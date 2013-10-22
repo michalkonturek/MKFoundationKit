@@ -1,5 +1,6 @@
 //
 //  NSNumber+MK_Fraction.h
+//  MKFoundationKit
 //
 //  Created by Michal Konturek on 30/06/2013.
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
