@@ -30,7 +30,6 @@
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:format];
     NSDate *result = [formatter dateFromString:string];
-//    [formatter release];
     
     return result;
 }
@@ -59,7 +58,6 @@
     return @"yyyy-MM-dd";
 }
 
-
 -(NSDate *)dateByAddingDays:(NSInteger)numDays {
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     
@@ -67,8 +65,6 @@
     [components setDay:numDays];
     
     NSDate *date = [calendar dateByAddingComponents:components toDate:self options:0];
-//    [components release];
-//    [calendar release];
     return date;
 }
 
@@ -77,7 +73,7 @@
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:[NSDate dateFormatMMMDDYYYY]];
     NSDate *ret = [formatter dateFromString:formattedString];
-//    [formatter release];
+
     return ret;
 }
 
@@ -102,7 +98,6 @@
     return [components day];
 }
 
-
 - (NSString *)formattedString {
     return [self formattedStringUsingFormat:[NSDate dateFormatMMMDDYYYY]];
 }
@@ -111,7 +106,6 @@
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:dateFormat];
     NSString *ret = [formatter stringFromDate:self];
-//    [formatter release];
     return ret;
 }
 

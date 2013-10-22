@@ -23,7 +23,6 @@
 		905F7C9B1816DCE000D0E780 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 905F7C801816DCE000D0E780 /* .gitkeep */; };
 		905F7C9C1816DCE000D0E780 /* NSDate+MK.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F7C831816DCE000D0E780 /* NSDate+MK.m */; };
 		905F7C9D1816DCE000D0E780 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 905F7C851816DCE000D0E780 /* .gitkeep */; };
-		905F7C9E1816DCE000D0E780 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 905F7C871816DCE000D0E780 /* .gitkeep */; };
 		905F7C9F1816DCE000D0E780 /* NSDictionary+MK.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F7C891816DCE000D0E780 /* NSDictionary+MK.m */; };
 		905F7CA01816DCE000D0E780 /* NSNumber+MK_Comparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F7C8D1816DCE000D0E780 /* NSNumber+MK_Comparison.m */; };
 		905F7CA11816DCE000D0E780 /* NSNumber+MK_Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F7C8F1816DCE000D0E780 /* NSNumber+MK_Creation.m */; };
@@ -72,7 +71,6 @@
 		905F7C821816DCE000D0E780 /* NSDate+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MK.h"; sourceTree = "<group>"; };
 		905F7C831816DCE000D0E780 /* NSDate+MK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MK.m"; sourceTree = "<group>"; };
 		905F7C851816DCE000D0E780 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		905F7C871816DCE000D0E780 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		905F7C881816DCE000D0E780 /* NSDictionary+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MK.h"; sourceTree = "<group>"; };
 		905F7C891816DCE000D0E780 /* NSDictionary+MK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MK.m"; sourceTree = "<group>"; };
 		905F7C8B1816DCE000D0E780 /* NSNumber+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+MK.h"; sourceTree = "<group>"; };
@@ -90,6 +88,7 @@
 		905F7C971816DCE000D0E780 /* NSNumber+MK_Precision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+MK_Precision.m"; sourceTree = "<group>"; };
 		905F7C991816DCE000D0E780 /* NSString+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MK.h"; sourceTree = "<group>"; };
 		905F7C9A1816DCE000D0E780 /* NSString+MK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK.m"; sourceTree = "<group>"; };
+		905F7CA71816DFC900D0E780 /* MKFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKFoundation.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +202,7 @@
 				905F7C861816DCE000D0E780 /* NSDictionary */,
 				905F7C8A1816DCE000D0E780 /* NSNumber */,
 				905F7C981816DCE000D0E780 /* NSString */,
+				905F7CA71816DFC900D0E780 /* MKFoundation.h */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -244,7 +244,6 @@
 		905F7C861816DCE000D0E780 /* NSDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				905F7C871816DCE000D0E780 /* .gitkeep */,
 				905F7C881816DCE000D0E780 /* NSDictionary+MK.h */,
 				905F7C891816DCE000D0E780 /* NSDictionary+MK.m */,
 			);
@@ -361,7 +360,6 @@
 			files = (
 				905F7C9B1816DCE000D0E780 /* .gitkeep in Resources */,
 				901F14801816C927002333D7 /* InfoPlist.strings in Resources */,
-				905F7C9E1816DCE000D0E780 /* .gitkeep in Resources */,
 				901F14881816C927002333D7 /* Images.xcassets in Resources */,
 				905F7C9D1816DCE000D0E780 /* .gitkeep in Resources */,
 			);
@@ -500,7 +498,7 @@
 		901F149C1816C927002333D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -533,13 +531,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Debug;
 		};
 		901F149D1816C927002333D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -565,6 +564,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
