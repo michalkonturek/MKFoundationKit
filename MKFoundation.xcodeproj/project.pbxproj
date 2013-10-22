@@ -31,6 +31,9 @@
 		905F7CA41816DCE000D0E780 /* NSNumber+MK_Negative.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F7C951816DCE000D0E780 /* NSNumber+MK_Negative.m */; };
 		905F7CA51816DCE000D0E780 /* NSNumber+MK_Precision.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F7C971816DCE000D0E780 /* NSNumber+MK_Precision.m */; };
 		905F7CA61816DCE000D0E780 /* NSString+MK.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F7C9A1816DCE000D0E780 /* NSString+MK.m */; };
+		90AB7F341816E16C0070D745 /* NSString+MK_EmailValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AB7F331816E16C0070D745 /* NSString+MK_EmailValidation.m */; };
+		90AB7F371816E20B0070D745 /* NSString+MK_UTF.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AB7F361816E20B0070D745 /* NSString+MK_UTF.m */; };
+		90AB7F3A1816E2C60070D745 /* NSString+MK_Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AB7F391816E2C60070D745 /* NSString+MK_Conversion.m */; };
 		F4456A8F9F0D4901812D32E2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4338C2BE2A5F46BEA81B602B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +92,12 @@
 		905F7C991816DCE000D0E780 /* NSString+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MK.h"; sourceTree = "<group>"; };
 		905F7C9A1816DCE000D0E780 /* NSString+MK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK.m"; sourceTree = "<group>"; };
 		905F7CA71816DFC900D0E780 /* MKFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKFoundation.h; sourceTree = "<group>"; };
+		90AB7F321816E16C0070D745 /* NSString+MK_EmailValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MK_EmailValidation.h"; sourceTree = "<group>"; };
+		90AB7F331816E16C0070D745 /* NSString+MK_EmailValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_EmailValidation.m"; sourceTree = "<group>"; };
+		90AB7F351816E20B0070D745 /* NSString+MK_UTF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MK_UTF.h"; sourceTree = "<group>"; };
+		90AB7F361816E20B0070D745 /* NSString+MK_UTF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_UTF.m"; sourceTree = "<group>"; };
+		90AB7F381816E2C60070D745 /* NSString+MK_Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MK_Conversion.h"; sourceTree = "<group>"; };
+		90AB7F391816E2C60070D745 /* NSString+MK_Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_Conversion.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +284,12 @@
 			children = (
 				905F7C991816DCE000D0E780 /* NSString+MK.h */,
 				905F7C9A1816DCE000D0E780 /* NSString+MK.m */,
+				90AB7F381816E2C60070D745 /* NSString+MK_Conversion.h */,
+				90AB7F391816E2C60070D745 /* NSString+MK_Conversion.m */,
+				90AB7F321816E16C0070D745 /* NSString+MK_EmailValidation.h */,
+				90AB7F331816E16C0070D745 /* NSString+MK_EmailValidation.m */,
+				90AB7F351816E20B0070D745 /* NSString+MK_UTF.h */,
+				90AB7F361816E20B0070D745 /* NSString+MK_UTF.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -444,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				905F7CA01816DCE000D0E780 /* NSNumber+MK_Comparison.m in Sources */,
+				90AB7F371816E20B0070D745 /* NSString+MK_UTF.m in Sources */,
 				901F14861816C927002333D7 /* AppDelegate.m in Sources */,
 				905F7CA41816DCE000D0E780 /* NSNumber+MK_Negative.m in Sources */,
 				905F7CA31816DCE000D0E780 /* NSNumber+MK_Manipulation.m in Sources */,
@@ -452,8 +468,10 @@
 				905F7CA51816DCE000D0E780 /* NSNumber+MK_Precision.m in Sources */,
 				905F7CA61816DCE000D0E780 /* NSString+MK.m in Sources */,
 				905F7CA21816DCE000D0E780 /* NSNumber+MK_Fraction.m in Sources */,
+				90AB7F341816E16C0070D745 /* NSString+MK_EmailValidation.m in Sources */,
 				905F7C9F1816DCE000D0E780 /* NSDictionary+MK.m in Sources */,
 				901F14821816C927002333D7 /* main.m in Sources */,
+				90AB7F3A1816E2C60070D745 /* NSString+MK_Conversion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
