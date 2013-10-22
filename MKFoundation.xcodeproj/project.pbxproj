@@ -20,11 +20,18 @@
 		901F14911816C927002333D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901F14791816C927002333D7 /* UIKit.framework */; };
 		901F14991816C927002333D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 901F14971816C927002333D7 /* InfoPlist.strings */; };
 		901F149B1816C927002333D7 /* MKFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 901F149A1816C927002333D7 /* MKFoundationTests.m */; };
-		905F7C761816D82400D0E780 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 905F7C6D1816D82400D0E780 /* .gitkeep */; };
-		905F7C771816D82400D0E780 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 905F7C6F1816D82400D0E780 /* .gitkeep */; };
-		905F7C781816D82400D0E780 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 905F7C711816D82400D0E780 /* .gitkeep */; };
-		905F7C791816D82400D0E780 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 905F7C731816D82400D0E780 /* .gitkeep */; };
-		905F7C7A1816D82400D0E780 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 905F7C751816D82400D0E780 /* .gitkeep */; };
+		905F7C9B1816DCE000D0E780 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 905F7C801816DCE000D0E780 /* .gitkeep */; };
+		905F7C9C1816DCE000D0E780 /* NSDate+MK.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F7C831816DCE000D0E780 /* NSDate+MK.m */; };
+		905F7C9D1816DCE000D0E780 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 905F7C851816DCE000D0E780 /* .gitkeep */; };
+		905F7C9E1816DCE000D0E780 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 905F7C871816DCE000D0E780 /* .gitkeep */; };
+		905F7C9F1816DCE000D0E780 /* NSDictionary+MK.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F7C891816DCE000D0E780 /* NSDictionary+MK.m */; };
+		905F7CA01816DCE000D0E780 /* NSNumber+MK_Comparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F7C8D1816DCE000D0E780 /* NSNumber+MK_Comparison.m */; };
+		905F7CA11816DCE000D0E780 /* NSNumber+MK_Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F7C8F1816DCE000D0E780 /* NSNumber+MK_Creation.m */; };
+		905F7CA21816DCE000D0E780 /* NSNumber+MK_Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F7C911816DCE000D0E780 /* NSNumber+MK_Fraction.m */; };
+		905F7CA31816DCE000D0E780 /* NSNumber+MK_Manipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F7C931816DCE000D0E780 /* NSNumber+MK_Manipulation.m */; };
+		905F7CA41816DCE000D0E780 /* NSNumber+MK_Negative.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F7C951816DCE000D0E780 /* NSNumber+MK_Negative.m */; };
+		905F7CA51816DCE000D0E780 /* NSNumber+MK_Precision.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F7C971816DCE000D0E780 /* NSNumber+MK_Precision.m */; };
+		905F7CA61816DCE000D0E780 /* NSString+MK.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F7C9A1816DCE000D0E780 /* NSString+MK.m */; };
 		F4456A8F9F0D4901812D32E2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4338C2BE2A5F46BEA81B602B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,11 +66,30 @@
 		901F14961816C927002333D7 /* MKFoundationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MKFoundationTests-Info.plist"; sourceTree = "<group>"; };
 		901F14981816C927002333D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		901F149A1816C927002333D7 /* MKFoundationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKFoundationTests.m; sourceTree = "<group>"; };
-		905F7C6D1816D82400D0E780 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		905F7C6F1816D82400D0E780 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		905F7C711816D82400D0E780 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		905F7C731816D82400D0E780 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		905F7C751816D82400D0E780 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		905F7C7D1816DCE000D0E780 /* MKLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKLog.h; sourceTree = "<group>"; };
+		905F7C7E1816DCE000D0E780 /* MKMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMacros.h; sourceTree = "<group>"; };
+		905F7C801816DCE000D0E780 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		905F7C821816DCE000D0E780 /* NSDate+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MK.h"; sourceTree = "<group>"; };
+		905F7C831816DCE000D0E780 /* NSDate+MK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MK.m"; sourceTree = "<group>"; };
+		905F7C851816DCE000D0E780 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		905F7C871816DCE000D0E780 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		905F7C881816DCE000D0E780 /* NSDictionary+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MK.h"; sourceTree = "<group>"; };
+		905F7C891816DCE000D0E780 /* NSDictionary+MK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MK.m"; sourceTree = "<group>"; };
+		905F7C8B1816DCE000D0E780 /* NSNumber+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+MK.h"; sourceTree = "<group>"; };
+		905F7C8C1816DCE000D0E780 /* NSNumber+MK_Comparison.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+MK_Comparison.h"; sourceTree = "<group>"; };
+		905F7C8D1816DCE000D0E780 /* NSNumber+MK_Comparison.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+MK_Comparison.m"; sourceTree = "<group>"; };
+		905F7C8E1816DCE000D0E780 /* NSNumber+MK_Creation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+MK_Creation.h"; sourceTree = "<group>"; };
+		905F7C8F1816DCE000D0E780 /* NSNumber+MK_Creation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+MK_Creation.m"; sourceTree = "<group>"; };
+		905F7C901816DCE000D0E780 /* NSNumber+MK_Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+MK_Fraction.h"; sourceTree = "<group>"; };
+		905F7C911816DCE000D0E780 /* NSNumber+MK_Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+MK_Fraction.m"; sourceTree = "<group>"; };
+		905F7C921816DCE000D0E780 /* NSNumber+MK_Manipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+MK_Manipulation.h"; sourceTree = "<group>"; };
+		905F7C931816DCE000D0E780 /* NSNumber+MK_Manipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+MK_Manipulation.m"; sourceTree = "<group>"; };
+		905F7C941816DCE000D0E780 /* NSNumber+MK_Negative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+MK_Negative.h"; sourceTree = "<group>"; };
+		905F7C951816DCE000D0E780 /* NSNumber+MK_Negative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+MK_Negative.m"; sourceTree = "<group>"; };
+		905F7C961816DCE000D0E780 /* NSNumber+MK_Precision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+MK_Precision.h"; sourceTree = "<group>"; };
+		905F7C971816DCE000D0E780 /* NSNumber+MK_Precision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+MK_Precision.m"; sourceTree = "<group>"; };
+		905F7C991816DCE000D0E780 /* NSString+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MK.h"; sourceTree = "<group>"; };
+		905F7C9A1816DCE000D0E780 /* NSString+MK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +155,7 @@
 		901F147B1816C927002333D7 /* MKFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				905F7C6B1816D82400D0E780 /* Source */,
+				905F7C7B1816DCE000D0E780 /* Source */,
 				901F14841816C927002333D7 /* AppDelegate.h */,
 				901F14851816C927002333D7 /* AppDelegate.m */,
 				901F14871816C927002333D7 /* Images.xcassets */,
@@ -167,54 +193,89 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		905F7C6B1816D82400D0E780 /* Source */ = {
+		905F7C7B1816DCE000D0E780 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				905F7C6C1816D82400D0E780 /* NSArray */,
-				905F7C6E1816D82400D0E780 /* NSDecimalNumber */,
-				905F7C701816D82400D0E780 /* NSDictionary */,
-				905F7C721816D82400D0E780 /* NSNumber */,
-				905F7C741816D82400D0E780 /* NSString */,
+				905F7C7C1816DCE000D0E780 /* Macros */,
+				905F7C7F1816DCE000D0E780 /* NSArray */,
+				905F7C811816DCE000D0E780 /* NSDate */,
+				905F7C841816DCE000D0E780 /* NSDecimalNumber */,
+				905F7C861816DCE000D0E780 /* NSDictionary */,
+				905F7C8A1816DCE000D0E780 /* NSNumber */,
+				905F7C981816DCE000D0E780 /* NSString */,
 			);
 			path = Source;
 			sourceTree = "<group>";
 		};
-		905F7C6C1816D82400D0E780 /* NSArray */ = {
+		905F7C7C1816DCE000D0E780 /* Macros */ = {
 			isa = PBXGroup;
 			children = (
-				905F7C6D1816D82400D0E780 /* .gitkeep */,
+				905F7C7D1816DCE000D0E780 /* MKLog.h */,
+				905F7C7E1816DCE000D0E780 /* MKMacros.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		905F7C7F1816DCE000D0E780 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				905F7C801816DCE000D0E780 /* .gitkeep */,
 			);
 			path = NSArray;
 			sourceTree = "<group>";
 		};
-		905F7C6E1816D82400D0E780 /* NSDecimalNumber */ = {
+		905F7C811816DCE000D0E780 /* NSDate */ = {
 			isa = PBXGroup;
 			children = (
-				905F7C6F1816D82400D0E780 /* .gitkeep */,
+				905F7C821816DCE000D0E780 /* NSDate+MK.h */,
+				905F7C831816DCE000D0E780 /* NSDate+MK.m */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
+		905F7C841816DCE000D0E780 /* NSDecimalNumber */ = {
+			isa = PBXGroup;
+			children = (
+				905F7C851816DCE000D0E780 /* .gitkeep */,
 			);
 			path = NSDecimalNumber;
 			sourceTree = "<group>";
 		};
-		905F7C701816D82400D0E780 /* NSDictionary */ = {
+		905F7C861816DCE000D0E780 /* NSDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				905F7C711816D82400D0E780 /* .gitkeep */,
+				905F7C871816DCE000D0E780 /* .gitkeep */,
+				905F7C881816DCE000D0E780 /* NSDictionary+MK.h */,
+				905F7C891816DCE000D0E780 /* NSDictionary+MK.m */,
 			);
 			path = NSDictionary;
 			sourceTree = "<group>";
 		};
-		905F7C721816D82400D0E780 /* NSNumber */ = {
+		905F7C8A1816DCE000D0E780 /* NSNumber */ = {
 			isa = PBXGroup;
 			children = (
-				905F7C731816D82400D0E780 /* .gitkeep */,
+				905F7C8B1816DCE000D0E780 /* NSNumber+MK.h */,
+				905F7C8C1816DCE000D0E780 /* NSNumber+MK_Comparison.h */,
+				905F7C8D1816DCE000D0E780 /* NSNumber+MK_Comparison.m */,
+				905F7C8E1816DCE000D0E780 /* NSNumber+MK_Creation.h */,
+				905F7C8F1816DCE000D0E780 /* NSNumber+MK_Creation.m */,
+				905F7C901816DCE000D0E780 /* NSNumber+MK_Fraction.h */,
+				905F7C911816DCE000D0E780 /* NSNumber+MK_Fraction.m */,
+				905F7C921816DCE000D0E780 /* NSNumber+MK_Manipulation.h */,
+				905F7C931816DCE000D0E780 /* NSNumber+MK_Manipulation.m */,
+				905F7C941816DCE000D0E780 /* NSNumber+MK_Negative.h */,
+				905F7C951816DCE000D0E780 /* NSNumber+MK_Negative.m */,
+				905F7C961816DCE000D0E780 /* NSNumber+MK_Precision.h */,
+				905F7C971816DCE000D0E780 /* NSNumber+MK_Precision.m */,
 			);
 			path = NSNumber;
 			sourceTree = "<group>";
 		};
-		905F7C741816D82400D0E780 /* NSString */ = {
+		905F7C981816DCE000D0E780 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
-				905F7C751816D82400D0E780 /* .gitkeep */,
+				905F7C991816DCE000D0E780 /* NSString+MK.h */,
+				905F7C9A1816DCE000D0E780 /* NSString+MK.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -298,13 +359,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				905F7C761816D82400D0E780 /* .gitkeep in Resources */,
+				905F7C9B1816DCE000D0E780 /* .gitkeep in Resources */,
 				901F14801816C927002333D7 /* InfoPlist.strings in Resources */,
-				905F7C781816D82400D0E780 /* .gitkeep in Resources */,
-				905F7C791816D82400D0E780 /* .gitkeep in Resources */,
+				905F7C9E1816DCE000D0E780 /* .gitkeep in Resources */,
 				901F14881816C927002333D7 /* Images.xcassets in Resources */,
-				905F7C771816D82400D0E780 /* .gitkeep in Resources */,
-				905F7C7A1816D82400D0E780 /* .gitkeep in Resources */,
+				905F7C9D1816DCE000D0E780 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +445,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				905F7CA01816DCE000D0E780 /* NSNumber+MK_Comparison.m in Sources */,
 				901F14861816C927002333D7 /* AppDelegate.m in Sources */,
+				905F7CA41816DCE000D0E780 /* NSNumber+MK_Negative.m in Sources */,
+				905F7CA31816DCE000D0E780 /* NSNumber+MK_Manipulation.m in Sources */,
+				905F7CA11816DCE000D0E780 /* NSNumber+MK_Creation.m in Sources */,
+				905F7C9C1816DCE000D0E780 /* NSDate+MK.m in Sources */,
+				905F7CA51816DCE000D0E780 /* NSNumber+MK_Precision.m in Sources */,
+				905F7CA61816DCE000D0E780 /* NSString+MK.m in Sources */,
+				905F7CA21816DCE000D0E780 /* NSNumber+MK_Fraction.m in Sources */,
+				905F7C9F1816DCE000D0E780 /* NSDictionary+MK.m in Sources */,
 				901F14821816C927002333D7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
