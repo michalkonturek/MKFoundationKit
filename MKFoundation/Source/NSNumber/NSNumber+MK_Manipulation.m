@@ -40,6 +40,7 @@
 - (instancetype)_raiseToNegativePower:(NSInteger)power {
 
     /*
+     source:
      http://stackoverflow.com/questions/3596060/raise-an-nsdecimalnumber-to-a-negative-power
      
      a^(-b) == 1 / (a^b)
