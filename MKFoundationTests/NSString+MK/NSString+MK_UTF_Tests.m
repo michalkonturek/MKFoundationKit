@@ -17,9 +17,6 @@
 - (void)test_decodeUTF8 {
     NSString *input = @"rÃ³ do sÃ­t";
     NSString *result = [input decodeUTF8];
-    
-    NSLog(@"%@", result);
-    
     assertThat(result, containsString(@"ró do sít"));
 }
 

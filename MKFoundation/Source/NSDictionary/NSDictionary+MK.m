@@ -10,14 +10,14 @@
 
 @implementation NSDictionary (MK)
 
-- (NSMutableDictionary *)renameKeysUsingRules:(NSDictionary *)rules {
+- (NSMutableDictionary *)renameKeysUsingMapping:(NSDictionary *)mapping {
     NSMutableDictionary *dictionary = [NSMutableDictionary dictionaryWithDictionary:self];
     
     id object = nil;
     NSString *newKey = nil;
-    for (NSString *key in rules) {
+    for (NSString *key in mapping) {
         object = [dictionary objectForKey:key];
-        newKey = [rules objectForKey:key];
+        newKey = [mapping objectForKey:key];
         if (object != nil) {
             [dictionary removeObjectForKey:key];
             [dictionary setObject:object forKey:newKey];

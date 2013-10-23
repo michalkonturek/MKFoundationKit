@@ -10,7 +10,7 @@
 
 @interface NSDictionary (MK)
 
-- (NSMutableDictionary *)renameKeysUsingRules:(NSDictionary *)rules;
+- (NSMutableDictionary *)renameKeysUsingMapping:(NSDictionary *)mapping;
 - (NSMutableDictionary *)dictionaryWithKeys:(NSArray *)keys;
 
 @end
