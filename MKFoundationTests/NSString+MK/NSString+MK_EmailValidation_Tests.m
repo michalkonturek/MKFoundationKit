@@ -14,12 +14,29 @@
 
 @implementation NSString_MK_EmailValidation_Tests
 
-- (void)setUp {
-    [super setUp];
+- (void)test_isValidEmail_returns_true {
+    BOOL result = [@"user@domain.com" isValidEmail];
+    assertThatBool(result, equalToBool(YES));
 }
 
-- (void)tearDown {
-    [super tearDown];
+- (void)test_isValidEmail_returns_true_when_domain_is_two_parts {
+    BOOL result = [@"user@email.domain.com" isValidEmail];
+    assertThatBool(result, equalToBool(YES));
+}
+
+- (void)test_isValidEmail_returns_true_when_domain_is_three_parts {
+    BOOL result = [@"user@email.subdomain.domain.com" isValidEmail];
+    assertThatBool(result, equalToBool(YES));
+}
+
+- (void)test_isValidEmail_returns_false_when_no_at {
+    BOOL result = [@"user.domain.com" isValidEmail];
+    assertThatBool(result, equalToBool(NO));
+}
+
+- (void)test_isValidEmail_returns_false_when_too_long_ending {
+    BOOL result = [@"user@domain.comcom" isValidEmail];
+    assertThatBool(result, equalToBool(NO));
 }
 
 @end
