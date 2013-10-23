@@ -24,6 +24,26 @@
     assertThat(result, equalTo(@-1));
 }
 
+- (void)test_negative_when_positive {
+    id result = [@1 negative];
+    assertThat(result, equalTo(@-1));
+}
+
+- (void)test_negative_when_negative {
+    id result = [@-1 negative];
+    assertThat(result, equalTo(@-1));
+}
+
+- (void)test_positive_when_positive {
+    id result = [@1 positive];
+    assertThat(result, equalTo(@1));
+}
+
+- (void)test_positive_when_negative {
+    id result = [@-1 positive];
+    assertThat(result, equalTo(@1));
+}
+
 - (void)test_negate_when_nsnumber_instance {
     id result = [@1 negate];
     assertThat(result, equalTo(@-1));
@@ -32,6 +52,26 @@
 - (void)test_negate_when_nsdecimalnumber_instance {
     id result = [[NSDecimalNumber one] negate];
     assertThat(result, equalTo(@-1));
+}
+
+- (void)test_isPositive_returns_true {
+    BOOL result = [@1 isPositive];
+    assertThatBool(result, equalToBool(YES));
+}
+
+- (void)test_isPositive_returns_false {
+    BOOL result = [[NSNumber minus_one] isPositive];
+    assertThatBool(result, equalToBool(NO));
+}
+
+- (void)test_isNegative_returns_true {
+    BOOL result = [[NSNumber minus_one] isNegative];
+    assertThatBool(result, equalToBool(YES));
+}
+
+- (void)test_isNegative_returns_false {
+    BOOL result = [@1 isNegative];
+    assertThatBool(result, equalToBool(NO));
 }
 
 @end
