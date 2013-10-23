@@ -8,12 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-#define allTrim(object) [object stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]]
+#import "NSString+MK_Conversion.h"
+#import "NSString+MK_EmailValidation.h"
+#import "NSString+MK_Empty.h"
+#import "NSString+MK_UTF.h"
 
-@interface NSString (MK)
 
-+ (BOOL)isStringEmptyOrNil:(NSString *)value;
-
-- (BOOL)isEmpty;
-
-@end

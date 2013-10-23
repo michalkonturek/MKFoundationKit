@@ -1,5 +1,5 @@
 //
-//  NSString+MK_Tests.m
+//  NSString_MK_Empty_Tests
 //  MKFoundation
 //
 //  Created by Michal Konturek on 23/10/2013.
@@ -8,11 +8,11 @@
 
 #import "BaseTest.h"
 
-@interface NSString_MK_Tests : SenTestCase
+@interface NSString_MK_Empty_Tests : SenTestCase
 
 @end
 
-@implementation NSString_MK_Tests
+@implementation NSString_MK_Empty_Tests
 
 - (void)test_isStringEmptyOrNil_returns_true {
     BOOL result = [NSString isStringEmptyOrNil:@""];

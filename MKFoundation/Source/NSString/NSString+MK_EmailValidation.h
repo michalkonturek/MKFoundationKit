@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
 //
 
-#import "NSString+MK.h"
+#import <Foundation/Foundation.h>
 
 @interface NSString (MK_EmailValidation)
 

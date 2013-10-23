@@ -14,12 +14,27 @@
 
 @implementation NSString_MK_Conversion_Tests
 
-- (void)setUp {
-    [super setUp];
+- (void)test_numberWithInteger_when_numeric {
+    NSString *input = @"101";
+    NSNumber *result = [input numberWithInteger];
+    assertThat(result, equalTo(@101));
 }
 
-- (void)tearDown {
-    [super tearDown];
+- (void)test_numberWithInteger_when_alphanumeric {
+    NSString *input = @"101 ABCD";
+    NSNumber *result = [input numberWithInteger];
+    assertThat(result, equalTo(@101));
 }
 
+- (void)test_numberWithLongLong_when_numeric {
+    NSString *input = @"101111111111";
+    NSNumber *result = [input numberWithLongLong];
+    assertThat(result, equalTo(@101111111111));
+}
+
+- (void)test_numberWithLongLong_when_alphanumeric {
+    NSString *input = @"101111111111 ABCD";
+    NSNumber *result = [input numberWithLongLong];
+    assertThat(result, equalTo(@101111111111));
+}
 @end
