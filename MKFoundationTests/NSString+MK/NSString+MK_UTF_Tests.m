@@ -14,12 +14,13 @@
 
 @implementation NSString_MK_UTF_Tests
 
-- (void)setUp {
-    [super setUp];
-}
-
-- (void)tearDown {
-    [super tearDown];
+- (void)test_decodeUTF8 {
+    NSString *input = @"rÃ³ do sÃ­t";
+    NSString *result = [input decodeUTF8];
+    
+    NSLog(@"%@", result);
+    
+    assertThat(result, containsString(@"ró do sít"));
 }
 
 @end

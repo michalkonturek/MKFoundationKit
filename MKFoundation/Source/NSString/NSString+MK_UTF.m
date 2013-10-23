@@ -10,13 +10,13 @@
 
 @implementation NSString (MK_UTF)
 
-+ (NSString *)decodeUTFString:(NSString *)value {
-    return [value decodeUTF];
++ (NSString *)decodeUTF8String:(NSString *)value {
+    return [value decodeUTF8];
 }
 
-- (NSString *)decodeUTF {
+- (NSString *)decodeUTF8 {
+    // source: http://www.cafewebmaster.com/online_tools/utf_decode
     
-    // source: http://stackoverflow.com/questions/4913499/utf8-character-decoding-in-objective-c
     return [NSString stringWithCString:[self cStringUsingEncoding:NSISOLatin1StringEncoding]
                               encoding:NSUTF8StringEncoding];
 }
