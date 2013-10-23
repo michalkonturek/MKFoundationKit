@@ -14,9 +14,9 @@
 
 - (instancetype)integralPart {
     if ([self isMemberOfClass:[NSNumber class]])
-        return [[self class] numberWithInteger:[self integerValue]];
+        return [NSNumber numberWithInteger:[self integerValue]];
     
-    return [[[self class] numberWithInteger:[self integerValue]] decimalNumber];
+    return [[NSDecimalNumber numberWithInteger:[self integerValue]] decimalNumber];
 //    return [self decimalNumberWithPrecision:0];   // do not use as it rounds the number
 }
 

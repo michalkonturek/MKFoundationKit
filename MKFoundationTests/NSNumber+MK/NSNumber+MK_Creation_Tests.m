@@ -1,6 +1,6 @@
 //
-//  NSNumber+Creation_Tests.m
-//  MKFinancialKit
+//  NSNumber+MK_Creation_Tests.m
+//  MKFoundation
 //
 //  Created by Michal Konturek on 02/07/2013.
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
