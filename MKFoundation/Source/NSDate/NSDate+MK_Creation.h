@@ -14,6 +14,6 @@
 + (NSDate *)dateFromString:(NSString *)string;
 + (NSDate *)dateFromString:(NSString *)string withFormat:(NSString *)format;
 
-- (NSDate *)dateAsDateWithoutTime;
+- (NSDate *)dateWithoutTime;
 
 @end

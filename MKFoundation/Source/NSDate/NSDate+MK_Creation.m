@@ -11,7 +11,7 @@
 @implementation NSDate (MK_Creation)
 
 + (NSDate *)dateWithoutTime {
-    return [[NSDate date] dateAsDateWithoutTime];
+    return [[NSDate date] dateWithoutTime];
 }
 
 + (NSDate *)dateFromString:(NSString *)string {
@@ -35,13 +35,14 @@
     return result;
 }
 
-- (NSDate *)dateAsDateWithoutTime {
+- (NSDate *)dateWithoutTime {
     NSString *formattedString = [self formattedString];
+
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:[NSDate dateFormatMMMDDYYYY]];
-    NSDate *ret = [formatter dateFromString:formattedString];
+    [formatter setDateFormat:[NSDate dateFormatDDMMMYYYY]];
+    NSDate *result = [formatter dateFromString:formattedString];
     
-    return ret;
+    return result;
 }
 
 @end
