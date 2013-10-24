@@ -11,6 +11,8 @@
 #import "MKLog.h"
 #import "MKMacros.h"
 
+#import "LINQ.h"
+
 #import "NSArray+MK.h"
 #import "NSDate+MK.h"
 #import "NSDictionary+MK.h"
