@@ -13,4 +13,6 @@
 - (NSMutableDictionary *)renameKeysUsingMapping:(NSDictionary *)mapping;
 - (NSMutableDictionary *)dictionaryWithKeys:(NSArray *)keys;
 
+- (BOOL)isEmpty;
+
 @end

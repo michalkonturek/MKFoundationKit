@@ -8,37 +8,44 @@
 
 #import "NSDictionary+MK.h"
 
+#import "NSArray+MK.h"
+#import "LINQ.h"
+
 @implementation NSDictionary (MK)
 
 - (NSMutableDictionary *)renameKeysUsingMapping:(NSDictionary *)mapping {
-    NSMutableDictionary *dictionary = [NSMutableDictionary dictionaryWithDictionary:self];
+    id result = [NSMutableDictionary dictionaryWithDictionary:self];
     
     id object = nil;
     NSString *newKey = nil;
     for (NSString *key in mapping) {
-        object = [dictionary objectForKey:key];
+        object = [result objectForKey:key];
         newKey = [mapping objectForKey:key];
         if (object != nil) {
-            [dictionary removeObjectForKey:key];
-            [dictionary setObject:object forKey:newKey];
+            [result removeObjectForKey:key];
+            [result setObject:object forKey:newKey];
         }
     }
     
-    return dictionary;
+    return result;
 }
 
 - (NSMutableDictionary *)dictionaryWithKeys:(NSArray *)keys {
-    NSAssert(keys != nil, @"Keys cannot be nil");
+    if ([keys isEmpty]) return [NSMutableDictionary LINQ_empty];
     
-    NSMutableDictionary *dictionary = [NSMutableDictionary dictionaryWithCapacity:[keys count]];
+    id result = [NSMutableDictionary dictionaryWithCapacity:[keys count]];
     for (NSString *key in keys) {
         id object = [self objectForKey:key];
         if (key != nil) {
-            [dictionary setObject:object forKey:key];
+            [result setObject:object forKey:key];
         }
     }
     
-    return dictionary;
+    return result;
+}
+
+- (BOOL)isEmpty {
+    return ([self count] == 0);
 }
 
 @end
