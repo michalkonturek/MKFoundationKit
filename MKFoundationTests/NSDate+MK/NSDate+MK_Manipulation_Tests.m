@@ -50,6 +50,30 @@
     assertThat(result, equalTo(@"01-04-2013"));
 }
 
+- (void)test_dateBySubtractingDays {
+    id date = [self.input dateBySubtractingDays:10];
+    id result = [date formattedString];
+    assertThat(result, equalTo(@"22-03-2012"));
+}
+
+- (void)test_dateBySubtractingWeeks {
+    id date = [self.input dateBySubtractingWeeks:2];
+    id result = [date formattedString];
+    assertThat(result, equalTo(@"18-03-2012"));
+}
+
+- (void)test_dateBySubtractingMonths {
+    id date = [self.input dateBySubtractingMonths:2];
+    id result = [date formattedString];
+    assertThat(result, equalTo(@"01-02-2012"));
+}
+
+- (void)test_dateBySubtractingYears {
+    id date = [self.input dateBySubtractingYears:2];
+    id result = [date formattedString];
+    assertThat(result, equalTo(@"01-04-2010"));
+}
+
 - (void)test_differenceInDaysToDate_when_later_date {
     id date = [NSDate dateFromString:@"11-04-2012"];
     NSInteger result = [self.input differenceInDaysToDate:date];

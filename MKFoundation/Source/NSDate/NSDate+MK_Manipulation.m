@@ -26,6 +26,22 @@
     return [self _dateByAdding:months ofUnit:NSCalendarUnitYear];
 }
 
+- (NSDate *)dateBySubtractingDays:(NSInteger)days {
+    return [self _dateByAdding:-days ofUnit:NSCalendarUnitDay];
+}
+
+- (NSDate *)dateBySubtractingWeeks:(NSInteger)weeks {
+    return [self dateByAddingDays:-(weeks * 7)];
+}
+
+- (NSDate *)dateBySubtractingMonths:(NSInteger)months {
+    return [self _dateByAdding:-months ofUnit:NSCalendarUnitMonth];
+}
+
+- (NSDate *)dateBySubtractingYears:(NSInteger)years {
+    return [self _dateByAdding:-years ofUnit:NSCalendarUnitYear];
+}
+
 - (NSDate *)_dateByAdding:(NSInteger)value ofUnit:(NSCalendarUnit)unit {
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     
@@ -45,23 +61,6 @@
     
     NSDate *date = [calendar dateByAddingComponents:components toDate:self options:0];
     return date;
-}
-
-
-- (NSDate *)dateBySubtractingDays:(NSInteger)days {
-    METHOD_NOT_IMPLEMENTED
-}
-
-- (NSDate *)dateBySubtractingWeeks:(NSInteger)weeks {
-    METHOD_NOT_IMPLEMENTED
-}
-
-- (NSDate *)dateBySubtractingMonths:(NSInteger)months {
-    METHOD_NOT_IMPLEMENTED
-}
-
-- (NSDate *)dateBySubtractingYears:(NSInteger)years {
-    METHOD_NOT_IMPLEMENTED
 }
 
 - (NSInteger)differenceInDaysToDate:(NSDate *)toDate {
