@@ -12,6 +12,3 @@
 #import "NSDate+MK_Formatting.h"
 #import "NSDate+MK_Manipulation.h"
 
-@interface NSDate (MK)
-
-@end

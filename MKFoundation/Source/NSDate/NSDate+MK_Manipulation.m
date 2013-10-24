@@ -10,35 +10,87 @@
 
 @implementation NSDate (MK_Manipulation)
 
-- (NSDate *)dateByAddingDays:(NSInteger)numDays {
+- (NSDate *)dateByAddingDays:(NSInteger)days {
+    return [self _dateByAdding:days ofUnit:NSCalendarUnitDay];
+}
+
+- (NSDate *)dateByAddingWeeks:(NSInteger)weeks {
+    return [self dateByAddingDays:(weeks * 7)];
+}
+
+- (NSDate *)dateByAddingMonths:(NSInteger)months {
+    return [self _dateByAdding:months ofUnit:NSCalendarUnitMonth];
+}
+
+- (NSDate *)dateByAddingYears:(NSInteger)months {
+    return [self _dateByAdding:months ofUnit:NSCalendarUnitYear];
+}
+
+- (NSDate *)dateBySubtractingDays:(NSInteger)days {
+    return [self _dateByAdding:-days ofUnit:NSCalendarUnitDay];
+}
+
+- (NSDate *)dateBySubtractingWeeks:(NSInteger)weeks {
+    return [self dateByAddingDays:-(weeks * 7)];
+}
+
+- (NSDate *)dateBySubtractingMonths:(NSInteger)months {
+    return [self _dateByAdding:-months ofUnit:NSCalendarUnitMonth];
+}
+
+- (NSDate *)dateBySubtractingYears:(NSInteger)years {
+    return [self _dateByAdding:-years ofUnit:NSCalendarUnitYear];
+}
+
+- (NSDate *)_dateByAdding:(NSInteger)value ofUnit:(NSCalendarUnit)unit {
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     
     NSDateComponents *components = [[NSDateComponents alloc] init];
-    [components setDay:numDays];
+    
+    switch (unit) {
+        case NSCalendarUnitDay:
+            [components setDay:value];
+            break;
+        case NSCalendarUnitMonth:
+            [components setMonth:value];
+            break;
+        default:
+            [components setYear:value];
+            break;
+    }
     
     NSDate *date = [calendar dateByAddingComponents:components toDate:self options:0];
     return date;
 }
 
-- (NSInteger)differenceInYearsToDate:(NSDate *)toDate {
-    NSCalendar *calendar = [NSCalendar currentCalendar];
-    unsigned unitFlags = NSYearCalendarUnit;
-    NSDateComponents *components = [calendar components:unitFlags fromDate:self toDate:toDate options:0];
-    return [components year];
+- (NSInteger)differenceInDaysToDate:(NSDate *)toDate {
+    return [self _differenceInUnit:NSCalendarUnitDay toDate:toDate];
 }
 
 - (NSInteger)differenceInMonthsToDate:(NSDate *)toDate {
-    NSCalendar *calendar = [NSCalendar currentCalendar];
-    unsigned unitFlags = NSMonthCalendarUnit;
-    NSDateComponents *components = [calendar components:unitFlags fromDate:self toDate:toDate options:0];
-    return [components month];
+    return [self _differenceInUnit:NSCalendarUnitMonth toDate:toDate];
 }
 
-- (NSInteger)differenceInDaysToDate:(NSDate *)toDate {
+- (NSInteger)differenceInYearsToDate:(NSDate *)toDate {
+    return [self _differenceInUnit:NSCalendarUnitYear toDate:toDate];
+}
+
+- (NSInteger)_differenceInUnit:(NSCalendarUnit)unit toDate:(NSDate *)toDate {
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    unsigned unitFlags = NSDayCalendarUnit;
-    NSDateComponents *components = [calendar components:unitFlags fromDate:self toDate:toDate options:0];
-    return [components day];
+    NSDateComponents *components = [calendar components:unit
+                                               fromDate:self toDate:toDate options:0];
+    
+    switch (unit) {
+        case NSCalendarUnitDay:
+            return [components day];
+            break;
+        case NSCalendarUnitMonth:
+            return [components month];
+            break;
+        default:
+            return [components year];
+            break;
+    }
 }
 
 @end

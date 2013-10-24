@@ -6,13 +6,17 @@
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
 //
 
-#import "NSString+MK.h"
+#import "NSDate+MK.h"
 
 @interface NSDate (MK_Formatting)
 
 + (NSString *)dateFormatCCCCDDMMMYYYY;
 + (NSString *)dateFormatCCCCDDMMMMYYYY;
+
++ (NSString *)dateFormatDDMMMYYYY;
++ (NSString *)dateFormatDDMMYYYYDashed;
 + (NSString *)dateFormatDDMMYYYYSlashed;
+
 + (NSString *)dateFormatDDMMMYYYYSlashed;
 + (NSString *)dateFormatMMMDDYYYY;
 + (NSString *)dateFormatYYYYMMDDDashed;

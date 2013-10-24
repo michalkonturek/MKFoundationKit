@@ -18,12 +18,20 @@
     return @"cccc, dd MMMM yyyy";
 }
 
++ (NSString *)dateFormatDDMMMYYYY {
+    return @"dd MMM yyyy";
+}
+
++ (NSString *)dateFormatDDMMYYYYDashed {
+    return @"dd-MM-yyyy";
+}
+
 + (NSString *)dateFormatDDMMYYYYSlashed {
-    return @"dd/MM/YYYY";
+   return @"dd/MM/yyyy";
 }
 
 + (NSString *)dateFormatDDMMMYYYYSlashed {
-    return @"dd/MMM/YYYY";
+    return @"dd/MMM/yyyy";
 }
 
 + (NSString *)dateFormatMMMDDYYYY {
@@ -35,14 +43,14 @@
 }
 
 - (NSString *)formattedString {
-    return [self formattedStringUsingFormat:[NSDate dateFormatMMMDDYYYY]];
+    return [self formattedStringUsingFormat:[NSDate dateFormatDDMMYYYYDashed]];
 }
 
 - (NSString *)formattedStringUsingFormat:(NSString *)dateFormat {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:dateFormat];
-    NSString *ret = [formatter stringFromDate:self];
-    return ret;
+    NSString *result = [formatter stringFromDate:self];
+    return result;
 }
 
 @end
