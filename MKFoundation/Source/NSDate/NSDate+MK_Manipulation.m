@@ -11,13 +11,7 @@
 @implementation NSDate (MK_Manipulation)
 
 - (NSDate *)dateByAddingDays:(NSInteger)days {
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    
-    NSDateComponents *components = [[NSDateComponents alloc] init];
-    [components setDay:days];
-    
-    NSDate *date = [calendar dateByAddingComponents:components toDate:self options:0];
-    return date;
+    return [self _dateByAdding:days ofUnit:NSCalendarUnitDay];
 }
 
 - (NSDate *)dateByAddingWeeks:(NSInteger)weeks {
@@ -25,12 +19,34 @@
 }
 
 - (NSDate *)dateByAddingMonths:(NSInteger)months {
-    METHOD_NOT_IMPLEMENTED
+    return [self _dateByAdding:months ofUnit:NSCalendarUnitMonth];
 }
 
-- (NSDate *)dateByAddingYears:(NSInteger)years {
-    METHOD_NOT_IMPLEMENTED
+- (NSDate *)dateByAddingYears:(NSInteger)months {
+    return [self _dateByAdding:months ofUnit:NSCalendarUnitYear];
 }
+
+- (NSDate *)_dateByAdding:(NSInteger)value ofUnit:(NSCalendarUnit)unit {
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    
+    switch (unit) {
+        case NSCalendarUnitDay:
+            [components setDay:value];
+            break;
+        case NSCalendarUnitMonth:
+            [components setMonth:value];
+            break;
+        default:
+            [components setYear:value];
+            break;
+    }
+    
+    NSDate *date = [calendar dateByAddingComponents:components toDate:self options:0];
+    return date;
+}
+
 
 - (NSDate *)dateBySubtractingDays:(NSInteger)days {
     METHOD_NOT_IMPLEMENTED

@@ -39,15 +39,15 @@
 }
 
 - (void)test_dateByAddingMonths {
-//    id date = [self.input dateByAddingMonths:2];
-//    id result = [date formattedString];
-//    assertThat(result, equalTo(@"01-06-2012"));
+    id date = [self.input dateByAddingMonths:2];
+    id result = [date formattedString];
+    assertThat(result, equalTo(@"01-06-2012"));
 }
 
 - (void)test_dateByAddingYears {
-//    id date = [self.input dateByAddingDays:1];
-//    id result = [date formattedString];
-//    assertThat(result, equalTo(@"01-04-2013"));
+    id date = [self.input dateByAddingYears:1];
+    id result = [date formattedString];
+    assertThat(result, equalTo(@"01-04-2013"));
 }
 
 - (void)test_differenceInDaysToDate_when_later_date {
