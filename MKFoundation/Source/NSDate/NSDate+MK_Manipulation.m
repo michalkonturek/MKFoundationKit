@@ -10,8 +10,14 @@
 
 @implementation NSDate (MK_Manipulation)
 
+/*
+ From iOS 7 NS<unit>CalendarUnit is deprecated and replaced by NSCalendarUnit<unit>.
+ At the moment Travis CI does not have Xcode 5 installed, so in otder to pass
+ tests, the legacy typedef ENUM must be used.
+ */
+
 - (NSDate *)dateByAddingDays:(NSInteger)days {
-    return [self _dateByAdding:days ofUnit:NSCalendarUnitDay];
+    return [self _dateByAdding:days ofUnit:NSDayCalendarUnit];
 }
 
 - (NSDate *)dateByAddingWeeks:(NSInteger)weeks {
@@ -19,15 +25,15 @@
 }
 
 - (NSDate *)dateByAddingMonths:(NSInteger)months {
-    return [self _dateByAdding:months ofUnit:NSCalendarUnitMonth];
+    return [self _dateByAdding:months ofUnit:NSMonthCalendarUnit];
 }
 
 - (NSDate *)dateByAddingYears:(NSInteger)months {
-    return [self _dateByAdding:months ofUnit:NSCalendarUnitYear];
+    return [self _dateByAdding:months ofUnit:NSYearCalendarUnit];
 }
 
 - (NSDate *)dateBySubtractingDays:(NSInteger)days {
-    return [self _dateByAdding:-days ofUnit:NSCalendarUnitDay];
+    return [self _dateByAdding:-days ofUnit:NSDayCalendarUnit];
 }
 
 - (NSDate *)dateBySubtractingWeeks:(NSInteger)weeks {
@@ -35,11 +41,11 @@
 }
 
 - (NSDate *)dateBySubtractingMonths:(NSInteger)months {
-    return [self _dateByAdding:-months ofUnit:NSCalendarUnitMonth];
+    return [self _dateByAdding:-months ofUnit:NSMonthCalendarUnit];
 }
 
 - (NSDate *)dateBySubtractingYears:(NSInteger)years {
-    return [self _dateByAdding:-years ofUnit:NSCalendarUnitYear];
+    return [self _dateByAdding:-years ofUnit:NSYearCalendarUnit];
 }
 
 - (NSDate *)_dateByAdding:(NSInteger)value ofUnit:(NSCalendarUnit)unit {
@@ -48,10 +54,10 @@
     NSDateComponents *components = [[NSDateComponents alloc] init];
     
     switch (unit) {
-        case NSCalendarUnitDay:
+        case NSDayCalendarUnit:
             [components setDay:value];
             break;
-        case NSCalendarUnitMonth:
+        case NSMonthCalendarUnit:
             [components setMonth:value];
             break;
         default:
@@ -64,15 +70,15 @@
 }
 
 - (NSInteger)differenceInDaysToDate:(NSDate *)toDate {
-    return [self _differenceInUnit:NSCalendarUnitDay toDate:toDate];
+    return [self _differenceInUnit:NSDayCalendarUnit toDate:toDate];
 }
 
 - (NSInteger)differenceInMonthsToDate:(NSDate *)toDate {
-    return [self _differenceInUnit:NSCalendarUnitMonth toDate:toDate];
+    return [self _differenceInUnit:NSMonthCalendarUnit toDate:toDate];
 }
 
 - (NSInteger)differenceInYearsToDate:(NSDate *)toDate {
-    return [self _differenceInUnit:NSCalendarUnitYear toDate:toDate];
+    return [self _differenceInUnit:NSYearCalendarUnit toDate:toDate];
 }
 
 - (NSInteger)_differenceInUnit:(NSCalendarUnit)unit toDate:(NSDate *)toDate {
@@ -81,10 +87,10 @@
                                                fromDate:self toDate:toDate options:0];
     
     switch (unit) {
-        case NSCalendarUnitDay:
+        case NSDayCalendarUnit:
             return [components day];
             break;
-        case NSCalendarUnitMonth:
+        case NSMonthCalendarUnit:
             return [components month];
             break;
         default:
