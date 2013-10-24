@@ -15,7 +15,7 @@
 }
 
 + (NSDate *)dateFromString:(NSString *)string {
-    return [self dateFromString:string withFormat:[NSDate dateFormatYYYYMMDDDashed]];
+    return [self dateFromString:string withFormat:[NSDate dateFormatDDMMYYYYDashed]];
 }
 
 + (NSDate *)dateFromString:(NSString *)string withFormat:(NSString *)format {
@@ -25,7 +25,7 @@
     }
     
     if (format == nil) {
-        format = [NSDate dateFormatYYYYMMDDDashed];
+        format = [NSDate dateFormatDDMMYYYYDashed];
     }
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
@@ -39,7 +39,7 @@
     NSString *formattedString = [self formattedString];
 
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:[NSDate dateFormatDDMMMYYYY]];
+    [formatter setDateFormat:[NSDate dateFormatDDMMYYYYDashed]];
     NSDate *result = [formatter dateFromString:formattedString];
     
     return result;

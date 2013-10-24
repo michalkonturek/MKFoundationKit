@@ -14,14 +14,6 @@
 
 @implementation NSDate_MK_Creation_Tests
 
-- (void)setUp {
-    [super setUp];
-}
-
-- (void)tearDown {
-    [super tearDown];
-}
-
 - (void)test_dateWithoutTime {
     NSDate *date = [NSDate dateWithoutTime];
     id result = [date formattedStringUsingFormat:@"HH:mm"];

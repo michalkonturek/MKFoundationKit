@@ -10,21 +10,49 @@
 
 @implementation NSDate (MK_Manipulation)
 
-- (NSDate *)dateByAddingDays:(NSInteger)numDays {
+- (NSDate *)dateByAddingDays:(NSInteger)days {
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     
     NSDateComponents *components = [[NSDateComponents alloc] init];
-    [components setDay:numDays];
+    [components setDay:days];
     
     NSDate *date = [calendar dateByAddingComponents:components toDate:self options:0];
     return date;
 }
 
-- (NSInteger)differenceInYearsToDate:(NSDate *)toDate {
+- (NSDate *)dateByAddingWeeks:(NSInteger)weeks {
+    return [self dateByAddingDays:(weeks * 7)];
+}
+
+- (NSDate *)dateByAddingMonths:(NSInteger)months {
+    METHOD_NOT_IMPLEMENTED
+}
+
+- (NSDate *)dateByAddingYears:(NSInteger)years {
+    METHOD_NOT_IMPLEMENTED
+}
+
+- (NSDate *)dateBySubtractingDays:(NSInteger)days {
+    METHOD_NOT_IMPLEMENTED
+}
+
+- (NSDate *)dateBySubtractingWeeks:(NSInteger)weeks {
+    METHOD_NOT_IMPLEMENTED
+}
+
+- (NSDate *)dateBySubtractingMonths:(NSInteger)months {
+    METHOD_NOT_IMPLEMENTED
+}
+
+- (NSDate *)dateBySubtractingYears:(NSInteger)years {
+    METHOD_NOT_IMPLEMENTED
+}
+
+- (NSInteger)differenceInDaysToDate:(NSDate *)toDate {
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    unsigned unitFlags = NSYearCalendarUnit;
+    unsigned unitFlags = NSDayCalendarUnit;
     NSDateComponents *components = [calendar components:unitFlags fromDate:self toDate:toDate options:0];
-    return [components year];
+    return [components day];
 }
 
 - (NSInteger)differenceInMonthsToDate:(NSDate *)toDate {
@@ -34,11 +62,11 @@
     return [components month];
 }
 
-- (NSInteger)differenceInDaysToDate:(NSDate *)toDate {
+- (NSInteger)differenceInYearsToDate:(NSDate *)toDate {
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    unsigned unitFlags = NSDayCalendarUnit;
+    unsigned unitFlags = NSYearCalendarUnit;
     NSDateComponents *components = [calendar components:unitFlags fromDate:self toDate:toDate options:0];
-    return [components day];
+    return [components year];
 }
 
 @end

@@ -14,12 +14,12 @@
 
 @implementation NSDate_MK_Formatting_Tests
 
-- (void)setUp {
-    [super setUp];
-}
-
-- (void)tearDown {
-    [super tearDown];
+- (void)test_formattedString {
+    id string = @"2012-04-01";
+    id date = [NSDate dateFromString:string withFormat:[NSDate dateFormatYYYYMMDDDashed]];
+    
+    id result = [date formattedStringUsingFormat:[NSDate dateFormatYYYYMMDDDashed]];
+    assertThat(result, equalTo(string));
 }
 
 @end
