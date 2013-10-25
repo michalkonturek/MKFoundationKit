@@ -13,7 +13,7 @@
 
 @implementation NSDictionary (MK)
 
-- (NSMutableDictionary *)renameKeysUsingMapping:(NSDictionary *)mapping {
+- (NSMutableDictionary *)MK_renameKeysUsingMapping:(NSDictionary *)mapping {
     id result = [NSMutableDictionary dictionaryWithDictionary:self];
     
     id object = nil;
@@ -30,8 +30,8 @@
     return result;
 }
 
-- (NSMutableDictionary *)dictionaryWithKeys:(NSArray *)keys {
-    if ([keys isEmpty]) return [NSMutableDictionary LINQ_empty];
+- (NSMutableDictionary *)MK_dictionaryWithKeys:(NSArray *)keys {
+    if ([keys MK_isEmpty]) return [NSMutableDictionary LINQ_empty];
     
     id result = [NSMutableDictionary dictionaryWithCapacity:[keys count]];
     for (NSString *key in keys) {
@@ -44,7 +44,7 @@
     return result;
 }
 
-- (BOOL)isEmpty {
+- (BOOL)MK_isEmpty {
     return ([self count] == 0);
 }
 

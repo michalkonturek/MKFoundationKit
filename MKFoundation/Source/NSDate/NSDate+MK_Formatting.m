@@ -10,43 +10,43 @@
 
 @implementation NSDate (MK_Formatting)
 
-+ (NSString *)dateFormatCCCCDDMMMYYYY {
++ (NSString *)MK_dateFormatCCCCDDMMMYYYY {
     return @"cccc, dd MMM yyyy";
 }
 
-+ (NSString *)dateFormatCCCCDDMMMMYYYY {
++ (NSString *)MK_dateFormatCCCCDDMMMMYYYY {
     return @"cccc, dd MMMM yyyy";
 }
 
-+ (NSString *)dateFormatDDMMMYYYY {
++ (NSString *)MK_dateFormatDDMMMYYYY {
     return @"dd MMM yyyy";
 }
 
-+ (NSString *)dateFormatDDMMYYYYDashed {
++ (NSString *)MK_dateFormatDDMMYYYYDashed {
     return @"dd-MM-yyyy";
 }
 
-+ (NSString *)dateFormatDDMMYYYYSlashed {
++ (NSString *)MK_dateFormatDDMMYYYYSlashed {
    return @"dd/MM/yyyy";
 }
 
-+ (NSString *)dateFormatDDMMMYYYYSlashed {
++ (NSString *)MK_dateFormatDDMMMYYYYSlashed {
     return @"dd/MMM/yyyy";
 }
 
-+ (NSString *)dateFormatMMMDDYYYY {
++ (NSString *)MK_dateFormatMMMDDYYYY {
     return @"MMM dd, yyyy";
 }
 
-+ (NSString *)dateFormatYYYYMMDDDashed {
++ (NSString *)MK_dateFormatYYYYMMDDDashed {
     return @"yyyy-MM-dd";
 }
 
-- (NSString *)formattedString {
-    return [self formattedStringUsingFormat:[NSDate dateFormatDDMMYYYYDashed]];
+- (NSString *)MK_formattedString {
+    return [self MK_formattedStringUsingFormat:[NSDate MK_dateFormatDDMMYYYYDashed]];
 }
 
-- (NSString *)formattedStringUsingFormat:(NSString *)dateFormat {
+- (NSString *)MK_formattedStringUsingFormat:(NSString *)dateFormat {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:dateFormat];
     NSString *result = [formatter stringFromDate:self];

@@ -10,6 +10,6 @@
 
 @interface NSArray (MK)
 
-- (BOOL)isEmpty;
+- (BOOL)MK_isEmpty;
 
 @end

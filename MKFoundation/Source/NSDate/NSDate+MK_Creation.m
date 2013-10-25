@@ -10,22 +10,22 @@
 
 @implementation NSDate (MK_Creation)
 
-+ (NSDate *)dateWithoutTime {
-    return [[NSDate date] dateWithoutTime];
++ (NSDate *)MK_dateWithoutTime {
+    return [[NSDate date] MK_dateWithoutTime];
 }
 
-+ (NSDate *)dateFromString:(NSString *)string {
-    return [self dateFromString:string withFormat:[NSDate dateFormatDDMMYYYYDashed]];
++ (NSDate *)MK_dateFromString:(NSString *)string {
+    return [self MK_dateFromString:string withFormat:[NSDate MK_dateFormatDDMMYYYYDashed]];
 }
 
-+ (NSDate *)dateFromString:(NSString *)string withFormat:(NSString *)format {
++ (NSDate *)MK_dateFromString:(NSString *)string withFormat:(NSString *)format {
     
     if ((NSNull *)string == [NSNull null] || string == nil) {
         return nil;
     }
     
     if (format == nil) {
-        format = [NSDate dateFormatDDMMYYYYDashed];
+        format = [NSDate MK_dateFormatDDMMYYYYDashed];
     }
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
@@ -35,11 +35,11 @@
     return result;
 }
 
-- (NSDate *)dateWithoutTime {
-    NSString *formattedString = [self formattedString];
+- (NSDate *)MK_dateWithoutTime {
+    NSString *formattedString = [self MK_formattedString];
 
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:[NSDate dateFormatDDMMYYYYDashed]];
+    [formatter setDateFormat:[NSDate MK_dateFormatDDMMYYYYDashed]];
     NSDate *result = [formatter dateFromString:formattedString];
     
     return result;

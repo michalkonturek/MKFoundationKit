@@ -10,10 +10,10 @@
 
 @interface NSDate (MK_Creation)
 
-+ (NSDate *)dateWithoutTime;
-+ (NSDate *)dateFromString:(NSString *)string;
-+ (NSDate *)dateFromString:(NSString *)string withFormat:(NSString *)format;
++ (NSDate *)MK_dateWithoutTime;
++ (NSDate *)MK_dateFromString:(NSString *)string;
++ (NSDate *)MK_dateFromString:(NSString *)string withFormat:(NSString *)format;
 
-- (NSDate *)dateWithoutTime;
+- (NSDate *)MK_dateWithoutTime;
 
 @end

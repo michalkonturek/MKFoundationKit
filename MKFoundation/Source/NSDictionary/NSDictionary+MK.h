@@ -10,9 +10,9 @@
 
 @interface NSDictionary (MK)
 
-- (NSMutableDictionary *)renameKeysUsingMapping:(NSDictionary *)mapping;
-- (NSMutableDictionary *)dictionaryWithKeys:(NSArray *)keys;
+- (NSMutableDictionary *)MK_renameKeysUsingMapping:(NSDictionary *)mapping;
+- (NSMutableDictionary *)MK_dictionaryWithKeys:(NSArray *)keys;
 
-- (BOOL)isEmpty;
+- (BOOL)MK_isEmpty;
 
 @end

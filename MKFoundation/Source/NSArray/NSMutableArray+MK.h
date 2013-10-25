@@ -14,6 +14,6 @@
  Safely adds object to the collection.
  It fails silenty if object is nil.
  */
-- (void)mk_safeAddObject:(id)object;
+- (void)MK_safeAddObject:(id)object;
 
 @end
