@@ -16,10 +16,8 @@
 
 - (void)test_stringWithUUID {
     NSString *result = [NSString MK_stringWithUUID];
-
-    NSString *regex = @"/^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/";
-    
-//    NSPredicate *email
+    NSString *regex = @"^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$";
+    assertThatBool([result MK_matchesRegex:regex], equalToBool(YES));
 }
 
 @end

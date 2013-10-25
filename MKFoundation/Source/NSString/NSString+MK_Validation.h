@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (MK_EmailValidation)
+@interface NSString (MK_Validation)
 
-+ (BOOL)MK_isStringValidEmail:(NSString *)value;
++ (BOOL)MK_isStringValidEmail:(NSString *)email;
 
 - (BOOL)MK_isValidEmail;
 
-//- (BOOL)MK_matchesRegex:(NSString *)regex;
+- (BOOL)MK_matchesRegex:(NSString *)regex;
 
 @end

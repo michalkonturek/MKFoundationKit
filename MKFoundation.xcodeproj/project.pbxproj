@@ -38,10 +38,10 @@
 		906E75D518183BD2008516E1 /* NSNumber+MK_Precision_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 906E75D418183BD2008516E1 /* NSNumber+MK_Precision_Tests.m */; };
 		90871C7F18184B45009BE84C /* NSString+MK_Empty_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90871C7E18184B45009BE84C /* NSString+MK_Empty_Tests.m */; };
 		90871C8118184B55009BE84C /* NSString+MK_Conversion_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90871C8018184B55009BE84C /* NSString+MK_Conversion_Tests.m */; };
-		90871C8318184B63009BE84C /* NSString+MK_EmailValidation_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90871C8218184B63009BE84C /* NSString+MK_EmailValidation_Tests.m */; };
+		90871C8318184B63009BE84C /* NSString+MK_Validation_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90871C8218184B63009BE84C /* NSString+MK_Validation_Tests.m */; };
 		90871C8518184B6E009BE84C /* NSString+MK_UTF_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90871C8418184B6E009BE84C /* NSString+MK_UTF_Tests.m */; };
 		90871C8A18184D9B009BE84C /* NSString+MK_Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 90871C8918184D9B009BE84C /* NSString+MK_Empty.m */; };
-		90AB7F341816E16C0070D745 /* NSString+MK_EmailValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AB7F331816E16C0070D745 /* NSString+MK_EmailValidation.m */; };
+		90AB7F341816E16C0070D745 /* NSString+MK_Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AB7F331816E16C0070D745 /* NSString+MK_Validation.m */; };
 		90AB7F371816E20B0070D745 /* NSString+MK_UTF.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AB7F361816E20B0070D745 /* NSString+MK_UTF.m */; };
 		90AB7F3A1816E2C60070D745 /* NSString+MK_Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AB7F391816E2C60070D745 /* NSString+MK_Conversion.m */; };
 		90AB7F3D1816E3A30070D745 /* NSDate+MK_Formatting.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AB7F3C1816E3A30070D745 /* NSDate+MK_Formatting.m */; };
@@ -127,12 +127,12 @@
 		906E75D418183BD2008516E1 /* NSNumber+MK_Precision_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+MK_Precision_Tests.m"; sourceTree = "<group>"; };
 		90871C7E18184B45009BE84C /* NSString+MK_Empty_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_Empty_Tests.m"; sourceTree = "<group>"; };
 		90871C8018184B55009BE84C /* NSString+MK_Conversion_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_Conversion_Tests.m"; sourceTree = "<group>"; };
-		90871C8218184B63009BE84C /* NSString+MK_EmailValidation_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_EmailValidation_Tests.m"; sourceTree = "<group>"; };
+		90871C8218184B63009BE84C /* NSString+MK_Validation_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_Validation_Tests.m"; sourceTree = "<group>"; };
 		90871C8418184B6E009BE84C /* NSString+MK_UTF_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_UTF_Tests.m"; sourceTree = "<group>"; };
 		90871C8818184D9B009BE84C /* NSString+MK_Empty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MK_Empty.h"; sourceTree = "<group>"; };
 		90871C8918184D9B009BE84C /* NSString+MK_Empty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_Empty.m"; sourceTree = "<group>"; };
-		90AB7F321816E16C0070D745 /* NSString+MK_EmailValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MK_EmailValidation.h"; sourceTree = "<group>"; };
-		90AB7F331816E16C0070D745 /* NSString+MK_EmailValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_EmailValidation.m"; sourceTree = "<group>"; };
+		90AB7F321816E16C0070D745 /* NSString+MK_Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MK_Validation.h"; sourceTree = "<group>"; };
+		90AB7F331816E16C0070D745 /* NSString+MK_Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_Validation.m"; sourceTree = "<group>"; };
 		90AB7F351816E20B0070D745 /* NSString+MK_UTF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MK_UTF.h"; sourceTree = "<group>"; };
 		90AB7F361816E20B0070D745 /* NSString+MK_UTF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_UTF.m"; sourceTree = "<group>"; };
 		90AB7F381816E2C60070D745 /* NSString+MK_Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MK_Conversion.h"; sourceTree = "<group>"; };
@@ -342,14 +342,14 @@
 				905F7C991816DCE000D0E780 /* NSString+MK.h */,
 				90AB7F381816E2C60070D745 /* NSString+MK_Conversion.h */,
 				90AB7F391816E2C60070D745 /* NSString+MK_Conversion.m */,
-				90AB7F321816E16C0070D745 /* NSString+MK_EmailValidation.h */,
-				90AB7F331816E16C0070D745 /* NSString+MK_EmailValidation.m */,
 				90871C8818184D9B009BE84C /* NSString+MK_Empty.h */,
 				90871C8918184D9B009BE84C /* NSString+MK_Empty.m */,
 				90AB7F351816E20B0070D745 /* NSString+MK_UTF.h */,
 				90AB7F361816E20B0070D745 /* NSString+MK_UTF.m */,
 				90382F7B181AD0A600A924D3 /* NSString+MK_UUID.h */,
 				90382F7C181AD0A600A924D3 /* NSString+MK_UUID.m */,
+				90AB7F321816E16C0070D745 /* NSString+MK_Validation.h */,
+				90AB7F331816E16C0070D745 /* NSString+MK_Validation.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -358,7 +358,7 @@
 			isa = PBXGroup;
 			children = (
 				90871C8018184B55009BE84C /* NSString+MK_Conversion_Tests.m */,
-				90871C8218184B63009BE84C /* NSString+MK_EmailValidation_Tests.m */,
+				90871C8218184B63009BE84C /* NSString+MK_Validation_Tests.m */,
 				90871C7E18184B45009BE84C /* NSString+MK_Empty_Tests.m */,
 				90871C8418184B6E009BE84C /* NSString+MK_UTF_Tests.m */,
 				90382F8B181AFF1600A924D3 /* NSString+MK_UUID_Tests.m */,
@@ -600,7 +600,7 @@
 				905F7CA51816DCE000D0E780 /* NSNumber+MK_Precision.m in Sources */,
 				90AB7F3D1816E3A30070D745 /* NSDate+MK_Formatting.m in Sources */,
 				905F7CA21816DCE000D0E780 /* NSNumber+MK_Fraction.m in Sources */,
-				90AB7F341816E16C0070D745 /* NSString+MK_EmailValidation.m in Sources */,
+				90AB7F341816E16C0070D745 /* NSString+MK_Validation.m in Sources */,
 				903183C5181945840065016F /* NSArray+MK.m in Sources */,
 				905F7C9F1816DCE000D0E780 /* NSDictionary+MK.m in Sources */,
 				901F14821816C927002333D7 /* main.m in Sources */,
@@ -616,7 +616,7 @@
 				903183C7181949DE0065016F /* NSDate+MK_Creation_Tests.m in Sources */,
 				90AB7F67181834C40070D745 /* NSNumber+MK_Comparison_Tests.m in Sources */,
 				906E75D318183BBB008516E1 /* NSNumber+MK_Fraction_Tests.m in Sources */,
-				90871C8318184B63009BE84C /* NSString+MK_EmailValidation_Tests.m in Sources */,
+				90871C8318184B63009BE84C /* NSString+MK_Validation_Tests.m in Sources */,
 				90382F8A181AFE4A00A924D3 /* NSArray+MK_Tests.m in Sources */,
 				90871C8118184B55009BE84C /* NSString+MK_Conversion_Tests.m in Sources */,
 				903183C2181942AF0065016F /* NSDictionary+MK_Tests.m in Sources */,

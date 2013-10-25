@@ -1,5 +1,5 @@
 //
-//  NSString+MK_EmailValidation_Tests.m
+//  NSString+MK_Validation_Tests.m
 //  MKFoundation
 //
 //  Created by Michal Konturek on 23/10/2013.
@@ -8,11 +8,11 @@
 
 #import "BaseTest.h"
 
-@interface NSString_MK_EmailValidation_Tests : SenTestCase
+@interface NSString_MK_Validation_Tests : SenTestCase
 
 @end
 
-@implementation NSString_MK_EmailValidation_Tests
+@implementation NSString_MK_Validation_Tests
 
 - (void)test_isValidEmail_returns_true {
     BOOL result = [@"user@domain.com" MK_isValidEmail];
