@@ -10,18 +10,18 @@
 
 @interface NSNumber (MK_Comparison)
 
-+ (instancetype)max:(NSArray *)numbers;
++ (instancetype)MK_max:(NSArray *)numbers;
 
-+ (instancetype)min:(NSArray *)numbers;
++ (instancetype)MK_min:(NSArray *)numbers;
 
-- (instancetype)max:(NSArray *)others;
+- (instancetype)MK_max:(NSArray *)others;
 
-- (instancetype)min:(NSArray *)others;
+- (instancetype)MK_min:(NSArray *)others;
 
-- (BOOL)isTheSame:(NSNumber *)other;
+- (BOOL)MK_isTheSame:(NSNumber *)other;
 
-- (BOOL)isGreaterThan:(NSNumber *)other;
+- (BOOL)MK_isGreaterThan:(NSNumber *)other;
 
-- (BOOL)isLessThan:(NSNumber *)other;
+- (BOOL)MK_isLessThan:(NSNumber *)other;
 
 @end

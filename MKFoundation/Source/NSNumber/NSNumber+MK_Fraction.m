@@ -12,25 +12,25 @@
 
 @implementation NSNumber (MK_Fraction)
 
-- (instancetype)integralPart {
+- (instancetype)MK_integralPart {
     if ([self isMemberOfClass:[NSNumber class]])
         return [NSNumber numberWithInteger:[self integerValue]];
     
-    return [[NSDecimalNumber numberWithInteger:[self integerValue]] decimalNumber];
+    return [[NSDecimalNumber numberWithInteger:[self integerValue]] MK_decimalNumber];
 //    return [self decimalNumberWithPrecision:0];   // do not use as it rounds the number
 }
 
-- (instancetype)fractionalPart {
-    NSDecimalNumber *integerPart = [[self integralPart] decimalNumber];
-    return [[self decimalNumber] decimalNumberBySubtracting:integerPart];
+- (instancetype)MK_fractionalPart {
+    NSDecimalNumber *integerPart = [[self MK_integralPart] MK_decimalNumber];
+    return [[self MK_decimalNumber] decimalNumberBySubtracting:integerPart];
 }
 
-- (BOOL)isInteger {
-    return ([[self fractionalPart] isEqualToNumber:@0]);
+- (BOOL)MK_isInteger {
+    return ([[self MK_fractionalPart] isEqualToNumber:@0]);
 }
 
-- (BOOL)isFraction {
-    return (![self isInteger]);
+- (BOOL)MK_isFraction {
+    return (![self MK_isInteger]);
 }
 
 @end

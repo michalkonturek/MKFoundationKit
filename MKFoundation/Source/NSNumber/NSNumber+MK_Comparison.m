@@ -12,31 +12,31 @@
 
 @implementation NSNumber (MK_Comparison)
 
-+ (instancetype)max:(NSArray *)numbers {
++ (instancetype)MK_max:(NSArray *)numbers {
     return [numbers LINQ_max];
 }
 
-+ (instancetype)min:(NSArray *)numbers {
++ (instancetype)MK_min:(NSArray *)numbers {
     return [numbers LINQ_min];
 }
 
-- (instancetype)max:(NSArray *)others {
+- (instancetype)MK_max:(NSArray *)others {
     return [[[NSMutableArray arrayWithArray:others] arrayByAddingObject:self] LINQ_max];
 }
 
-- (instancetype)min:(NSArray *)others {
+- (instancetype)MK_min:(NSArray *)others {
     return [[[NSMutableArray arrayWithArray:others] arrayByAddingObject:self] LINQ_min];
 }
 
-- (BOOL)isTheSame:(NSNumber *)other {
+- (BOOL)MK_isTheSame:(NSNumber *)other {
     return ([self compare:other] == NSOrderedSame);
 }
 
-- (BOOL)isGreaterThan:(NSNumber *)other {
+- (BOOL)MK_isGreaterThan:(NSNumber *)other {
     return ([self compare:other] == NSOrderedDescending);
 }
 
-- (BOOL)isLessThan:(NSNumber *)other {
+- (BOOL)MK_isLessThan:(NSNumber *)other {
     return ([self compare:other] == NSOrderedAscending);
 }
 

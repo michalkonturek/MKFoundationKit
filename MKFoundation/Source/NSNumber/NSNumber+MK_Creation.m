@@ -10,12 +10,12 @@
 
 @implementation NSNumber (MK_Creation)
 
-+ (instancetype)createFrom:(NSNumber *)number {
++ (instancetype)MK_createFrom:(NSNumber *)number {
     if ([self class] == [NSNumber class]) return number;
     return [NSDecimalNumber decimalNumberWithDecimal:[number decimalValue]];
 }
 
-- (NSDecimalNumber *)decimalNumber {
+- (NSDecimalNumber *)MK_decimalNumber {
     if ([self isMemberOfClass:[NSDecimalNumber class]]) return (NSDecimalNumber *)self;
     return [NSDecimalNumber decimalNumberWithDecimal:[self decimalValue]];
 //    return [NSDecimalNumber decimalNumberWithString:[self stringValue]];

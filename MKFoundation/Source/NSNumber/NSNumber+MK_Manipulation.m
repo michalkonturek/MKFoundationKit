@@ -12,29 +12,29 @@
 
 @implementation NSNumber (MK_Manipulation)
 
-- (instancetype)add:(NSNumber *)other {
+- (instancetype)MK_add:(NSNumber *)other {
     if (!other) return self;
-    return [[self decimalNumber] decimalNumberByAdding:[other decimalNumber]];
+    return [[self MK_decimalNumber] decimalNumberByAdding:[other MK_decimalNumber]];
 }
 
-- (instancetype)subtract:(NSNumber *)other {
+- (instancetype)MK_subtract:(NSNumber *)other {
     if (!other) return self;
-    return [[self decimalNumber] decimalNumberBySubtracting:[other decimalNumber]];
+    return [[self MK_decimalNumber] decimalNumberBySubtracting:[other MK_decimalNumber]];
 }
 
-- (instancetype)multiplyBy:(NSNumber *)other {
+- (instancetype)MK_multiplyBy:(NSNumber *)other {
     if (!other) return self;
-    return [[self decimalNumber] decimalNumberByMultiplyingBy:[other decimalNumber]];
+    return [[self MK_decimalNumber] decimalNumberByMultiplyingBy:[other MK_decimalNumber]];
 }
 
-- (instancetype)divideBy:(NSNumber *)other {
+- (instancetype)MK_divideBy:(NSNumber *)other {
     if (!other) return self;
-    return [[self decimalNumber] decimalNumberByDividingBy:[other decimalNumber]];
+    return [[self MK_decimalNumber] decimalNumberByDividingBy:[other MK_decimalNumber]];
 }
 
-- (instancetype)raiseToPower:(NSInteger)power {
+- (instancetype)MK_raiseToPower:(NSInteger)power {
     if (power < 0) return [self _raiseToNegativePower:power];
-    return [[self decimalNumber] decimalNumberByRaisingToPower:power];
+    return [[self MK_decimalNumber] decimalNumberByRaisingToPower:power];
 }
 
 - (instancetype)_raiseToNegativePower:(NSInteger)power {
@@ -48,8 +48,8 @@
     
     power = power * (-1);
     
-    id result = [self raiseToPower:power];
-    return [[NSDecimalNumber one] divideBy:result];
+    id result = [self MK_raiseToPower:power];
+    return [[NSDecimalNumber one] MK_divideBy:result];
 }
 
 @end

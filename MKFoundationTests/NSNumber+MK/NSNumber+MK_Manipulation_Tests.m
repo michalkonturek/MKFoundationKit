@@ -27,42 +27,42 @@
 }
 
 - (void)test_add_integer {
-    id result = [self.input add:@2];
+    id result = [self.input MK_add:@2];
     assertThat(result, equalToInteger(4));
 }
 
 - (void)test_add_fraction {
-    id result = [self.input add:@2.6];
+    id result = [self.input MK_add:@2.6];
     assertThat(result, equalToDouble(4.6));
 }
 
 - (void)test_subtract_integer {
-    id result = [self.input subtract:@1];
+    id result = [self.input MK_subtract:@1];
     assertThat(result, equalToInteger(1));
 }
 
 - (void)test_subtract_fraction {
-    id result = [self.input subtract:@1.2];
+    id result = [self.input MK_subtract:@1.2];
     assertThat(result, equalToDouble(0.8));
 }
 
 - (void)test_multiplyBy {
-    id result = [self.input multiplyBy:@2];
+    id result = [self.input MK_multiplyBy:@2];
     assertThat(result, equalToInteger(4));
 }
 
 - (void)test_divideBy {
-    id result = [self.input divideBy:@4];
+    id result = [self.input MK_divideBy:@4];
     assertThat(result, equalToDouble(0.5));
 }
 
 - (void)test_raiseToPower_positive {
-    id result = [self.input raiseToPower:3];
+    id result = [self.input MK_raiseToPower:3];
     assertThat(result, equalToInteger(8));
 }
 
 - (void)test_raiseToPower_negative {
-    id result = [self.input raiseToPower:-3];
+    id result = [self.input MK_raiseToPower:-3];
     assertThat(result, equalToDouble(0.125));
 }
 

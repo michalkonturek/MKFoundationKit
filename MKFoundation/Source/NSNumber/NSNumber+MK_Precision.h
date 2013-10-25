@@ -10,9 +10,9 @@
 
 @interface NSNumber (MK_Precision)
 
-+ (NSDecimalNumberHandler *)decimalNumberHandlerWithScale:(short)scale;
++ (NSDecimalNumberHandler *)MK_decimalNumberHandlerWithScale:(short)scale;
 
-- (instancetype)roundedAsMoney;
-- (instancetype)roundedWithPrecision:(short)precision;
+- (instancetype)MK_roundedAsMoney;
+- (instancetype)MK_roundedWithPrecision:(short)precision;
 
 @end

@@ -27,12 +27,12 @@
 }
 
 - (void)test_roundedWithPrecision_0 {
-    id result = [self.input roundedWithPrecision:0];
+    id result = [self.input MK_roundedWithPrecision:0];
     assertThat(result, equalTo(@1));
 }
 
 - (void)test_roundedWithPrecision_1 {
-    id result = [self.input roundedWithPrecision:1];
+    id result = [self.input MK_roundedWithPrecision:1];
     assertThat(result, equalTo(@1.1));
 }
 
@@ -45,12 +45,12 @@
 }
 
 - (void)test_roundedWithPrecision_3 {
-    id result = [self.input roundedWithPrecision:3];
+    id result = [self.input MK_roundedWithPrecision:3];
     assertThat(result, equalTo(@1.123));
 }
 
 - (void)test_roundedWithPrecision_4 {
-    id result = [self.input roundedWithPrecision:4];
+    id result = [self.input MK_roundedWithPrecision:4];
     assertThat(result, equalTo(@1.1235));
 }
 

@@ -12,27 +12,27 @@
 
 @implementation NSNumber (MK_Negative)
 
-+ (instancetype)minus_one {
++ (instancetype)MK_minus_one {
     return [[NSDecimalNumber zero] decimalNumberBySubtracting:[NSDecimalNumber one]];
 }
 
-- (instancetype)negative {
-    return ([self isNegative]) ? self : [self negate];
+- (instancetype)MK_negative {
+    return ([self MK_isNegative]) ? self : [self MK_negate];
 }
 
-- (instancetype)positive {
-    return ([self isPositive]) ? self : [self negate];
+- (instancetype)MK_positive {
+    return ([self MK_isPositive]) ? self : [self MK_negate];
 }
 
-- (instancetype)negate {    
-    return [[self decimalNumber] decimalNumberByMultiplyingBy:[NSDecimalNumber minus_one]];
+- (instancetype)MK_negate {    
+    return [[self MK_decimalNumber] decimalNumberByMultiplyingBy:[NSDecimalNumber MK_minus_one]];
 }
 
-- (BOOL)isPositive {
-    return (![self isNegative]);
+- (BOOL)MK_isPositive {
+    return (![self MK_isNegative]);
 }
 
-- (BOOL)isNegative {
+- (BOOL)MK_isNegative {
     return ([self doubleValue] < 0);
 }
 
