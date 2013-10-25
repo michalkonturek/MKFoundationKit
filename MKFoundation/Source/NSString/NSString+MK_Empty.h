@@ -12,8 +12,8 @@
 
 @interface NSString (MK_Empty)
 
-+ (BOOL)isStringEmptyOrNil:(NSString *)value;
++ (BOOL)MK_isStringEmptyOrNil:(NSString *)value;
 
-- (BOOL)isEmpty;
+- (BOOL)MK_isEmpty;
 
 @end

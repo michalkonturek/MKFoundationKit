@@ -10,4 +10,6 @@
 
 @interface NSString (MK_UUID)
 
++ (NSString *)MK_stringWithUUID;
+
 @end

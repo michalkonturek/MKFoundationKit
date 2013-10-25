@@ -10,7 +10,7 @@
 
 @implementation NSString (MK_UUID)
 
-+ (NSString *)stringWithUUIDA {
++ (NSString *)MK_stringWithUUID {
     CFUUIDRef UUID = CFUUIDCreate(nil);
     
     // http://stackoverflow.com/questions/7036350/arc-and-bridged-cast

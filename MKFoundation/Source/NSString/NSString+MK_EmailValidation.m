@@ -10,7 +10,7 @@
 
 @implementation NSString (MK_EmailValidation)
 
-+ (BOOL)isStringValidEmail:(NSString *)value {
++ (BOOL)MK_isStringValidEmail:(NSString *)value {
     /*
      Source:        http://stackoverflow.com/questions/3139619/check-that-an-email-address-is-valid-on-ios
      Discussion:    http://blog.logichigh.com/2010/09/02/validating-an-e-mail-address/
@@ -23,8 +23,8 @@
     return [emailTest evaluateWithObject:value];
 }
 
-- (BOOL)isValidEmail {
-    return [[self class] isStringValidEmail:self];
+- (BOOL)MK_isValidEmail {
+    return [[self class] MK_isStringValidEmail:self];
 }
 
 @end

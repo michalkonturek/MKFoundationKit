@@ -10,8 +10,8 @@
 
 @interface NSString (MK_EmailValidation)
 
-+ (BOOL)isStringValidEmail:(NSString *)value;
++ (BOOL)MK_isStringValidEmail:(NSString *)value;
 
-- (BOOL)isValidEmail;
+- (BOOL)MK_isValidEmail;
 
 @end

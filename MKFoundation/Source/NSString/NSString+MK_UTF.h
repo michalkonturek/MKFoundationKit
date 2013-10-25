@@ -10,8 +10,8 @@
 
 @interface NSString (MK_UTF)
 
-+ (NSString *)decodeUTF8String:(NSString *)value;
++ (NSString *)MK_decodeUTF8String:(NSString *)value;
 
-- (NSString *)decodeUTF8;
+- (NSString *)MK_decodeUTF8;
 
 @end

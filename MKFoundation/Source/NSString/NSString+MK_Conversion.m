@@ -10,7 +10,7 @@
 
 @implementation NSString (MK_Conversion)
 
-- (NSNumber *)numberWithInteger {
+- (NSNumber *)MK_numberWithInteger {
     @try {
         return [NSNumber numberWithInteger:[self integerValue]];
     }
@@ -19,7 +19,7 @@
     }
 }
 
-- (NSNumber *)numberWithLongLong {
+- (NSNumber *)MK_numberWithLongLong {
     @try {
         return [NSNumber numberWithLongLong:[self longLongValue]];
     }

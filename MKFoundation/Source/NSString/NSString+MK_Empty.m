@@ -10,12 +10,12 @@
 
 @implementation NSString (MK_Empty)
 
-+ (BOOL)isStringEmptyOrNil:(NSString *)value {
++ (BOOL)MK_isStringEmptyOrNil:(NSString *)value {
     if (value == nil) return YES;
-    return [value isEmpty];
+    return [value MK_isEmpty];
 }
 
-- (BOOL)isEmpty {
+- (BOOL)MK_isEmpty {
     return ([allTrim(self) length] == 0) ? YES : NO;
 }
 
