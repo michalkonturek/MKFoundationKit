@@ -10,7 +10,7 @@
 
 @implementation NSArray (MK)
 
-- (BOOL)isEmpty {
+- (BOOL)MK_isEmpty {
     return ([self count] == 0);
 }
 

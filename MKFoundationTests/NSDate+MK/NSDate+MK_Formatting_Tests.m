@@ -16,9 +16,9 @@
 
 - (void)test_formattedString {
     id string = @"2012-04-01";
-    id date = [NSDate dateFromString:string withFormat:[NSDate dateFormatYYYYMMDDDashed]];
+    id date = [NSDate MK_dateFromString:string withFormat:[NSDate MK_dateFormatYYYYMMDDDashed]];
     
-    id result = [date formattedStringUsingFormat:[NSDate dateFormatYYYYMMDDDashed]];
+    id result = [date MK_formattedStringUsingFormat:[NSDate MK_dateFormatYYYYMMDDDashed]];
     assertThat(result, equalTo(string));
 }
 

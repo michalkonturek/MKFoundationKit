@@ -15,22 +15,22 @@
 @implementation NSString_MK_Empty_Tests
 
 - (void)test_isStringEmptyOrNil_returns_true {
-    BOOL result = [NSString isStringEmptyOrNil:@""];
+    BOOL result = [NSString MK_isStringEmptyOrNil:@""];
     assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_isStringEmptyOrNil_returns_true_when_spaces {
-    BOOL result = [NSString isStringEmptyOrNil:@"   "];
+    BOOL result = [NSString MK_isStringEmptyOrNil:@"   "];
     assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_isStringEmptyOrNil_returns_true_when_nil {
-    BOOL result = [NSString isStringEmptyOrNil:nil];
+    BOOL result = [NSString MK_isStringEmptyOrNil:nil];
     assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_isStringEmptyOrNil_returns_false {
-    BOOL result = [NSString isStringEmptyOrNil:@"A B C D"];
+    BOOL result = [NSString MK_isStringEmptyOrNil:@"A B C D"];
     assertThatBool(result, equalToBool(NO));
 }
 

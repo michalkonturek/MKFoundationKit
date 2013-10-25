@@ -15,16 +15,16 @@
 @implementation NSDate_MK_Creation_Tests
 
 - (void)test_dateWithoutTime {
-    NSDate *date = [NSDate dateWithoutTime];
-    id result = [date formattedStringUsingFormat:@"HH:mm"];
+    NSDate *date = [NSDate MK_dateWithoutTime];
+    id result = [date MK_formattedStringUsingFormat:@"HH:mm"];
     assertThat(result, equalTo(@"00:00"));
 }
 
 - (void)test_dateFromStringWithFormat {
     id string = @"2012-04-01";
-    id date = [NSDate dateFromString:string withFormat:[NSDate dateFormatYYYYMMDDDashed]];
+    id date = [NSDate MK_dateFromString:string withFormat:[NSDate MK_dateFormatYYYYMMDDDashed]];
     
-    id result = [date formattedStringUsingFormat:[NSDate dateFormatYYYYMMDDDashed]];
+    id result = [date MK_formattedStringUsingFormat:[NSDate MK_dateFormatYYYYMMDDDashed]];
     assertThat(result, equalTo(string));
 }
 

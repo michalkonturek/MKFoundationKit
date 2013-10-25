@@ -1,5 +1,5 @@
 //
-//  NSString+MK_EmailValidation_Tests.m
+//  NSString+MK_Validation_Tests.m
 //  MKFoundation
 //
 //  Created by Michal Konturek on 23/10/2013.
@@ -8,34 +8,34 @@
 
 #import "BaseTest.h"
 
-@interface NSString_MK_EmailValidation_Tests : SenTestCase
+@interface NSString_MK_Validation_Tests : SenTestCase
 
 @end
 
-@implementation NSString_MK_EmailValidation_Tests
+@implementation NSString_MK_Validation_Tests
 
 - (void)test_isValidEmail_returns_true {
-    BOOL result = [@"user@domain.com" isValidEmail];
+    BOOL result = [@"user@domain.com" MK_isValidEmail];
     assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_isValidEmail_returns_true_when_domain_is_two_parts {
-    BOOL result = [@"user@email.domain.com" isValidEmail];
+    BOOL result = [@"user@email.domain.com" MK_isValidEmail];
     assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_isValidEmail_returns_true_when_domain_is_three_parts {
-    BOOL result = [@"user@email.subdomain.domain.com" isValidEmail];
+    BOOL result = [@"user@email.subdomain.domain.com" MK_isValidEmail];
     assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_isValidEmail_returns_false_when_no_at {
-    BOOL result = [@"user.domain.com" isValidEmail];
+    BOOL result = [@"user.domain.com" MK_isValidEmail];
     assertThatBool(result, equalToBool(NO));
 }
 
 - (void)test_isValidEmail_returns_false_when_too_long_ending {
-    BOOL result = [@"user@domain.comcom" isValidEmail];
+    BOOL result = [@"user@domain.comcom" MK_isValidEmail];
     assertThatBool(result, equalToBool(NO));
 }
 

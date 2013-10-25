@@ -15,7 +15,7 @@
 @implementation NSNumber_MK_Creation_Tests
 
 - (void)test_createFrom_when_nsnumber_class {
-    id result = [NSNumber createFrom:[NSNumber numberWithInteger:1]];
+    id result = [NSNumber MK_createFrom:[NSNumber numberWithInteger:1]];
 
     /*
      NOTE: NSNumber is class cluster; use objType to get a specific type.
@@ -26,7 +26,7 @@
 }
 
 - (void)test_createFrom_when_nsdecimalnumber_class {
-    id result = [NSDecimalNumber createFrom:@1];
+    id result = [NSDecimalNumber MK_createFrom:@1];
     
     NSLog(@"%@", [result class]);
     

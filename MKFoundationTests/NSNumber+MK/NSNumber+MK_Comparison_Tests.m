@@ -26,55 +26,55 @@
 
 - (void)test_class_max {
     id expected = @18;
-    id returned = [NSNumber max:self.numbers];
+    id returned = [NSNumber MK_max:self.numbers];
     assertThat(expected, equalTo(returned));
 }
 
 - (void)test_class_min {
     id expected = @1;
-    id returned = [NSNumber min:self.numbers];
+    id returned = [NSNumber MK_min:self.numbers];
     assertThat(expected, equalTo(returned));
 }
 
 - (void)test_max {
     id expected = @31;
-    id returned = [expected max:self.numbers];
+    id returned = [expected MK_max:self.numbers];
     assertThat(expected, equalTo(returned));
 }
 
 - (void)test_min {
     id expected = @1;
-    id returned = [@2 min:self.numbers];
+    id returned = [@2 MK_min:self.numbers];
     assertThat(expected, equalTo(returned));
 }
 
 - (void)test_isTheSame_returns_true {
-    BOOL result = [@10 isTheSame:@10.0];
+    BOOL result = [@10 MK_isTheSame:@10.0];
     assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_isTheSame_returns_false {
-    BOOL result = [@10 isTheSame:@10.1];
+    BOOL result = [@10 MK_isTheSame:@10.1];
     assertThatBool(result, equalToBool(NO));
 }
 
 - (void)test_isGreaterThan_returns_true {
-    BOOL result = [@100 isGreaterThan:@10];
+    BOOL result = [@100 MK_isGreaterThan:@10];
     assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_isGreaterThan_returns_false {
-    BOOL result = [@10 isGreaterThan:@10.08];
+    BOOL result = [@10 MK_isGreaterThan:@10.08];
     assertThatBool(result, equalToBool(NO));
 }
 
 - (void)test_isLessThan_returns_true {
-    BOOL result = [@10 isLessThan:@18];
+    BOOL result = [@10 MK_isLessThan:@18];
     assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_isLessThan_returns_false {
-    BOOL result = [@19.5 isLessThan:@18];
+    BOOL result = [@19.5 MK_isLessThan:@18];
     assertThatBool(result, equalToBool(NO));
 }
 
