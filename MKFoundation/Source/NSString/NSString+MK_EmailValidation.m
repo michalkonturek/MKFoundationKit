@@ -27,4 +27,8 @@
     return [[self class] MK_isStringValidEmail:self];
 }
 
+//- (BOOL)MK_matchesRegex:(NSString *)regex {
+//    
+//}
+
 @end

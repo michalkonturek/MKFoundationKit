@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#import "NSMutableDictionary+MK.h"
+
 @interface NSDictionary (MK)
 
-- (NSMutableDictionary *)MK_renameKeysUsingMapping:(NSDictionary *)mapping;
 - (NSMutableDictionary *)MK_dictionaryWithKeys:(NSArray *)keys;
+- (NSMutableDictionary *)MK_renameKeysUsingMapping:(NSDictionary *)mapping;
 
 - (BOOL)MK_isEmpty;
 

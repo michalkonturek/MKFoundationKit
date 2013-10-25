@@ -13,6 +13,20 @@
 
 @implementation NSDictionary (MK)
 
+- (NSMutableDictionary *)MK_dictionaryWithKeys:(NSArray *)keys {
+    if ([keys MK_isEmpty]) return [NSMutableDictionary LINQ_empty];
+    
+    id result = [NSMutableDictionary dictionaryWithCapacity:[keys count]];
+    for (NSString *key in keys) {
+        id object = [self objectForKey:key];
+        if (key != nil) {
+            [result setObject:object forKey:key];
+        }
+    }
+    
+    return result;
+}
+
 - (NSMutableDictionary *)MK_renameKeysUsingMapping:(NSDictionary *)mapping {
     id result = [NSMutableDictionary dictionaryWithDictionary:self];
     
@@ -24,20 +38,6 @@
         if (object != nil) {
             [result removeObjectForKey:key];
             [result setObject:object forKey:newKey];
-        }
-    }
-    
-    return result;
-}
-
-- (NSMutableDictionary *)MK_dictionaryWithKeys:(NSArray *)keys {
-    if ([keys MK_isEmpty]) return [NSMutableDictionary LINQ_empty];
-    
-    id result = [NSMutableDictionary dictionaryWithCapacity:[keys count]];
-    for (NSString *key in keys) {
-        id object = [self objectForKey:key];
-        if (key != nil) {
-            [result setObject:object forKey:key];
         }
     }
     

@@ -12,5 +12,6 @@
 #import "NSString+MK_EmailValidation.h"
 #import "NSString+MK_Empty.h"
 #import "NSString+MK_UTF.h"
+#import "NSString+MK_UUID.h"
 
 

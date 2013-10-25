@@ -22,6 +22,10 @@
 		90382F7D181AD0A600A924D3 /* NSString+MK_UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 90382F7C181AD0A600A924D3 /* NSString+MK_UUID.m */; };
 		90382F80181AD2AA00A924D3 /* NSMutableArray+MK.m in Sources */ = {isa = PBXBuildFile; fileRef = 90382F7F181AD2AA00A924D3 /* NSMutableArray+MK.m */; };
 		90382F83181AD3B600A924D3 /* NSMutableDictionary+MK.m in Sources */ = {isa = PBXBuildFile; fileRef = 90382F82181AD3B600A924D3 /* NSMutableDictionary+MK.m */; };
+		90382F86181AFC3600A924D3 /* NSMutableArray+MK_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90382F85181AFC3600A924D3 /* NSMutableArray+MK_Tests.m */; };
+		90382F88181AFC4600A924D3 /* NSMutableDictionary+MK_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90382F87181AFC4600A924D3 /* NSMutableDictionary+MK_Tests.m */; };
+		90382F8A181AFE4A00A924D3 /* NSArray+MK_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90382F89181AFE4A00A924D3 /* NSArray+MK_Tests.m */; };
+		90382F8C181AFF1600A924D3 /* NSString+MK_UUID_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90382F8B181AFF1600A924D3 /* NSString+MK_UUID_Tests.m */; };
 		905F7C9D1816DCE000D0E780 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 905F7C851816DCE000D0E780 /* .gitkeep */; };
 		905F7C9F1816DCE000D0E780 /* NSDictionary+MK.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F7C891816DCE000D0E780 /* NSDictionary+MK.m */; };
 		905F7CA01816DCE000D0E780 /* NSNumber+MK_Comparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F7C8D1816DCE000D0E780 /* NSNumber+MK_Comparison.m */; };
@@ -94,6 +98,10 @@
 		90382F7F181AD2AA00A924D3 /* NSMutableArray+MK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+MK.m"; sourceTree = "<group>"; };
 		90382F81181AD3B600A924D3 /* NSMutableDictionary+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+MK.h"; sourceTree = "<group>"; };
 		90382F82181AD3B600A924D3 /* NSMutableDictionary+MK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+MK.m"; sourceTree = "<group>"; };
+		90382F85181AFC3600A924D3 /* NSMutableArray+MK_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+MK_Tests.m"; sourceTree = "<group>"; };
+		90382F87181AFC4600A924D3 /* NSMutableDictionary+MK_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+MK_Tests.m"; sourceTree = "<group>"; };
+		90382F89181AFE4A00A924D3 /* NSArray+MK_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MK_Tests.m"; sourceTree = "<group>"; };
+		90382F8B181AFF1600A924D3 /* NSString+MK_UUID_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_UUID_Tests.m"; sourceTree = "<group>"; };
 		905F7C7D1816DCE000D0E780 /* MKLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKLog.h; sourceTree = "<group>"; };
 		905F7C7E1816DCE000D0E780 /* MKMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMacros.h; sourceTree = "<group>"; };
 		905F7C821816DCE000D0E780 /* NSDate+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MK.h"; sourceTree = "<group>"; };
@@ -231,6 +239,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		90382F84181AFC1300A924D3 /* NSArray+MK */ = {
+			isa = PBXGroup;
+			children = (
+				90382F85181AFC3600A924D3 /* NSMutableArray+MK_Tests.m */,
+				90382F89181AFE4A00A924D3 /* NSArray+MK_Tests.m */,
+			);
+			path = "NSArray+MK";
+			sourceTree = "<group>";
+		};
 		905F7C7B1816DCE000D0E780 /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -344,6 +361,7 @@
 				90871C8218184B63009BE84C /* NSString+MK_EmailValidation_Tests.m */,
 				90871C7E18184B45009BE84C /* NSString+MK_Empty_Tests.m */,
 				90871C8418184B6E009BE84C /* NSString+MK_UTF_Tests.m */,
+				90382F8B181AFF1600A924D3 /* NSString+MK_UUID_Tests.m */,
 			);
 			path = "NSString+MK";
 			sourceTree = "<group>";
@@ -352,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				90AB7F5D181834C40070D745 /* BaseTest.h */,
+				90382F84181AFC1300A924D3 /* NSArray+MK */,
 				90AB7F5E181834C40070D745 /* NSDate+MK */,
 				90AB7F5F181834C40070D745 /* NSDictionary+MK */,
 				90AB7F60181834C40070D745 /* NSNumber+MK */,
@@ -385,6 +404,7 @@
 			isa = PBXGroup;
 			children = (
 				903183C1181942AF0065016F /* NSDictionary+MK_Tests.m */,
+				90382F87181AFC4600A924D3 /* NSMutableDictionary+MK_Tests.m */,
 			);
 			path = "NSDictionary+MK";
 			sourceTree = "<group>";
@@ -597,15 +617,19 @@
 				90AB7F67181834C40070D745 /* NSNumber+MK_Comparison_Tests.m in Sources */,
 				906E75D318183BBB008516E1 /* NSNumber+MK_Fraction_Tests.m in Sources */,
 				90871C8318184B63009BE84C /* NSString+MK_EmailValidation_Tests.m in Sources */,
+				90382F8A181AFE4A00A924D3 /* NSArray+MK_Tests.m in Sources */,
 				90871C8118184B55009BE84C /* NSString+MK_Conversion_Tests.m in Sources */,
 				903183C2181942AF0065016F /* NSDictionary+MK_Tests.m in Sources */,
 				90AB7F68181834C40070D745 /* NSNumber+MK_Negative_Tests.m in Sources */,
+				90382F86181AFC3600A924D3 /* NSMutableArray+MK_Tests.m in Sources */,
 				903183C9181949E80065016F /* NSDate+MK_Formatting_Tests.m in Sources */,
 				903183CB181949F40065016F /* NSDate+MK_Manipulation_Tests.m in Sources */,
 				906E75D518183BD2008516E1 /* NSNumber+MK_Precision_Tests.m in Sources */,
 				90871C7F18184B45009BE84C /* NSString+MK_Empty_Tests.m in Sources */,
 				90AB7F66181834C40070D745 /* NSNumber+MK_Manipulation_Tests.m in Sources */,
 				90871C8518184B6E009BE84C /* NSString+MK_UTF_Tests.m in Sources */,
+				90382F8C181AFF1600A924D3 /* NSString+MK_UUID_Tests.m in Sources */,
+				90382F88181AFC4600A924D3 /* NSMutableDictionary+MK_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "NSMutableArray+MK.h"
+
 @interface NSArray (MK)
 
 - (BOOL)MK_isEmpty;

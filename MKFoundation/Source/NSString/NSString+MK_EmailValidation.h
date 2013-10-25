@@ -14,4 +14,6 @@
 
 - (BOOL)MK_isValidEmail;
 
+//- (BOOL)MK_matchesRegex:(NSString *)regex;
+
 @end
