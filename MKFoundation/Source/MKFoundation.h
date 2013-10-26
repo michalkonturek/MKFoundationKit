@@ -14,6 +14,7 @@
 #import "LINQ.h"
 
 #import "NSArray+MK.h"
+#import "NSData+MK.h"
 #import "NSDate+MK.h"
 #import "NSDictionary+MK.h"
 #import "NSNumber+MK.h"
