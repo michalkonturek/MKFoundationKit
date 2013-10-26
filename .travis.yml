@@ -9,6 +9,11 @@ before_install:
     # update cocoapods
     - gem update cocoapods
 
+before_script:
+    # FIX: issue with pods and xcode 5 xcassets
+    - chmod -R +x ./scripts
+    - cp scripts/Pods-resources.sh Pods/Pods-resources.sh
+
 script: xctool clean build test -arch i386 ONLY_ACTIVE_ARCH=NO
 # script: xctool clean build test
 
