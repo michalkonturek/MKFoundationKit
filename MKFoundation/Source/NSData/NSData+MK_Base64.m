@@ -6,6 +6,11 @@
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
 //
 
+/*
+ Base64 implementation based on Base64 by Nick Lockwood.
+ The original implementation has been altered.
+ */
+
 //
 //  Base64.h
 //
@@ -92,6 +97,10 @@
     //truncate data to match actual output length
     outputData.length = outputLength;
     return outputLength? outputData: nil;
+}
+
+- (NSString *)MK_base64DecodedString {
+    return [[NSString alloc] initWithData:self encoding:NSUTF8StringEncoding];
 }
 
 - (NSString *)MK_base64EncodedString {

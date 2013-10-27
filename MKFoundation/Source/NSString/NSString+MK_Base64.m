@@ -6,6 +6,11 @@
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
 //
 
+/*
+ Base64 implementation based on Base64 by Nick Lockwood.
+ The original implementation has been altered.
+ */
+
 //
 //  Base64.h
 //

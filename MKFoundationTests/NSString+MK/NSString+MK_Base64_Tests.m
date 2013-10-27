@@ -64,10 +64,8 @@
     NSString *decoded = @"Test input A";
     NSString *encoded = @"VGVzdCBpbnB1dCBB";
     
-    NSString *result = [[NSString alloc] initWithData:[encoded MK_base64DecodedData]
-                                             encoding:NSUTF8StringEncoding];
-    
-    assertThat(result, equalTo(decoded));
+    assertThat([[encoded MK_base64DecodedData] MK_base64EncodedString], equalTo(encoded));
+    assertThat([[encoded MK_base64DecodedData] MK_base64DecodedString], equalTo(decoded));
 }
 
 - (void)test_base64EncodedData {
@@ -75,6 +73,7 @@
     NSString *encoded = @"VGVzdCBpbnB1dCBB";
     
     assertThat([[decoded MK_base64EncodedData] MK_base64EncodedString], equalTo(encoded));
+    assertThat([[decoded MK_base64EncodedData] MK_base64DecodedString], equalTo(decoded));
 }
 
 @end
