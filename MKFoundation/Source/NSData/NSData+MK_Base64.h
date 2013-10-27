@@ -15,5 +15,4 @@
 - (NSString *)MK_base64EncodedString;
 - (NSString *)MK_base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth;
 
-
 @end

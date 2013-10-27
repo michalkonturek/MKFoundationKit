@@ -14,12 +14,6 @@
 
 @implementation NSData_MK_Base64_Tests
 
-- (void)setUp {
-    [super setUp];
-}
 
-- (void)tearDown {
-    [super tearDown];
-}
 
 @end
