@@ -16,35 +16,35 @@
  tests, the legacy typedef ENUM must be used.
  */
 
-- (NSDate *)dateByAddingDays:(NSInteger)days {
+- (NSDate *)MK_dateByAddingDays:(NSInteger)days {
     return [self _dateByAdding:days ofUnit:NSDayCalendarUnit];
 }
 
-- (NSDate *)dateByAddingWeeks:(NSInteger)weeks {
-    return [self dateByAddingDays:(weeks * 7)];
+- (NSDate *)MK_dateByAddingWeeks:(NSInteger)weeks {
+    return [self MK_dateByAddingDays:(weeks * 7)];
 }
 
-- (NSDate *)dateByAddingMonths:(NSInteger)months {
+- (NSDate *)MK_dateByAddingMonths:(NSInteger)months {
     return [self _dateByAdding:months ofUnit:NSMonthCalendarUnit];
 }
 
-- (NSDate *)dateByAddingYears:(NSInteger)months {
+- (NSDate *)MK_dateByAddingYears:(NSInteger)months {
     return [self _dateByAdding:months ofUnit:NSYearCalendarUnit];
 }
 
-- (NSDate *)dateBySubtractingDays:(NSInteger)days {
+- (NSDate *)MK_dateBySubtractingDays:(NSInteger)days {
     return [self _dateByAdding:-days ofUnit:NSDayCalendarUnit];
 }
 
-- (NSDate *)dateBySubtractingWeeks:(NSInteger)weeks {
-    return [self dateByAddingDays:-(weeks * 7)];
+- (NSDate *)MK_dateBySubtractingWeeks:(NSInteger)weeks {
+    return [self MK_dateByAddingDays:-(weeks * 7)];
 }
 
-- (NSDate *)dateBySubtractingMonths:(NSInteger)months {
+- (NSDate *)MK_dateBySubtractingMonths:(NSInteger)months {
     return [self _dateByAdding:-months ofUnit:NSMonthCalendarUnit];
 }
 
-- (NSDate *)dateBySubtractingYears:(NSInteger)years {
+- (NSDate *)MK_dateBySubtractingYears:(NSInteger)years {
     return [self _dateByAdding:-years ofUnit:NSYearCalendarUnit];
 }
 
@@ -69,15 +69,15 @@
     return date;
 }
 
-- (NSInteger)differenceInDaysToDate:(NSDate *)toDate {
+- (NSInteger)MK_differenceInDaysToDate:(NSDate *)toDate {
     return [self _differenceInUnit:NSDayCalendarUnit toDate:toDate];
 }
 
-- (NSInteger)differenceInMonthsToDate:(NSDate *)toDate {
+- (NSInteger)MK_differenceInMonthsToDate:(NSDate *)toDate {
     return [self _differenceInUnit:NSMonthCalendarUnit toDate:toDate];
 }
 
-- (NSInteger)differenceInYearsToDate:(NSDate *)toDate {
+- (NSInteger)MK_differenceInYearsToDate:(NSDate *)toDate {
     return [self _differenceInUnit:NSYearCalendarUnit toDate:toDate];
 }
 

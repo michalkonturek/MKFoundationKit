@@ -13,6 +13,4 @@
 
 #import "MKFoundation.h"
 
-#define TEST_PASSES assertThatBool(YES, equalToBool(YES));
-#define TEST_FAILS  STFail(@"Test not implemented.");
-#define TEST_NOT_IMPLEMENTED STFail(@"Test not implemented.");
+#import "MKMacro_Test.h"
