@@ -108,7 +108,7 @@
 		90382F89181AFE4A00A924D3 /* NSArray+MK_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MK_Tests.m"; sourceTree = "<group>"; };
 		90382F8B181AFF1600A924D3 /* NSString+MK_UUID_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_UUID_Tests.m"; sourceTree = "<group>"; };
 		905F7C7D1816DCE000D0E780 /* MKLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKLog.h; sourceTree = "<group>"; };
-		905F7C7E1816DCE000D0E780 /* MKMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMacros.h; sourceTree = "<group>"; };
+		905F7C7E1816DCE000D0E780 /* MKMacro_Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMacro_Method.h; sourceTree = "<group>"; };
 		905F7C821816DCE000D0E780 /* NSDate+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MK.h"; sourceTree = "<group>"; };
 		905F7C851816DCE000D0E780 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		905F7C881816DCE000D0E780 /* NSDictionary+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MK.h"; sourceTree = "<group>"; };
@@ -136,6 +136,7 @@
 		90871C8418184B6E009BE84C /* NSString+MK_UTF_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_UTF_Tests.m"; sourceTree = "<group>"; };
 		90871C8818184D9B009BE84C /* NSString+MK_Empty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MK_Empty.h"; sourceTree = "<group>"; };
 		90871C8918184D9B009BE84C /* NSString+MK_Empty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_Empty.m"; sourceTree = "<group>"; };
+		908BFFA9181DBCD200C4B7CB /* MKMacro_Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMacro_Test.h; sourceTree = "<group>"; };
 		90AB7F321816E16C0070D745 /* NSString+MK_Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MK_Validation.h"; sourceTree = "<group>"; };
 		90AB7F331816E16C0070D745 /* NSString+MK_Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_Validation.m"; sourceTree = "<group>"; };
 		90AB7F351816E20B0070D745 /* NSString+MK_UTF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MK_UTF.h"; sourceTree = "<group>"; };
@@ -281,7 +282,8 @@
 			isa = PBXGroup;
 			children = (
 				905F7C7D1816DCE000D0E780 /* MKLog.h */,
-				905F7C7E1816DCE000D0E780 /* MKMacros.h */,
+				905F7C7E1816DCE000D0E780 /* MKMacro_Method.h */,
+				908BFFA9181DBCD200C4B7CB /* MKMacro_Test.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
