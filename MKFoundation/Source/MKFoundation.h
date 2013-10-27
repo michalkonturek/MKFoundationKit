@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import "MKLog.h"
-#import "MKMacros.h"
+#import "MKMacro_Test.h"
 
 #import "LINQ.h"
 
