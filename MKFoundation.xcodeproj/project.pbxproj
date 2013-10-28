@@ -167,6 +167,7 @@
 		90B244F8181C77FC007EE48E /* NSString+MK_Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_Base64.m"; sourceTree = "<group>"; };
 		90B244FA181C783B007EE48E /* NSData+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MK.h"; sourceTree = "<group>"; };
 		90B244FB181C783B007EE48E /* NSData+MK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MK.m"; sourceTree = "<group>"; };
+		90EF3120181F023400D97F57 /* MKMacro+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMacro+Geometry.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				905F7C7D1816DCE000D0E780 /* MKLog.h */,
+				90EF3120181F023400D97F57 /* MKMacro+Geometry.h */,
 				905F7C7E1816DCE000D0E780 /* MKMacro_Method.h */,
 				908BFFA9181DBCD200C4B7CB /* MKMacro_Test.h */,
 			);
