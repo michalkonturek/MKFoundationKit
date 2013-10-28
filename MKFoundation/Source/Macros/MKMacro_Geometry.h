@@ -1,5 +1,5 @@
 //
-//  MKMacro+Geometry.h
+//  MKMacro_Geometry.h
 //  MKFoundation
 //
 //  Created by Michal Konturek on 28/10/2013.
