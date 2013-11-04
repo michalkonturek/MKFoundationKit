@@ -12,12 +12,7 @@
 
 + (BOOL)MK_isStringEmptyOrNil:(NSString *)value;
 
-- (BOOL)MK_containsString:(NSString *)term caseSensitive:(BOOL)caseSensitive;
 - (BOOL)MK_isEmpty;
 - (NSString *)MK_trimmedString;
-
-- (NSString *)MK_firstComponent:(NSCharacterSet *)separators;
-- (NSString *)MK_lastComponent:(NSCharacterSet *)separators;
-- (NSString *)MK_componentAtIndex:(NSInteger)index usingSeparators:(NSCharacterSet *)separators;
 
 @end
