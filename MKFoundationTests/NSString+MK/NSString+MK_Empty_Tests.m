@@ -34,6 +34,34 @@
     assertThatBool(result, equalToBool(NO));
 }
 
+- (void)test_containsString_when_case_returns_true {
+    NSString *term = @"regis";
+    NSString *target = @"Vexilla regis prodeunt inferni.";
+    BOOL result = [target MK_containsString:term caseSensitive:YES];
+    assertThatBool(result, equalToBool(YES));
+}
+
+- (void)test_containsString_when_case_returns_false {
+    NSString *term = @"Regis";
+    NSString *target = @"Vexilla regis prodeunt inferni.";
+    BOOL result = [target MK_containsString:term caseSensitive:YES];
+    assertThatBool(result, equalToBool(NO));
+}
+
+- (void)test_containsString_when_no_case_returns_true {
+    NSString *term = @"Regis";
+    NSString *target = @"Vexilla regis prodeunt inferni.";
+    BOOL result = [target MK_containsString:term caseSensitive:NO];
+    assertThatBool(result, equalToBool(YES));
+}
+
+- (void)test_containsString_when_no_case_returns_false {
+    NSString *term = @"Regissss";
+    NSString *target = @"Vexilla regis prodeunt inferni.";
+    BOOL result = [target MK_containsString:term caseSensitive:NO];
+    assertThatBool(result, equalToBool(NO));
+}
+
 - (void)test_trimmedString {
     NSString *input = [NSString stringWithFormat:@" ABCD "];
     NSString *result = [input MK_trimmedString];

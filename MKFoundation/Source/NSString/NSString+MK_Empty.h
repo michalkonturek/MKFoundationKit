@@ -12,6 +12,7 @@
 
 + (BOOL)MK_isStringEmptyOrNil:(NSString *)value;
 
+- (BOOL)MK_containsString:(NSString *)term caseSensitive:(BOOL)caseSensitive;
 - (BOOL)MK_isEmpty;
 - (NSString *)MK_trimmedString;
 
