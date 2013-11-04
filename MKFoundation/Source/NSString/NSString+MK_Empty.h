@@ -8,12 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-#define allTrim(object) [object stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]]
-
 @interface NSString (MK_Empty)
 
 + (BOOL)MK_isStringEmptyOrNil:(NSString *)value;
 
 - (BOOL)MK_isEmpty;
+- (NSString *)MK_trimmedString;
 
 @end

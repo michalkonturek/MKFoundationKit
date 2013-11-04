@@ -60,6 +60,8 @@
 		90B244F3181C77D6007EE48E /* NSString+MK_Base64_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B244F2181C77D6007EE48E /* NSString+MK_Base64_Tests.m */; };
 		90B244F9181C77FC007EE48E /* NSString+MK_Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B244F8181C77FC007EE48E /* NSString+MK_Base64.m */; };
 		90B244FC181C783B007EE48E /* NSData+MK.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B244FB181C783B007EE48E /* NSData+MK.m */; };
+		90C6171E1827DA98009EEFD3 /* NSString+MK_Misc.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C6171D1827DA98009EEFD3 /* NSString+MK_Misc.m */; };
+		90C617201827DAC0009EEFD3 /* NSString+MK_Misc_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C6171F1827DAC0009EEFD3 /* NSString+MK_Misc_Tests.m */; };
 		EE5AEA91C8D8472592D61643 /* libPods-MKFoundationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55741B3BD4E64F038C34A09D /* libPods-MKFoundationTests.a */; };
 		F4456A8F9F0D4901812D32E2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4338C2BE2A5F46BEA81B602B /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -167,6 +169,11 @@
 		90B244F8181C77FC007EE48E /* NSString+MK_Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_Base64.m"; sourceTree = "<group>"; };
 		90B244FA181C783B007EE48E /* NSData+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MK.h"; sourceTree = "<group>"; };
 		90B244FB181C783B007EE48E /* NSData+MK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MK.m"; sourceTree = "<group>"; };
+		90C6171C1827DA98009EEFD3 /* NSString+MK_Misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MK_Misc.h"; sourceTree = "<group>"; };
+		90C6171D1827DA98009EEFD3 /* NSString+MK_Misc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_Misc.m"; sourceTree = "<group>"; };
+		90C6171F1827DAC0009EEFD3 /* NSString+MK_Misc_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_Misc_Tests.m"; sourceTree = "<group>"; };
+		90EF3120181F023400D97F57 /* MKMacro_Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMacro_Geometry.h; sourceTree = "<group>"; };
+		90EF3123181F086500D97F57 /* MKMacro_Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMacro_Version.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,8 +289,10 @@
 			isa = PBXGroup;
 			children = (
 				905F7C7D1816DCE000D0E780 /* MKLog.h */,
+				90EF3120181F023400D97F57 /* MKMacro_Geometry.h */,
 				905F7C7E1816DCE000D0E780 /* MKMacro_Method.h */,
 				908BFFA9181DBCD200C4B7CB /* MKMacro_Test.h */,
+				90EF3123181F086500D97F57 /* MKMacro_Version.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -362,6 +371,8 @@
 				90AB7F391816E2C60070D745 /* NSString+MK_Conversion.m */,
 				90871C8818184D9B009BE84C /* NSString+MK_Empty.h */,
 				90871C8918184D9B009BE84C /* NSString+MK_Empty.m */,
+				90C6171C1827DA98009EEFD3 /* NSString+MK_Misc.h */,
+				90C6171D1827DA98009EEFD3 /* NSString+MK_Misc.m */,
 				90AB7F351816E20B0070D745 /* NSString+MK_UTF.h */,
 				90AB7F361816E20B0070D745 /* NSString+MK_UTF.m */,
 				90382F7B181AD0A600A924D3 /* NSString+MK_UUID.h */,
@@ -379,6 +390,7 @@
 				90871C8018184B55009BE84C /* NSString+MK_Conversion_Tests.m */,
 				90871C8218184B63009BE84C /* NSString+MK_Validation_Tests.m */,
 				90871C7E18184B45009BE84C /* NSString+MK_Empty_Tests.m */,
+				90C6171F1827DAC0009EEFD3 /* NSString+MK_Misc_Tests.m */,
 				90871C8418184B6E009BE84C /* NSString+MK_UTF_Tests.m */,
 				90382F8B181AFF1600A924D3 /* NSString+MK_UUID_Tests.m */,
 			);
@@ -643,6 +655,7 @@
 				90AB7F3D1816E3A30070D745 /* NSDate+MK_Formatting.m in Sources */,
 				905F7CA21816DCE000D0E780 /* NSNumber+MK_Fraction.m in Sources */,
 				90AB7F341816E16C0070D745 /* NSString+MK_Validation.m in Sources */,
+				90C6171E1827DA98009EEFD3 /* NSString+MK_Misc.m in Sources */,
 				903183C5181945840065016F /* NSArray+MK.m in Sources */,
 				905F7C9F1816DCE000D0E780 /* NSDictionary+MK.m in Sources */,
 				901F14821816C927002333D7 /* main.m in Sources */,
@@ -671,6 +684,7 @@
 				90B244F3181C77D6007EE48E /* NSString+MK_Base64_Tests.m in Sources */,
 				90871C7F18184B45009BE84C /* NSString+MK_Empty_Tests.m in Sources */,
 				90AB7F66181834C40070D745 /* NSNumber+MK_Manipulation_Tests.m in Sources */,
+				90C617201827DAC0009EEFD3 /* NSString+MK_Misc_Tests.m in Sources */,
 				90871C8518184B6E009BE84C /* NSString+MK_UTF_Tests.m in Sources */,
 				90382F8C181AFF1600A924D3 /* NSString+MK_UUID_Tests.m in Sources */,
 				90382F88181AFC4600A924D3 /* NSMutableDictionary+MK_Tests.m in Sources */,

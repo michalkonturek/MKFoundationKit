@@ -37,4 +37,5 @@
     NSNumber *result = [input MK_numberWithLongLong];
     assertThat(result, equalTo(@101111111111));
 }
+
 @end
