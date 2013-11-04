@@ -30,8 +30,14 @@
 }
 
 - (void)test_isStringEmptyOrNil_returns_false {
-    BOOL result = [NSString MK_isStringEmptyOrNil:@"A B C D"];
+    BOOL result = [NSString MK_isStringEmptyOrNil:@"A B"];
     assertThatBool(result, equalToBool(NO));
+}
+
+- (void)test_trimmedString {
+    NSString *input = [NSString stringWithFormat:@" ABCD "];
+    NSString *result = [input MK_trimmedString];
+    assertThat(result, equalTo(@"ABCD"));
 }
 
 @end

@@ -16,7 +16,11 @@
 }
 
 - (BOOL)MK_isEmpty {
-    return ([allTrim(self) length] == 0) ? YES : NO;
+    return ([[self MK_trimmedString] length] == 0);
+}
+
+- (NSString *)MK_trimmedString {
+    return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
 @end
