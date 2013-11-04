@@ -31,6 +31,19 @@
 }
 
 
+- (NSString *)MK_firstComponent:(NSCharacterSet *)separators {
+    return [self MK_componentAtIndex:0 usingSeparators:separators];
+}
+
+- (NSString *)MK_lastComponent:(NSCharacterSet *)separators {
+    NSArray *components = [self componentsSeparatedByCharactersInSet:separators];
+    return (components.count == 1) ? @"" : [components lastObject];
+}
+
+- (NSString *)MK_componentAtIndex:(NSInteger)index usingSeparators:(NSCharacterSet *)separators {
+    NSArray *components = [self componentsSeparatedByCharactersInSet:separators];
+    return (components.count == 1) ? @"" : [components objectAtIndex:index];
+}
 
 
 @end

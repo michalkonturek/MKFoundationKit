@@ -16,4 +16,8 @@
 - (BOOL)MK_isEmpty;
 - (NSString *)MK_trimmedString;
 
+- (NSString *)MK_firstComponent:(NSCharacterSet *)separators;
+- (NSString *)MK_lastComponent:(NSCharacterSet *)separators;
+- (NSString *)MK_componentAtIndex:(NSInteger)index usingSeparators:(NSCharacterSet *)separators;
+
 @end
