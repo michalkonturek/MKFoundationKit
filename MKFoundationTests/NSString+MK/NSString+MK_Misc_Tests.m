@@ -30,12 +30,12 @@
 }
 
 - (void)test_firstComponent {
-    NSString *result = [self.input MK_firstComponent:self.separators];
+    NSString *result = [self.input MK_firstComponentUsingSeparators:self.separators];
     assertThat(result, equalTo(@"Vexilla"));
 }
 
 - (void)test_lastComponent {
-    NSString *result = [self.input MK_lastComponent:self.separators];
+    NSString *result = [self.input MK_lastComponentUsingSeparators:self.separators];
     assertThat(result, equalTo(@"inferni."));
 }
 

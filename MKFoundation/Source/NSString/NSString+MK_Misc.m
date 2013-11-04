@@ -10,11 +10,11 @@
 
 @implementation NSString (MK_Misc)
 
-- (NSString *)MK_firstComponent:(NSCharacterSet *)separators {
+- (NSString *)MK_firstComponentUsingSeparators:(NSCharacterSet *)separators {
     return [self MK_componentAtIndex:0 usingSeparators:separators];
 }
 
-- (NSString *)MK_lastComponent:(NSCharacterSet *)separators {
+- (NSString *)MK_lastComponentUsingSeparators:(NSCharacterSet *)separators {
     NSArray *components = [self componentsSeparatedByCharactersInSet:separators];
     return (components.count == 1) ? @"" : [components lastObject];
 }
