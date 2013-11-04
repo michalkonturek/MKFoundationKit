@@ -20,8 +20,13 @@
 }
 
 - (NSString *)MK_componentAtIndex:(NSInteger)index usingSeparators:(NSCharacterSet *)separators {
+    if (index < 0) return @"";
+    
     NSArray *components = [self componentsSeparatedByCharactersInSet:separators];
-    return (components.count == 1) ? @"" : [components objectAtIndex:index];
+    if ([components count] == 1) return @"";
+    if ([components count] <= index) return @"";
+    
+    return [components objectAtIndex:index];
 }
 
 - (BOOL)MK_containsString:(NSString *)term caseSensitive:(BOOL)caseSensitive {

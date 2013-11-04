@@ -10,7 +10,8 @@
 
 @interface NSString_MK_Misc_Tests : SenTestCase
 
-@property (nonatomic, strong) NSString *target;
+@property (nonatomic, strong) NSString *input;
+@property (nonatomic, strong) NSCharacterSet *separators;
 
 @end
 
@@ -18,39 +19,67 @@
 
 - (void)setUp {
     [super setUp];
-    self.target = @"Vexilla regis prodeunt inferni.";
+    self.input = @"Vexilla regis prodeunt inferni.";
+    self.separators = [NSCharacterSet whitespaceCharacterSet];
 }
 
 - (void)tearDown {
-    self.target = nil;
+    self.input = nil;
+    self.separators = nil;
     [super tearDown];
+}
+
+- (void)test_firstComponent {
+    NSString *result = [self.input MK_firstComponent:self.separators];
+    assertThat(result, equalTo(@"Vexilla"));
+}
+
+- (void)test_lastComponent {
+    NSString *result = [self.input MK_lastComponent:self.separators];
+    assertThat(result, equalTo(@"inferni."));
+}
+
+- (void)test_componentAtIndex {
+    NSString *result = [self.input MK_componentAtIndex:2 usingSeparators:self.separators];
+    assertThat(result, equalTo(@"prodeunt"));
+}
+
+- (void)test_componentAtIndex_when_empty_returns_empty {
+    NSString *result = [@"" MK_componentAtIndex:3 usingSeparators:self.separators];
+    assertThat(result, equalTo(@""));
+}
+
+- (void)test_componentAtIndex_when_index_higher_than_components_count__returns_empty {
+    NSString *result = [self.input MK_componentAtIndex:4 usingSeparators:self.separators];
+    assertThat(result, equalTo(@""));
+}
+
+- (void)test_componentAtIndex_when_index_negative__returns_empty {
+    NSString *result = [self.input MK_componentAtIndex:-1 usingSeparators:self.separators];
+    assertThat(result, equalTo(@""));
 }
 
 - (void)test_containsString_when_case_returns_true {
     NSString *term = @"regis";
-    NSString *target = @"Vexilla regis prodeunt inferni.";
-    BOOL result = [target MK_containsString:term caseSensitive:YES];
+    BOOL result = [self.input MK_containsString:term caseSensitive:YES];
     assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_containsString_when_case_returns_false {
     NSString *term = @"Regis";
-    NSString *target = @"Vexilla regis prodeunt inferni.";
-    BOOL result = [target MK_containsString:term caseSensitive:YES];
+    BOOL result = [self.input MK_containsString:term caseSensitive:YES];
     assertThatBool(result, equalToBool(NO));
 }
 
 - (void)test_containsString_when_no_case_returns_true {
     NSString *term = @"Regis";
-    NSString *target = @"Vexilla regis prodeunt inferni.";
-    BOOL result = [target MK_containsString:term caseSensitive:NO];
+    BOOL result = [self.input MK_containsString:term caseSensitive:NO];
     assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_containsString_when_no_case_returns_false {
     NSString *term = @"Regissss";
-    NSString *target = @"Vexilla regis prodeunt inferni.";
-    BOOL result = [target MK_containsString:term caseSensitive:NO];
+    BOOL result = [self.input MK_containsString:term caseSensitive:NO];
     assertThatBool(result, equalToBool(NO));
 }
 
