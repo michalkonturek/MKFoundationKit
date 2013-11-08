@@ -10,8 +10,20 @@
 
 @implementation NSDate (MK_Creation)
 
++ (NSDate *)MK_dateTomorrow {
+    return [[NSDate date] MK_dateByAddingDays:1];
+}
+
++ (NSDate *)MK_dateYesterday {
+    return [[NSDate date] MK_dateBySubtractingDays:1];
+}
+
 + (NSDate *)MK_dateWithoutTime {
     return [[NSDate date] MK_dateWithoutTime];
+}
+
++ (NSDate *)MK_dateWithDaysFromNow:(NSInteger)days {
+    return [[NSDate date] MK_dateByAddingDays:days];
 }
 
 + (NSDate *)MK_dateFromString:(NSString *)string {

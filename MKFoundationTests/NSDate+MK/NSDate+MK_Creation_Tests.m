@@ -14,6 +14,20 @@
 
 @implementation NSDate_MK_Creation_Tests
 
+- (void)test_dateTomorrow {
+    NSDate *today = [NSDate date];
+    NSDate *tomorrow = [NSDate MK_dateTomorrow];
+    NSInteger result = [today MK_differenceInDaysToDate:tomorrow];
+    assertThatInteger(result, equalToInteger(1));
+}
+
+- (void)test_dateYesterday {
+    NSDate *today = [NSDate date];
+    NSDate *yesterday = [[NSDate MK_dateYesterday] MK_dateWithoutTime];
+    NSInteger result = [today MK_differenceInDaysToDate:yesterday];
+    assertThatInteger(result, equalToInteger(-1));
+}
+
 - (void)test_dateWithoutTime {
     NSDate *date = [NSDate MK_dateWithoutTime];
     id result = [date MK_formattedStringUsingFormat:@"HH:mm"];
