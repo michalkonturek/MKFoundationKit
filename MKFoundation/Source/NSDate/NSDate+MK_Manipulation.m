@@ -49,7 +49,7 @@
 }
 
 - (NSDate *)_dateByAdding:(NSInteger)value ofUnit:(NSCalendarUnit)unit {
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+//    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     
     NSDateComponents *components = [[NSDateComponents alloc] init];
     
@@ -64,7 +64,8 @@
             [components setYear:value];
             break;
     }
-    
+
+    NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDate *date = [calendar dateByAddingComponents:components toDate:self options:0];
     return date;
 }

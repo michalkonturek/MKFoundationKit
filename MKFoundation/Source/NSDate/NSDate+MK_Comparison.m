@@ -11,15 +11,15 @@
 @implementation NSDate (MK_Comparison)
 
 - (BOOL)MK_isToday {
-    METHOD_NOT_IMPLEMENTED
+    return [self MK_isEqualToDateIgnoringTime:[NSDate date]];
 }
 
 - (BOOL)MK_isTomorrow {
-    METHOD_NOT_IMPLEMENTED
+    return [self MK_isEqualToDateIgnoringTime:[NSDate MK_dateTomorrow]];
 }
 
 - (BOOL)MK_isYesterday {
-    METHOD_NOT_IMPLEMENTED
+    return [self MK_isEqualToDateIgnoringTime:[NSDate MK_dateYesterday]];
 }
 
 - (BOOL)MK_isThisWeek {
@@ -63,7 +63,11 @@
 }
 
 - (BOOL)MK_isEqualToDateIgnoringTime:(NSDate *)date {
-    METHOD_NOT_IMPLEMENTED    
+    NSDateComponents *components1 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:self];
+    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:date];
+    return (([components1 year] == [components2 year]) &&
+            ([components1 month] == [components2 month]) &&
+            ([components1 day] == [components2 day]));
 }
 
 @end

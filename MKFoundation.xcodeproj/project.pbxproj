@@ -27,6 +27,7 @@
 		90382F8A181AFE4A00A924D3 /* NSArray+MK_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90382F89181AFE4A00A924D3 /* NSArray+MK_Tests.m */; };
 		90382F8C181AFF1600A924D3 /* NSString+MK_UUID_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90382F8B181AFF1600A924D3 /* NSString+MK_UUID_Tests.m */; };
 		905AC43E182DA1E80047B2F7 /* NSDate+MK_Comparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 905AC43D182DA1E80047B2F7 /* NSDate+MK_Comparison.m */; };
+		905AC440182DA3C30047B2F7 /* NSDate+MK_Comparison_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 905AC43F182DA3C30047B2F7 /* NSDate+MK_Comparison_Tests.m */; };
 		905F7C9D1816DCE000D0E780 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 905F7C851816DCE000D0E780 /* .gitkeep */; };
 		905F7C9F1816DCE000D0E780 /* NSDictionary+MK.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F7C891816DCE000D0E780 /* NSDictionary+MK.m */; };
 		905F7CA01816DCE000D0E780 /* NSNumber+MK_Comparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F7C8D1816DCE000D0E780 /* NSNumber+MK_Comparison.m */; };
@@ -112,6 +113,7 @@
 		90382F8B181AFF1600A924D3 /* NSString+MK_UUID_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_UUID_Tests.m"; sourceTree = "<group>"; };
 		905AC43C182DA1E80047B2F7 /* NSDate+MK_Comparison.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MK_Comparison.h"; sourceTree = "<group>"; };
 		905AC43D182DA1E80047B2F7 /* NSDate+MK_Comparison.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MK_Comparison.m"; sourceTree = "<group>"; };
+		905AC43F182DA3C30047B2F7 /* NSDate+MK_Comparison_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MK_Comparison_Tests.m"; sourceTree = "<group>"; };
 		905F7C7D1816DCE000D0E780 /* MKLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKLog.h; sourceTree = "<group>"; };
 		905F7C7E1816DCE000D0E780 /* MKMacro_Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMacro_Method.h; sourceTree = "<group>"; };
 		905F7C821816DCE000D0E780 /* NSDate+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MK.h"; sourceTree = "<group>"; };
@@ -315,10 +317,10 @@
 			isa = PBXGroup;
 			children = (
 				905F7C821816DCE000D0E780 /* NSDate+MK.h */,
-				90AB7F3E1816E4200070D745 /* NSDate+MK_Creation.h */,
-				90AB7F3F1816E4200070D745 /* NSDate+MK_Creation.m */,
 				905AC43C182DA1E80047B2F7 /* NSDate+MK_Comparison.h */,
 				905AC43D182DA1E80047B2F7 /* NSDate+MK_Comparison.m */,
+				90AB7F3E1816E4200070D745 /* NSDate+MK_Creation.h */,
+				90AB7F3F1816E4200070D745 /* NSDate+MK_Creation.m */,
 				90AB7F3B1816E3A30070D745 /* NSDate+MK_Formatting.h */,
 				90AB7F3C1816E3A30070D745 /* NSDate+MK_Formatting.m */,
 				90AB7F411816E42C0070D745 /* NSDate+MK_Manipulation.h */,
@@ -430,6 +432,7 @@
 		90AB7F5E181834C40070D745 /* NSDate+MK */ = {
 			isa = PBXGroup;
 			children = (
+				905AC43F182DA3C30047B2F7 /* NSDate+MK_Comparison_Tests.m */,
 				903183C6181949DE0065016F /* NSDate+MK_Creation_Tests.m */,
 				903183C8181949E80065016F /* NSDate+MK_Formatting_Tests.m */,
 				903183CA181949F40065016F /* NSDate+MK_Manipulation_Tests.m */,
@@ -686,6 +689,7 @@
 				90382F86181AFC3600A924D3 /* NSMutableArray+MK_Tests.m in Sources */,
 				903183C9181949E80065016F /* NSDate+MK_Formatting_Tests.m in Sources */,
 				903183CB181949F40065016F /* NSDate+MK_Manipulation_Tests.m in Sources */,
+				905AC440182DA3C30047B2F7 /* NSDate+MK_Comparison_Tests.m in Sources */,
 				906E75D518183BD2008516E1 /* NSNumber+MK_Precision_Tests.m in Sources */,
 				90B244F3181C77D6007EE48E /* NSString+MK_Base64_Tests.m in Sources */,
 				90871C7F18184B45009BE84C /* NSString+MK_Empty_Tests.m in Sources */,
