@@ -78,6 +78,7 @@
     switch (unit) {
         case NSYearCalendarUnit:
             [components setYear:value];
+            break;
         case NSMonthCalendarUnit:
             [components setMonth:value];
             break;
