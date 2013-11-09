@@ -96,15 +96,27 @@
 }
 
 - (void)test_dateBySubtractingHours {
-    
+    NSInteger plus = 8;
+    NSInteger minus = 2;
+    id date = [[self.input MK_dateWithoutTime] MK_dateByAddingHours:plus];
+    NSInteger result = [[date MK_dateBySubtractingHours:minus] MK_hour];
+    assertThatInteger(result, equalToInteger(plus - minus));
 }
 
 - (void)test_dateBySubtractingMinutes {
-    
+    NSInteger plus = 38;
+    NSInteger minus = 18;
+    id date = [[self.input MK_dateWithoutTime] MK_dateByAddingMinutes:plus];
+    NSInteger result = [[date MK_dateBySubtractingMinutes:minus] MK_minutes];
+    assertThatInteger(result, equalToInteger(plus - minus));
 }
 
 - (void)test_dateBySubtractingSeconds {
-    
+    NSInteger plus = 42;
+    NSInteger minus = 19;
+    id date = [[self.input MK_dateWithoutTime] MK_dateByAddingSeconds:plus];
+    NSInteger result = [[date MK_dateBySubtractingSeconds:minus] MK_seconds];
+    assertThatInteger(result, equalToInteger(plus - minus));
 }
 
 - (void)test_differenceInDaysToDate_when_later_date {
