@@ -29,6 +29,4 @@
 
 - (BOOL)MK_isEqualToDateIgnoringTime:(NSDate *)other;
 
-- (NSDateComponents *)components;
-
 @end

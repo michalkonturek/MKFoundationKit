@@ -83,8 +83,4 @@
             ([components1 day] == [components2 day]));
 }
 
-- (NSDateComponents *)components {
-    return [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:self];
-}
-
 @end
