@@ -40,8 +40,8 @@
      NOTE: Depending on localization, week starts on Monday or Sunday.
      */
     
-    NSDateComponents *components1 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:self];
-    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:other];
+    NSDateComponents *components1 = [self components];
+    NSDateComponents *components2 = [other components];
     
     return (([components1 year] == [components2 year]) &&
             ([components1 week] == [components2 week]));
@@ -60,8 +60,8 @@
 }
 
 - (BOOL)MK_isSameYearAsDate:(NSDate *)other {
-    NSDateComponents *components1 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:self];
-    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:other];
+    NSDateComponents *components1 = [self components];
+    NSDateComponents *components2 = [other components];
     
     return ([components1 year] == [components2 year]);
 }
@@ -75,8 +75,8 @@
 }
 
 - (BOOL)MK_isEqualToDateIgnoringTime:(NSDate *)other {
-    NSDateComponents *components1 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:self];
-    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:other];
+    NSDateComponents *components1 = [self components];
+    NSDateComponents *components2 = [other components];
     
     return (([components1 year] == [components2 year]) &&
             ([components1 month] == [components2 month]) &&
