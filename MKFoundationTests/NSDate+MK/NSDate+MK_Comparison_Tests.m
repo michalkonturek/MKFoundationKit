@@ -175,11 +175,21 @@
 }
 
 - (void)test_isEqualToDateIgnoringTime_returns_true {
-    
+    NSString *format = @"dd-MM-yyyy HH:mm:ss";
+    id target = [NSDate MK_dateFromString:@"07-01-2013 20:02:15" withFormat:format];
+    id other = [target MK_dateByAddingHours:1];
+
+    BOOL result = [target MK_isEqualToDateIgnoringTime:other];
+    assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_isEqualToDateIgnoringTime_returns_false {
+    NSString *format = @"dd-MM-yyyy HH:mm:ss";
+    id target = [NSDate MK_dateFromString:@"07-01-2013 20:02:15" withFormat:format];
+    id other = [target MK_dateByAddingHours:6];
     
+    BOOL result = [target MK_isEqualToDateIgnoringTime:other];
+    assertThatBool(result, equalToBool(NO));
 }
 
 @end
