@@ -147,19 +147,31 @@
 }
 
 - (void)test_isEarlierThanDate_returns_true {
-    
+    NSDate *target = [NSDate date];
+    NSDate *other = [[NSDate date] MK_dateByAddingDays:1];
+    BOOL result = [target MK_isEarlierThanDate:other];
+    assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_isEarlierThanDate_returns_false {
-    
+    NSDate *target = [NSDate date];
+    NSDate *other = [[NSDate date] MK_dateBySubtractingDays:1];
+    BOOL result = [target MK_isEarlierThanDate:other];
+    assertThatBool(result, equalToBool(NO));
 }
 
 - (void)test_isLaterThanDate_returns_true {
-    
+    NSDate *target = [NSDate date];
+    NSDate *other = [[NSDate date] MK_dateBySubtractingDays:1];
+    BOOL result = [target MK_isLaterThanDate:other];
+    assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_isLaterThanDate_returns_false {
-    
+    NSDate *target = [NSDate date];
+    NSDate *other = [[NSDate date] MK_dateByAddingDays:1];
+    BOOL result = [target MK_isLaterThanDate:other];
+    assertThatBool(result, equalToBool(NO));
 }
 
 - (void)test_isEqualToDateIgnoringTime_returns_true {

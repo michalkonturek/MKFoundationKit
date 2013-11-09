@@ -34,14 +34,14 @@
     return [self MK_isSameWeekAsDate:[[NSDate date] MK_dateBySubtractingWeeks:1]];
 }
 
-- (BOOL)MK_isSameWeekAsDate:(NSDate *)date {
+- (BOOL)MK_isSameWeekAsDate:(NSDate *)other {
     
     /*
      NOTE: Depending on localization, week starts on Monday or Sunday.
      */
     
     NSDateComponents *components1 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:self];
-    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:date];
+    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:other];
     
     return (([components1 year] == [components2 year]) &&
             ([components1 week] == [components2 week]));
@@ -59,28 +59,32 @@
     return [self MK_isSameYearAsDate:[[NSDate date] MK_dateBySubtractingYears:1]];
 }
 
-- (BOOL)MK_isSameYearAsDate:(NSDate *)date {
+- (BOOL)MK_isSameYearAsDate:(NSDate *)other {
     NSDateComponents *components1 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:self];
-    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:date];
+    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:other];
     
     return ([components1 year] == [components2 year]);
 }
 
-- (BOOL)MK_isEarlierThanDate:(NSDate *)date {
-    METHOD_NOT_IMPLEMENTED
+- (BOOL)MK_isEarlierThanDate:(NSDate *)other {
+    return ([self compare:other] == NSOrderedAscending);
 }
 
-- (BOOL)MK_isLaterThanDate:(NSDate *)date {
-    METHOD_NOT_IMPLEMENTED
+- (BOOL)MK_isLaterThanDate:(NSDate *)other {
+    return ([self compare:other] == NSOrderedDescending);
 }
 
-- (BOOL)MK_isEqualToDateIgnoringTime:(NSDate *)date {
+- (BOOL)MK_isEqualToDateIgnoringTime:(NSDate *)other {
     NSDateComponents *components1 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:self];
-    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:date];
+    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:other];
     
     return (([components1 year] == [components2 year]) &&
             ([components1 month] == [components2 month]) &&
             ([components1 day] == [components2 day]));
+}
+
+- (NSDateComponents *)components {
+    return [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:self];
 }
 
 @end

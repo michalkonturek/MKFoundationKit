@@ -17,16 +17,18 @@
 - (BOOL)MK_isThisWeek;
 - (BOOL)MK_isNextWeek;
 - (BOOL)MK_isLastWeek;
-- (BOOL)MK_isSameWeekAsDate:(NSDate *)date;
+- (BOOL)MK_isSameWeekAsDate:(NSDate *)other;
 
 - (BOOL)MK_isThisYear;
 - (BOOL)MK_isNextYear;
 - (BOOL)MK_isLastYear;
-- (BOOL)MK_isSameYearAsDate:(NSDate *)date;
+- (BOOL)MK_isSameYearAsDate:(NSDate *)other;
 
-- (BOOL)MK_isEarlierThanDate:(NSDate *)date;
-- (BOOL)MK_isLaterThanDate:(NSDate *)date;
+- (BOOL)MK_isEarlierThanDate:(NSDate *)other;
+- (BOOL)MK_isLaterThanDate:(NSDate *)other;
 
-- (BOOL)MK_isEqualToDateIgnoringTime:(NSDate *)date;
+- (BOOL)MK_isEqualToDateIgnoringTime:(NSDate *)other;
+
+- (NSDateComponents *)components;
 
 @end
