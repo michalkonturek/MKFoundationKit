@@ -10,48 +10,48 @@
 
 @implementation NSDate (MK_Components)
 
-- (NSInteger)mk_year {
-    return [[self mk_components] year];
+- (NSInteger)MK_year {
+    return [[self MK_components] year];
 }
 
-- (NSInteger)mk_month {
-    return [[self mk_components] month];
+- (NSInteger)MK_month {
+    return [[self MK_components] month];
 }
 
-- (NSInteger)mk_week {
-    return [[self mk_components] week];
+- (NSInteger)MK_week {
+    return [[self MK_components] week];
 }
 
-- (NSInteger)mk_weeekday {
+- (NSInteger)MK_weeekday {
 
     /*
      NOTE: Depending on localization, week starts on Monday or Sunday.
      */
     
-    return [[self mk_components] weekday];
+    return [[self MK_components] weekday];
 }
 
-- (NSInteger)mk_nthWeekday {
-    return [[self mk_components] weekdayOrdinal];
+- (NSInteger)MK_nthWeekday {
+    return [[self MK_components] weekdayOrdinal];
 }
 
-- (NSInteger)mk_day {
-    return [[self mk_components] day];
+- (NSInteger)MK_day {
+    return [[self MK_components] day];
 }
 
-- (NSInteger)mk_hour {
-    return [[self mk_components] hour];
+- (NSInteger)MK_hour {
+    return [[self MK_components] hour];
 }
 
-- (NSInteger)mk_minutes {
-    return [[self mk_components] minute];
+- (NSInteger)MK_minutes {
+    return [[self MK_components] minute];
 }
 
-- (NSInteger)mk_seconds {
-    return [[self mk_components] second];
+- (NSInteger)MK_seconds {
+    return [[self MK_components] second];
 }
 
-- (NSDateComponents *)mk_components {
+- (NSDateComponents *)MK_components {
     return [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:self];
 }
 

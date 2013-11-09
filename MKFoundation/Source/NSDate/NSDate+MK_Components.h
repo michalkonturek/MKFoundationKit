@@ -12,16 +12,16 @@
 
 @interface NSDate (MK_Components)
 
-- (NSInteger)mk_year;
-- (NSInteger)mk_month;
-- (NSInteger)mk_week;
-- (NSInteger)mk_weeekday;
-- (NSInteger)mk_nthWeekday;
-- (NSInteger)mk_day;
-- (NSInteger)mk_hour;
-- (NSInteger)mk_minutes;
-- (NSInteger)mk_seconds;
+- (NSInteger)MK_year;
+- (NSInteger)MK_month;
+- (NSInteger)MK_week;
+- (NSInteger)MK_weeekday;
+- (NSInteger)MK_nthWeekday;
+- (NSInteger)MK_day;
+- (NSInteger)MK_hour;
+- (NSInteger)MK_minutes;
+- (NSInteger)MK_seconds;
 
-- (NSDateComponents *)mk_components;
+- (NSDateComponents *)MK_components;
 
 @end

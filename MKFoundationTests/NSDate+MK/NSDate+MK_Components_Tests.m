@@ -27,42 +27,42 @@
 }
 
 - (void)test_year {
-    NSInteger result = [self.target mk_year];
+    NSInteger result = [self.target MK_year];
     assertThatInteger(result, equalToInteger(2013));
 }
 
 - (void)test_week {
-    NSInteger result = [self.target mk_week];
+    NSInteger result = [self.target MK_week];
     assertThatInteger(result, equalToInteger(2));
 }
 
 - (void)test_weekday {
-    NSInteger result = [self.target mk_weeekday];
+    NSInteger result = [self.target MK_weeekday];
     assertThatInteger(result, equalToInteger(2));
 }
 
 - (void)test_nthWeekday {
-    NSInteger result = [self.target mk_nthWeekday];
+    NSInteger result = [self.target MK_nthWeekday];
     assertThatInteger(result, equalToInteger(1));
 }
 
 - (void)test_day {
-    NSInteger result = [self.target mk_day];
+    NSInteger result = [self.target MK_day];
     assertThatInteger(result, equalToInteger(7));
 }
 
 - (void)test_hour {
-    NSInteger result = [self.target mk_hour];
+    NSInteger result = [self.target MK_hour];
     assertThatInteger(result, equalToInteger(20));
 }
 
 - (void)test_minute {
-    NSInteger result = [self.target mk_minutes];
+    NSInteger result = [self.target MK_minutes];
     assertThatInteger(result, equalToInteger(2));
 }
 
 - (void)test_seconds {
-    NSInteger result = [self.target mk_seconds];
+    NSInteger result = [self.target MK_seconds];
     assertThatInteger(result, equalToInteger(15));
 }
 
