@@ -50,6 +50,27 @@
     assertThat(result, equalTo(@"01-04-2013"));
 }
 
+- (void)test_dateByAddingHours {
+    NSInteger element = 8;
+    id date = [[self.input MK_dateWithoutTime] MK_dateByAddingHours:element];
+    NSInteger result = [date MK_hour];
+    assertThatInteger(result, equalToInteger(element));
+}
+
+- (void)test_dateByAddingMinutes {
+    NSInteger element = 38;
+    id date = [[self.input MK_dateWithoutTime] MK_dateByAddingMinutes:element];
+    NSInteger result = [date MK_minutes];
+    assertThatInteger(result, equalToInteger(element));
+}
+
+- (void)test_dateByAddingSeconds {
+    NSInteger element = 42;
+    id date = [[self.input MK_dateWithoutTime] MK_dateByAddingSeconds:element];
+    NSInteger result = [date MK_seconds];
+    assertThatInteger(result, equalToInteger(element));
+}
+
 - (void)test_dateBySubtractingDays {
     id date = [self.input MK_dateBySubtractingDays:10];
     id result = [date MK_formattedString];
@@ -72,6 +93,30 @@
     id date = [self.input MK_dateBySubtractingYears:2];
     id result = [date MK_formattedString];
     assertThat(result, equalTo(@"01-04-2010"));
+}
+
+- (void)test_dateBySubtractingHours {
+    NSInteger plus = 8;
+    NSInteger minus = 2;
+    id date = [[self.input MK_dateWithoutTime] MK_dateByAddingHours:plus];
+    NSInteger result = [[date MK_dateBySubtractingHours:minus] MK_hour];
+    assertThatInteger(result, equalToInteger(plus - minus));
+}
+
+- (void)test_dateBySubtractingMinutes {
+    NSInteger plus = 38;
+    NSInteger minus = 18;
+    id date = [[self.input MK_dateWithoutTime] MK_dateByAddingMinutes:plus];
+    NSInteger result = [[date MK_dateBySubtractingMinutes:minus] MK_minutes];
+    assertThatInteger(result, equalToInteger(plus - minus));
+}
+
+- (void)test_dateBySubtractingSeconds {
+    NSInteger plus = 42;
+    NSInteger minus = 19;
+    id date = [[self.input MK_dateWithoutTime] MK_dateByAddingSeconds:plus];
+    NSInteger result = [[date MK_dateBySubtractingSeconds:minus] MK_seconds];
+    assertThatInteger(result, equalToInteger(plus - minus));
 }
 
 - (void)test_differenceInDaysToDate_when_later_date {

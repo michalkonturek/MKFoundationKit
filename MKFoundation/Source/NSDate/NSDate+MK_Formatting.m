@@ -10,6 +10,8 @@
 
 @implementation NSDate (MK_Formatting)
 
+// resource: http://unicode.org/reports/tr35/tr35-6.html#Date_Format_Patterns
+
 + (NSString *)MK_dateFormatCCCCDDMMMYYYY {
     return @"cccc, dd MMM yyyy";
 }
