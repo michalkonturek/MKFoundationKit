@@ -23,35 +23,47 @@
 }
 
 - (BOOL)MK_isThisWeek {
-    METHOD_NOT_IMPLEMENTED
+    return [self MK_isSameWeekAsDate:[NSDate date]];
 }
 
 - (BOOL)MK_isNextWeek {
-    METHOD_NOT_IMPLEMENTED
+    return [self MK_isSameWeekAsDate:[[NSDate date] MK_dateByAddingWeeks:1]];
 }
 
 - (BOOL)MK_isLastWeek {
-    METHOD_NOT_IMPLEMENTED
+    return [self MK_isSameWeekAsDate:[[NSDate date] MK_dateBySubtractingWeeks:1]];
 }
 
 - (BOOL)MK_isSameWeekAsDate:(NSDate *)date {
-    METHOD_NOT_IMPLEMENTED
+    
+    /*
+     NOTE: Depending on localization, week starts on Monday or Sunday.
+     */
+    
+    NSDateComponents *components1 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:self];
+    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:date];
+    
+    return (([components1 year] == [components2 year]) &&
+            ([components1 week] == [components2 week]));
 }
 
 - (BOOL)MK_isThisYear {
-    METHOD_NOT_IMPLEMENTED
+    return [self MK_isSameYearAsDate:[NSDate date]];
 }
 
 - (BOOL)MK_isNextYear {
-    METHOD_NOT_IMPLEMENTED
+    return [self MK_isSameYearAsDate:[[NSDate date] MK_dateByAddingYears:1]];
 }
 
 - (BOOL)MK_isLastYear {
-    METHOD_NOT_IMPLEMENTED
+    return [self MK_isSameYearAsDate:[[NSDate date] MK_dateBySubtractingYears:1]];
 }
 
 - (BOOL)MK_isSameYearAsDate:(NSDate *)date {
-    METHOD_NOT_IMPLEMENTED
+    NSDateComponents *components1 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:self];
+    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:date];
+    
+    return ([components1 year] == [components2 year]);
 }
 
 - (BOOL)MK_isEarlierThanDate:(NSDate *)date {
@@ -65,6 +77,7 @@
 - (BOOL)MK_isEqualToDateIgnoringTime:(NSDate *)date {
     NSDateComponents *components1 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:self];
     NSDateComponents *components2 = [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:date];
+    
     return (([components1 year] == [components2 year]) &&
             ([components1 month] == [components2 month]) &&
             ([components1 day] == [components2 day]));

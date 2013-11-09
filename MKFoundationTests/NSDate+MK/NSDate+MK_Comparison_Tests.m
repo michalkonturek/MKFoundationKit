@@ -14,14 +14,6 @@
 
 @implementation NSDate_MK_Comparison_Tests
 
-- (void)setUp {
-    [super setUp];
-}
-
-- (void)tearDown {
-    [super tearDown];
-}
-
 - (void)test_isToday_returns_true {
     NSDate *target = [NSDate date];
     BOOL result = [target MK_isToday];
@@ -59,67 +51,99 @@
 }
 
 - (void)test_isThisWeek_returns_true {
-    
+    NSDate *target = [NSDate date];
+    BOOL result = [target MK_isThisWeek];
+    assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_isThisWeek_returns_false {
-    
+    NSDate *target = [[NSDate date] MK_dateByAddingDays:8];
+    BOOL result = [target MK_isThisWeek];
+    assertThatBool(result, equalToBool(NO));
 }
 
 - (void)test_isNextWeek_returns_true {
-    
+    NSDate *target = [[NSDate date] MK_dateByAddingDays:7];
+    BOOL result = [target MK_isNextWeek];
+    assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_isNextWeek_returns_false {
-    
+    NSDate *target = [NSDate date];
+    BOOL result = [target MK_isNextWeek];
+    assertThatBool(result, equalToBool(NO));
 }
 
 - (void)test_isLastWeek_returns_true {
-    
+    NSDate *target = [[NSDate date] MK_dateBySubtractingWeeks:1];
+    BOOL result = [target MK_isLastWeek];
+    assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_isLastWeek_returns_false {
-    
+    NSDate *target = [NSDate date];
+    BOOL result = [target MK_isLastWeek];
+    assertThatBool(result, equalToBool(NO));
 }
 
 - (void)test_isSameWeekAsDate_returns_true {
-    
+    NSDate *target = [NSDate MK_dateFromString:@"01-01-2013"];
+    BOOL result = [target MK_isSameWeekAsDate:[NSDate MK_dateFromString:@"02-01-2013"]];
+    assertThatBool(result, equalToBool(YES));
+}
+
+- (void)test_isSameWeekAsDate_returns_true_when_different_months {
+    NSDate *target = [NSDate MK_dateFromString:@"31-01-2013"];
+    BOOL result = [target MK_isSameWeekAsDate:[NSDate MK_dateFromString:@"02-02-2013"]];
+    assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_isSameWeekAsDate_returns_false {
-    
+    NSDate *target = [NSDate date];
+    BOOL result = [target MK_isSameWeekAsDate:[target MK_dateByAddingWeeks:1]];
+    assertThatBool(result, equalToBool(NO));
+}
+
+- (void)test_isSameWeekAsDate_returns_false_when_different_year {
+    NSDate *target = [NSDate MK_dateFromString:@"01-01-2013"];
+    BOOL result = [target MK_isSameWeekAsDate:[target MK_dateByAddingYears:1]];
+    assertThatBool(result, equalToBool(NO));
 }
 
 - (void)test_isThisYear_returns_true {
-    
+    NSDate *target = [NSDate date];
+    BOOL result = [target MK_isThisYear];
+    assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_isThisYear_returns_false {
-    
+    NSDate *target = [[NSDate date] MK_dateByAddingYears:1];
+    BOOL result = [target MK_isThisYear];
+    assertThatBool(result, equalToBool(NO));
 }
 
 - (void)test_isNextYear_returns_true {
-    
+    NSDate *target = [[NSDate date] MK_dateByAddingYears:1];
+    BOOL result = [target MK_isNextYear];
+    assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_isNextYear_returns_false {
-    
+    NSDate *target = [NSDate date];
+    BOOL result = [target MK_isNextYear];
+    assertThatBool(result, equalToBool(NO));
 }
 
 - (void)test_isLastYear_returns_true {
-    
+    NSDate *target = [[NSDate date] MK_dateBySubtractingYears:1];
+    BOOL result = [target MK_isLastYear];
+    assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_isLastYear_returns_false {
-    
-}
-
-- (void)test_isSameYearAsDate_returns_true {
-    
-}
-
-- (void)test_isSameYearAsDate_returns_false {
-    
+    NSDate *target = [NSDate date];
+    BOOL result = [target MK_isLastYear];
+    assertThatBool(result, equalToBool(NO));
 }
 
 - (void)test_isEarlierThanDate_returns_true {
