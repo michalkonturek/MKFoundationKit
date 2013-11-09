@@ -48,9 +48,7 @@
     return [self _dateByAdding:-years ofUnit:NSYearCalendarUnit];
 }
 
-- (NSDate *)_dateByAdding:(NSInteger)value ofUnit:(NSCalendarUnit)unit {
-//    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    
+- (NSDate *)_dateByAdding:(NSInteger)value ofUnit:(NSCalendarUnit)unit {    
     NSDateComponents *components = [[NSDateComponents alloc] init];
     
     switch (unit) {

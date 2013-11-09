@@ -11,39 +11,44 @@
 @implementation NSDate (MK_Components)
 
 - (NSInteger)mk_year {
-    METHOD_NOT_IMPLEMENTED
+    return [[self mk_components] year];
 }
 
 - (NSInteger)mk_month {
-    METHOD_NOT_IMPLEMENTED
+    return [[self mk_components] month];
 }
 
 - (NSInteger)mk_week {
-    METHOD_NOT_IMPLEMENTED
+    return [[self mk_components] week];
 }
 
 - (NSInteger)mk_weeekday {
-    METHOD_NOT_IMPLEMENTED
+
+    /*
+     NOTE: Depending on localization, week starts on Monday or Sunday.
+     */
+    
+    return [[self mk_components] weekday];
 }
 
 - (NSInteger)mk_nthWeekday {
-    METHOD_NOT_IMPLEMENTED
+    return [[self mk_components] weekdayOrdinal];
 }
 
 - (NSInteger)mk_day {
-    METHOD_NOT_IMPLEMENTED
+    return [[self mk_components] day];
 }
 
 - (NSInteger)mk_hour {
-    METHOD_NOT_IMPLEMENTED
+    return [[self mk_components] hour];
 }
 
 - (NSInteger)mk_minutes {
-    METHOD_NOT_IMPLEMENTED
+    return [[self mk_components] minute];
 }
 
 - (NSInteger)mk_seconds {
-    METHOD_NOT_IMPLEMENTED
+    return [[self mk_components] second];
 }
 
 - (NSDateComponents *)mk_components {

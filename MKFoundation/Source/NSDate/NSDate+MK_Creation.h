@@ -18,8 +18,6 @@
 + (NSDate *)MK_dateFromString:(NSString *)string;
 + (NSDate *)MK_dateFromString:(NSString *)string withFormat:(NSString *)format;
 
-//+ (NSDate *)MK_dateWithDaysBeforeNow:(NSInteger)days;
-
 - (NSDate *)MK_dateWithoutTime;
 
 @end
