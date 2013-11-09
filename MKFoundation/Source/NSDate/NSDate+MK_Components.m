@@ -10,43 +10,43 @@
 
 @implementation NSDate (MK_Components)
 
-- (NSInteger)year {
+- (NSInteger)mk_year {
     METHOD_NOT_IMPLEMENTED
 }
 
-- (NSInteger)month {
+- (NSInteger)mk_month {
     METHOD_NOT_IMPLEMENTED
 }
 
-- (NSInteger)week {
+- (NSInteger)mk_week {
     METHOD_NOT_IMPLEMENTED
 }
 
-- (NSInteger)weeekday {
+- (NSInteger)mk_weeekday {
     METHOD_NOT_IMPLEMENTED
 }
 
-- (NSInteger)nthWeekday {
+- (NSInteger)mk_nthWeekday {
     METHOD_NOT_IMPLEMENTED
 }
 
-- (NSInteger)day {
+- (NSInteger)mk_day {
     METHOD_NOT_IMPLEMENTED
 }
 
-- (NSInteger)hour {
+- (NSInteger)mk_hour {
     METHOD_NOT_IMPLEMENTED
 }
 
-- (NSInteger)minute {
+- (NSInteger)mk_minutes {
     METHOD_NOT_IMPLEMENTED
 }
 
-- (NSInteger)second {
+- (NSInteger)mk_seconds {
     METHOD_NOT_IMPLEMENTED
 }
 
-- (NSDateComponents *)components {
+- (NSDateComponents *)mk_components {
     return [[NSCalendar currentCalendar] components:DATE_COMPONENTS fromDate:self];
 }
 
