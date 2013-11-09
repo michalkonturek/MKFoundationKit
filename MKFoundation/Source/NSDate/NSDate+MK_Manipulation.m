@@ -32,6 +32,18 @@
     return [self _dateByAdding:months ofUnit:NSYearCalendarUnit];
 }
 
+- (NSDate *)MK_dateByAddingHours:(NSInteger)hours {
+    return [self _dateByAdding:hours ofUnit:NSHourCalendarUnit];
+}
+
+- (NSDate *)MK_dateByAddingMinutes:(NSInteger)minutes {
+    return [self _dateByAdding:minutes ofUnit:NSMinuteCalendarUnit];
+}
+
+- (NSDate *)MK_dateByAddingSeconds:(NSInteger)seconds {
+    return [self _dateByAdding:seconds ofUnit:NSSecondCalendarUnit];
+}
+
 - (NSDate *)MK_dateBySubtractingDays:(NSInteger)days {
     return [self _dateByAdding:-days ofUnit:NSDayCalendarUnit];
 }
@@ -48,18 +60,40 @@
     return [self _dateByAdding:-years ofUnit:NSYearCalendarUnit];
 }
 
+- (NSDate *)MK_dateBySubtractingHours:(NSInteger)hours {
+    return [self _dateByAdding:-hours ofUnit:NSHourCalendarUnit];
+}
+
+- (NSDate *)MK_dateBySubtractingMinutes:(NSInteger)minutes {
+    return [self _dateByAdding:-minutes ofUnit:NSMinuteCalendarUnit];
+}
+
+- (NSDate *)MK_dateBySubtractingSeconds:(NSInteger)seconds {
+    return [self _dateByAdding:-seconds ofUnit:NSSecondCalendarUnit];
+}
+
 - (NSDate *)_dateByAdding:(NSInteger)value ofUnit:(NSCalendarUnit)unit {    
     NSDateComponents *components = [[NSDateComponents alloc] init];
     
     switch (unit) {
-        case NSDayCalendarUnit:
-            [components setDay:value];
-            break;
+        case NSYearCalendarUnit:
+            [components setYear:value];
         case NSMonthCalendarUnit:
             [components setMonth:value];
             break;
+        case NSDayCalendarUnit:
+            [components setDay:value];
+            break;
+        case NSHourCalendarUnit:
+            [components setHour:value];
+            break;
+        case NSMinuteCalendarUnit:
+            [components setMinute:value];
+            break;
+        case NSSecondCalendarUnit:
+            [components setSecond:value];
+            break;
         default:
-            [components setYear:value];
             break;
     }
 
