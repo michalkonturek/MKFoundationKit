@@ -1,14 +1,14 @@
 //
-//  NSMutableArray+MK
+//  NSMutableArray+MK_Misc
 //  MKFoundation
 //
 //  Created by Michal Konturek on 25/10/2013.
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
 //
 
-#import "NSMutableArray+MK.h"
+#import "NSMutableArray+MK_Misc.h"
 
-@implementation NSMutableArray (MK)
+@implementation NSMutableArray (MK_Misc)
 
 - (void)MK_safeAddObject:(id)object {
     if (!object) return;

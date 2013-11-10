@@ -1,5 +1,5 @@
 //
-//  NSMutableArray+MK
+//  NSMutableArray+MK_Misc
 //  MKFoundation
 //
 //  Created by Michal Konturek on 25/10/2013.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSMutableArray (MK)
+@interface NSMutableArray (MK_Misc)
 
 /**
  Safely adds object to the collection.
