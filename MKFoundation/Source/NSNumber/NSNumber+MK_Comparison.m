@@ -40,4 +40,14 @@
     return ([self compare:other] == NSOrderedAscending);
 }
 
+- (BOOL)MK_isEven {
+    return (![self MK_isOdd]);
+}
+
+- (BOOL)MK_isOdd {
+    if ([self MK_isFraction]) return YES;
+    if ([self MK_isTheSame:@0]) return NO;
+    return [[self MK_divideBy:@2] MK_isFraction];
+}
+
 @end

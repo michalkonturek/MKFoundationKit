@@ -35,15 +35,15 @@
 }
 
 - (BOOL)MK_all:(LINQConditionBlock)conditionBlock {
-    METHOD_NOT_IMPLEMENTED
+    return [self LINQ_all:conditionBlock];
 }
 
 - (BOOL)MK_any:(LINQConditionBlock)conditionBlock {
-    METHOD_NOT_IMPLEMENTED
+    return [self LINQ_any:conditionBlock];
 }
 
 - (BOOL)MK_none:(LINQConditionBlock)conditionBlock {
-    METHOD_NOT_IMPLEMENTED
+    return (![self LINQ_all:conditionBlock]);
 }
 
 @end
