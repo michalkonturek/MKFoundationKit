@@ -1,5 +1,5 @@
 //
-//  NSArray+MK_Tests.m
+//  NSArray+MK_Misc_Tests.m
 //  MKFoundation
 //
 //  Created by Michal Konturek on 25/10/2013.
@@ -8,13 +8,13 @@
 
 #import "BaseTest.h"
 
-@interface NSArray_MK_Tests : SenTestCase
+@interface NSArray_MK_Misc_Tests : SenTestCase
 
 @property (nonatomic, strong) NSArray *input;
 
 @end
 
-@implementation NSArray_MK_Tests
+@implementation NSArray_MK_Misc_Tests
 
 - (void)setUp {
     [super setUp];
