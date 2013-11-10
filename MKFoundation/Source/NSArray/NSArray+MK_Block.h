@@ -8,15 +8,19 @@
 
 #import "NSArray+MK.h"
 
+typedef void (^MKItemBlock)(id item);
+
 @interface NSArray (MK_Block)
 
-- (void)MK_apply:(LINQSelectorBlock)selectorBlock;
+- (void)MK_apply:(MKItemBlock)block;
 
-- (void)MK_each:(LINQSelectorBlock)selectorBlock;
+- (void)MK_each:(MKItemBlock)block;
+
+- (instancetype)MK_map:(LINQSelectorBlock)selectorBlock;
 
 - (id)MK_match:(LINQConditionBlock)conditionBlock;
 
-- (instancetype)MK_map:(LINQSelectorBlock)selectorBlock;
+- (id)MK_reduce:(id)initial withBlock:(LINQAccumulatorBlock)accumulatorBlock;
 
 - (instancetype)MK_reject:(LINQConditionBlock)conditionBlock;
 
