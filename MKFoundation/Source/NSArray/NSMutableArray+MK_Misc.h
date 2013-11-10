@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "NSArray+MK.h"
 
 @interface NSMutableArray (MK_Misc)
 
