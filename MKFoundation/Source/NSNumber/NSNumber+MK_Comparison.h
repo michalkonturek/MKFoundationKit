@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "NSNumber+MK.h"
 
 @interface NSNumber (MK_Comparison)
 
@@ -23,5 +23,9 @@
 - (BOOL)MK_isGreaterThan:(NSNumber *)other;
 
 - (BOOL)MK_isLessThan:(NSNumber *)other;
+
+- (BOOL)MK_isEven;
+
+- (BOOL)MK_isOdd;
 
 @end

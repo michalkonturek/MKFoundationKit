@@ -13,8 +13,6 @@
 #import "MKMacro_Method.h"
 #import "MKMacro_Test.h"
 
-#import "LINQ.h"
-
 #import "NSArray+MK.h"
 #import "NSData+MK.h"
 #import "NSDate+MK.h"

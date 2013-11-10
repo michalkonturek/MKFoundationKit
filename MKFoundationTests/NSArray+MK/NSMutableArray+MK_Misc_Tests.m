@@ -1,5 +1,5 @@
 //
-//  NSMutableArray+MK_Tests.m
+//  NSMutableArray+MK_Misc_Tests.m
 //  MKFoundation
 //
 //  Created by Michal Konturek on 25/10/2013.
@@ -8,11 +8,11 @@
 
 #import "BaseTest.h"
 
-@interface NSMutableArray_MK_Tests : SenTestCase
+@interface NSMutableArray_MK_Misc_Tests : SenTestCase
 
 @end
 
-@implementation NSMutableArray_MK_Tests
+@implementation NSMutableArray_MK_Misc_Tests
 
 - (void)test_safeAddObject {
     NSMutableArray *result = [NSMutableArray LINQ_empty];

@@ -9,6 +9,10 @@ before_install:
     # update cocoapods
     - gem update cocoapods
 
+    # print version summary
+    - pod --version
+    - xctool -version
+
 before_script:
     # FIX: issue with pods and xcode 5 xcassets
     - chmod -R +x ./scripts

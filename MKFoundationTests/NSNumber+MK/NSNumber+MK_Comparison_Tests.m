@@ -78,4 +78,34 @@
     assertThatBool(result, equalToBool(NO));
 }
 
+- (void)test_isEven_returns_true {
+    BOOL result = [@22 MK_isEven];
+    assertThatBool(result, equalToBool(YES));
+}
+
+- (void)test_isEven_returns_true_when_zero {
+    BOOL result = [@0 MK_isEven];
+    assertThatBool(result, equalToBool(YES));
+}
+
+- (void)test_isEven_returns_false {
+    BOOL result = [@1 MK_isEven];
+    assertThatBool(result, equalToBool(NO));
+}
+
+- (void)test_isOdd_returns_true {
+    BOOL result = [@3 MK_isOdd];
+    assertThatBool(result, equalToBool(YES));
+}
+
+- (void)test_isOdd_returns_true_when_fraction {
+    BOOL result = [@2.2 MK_isOdd];
+    assertThatBool(result, equalToBool(YES));
+}
+
+- (void)test_isOdd_returns_false {
+    BOOL result = [@4 MK_isOdd];
+    assertThatBool(result, equalToBool(NO));
+}
+
 @end
