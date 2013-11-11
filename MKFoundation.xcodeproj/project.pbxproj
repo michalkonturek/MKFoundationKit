@@ -70,6 +70,7 @@
 		90C686B3182FEFEE0009DF62 /* NSArray+MK_Block_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C686B2182FEFEE0009DF62 /* NSArray+MK_Block_Tests.m */; };
 		90F76B5718319E2700757308 /* NSDictionary+MK_Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F76B5618319E2700757308 /* NSDictionary+MK_Block.m */; };
 		90F76B5E1831A11C00757308 /* NSSet+MK_Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F76B5D1831A11C00757308 /* NSSet+MK_Block.m */; };
+		90F76B611831A25F00757308 /* NSSet+MK.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F76B601831A25F00757308 /* NSSet+MK.m */; };
 		EE5AEA91C8D8472592D61643 /* libPods-MKFoundationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55741B3BD4E64F038C34A09D /* libPods-MKFoundationTests.a */; };
 		F4456A8F9F0D4901812D32E2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4338C2BE2A5F46BEA81B602B /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -197,6 +198,8 @@
 		90F76B5818319EF100757308 /* NSDictionary+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MK.h"; sourceTree = "<group>"; };
 		90F76B5C1831A11C00757308 /* NSSet+MK_Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+MK_Block.h"; sourceTree = "<group>"; };
 		90F76B5D1831A11C00757308 /* NSSet+MK_Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+MK_Block.m"; sourceTree = "<group>"; };
+		90F76B5F1831A25F00757308 /* NSSet+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+MK.h"; sourceTree = "<group>"; };
+		90F76B601831A25F00757308 /* NSSet+MK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+MK.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -513,6 +516,8 @@
 		90F76B5B1831A10100757308 /* NSSet */ = {
 			isa = PBXGroup;
 			children = (
+				90F76B5F1831A25F00757308 /* NSSet+MK.h */,
+				90F76B601831A25F00757308 /* NSSet+MK.m */,
 				90F76B5C1831A11C00757308 /* NSSet+MK_Block.h */,
 				90F76B5D1831A11C00757308 /* NSSet+MK_Block.m */,
 			);
@@ -697,6 +702,7 @@
 				90382F83181AD3B600A924D3 /* NSMutableDictionary+MK_Misc.m in Sources */,
 				905F7CA31816DCE000D0E780 /* NSNumber+MK_Manipulation.m in Sources */,
 				90AB7F401816E4200070D745 /* NSDate+MK_Creation.m in Sources */,
+				90F76B611831A25F00757308 /* NSSet+MK.m in Sources */,
 				90871C8A18184D9B009BE84C /* NSString+MK_Empty.m in Sources */,
 				905AC43E182DA1E80047B2F7 /* NSDate+MK_Comparison.m in Sources */,
 				905F7CA11816DCE000D0E780 /* NSNumber+MK_Creation.m in Sources */,

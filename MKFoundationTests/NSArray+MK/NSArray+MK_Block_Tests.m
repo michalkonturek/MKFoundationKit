@@ -14,16 +14,8 @@
 
 @implementation NSArray_MK_Block_Tests
 
-- (void)setUp {
-    [super setUp];
-}
-
-- (void)tearDown {
-    [super tearDown];
-}
-
 - (void)test_apply {
-    id target = @[@1, @2, @4, @11];
+    NSArray *target = @[@1, @2, @4, @11];
     
     id result = [NSMutableArray array];
     [target MK_apply:^(id item) {
