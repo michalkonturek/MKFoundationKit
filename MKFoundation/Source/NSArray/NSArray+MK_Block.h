@@ -8,8 +8,6 @@
 
 #import "NSArray+MK.h"
 
-typedef void (^MKItemBlock)(id item);
-
 @interface NSArray (MK_Block)
 
 - (void)MK_apply:(MKItemBlock)block;
