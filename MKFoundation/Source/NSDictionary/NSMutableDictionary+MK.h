@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "NSDictionary+MK.h"
 
 @interface NSMutableDictionary (MK)
 
