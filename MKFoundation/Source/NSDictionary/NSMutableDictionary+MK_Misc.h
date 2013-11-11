@@ -8,7 +8,7 @@
 
 #import "NSDictionary+MK.h"
 
-@interface NSMutableDictionary (MK)
+@interface NSMutableDictionary (MK_Misc)
 
 /**
  Safely adds object to the collection.

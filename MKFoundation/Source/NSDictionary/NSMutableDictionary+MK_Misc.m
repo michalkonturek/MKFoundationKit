@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
 //
 
-#import "NSMutableDictionary+MK.h"
+#import "NSMutableDictionary+MK_Misc.h"
 
-@implementation NSMutableDictionary (MK)
+@implementation NSMutableDictionary (MK_Misc)
 
 - (void)MK_safeSetObject:(id)object forKey:(id)key {
     if (!key || !object) return;
