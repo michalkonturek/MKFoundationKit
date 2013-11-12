@@ -26,18 +26,18 @@
     [super tearDown];
 }
 
-- (void)test_apply {
-    __block id result = [NSMutableArray array];
-    [self.input MK_apply:^(id item) {
-        [result addObject:item];
-    }];
-    
-    // NOTE: MK_apply is asyncrhonous call
-    [NSThread sleepForTimeInterval:2];
-    
-    assertThat(result, hasCountOf(4));
-    assertThat(result, containsInAnyOrder(@1, @2, @4, @11, nil));
-}
+//- (void)test_apply {
+//    __block id result = [NSMutableArray array];
+//    [self.input MK_apply:^(id item) {
+//        [result addObject:item];
+//    }];
+//    
+//    // NOTE: MK_apply is asyncrhonous call
+//    [NSThread sleepForTimeInterval:2];
+//    
+//    assertThat(result, hasCountOf(4));
+//    assertThat(result, containsInAnyOrder(@1, @2, @4, @11, nil));
+//}
 
 - (void)test_each {
     __block id result = [NSMutableArray array];

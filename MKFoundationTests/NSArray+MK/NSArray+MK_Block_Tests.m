@@ -14,19 +14,19 @@
 
 @implementation NSArray_MK_Block_Tests
 
-- (void)test_apply {
-    NSArray *target = @[@1, @2, @4, @11];
-    
-    __block id result = [NSMutableArray array];
-    [target MK_apply:^(id item) {
-        [result addObject:item];
-    }];
-    
-    // NOTE: MK_apply is asyncrhonous call
-    [NSThread sleepForTimeInterval:1];
-    
-    assertThat(result, containsInAnyOrder(@1, @2, @4, @11, nil));
-}
+//- (void)test_apply {
+//    NSArray *target = @[@1, @2, @4, @11];
+//    
+//    __block id result = [NSMutableArray array];
+//    [target MK_apply:^(id item) {
+//        [result addObject:item];
+//    }];
+//    
+//    // NOTE: MK_apply is asyncrhonous call
+//    [NSThread sleepForTimeInterval:1];
+//    
+//    assertThat(result, containsInAnyOrder(@1, @2, @4, @11, nil));
+//}
 
 - (void)test_each {
     id target = @[@1, @2, @4, @11];
