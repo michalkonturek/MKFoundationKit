@@ -16,18 +16,18 @@
 
 - (instancetype)MK_map:(LINQSelectorBlock)selectorBlock;
 
-- (id)MK_match:(LINQConditionBlock)conditionBlock;
+- (id)MK_match:(LINQKeyValueConditionBlock)conditionBlock;
 
 - (id)MK_reduce:(id)initial withBlock:(LINQAccumulatorBlock)accumulatorBlock;
 
-- (instancetype)MK_reject:(LINQConditionBlock)conditionBlock;
+- (instancetype)MK_reject:(LINQKeyValueConditionBlock)conditionBlock;
 
-- (instancetype)MK_select:(LINQConditionBlock)conditionBlock;
+- (instancetype)MK_select:(LINQKeyValueConditionBlock)conditionBlock;
 
-- (BOOL)MK_all:(LINQConditionBlock)conditionBlock;
+- (BOOL)MK_all:(LINQKeyValueConditionBlock)conditionBlock;
 
-- (BOOL)MK_any:(LINQConditionBlock)conditionBlock;
+- (BOOL)MK_any:(LINQKeyValueConditionBlock)conditionBlock;
 
-- (BOOL)MK_none:(LINQConditionBlock)conditionBlock;
+- (BOOL)MK_none:(LINQKeyValueConditionBlock)conditionBlock;
 
 @end

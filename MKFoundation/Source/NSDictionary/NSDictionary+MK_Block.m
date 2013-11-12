@@ -11,43 +11,79 @@
 @implementation NSDictionary (MK_Block)
 
 - (void)MK_apply:(MKItemBlock)block {
-    METHOD_NOT_IMPLEMENTED
+    if (!block) return;
+    
+    [self enumerateKeysAndObjectsWithOptions:NSEnumerationConcurrent
+                                  usingBlock:^(id key, id obj, BOOL *stop)
+    {
+        block(obj);
+    }];
 }
 
 - (void)MK_each:(MKItemBlock)block {
-    METHOD_NOT_IMPLEMENTED
+    if (!block) return;
+    
+    [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        block(obj);
+    }];
 }
 
 - (instancetype)MK_map:(LINQSelectorBlock)selectorBlock {
-    METHOD_NOT_IMPLEMENTED
+    if (!selectorBlock) return [[self class] dictionary];
+    
+    NSMutableDictionary *result = [NSMutableDictionary dictionaryWithCapacity:self.count];
+    [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        [result setObject:selectorBlock(obj) forKey:key];
+    }];
+    
+    return result;
 }
 
-- (id)MK_match:(LINQConditionBlock)conditionBlock {
-    METHOD_NOT_IMPLEMENTED
+- (id)MK_match:(LINQKeyValueConditionBlock)conditionBlock {
+    if (!conditionBlock) return self;
+    
+    __block id result = nil;
+    [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        if (conditionBlock(key, obj)) {
+            result = obj;
+            *stop = YES;
+        }
+    }];
+    
+    return result;
 }
 
 - (id)MK_reduce:(id)initial withBlock:(LINQAccumulatorBlock)accumulatorBlock {
-    METHOD_NOT_IMPLEMENTED
+    if (!accumulatorBlock) return self;
+    
+    __block id result = initial;
+    [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        result = accumulatorBlock(obj, result);
+    }];
+    
+    return result;
 }
 
-- (instancetype)MK_reject:(LINQConditionBlock)conditionBlock {
-    METHOD_NOT_IMPLEMENTED
+- (instancetype)MK_reject:(LINQKeyValueConditionBlock)conditionBlock {
+    return [self LINQ_where:^BOOL(id key, id value) {
+        return (!conditionBlock(key, value));
+    }];
 }
 
-- (instancetype)MK_select:(LINQConditionBlock)conditionBlock {
-    METHOD_NOT_IMPLEMENTED
+- (instancetype)MK_select:(LINQKeyValueConditionBlock)conditionBlock {
+    return [self LINQ_where:conditionBlock];
 }
 
-- (BOOL)MK_all:(LINQConditionBlock)conditionBlock {
-    METHOD_NOT_IMPLEMENTED
+- (BOOL)MK_all:(LINQKeyValueConditionBlock)conditionBlock {
+    return [self LINQ_all:conditionBlock];
 }
 
-- (BOOL)MK_any:(LINQConditionBlock)conditionBlock {
-    METHOD_NOT_IMPLEMENTED
+- (BOOL)MK_any:(LINQKeyValueConditionBlock)conditionBlock {
+    return [self LINQ_any:conditionBlock];
 }
 
-- (BOOL)MK_none:(LINQConditionBlock)conditionBlock {
-    METHOD_NOT_IMPLEMENTED
+- (BOOL)MK_none:(LINQKeyValueConditionBlock)conditionBlock {
+    return ![self LINQ_any:conditionBlock];
 }
 
 @end

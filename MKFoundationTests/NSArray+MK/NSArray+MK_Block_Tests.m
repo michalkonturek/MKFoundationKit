@@ -17,7 +17,7 @@
 - (void)test_apply {
     NSArray *target = @[@1, @2, @4, @11];
     
-    id result = [NSMutableArray array];
+    __block id result = [NSMutableArray array];
     [target MK_apply:^(id item) {
         [result addObject:item];
     }];
@@ -31,10 +31,13 @@
 - (void)test_each {
     id target = @[@1, @2, @4, @11];
     
-    id result = [NSMutableArray array];
+    __block id result = [NSMutableArray array];
     [target MK_each:^(id item) {
         [result addObject:item];
     }];
+    
+    // NOTE: MK_apply is asyncrhonous call
+    [NSThread sleepForTimeInterval:2];
     
     assertThat(result, contains(@1, @2, @4, @11, nil));
 }
