@@ -1,14 +1,14 @@
 //
-//  NSArray+MK_Block.h
+//  NSSet+MK_Block.h
 //  MKFoundation
 //
-//  Created by Michal Konturek on 10/11/2013.
+//  Created by Michal Konturek on 11/11/2013.
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
 //
 
-#import "NSArray+MK.h"
+#import "NSSet+MK.h"
 
-@interface NSArray (MK_Block)
+@interface NSSet (MK_Block)
 
 - (void)MK_apply:(MKItemBlock)block;
 

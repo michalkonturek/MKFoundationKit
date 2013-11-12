@@ -1,5 +1,5 @@
 //
-//  NSDictionary+MK.m
+//  NSDictionary+MK_Misc.m
 //  MKFoundationKit
 //
 //  Created by Michal Konturek on 11/07/2013.
@@ -11,7 +11,7 @@
 #import "NSArray+MK.h"
 #import "LINQ.h"
 
-@implementation NSDictionary (MK)
+@implementation NSDictionary (MK_Misc)
 
 - (NSMutableDictionary *)MK_dictionaryWithKeys:(NSArray *)keys {
     if ([keys MK_isEmpty]) return [NSMutableDictionary LINQ_empty];
