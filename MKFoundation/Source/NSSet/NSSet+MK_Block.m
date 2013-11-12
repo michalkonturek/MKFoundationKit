@@ -19,35 +19,38 @@
 }
 
 - (instancetype)MK_map:(LINQSelectorBlock)selectorBlock {
-    METHOD_NOT_IMPLEMENTED
+    id result = [[self allObjects] MK_map:selectorBlock];
+    return [[self class] setWithArray:result];
 }
 
 - (id)MK_match:(LINQConditionBlock)conditionBlock {
-    METHOD_NOT_IMPLEMENTED
+    return [[self allObjects] MK_match:conditionBlock];
 }
 
 - (id)MK_reduce:(id)initial withBlock:(LINQAccumulatorBlock)accumulatorBlock {
-    METHOD_NOT_IMPLEMENTED
+    return [[self allObjects] MK_reduce:initial withBlock:accumulatorBlock];
 }
 
 - (instancetype)MK_reject:(LINQConditionBlock)conditionBlock {
-    METHOD_NOT_IMPLEMENTED
+    id result = [[self allObjects] MK_reject:conditionBlock];
+    return [[self class] setWithArray:result];
 }
 
 - (instancetype)MK_select:(LINQConditionBlock)conditionBlock {
-    METHOD_NOT_IMPLEMENTED
+    id result = [[self allObjects] MK_select:conditionBlock];
+    return [[self class] setWithArray:result];
 }
 
 - (BOOL)MK_all:(LINQConditionBlock)conditionBlock {
-    METHOD_NOT_IMPLEMENTED
+    return [[self allObjects] MK_all:conditionBlock];
 }
 
 - (BOOL)MK_any:(LINQConditionBlock)conditionBlock {
-    METHOD_NOT_IMPLEMENTED
+    return [[self allObjects] MK_any:conditionBlock];
 }
 
 - (BOOL)MK_none:(LINQConditionBlock)conditionBlock {
-    METHOD_NOT_IMPLEMENTED
+    return [[self allObjects] MK_none:conditionBlock];
 }
 
 @end
