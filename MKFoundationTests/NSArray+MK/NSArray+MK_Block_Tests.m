@@ -22,6 +22,9 @@
         [result addObject:item];
     }];
     
+    // NOTE: MK_apply is asyncrhonous call
+    [NSThread sleepForTimeInterval:1];
+    
     assertThat(result, containsInAnyOrder(@1, @2, @4, @11, nil));
 }
 

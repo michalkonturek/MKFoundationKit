@@ -10,38 +10,53 @@
 
 @interface NSSet_MK_Block_Tests : SenTestCase
 
+@property (nonatomic, strong) NSSet *input;
+
 @end
 
 @implementation NSSet_MK_Block_Tests
 
+- (void)setUp {
+    [super setUp];
+    self.input = [NSSet setWithArray:@[@1, @2, @4, @11]];
+}
+
+- (void)tearDown {
+    self.input = nil;
+    [super tearDown];
+}
+
 - (void)test_apply {
-    NSSet *target = [NSSet setWithArray:@[@1, @2, @4, @11]];
     id result = [NSMutableArray array];
-    [target MK_apply:^(id item) {
+    [self.input MK_apply:^(id item) {
         [result addObject:item];
     }];
     
+    assertThat(result, hasCountOf(4));
     assertThat(result, containsInAnyOrder(@1, @2, @4, @11, nil));
 }
 
 - (void)test_each {
-    NSSet *target = [NSSet setWithArray:@[@1, @2, @4, @11]];
     id result = [NSMutableArray array];
-    [target MK_each:^(id item) {
+    [self.input MK_each:^(id item) {
         [result addObject:item];
     }];
     
+    assertThat(result, hasCountOf(4));
     assertThat(result, containsInAnyOrder(@1, @2, @4, @11, nil));
 }
 
 - (void)test_map {
-    // Method calls a method from LINQ4Obj-C which already passes tests.
-    TEST_PASSES
+    id result = [self.input MK_map:^id(id item) {
+        return [item MK_multiplyBy:@2];
+    }];
+    
+    assertThat(result, hasCountOf(4));
+    assertThat(result, containsInAnyOrder(@2, @4, @8, @22, nil));
 }
 
 - (void)test_match_returns {
-    NSSet *target = [NSSet setWithArray:@[@1, @2, @4, @11]];
-    id result = [target MK_match:^BOOL(id item) {
+    id result = [self.input MK_match:^BOOL(id item) {
         return [item MK_isEven];
     }];
     
@@ -81,18 +96,48 @@
 }
 
 - (void)test_select {
-    // Method calls a method from LINQ4Obj-C which already passes tests.
-    TEST_PASSES
+    id result = [self.input MK_select:^BOOL(id item) {
+        return [item MK_isEven];
+    }];
+
+    assertThat(result, hasCountOf(2));
+    assertThat(result, containsInAnyOrder(@2, @4, nil));
 }
 
-- (void)test_all {
-    // Method calls a method from LINQ4Obj-C which already passes tests.
-    TEST_PASSES
+- (void)test_all_returns_true {
+    NSSet *target = [NSSet setWithArray:@[@2, @4, @8, @22]];
+    BOOL result = [target MK_all:^BOOL(id item) {
+        return [item MK_isEven];
+    }];
+    
+    assertThatBool(result, equalToBool(YES));
 }
 
-- (void)test_any {
-    // Method calls a method from LINQ4Obj-C which already passes tests.
-    TEST_PASSES
+- (void)test_all_returns_false {
+    NSSet *target = [NSSet setWithArray:@[@2, @4, @8, @31]];
+    BOOL result = [target MK_all:^BOOL(id item) {
+        return [item MK_isEven];
+    }];
+    
+    assertThatBool(result, equalToBool(NO));
+}
+
+- (void)test_any_returns_true {
+    NSSet *target = [NSSet setWithArray:@[@2, @4, @8, @31]];
+    BOOL result = [target MK_any:^BOOL(id item) {
+        return [item MK_isOdd];
+    }];
+    
+    assertThatBool(result, equalToBool(YES));
+}
+
+- (void)test_any_returns_false {
+    NSSet *target = [NSSet setWithArray:@[@2, @4, @8, @22]];
+    BOOL result = [target MK_any:^BOOL(id item) {
+        return [item MK_isOdd];
+    }];
+    
+    assertThatBool(result, equalToBool(NO));
 }
 
 - (void)test_none_returns_true {
