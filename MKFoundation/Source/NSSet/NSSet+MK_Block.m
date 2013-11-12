@@ -11,11 +11,11 @@
 @implementation NSSet (MK_Block)
 
 - (void)MK_apply:(MKItemBlock)block {
-    METHOD_NOT_IMPLEMENTED
+    [[self allObjects] MK_apply:block];
 }
 
 - (void)MK_each:(MKItemBlock)block {
-    METHOD_NOT_IMPLEMENTED
+    [[self allObjects] MK_each:block];
 }
 
 - (instancetype)MK_map:(LINQSelectorBlock)selectorBlock {
