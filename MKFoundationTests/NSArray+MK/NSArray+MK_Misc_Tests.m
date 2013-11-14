@@ -10,7 +10,7 @@
 
 @interface NSArray_MK_Misc_Tests : SenTestCase
 
-@property (nonatomic, strong) NSArray *input;
+@property (nonatomic, strong) NSArray *target;
 
 @end
 
@@ -18,11 +18,11 @@
 
 - (void)setUp {
     [super setUp];
-    self.input = @[@1, @2, @3];
+    self.target = @[@1, @2, @3];
 }
 
 - (void)tearDown {
-    self.input = nil;
+    self.target = nil;
     [super tearDown];
 }
 
@@ -32,8 +32,22 @@
 }
 
 - (void)test_isEmpty_returns_false {
-    BOOL result = [self.input MK_isEmpty];
+    BOOL result = [self.target MK_isEmpty];
     assertThatBool(result, equalToBool(NO));
+}
+
+- (void)test_firstObject_when_empty_returns_nil {
+    self.target = [NSArray array];
+    id result = [self.target MK_firstObject];
+    
+    assertThat(result, nilValue());
+}
+
+- (void)test_dequeueObject_returns_first_element {
+    id expected = [self.target objectAtIndex:0];
+    id result = [self.target MK_firstObject];
+    
+    assertThat(result, sameInstance(expected));
 }
 
 @end
