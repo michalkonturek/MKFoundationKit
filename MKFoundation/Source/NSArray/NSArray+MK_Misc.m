@@ -14,4 +14,9 @@
     return ([self count] == 0);
 }
 
+- (id)MK_firstObject {
+    if ([self MK_isEmpty]) return nil;
+    return [self objectAtIndex:0];
+}
+
 @end
