@@ -30,9 +30,28 @@
 
 }
 
-- (void)test_dequeueObject {
-
+- (void)test_dequeueObject_when_empty_returns_nil {
+    self.target = [NSMutableArray array];
+    id result = [self.target MK_dequeueObject];
+    
+    assertThat(result, nilValue());
 }
+
+- (void)test_dequeueObject_returns_first_element {
+    id expected = [self.target firstObject];
+    id result = [self.target MK_dequeueObject];
+    
+    assertThat(result, sameInstance(expected));
+}
+
+- (void)test_dequeueObject_removes_first_element {
+    [self.target MK_dequeueObject];
+    
+    assertThat(self.target, hasCountOf(2));
+    assertThat(self.target, contains(@2, @3, nil));
+}
+
+
 
 
 @end

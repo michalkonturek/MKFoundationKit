@@ -15,7 +15,11 @@
 }
 
 - (id)MK_dequeueObject {
-    METHOD_NOT_IMPLEMENTED
+    if ([self MK_isEmpty]) return nil;
+    
+    id lastObject = [self firstObject];
+    [self removeObjectAtIndex:0];
+    return lastObject;
 }
 
 @end
