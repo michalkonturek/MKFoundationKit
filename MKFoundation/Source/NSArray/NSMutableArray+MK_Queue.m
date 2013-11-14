@@ -11,7 +11,7 @@
 @implementation NSMutableArray (MK_Queue)
 
 - (void)MK_enqueueObject:(id)object {
-    METHOD_NOT_IMPLEMENTED
+    [self addObject:object];
 }
 
 - (id)MK_dequeueObject {

@@ -26,8 +26,12 @@
     [super tearDown];
 }
 
-- (void)test_enqueueObject {
-
+- (void)test_enqueueObject_adds_element_at_the_end {
+    id expected = @5;
+    [self.target MK_enqueueObject:expected];
+    id result = [self.target lastObject];
+    
+    assertThat(result, sameInstance(expected));
 }
 
 - (void)test_dequeueObject_when_empty_returns_nil {
