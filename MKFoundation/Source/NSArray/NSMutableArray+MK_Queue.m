@@ -17,7 +17,7 @@
 - (id)MK_dequeueObject {
     if ([self MK_isEmpty]) return nil;
     
-    id lastObject = [self firstObject];
+    id lastObject = [self MK_firstObject];
     [self removeObjectAtIndex:0];
     return lastObject;
 }

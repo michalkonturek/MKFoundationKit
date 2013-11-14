@@ -17,7 +17,7 @@
 - (id)MK_pullObject {
     if ([self MK_isEmpty]) return nil;
 
-    id firstObject = [self firstObject];
+    id firstObject = [self MK_firstObject];
     [self removeObject:firstObject];
     return firstObject;
 }

@@ -42,7 +42,7 @@
 }
 
 - (void)test_dequeueObject_returns_first_element {
-    id expected = [self.target firstObject];
+    id expected = [self.target MK_firstObject];
     id result = [self.target MK_dequeueObject];
     
     assertThat(result, sameInstance(expected));
