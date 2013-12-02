@@ -29,7 +29,9 @@ MKFoundation is a collection of categories for `NSFoundation` classes to acceler
 ### NSString
 
 
+- - - 
 
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/michalkonturek/mkfoundation/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 
 
