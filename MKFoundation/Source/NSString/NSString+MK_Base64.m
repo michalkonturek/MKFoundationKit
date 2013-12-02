@@ -50,7 +50,7 @@
 @implementation NSString (MK_Base64)
 
 + (NSString *)MK_stringWithBase64EncodedString:(NSString *)string {
-    NSData *data = [NSData MK_dataWithBase64EncodedString:string];
+    NSData *data = [NSData mk_dataWithBase64EncodedString:string];
     if (!data) return nil;
     
     return [[self alloc] initWithData:data encoding:NSUTF8StringEncoding];
@@ -62,16 +62,16 @@
 
 - (NSString *)MK_base64EncodedString {
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
-    return [data MK_base64EncodedString];
+    return [data mk_base64EncodedString];
 }
 
 - (NSString *)MK_base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth {
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
-    return [data MK_base64EncodedStringWithWrapWidth:wrapWidth];
+    return [data mk_base64EncodedStringWithWrapWidth:wrapWidth];
 }
 
 - (NSData *)MK_base64DecodedData {
-    return [NSData MK_dataWithBase64EncodedString:self];
+    return [NSData mk_dataWithBase64EncodedString:self];
 }
 
 - (NSData *)MK_base64EncodedData {

@@ -69,7 +69,6 @@
 		90B244F1181C77C8007EE48E /* NSData+MK_Base64_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B244F0181C77C8007EE48E /* NSData+MK_Base64_Tests.m */; };
 		90B244F3181C77D6007EE48E /* NSString+MK_Base64_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B244F2181C77D6007EE48E /* NSString+MK_Base64_Tests.m */; };
 		90B244F9181C77FC007EE48E /* NSString+MK_Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B244F8181C77FC007EE48E /* NSString+MK_Base64.m */; };
-		90B244FC181C783B007EE48E /* NSData+MK.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B244FB181C783B007EE48E /* NSData+MK.m */; };
 		90C6171E1827DA98009EEFD3 /* NSString+MK_Misc.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C6171D1827DA98009EEFD3 /* NSString+MK_Misc.m */; };
 		90C617201827DAC0009EEFD3 /* NSString+MK_Misc_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C6171F1827DAC0009EEFD3 /* NSString+MK_Misc_Tests.m */; };
 		90C686AE182FE2B30009DF62 /* NSArray+MK_Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C686AD182FE2B30009DF62 /* NSArray+MK_Block.m */; };
@@ -202,7 +201,6 @@
 		90B244F7181C77FC007EE48E /* NSString+MK_Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MK_Base64.h"; sourceTree = "<group>"; };
 		90B244F8181C77FC007EE48E /* NSString+MK_Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_Base64.m"; sourceTree = "<group>"; };
 		90B244FA181C783B007EE48E /* NSData+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MK.h"; sourceTree = "<group>"; };
-		90B244FB181C783B007EE48E /* NSData+MK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MK.m"; sourceTree = "<group>"; };
 		90C6171C1827DA98009EEFD3 /* NSString+MK_Misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MK_Misc.h"; sourceTree = "<group>"; };
 		90C6171D1827DA98009EEFD3 /* NSString+MK_Misc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_Misc.m"; sourceTree = "<group>"; };
 		90C6171F1827DAC0009EEFD3 /* NSString+MK_Misc_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_Misc_Tests.m"; sourceTree = "<group>"; };
@@ -549,7 +547,6 @@
 			isa = PBXGroup;
 			children = (
 				90B244FA181C783B007EE48E /* NSData+MK.h */,
-				90B244FB181C783B007EE48E /* NSData+MK.m */,
 				90B244EC181C7767007EE48E /* NSData+MK_Base64.h */,
 				90B244ED181C7767007EE48E /* NSData+MK_Base64.m */,
 			);
@@ -749,7 +746,6 @@
 				90B244EE181C7767007EE48E /* NSData+MK_Base64.m in Sources */,
 				90382F80181AD2AA00A924D3 /* NSMutableArray+MK_Misc.m in Sources */,
 				905F7CA01816DCE000D0E780 /* NSNumber+MK_Comparison.m in Sources */,
-				90B244FC181C783B007EE48E /* NSData+MK.m in Sources */,
 				90B244F9181C77FC007EE48E /* NSString+MK_Base64.m in Sources */,
 				90F76B5718319E2700757308 /* NSDictionary+MK_Block.m in Sources */,
 				901AE4F618355EB700A7EBAD /* NSMutableArray+MK_Queue.m in Sources */,

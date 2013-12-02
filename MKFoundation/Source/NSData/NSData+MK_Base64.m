@@ -49,7 +49,7 @@
 
 @implementation NSData (MK_Base64)
 
-+ (NSData *)MK_dataWithBase64EncodedString:(NSString *)string {
++ (NSData *)mk_dataWithBase64EncodedString:(NSString *)string {
     const char lookup[] =
     {
         99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99,
@@ -99,15 +99,15 @@
     return outputLength? outputData: nil;
 }
 
-- (NSString *)MK_base64DecodedString {
+- (NSString *)mk_base64DecodedString {
     return [[NSString alloc] initWithData:self encoding:NSUTF8StringEncoding];
 }
 
-- (NSString *)MK_base64EncodedString {
-    return [self MK_base64EncodedStringWithWrapWidth:0];
+- (NSString *)mk_base64EncodedString {
+    return [self mk_base64EncodedStringWithWrapWidth:0];
 }
 
-- (NSString *)MK_base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth {
+- (NSString *)mk_base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth {
     //ensure wrapWidth is a multiple of 4
     wrapWidth = (wrapWidth / 4) * 4;
     

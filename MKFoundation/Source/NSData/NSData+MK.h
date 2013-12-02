@@ -10,6 +10,3 @@
 
 #import "NSData+MK_Base64.h"
 
-@interface NSData (MK)
-
-@end

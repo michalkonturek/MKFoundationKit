@@ -24,10 +24,10 @@
     NSString *decoded = @"1";
     NSString *encoded = @"MQ==";
     
-    assertThat([[NSData MK_dataWithBase64EncodedString:encoded] MK_base64EncodedString],
+    assertThat([[NSData mk_dataWithBase64EncodedString:encoded] mk_base64EncodedString],
                equalTo(encoded));
     
-    assertThat([[decoded MK_base64EncodedData] MK_base64DecodedString],
+    assertThat([[decoded MK_base64EncodedData] mk_base64DecodedString],
                equalTo(decoded));
 }
 
@@ -35,10 +35,10 @@
     NSString *decoded = @"12";
     NSString *encoded = @"MTI=";
     
-    assertThat([[NSData MK_dataWithBase64EncodedString:encoded] MK_base64EncodedString],
+    assertThat([[NSData mk_dataWithBase64EncodedString:encoded] mk_base64EncodedString],
                equalTo(encoded));
     
-    assertThat([[decoded MK_base64EncodedData] MK_base64DecodedString],
+    assertThat([[decoded MK_base64EncodedData] mk_base64DecodedString],
                equalTo(decoded));
 }
 
@@ -46,10 +46,10 @@
     NSString *decoded = @"1234567890";
     NSString *encoded = @"MTIzNDU2Nzg5MA==";
     
-    assertThat([[NSData MK_dataWithBase64EncodedString:encoded] MK_base64EncodedString],
+    assertThat([[NSData mk_dataWithBase64EncodedString:encoded] mk_base64EncodedString],
                equalTo(encoded));
     
-    assertThat([[decoded MK_base64EncodedData] MK_base64DecodedString],
+    assertThat([[decoded MK_base64EncodedData] mk_base64DecodedString],
                equalTo(decoded));
 }
 
@@ -57,10 +57,10 @@
     NSString *decoded = @"1234567890A";
     NSString *encoded = @"MTIzNDU2Nzg5MEE=";
     
-    assertThat([[NSData MK_dataWithBase64EncodedString:encoded] MK_base64EncodedString],
+    assertThat([[NSData mk_dataWithBase64EncodedString:encoded] mk_base64EncodedString],
                equalTo(encoded));
     
-    assertThat([[decoded MK_base64EncodedData] MK_base64DecodedString],
+    assertThat([[decoded MK_base64EncodedData] mk_base64DecodedString],
                equalTo(decoded));
 }
 
@@ -68,10 +68,10 @@
     NSString *decoded = @"Test input A";
     NSString *encoded = @"VGVzdCBpbnB1dCBB";
     
-    assertThat([[NSData MK_dataWithBase64EncodedString:encoded] MK_base64EncodedString],
+    assertThat([[NSData mk_dataWithBase64EncodedString:encoded] mk_base64EncodedString],
                equalTo(encoded));
     
-    assertThat([[decoded MK_base64EncodedData] MK_base64DecodedString],
+    assertThat([[decoded MK_base64EncodedData] mk_base64DecodedString],
                equalTo(decoded));
 }
 
