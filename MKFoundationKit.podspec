@@ -1,9 +1,9 @@
 
 Pod::Spec.new do |s|
-  s.name         = "MKFoundation"
-  s.version      = "0.3.4"
+  s.name         = "MKFoundationKit"
+  s.version      = "4.0.0"
   s.summary      = "Collection of categories for NSFoundation classes to accelerate development."
-  s.homepage     = "https://github.com/michalkonturek/MKFoundation"
+  s.homepage     = "https://github.com/michalkonturek/MKFoundationKit"
   s.license      = 'MIT'
 
   s.author       = { 
@@ -14,11 +14,11 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.8'
 
   s.source       = {
-    :git => "https://github.com/michalkonturek/MKFoundation.git",
-    :tag => "0.3.4"
+    :git => "https://github.com/michalkonturek/MKFoundationKit.git",
+    :tag => "4.0.0"
   }
 
-  s.source_files = 'MKFoundation/Source/**/*.{h,m}'
+  s.source_files = 'MKFoundationKit/Source/**/*.{h,m}'
   s.requires_arc = true
 
   s.dependency 'LINQ4Obj-C', '>= 1.0.0'
