@@ -18,5 +18,6 @@
 #import "NSDate+MK.h"
 #import "NSDictionary+MK.h"
 #import "NSNumber+MK.h"
+#import "NSObject+MK_AutoDescribe.h"
 #import "NSSet+MK.h"
 #import "NSString+MK.h"
