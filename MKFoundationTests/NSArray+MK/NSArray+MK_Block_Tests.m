@@ -50,7 +50,7 @@
 - (void)test_match_returns {
     id target = @[@1, @2, @4, @11];
     id result = [target mk_match:^BOOL(id item) {
-        return [item MK_isEven];
+        return [item mk_isEven];
     }];
     
     assertThat(result, equalTo(@2));
@@ -59,7 +59,7 @@
 - (void)test_match_returns_nil {
     id target = @[@1, @3, @5, @11];
     id result = [target mk_match:^BOOL(id item) {
-        return [item MK_isEven];
+        return [item mk_isEven];
     }];
     
     assertThat(result, nilValue());
@@ -77,7 +77,7 @@
 - (void)test_reject {
     id target = @[@1, @2, @4, @11, @14];
     id result = [target mk_reject:^BOOL(id item) {
-        return [item MK_isEven];
+        return [item mk_isEven];
     }];
     
     assertThat(result, hasCountOf(2));
@@ -102,7 +102,7 @@
 - (void)test_none_returns_true {
     id target = @[@1, @3, @5, @11];
     BOOL result = [target mk_none:^BOOL(id item) {
-        return [item MK_isEven];
+        return [item mk_isEven];
     }];
     
     assertThatBool(result, equalToBool(YES));
@@ -111,7 +111,7 @@
 - (void)test_none_returns_false {
     id target = @[@1, @4, @5, @11];
     BOOL result = [target mk_none:^BOOL(id item) {
-        return [item MK_isEven];
+        return [item mk_isEven];
     }];
     
     assertThatBool(result, equalToBool(NO));
