@@ -1,9 +1,9 @@
 # MKFoundationKit
 
 [![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)](https://github.com/michalkonturek/MKFoundationKit/blob/master/LICENSE)
-[![Build Platform](https://cocoapod-badges.herokuapp.com/p/MKFoundation/badge.png)](https://github.com/michalkonturek/MKFoundationKit)
-[![Build Version](https://cocoapod-badges.herokuapp.com/v/MKFoundation/badge.png)](https://github.com/michalkonturek/MKFoundationKit)
-[![Build Status](https://travis-ci.org/michalkonturek/MKFoundation.png?branch=master)](https://travis-ci.org/michalkonturek/MKFoundationKit)
+[![Build Platform](https://cocoapod-badges.herokuapp.com/p/MKFoundationKit/badge.png)](https://github.com/michalkonturek/MKFoundationKit)
+[![Build Version](https://cocoapod-badges.herokuapp.com/v/MKFoundationKit/badge.png)](https://github.com/michalkonturek/MKFoundationKit)
+[![Build Status](https://travis-ci.org/michalkonturek/MKFoundationKit.png?branch=master)](https://travis-ci.org/michalkonturek/MKFoundationKit)
 
 
 MKFoundationKit is a collection of categories for `NSFoundation` classes to accelerate development. 
@@ -223,7 +223,6 @@ Source code of this project is available under the standard MIT license. Please 
 - - - 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/michalkonturek/mkfoundationkit/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
 
 
 
