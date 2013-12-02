@@ -10,73 +10,73 @@
 
 @implementation NSDate (MK_Comparison)
 
-- (BOOL)MK_isToday {
-    return [self MK_isEqualToDateIgnoringTime:[NSDate date]];
+- (BOOL)mk_isToday {
+    return [self mk_isEqualToDateIgnoringTime:[NSDate date]];
 }
 
-- (BOOL)MK_isTomorrow {
-    return [self MK_isEqualToDateIgnoringTime:[NSDate MK_dateTomorrow]];
+- (BOOL)mk_isTomorrow {
+    return [self mk_isEqualToDateIgnoringTime:[NSDate mk_dateTomorrow]];
 }
 
-- (BOOL)MK_isYesterday {
-    return [self MK_isEqualToDateIgnoringTime:[NSDate MK_dateYesterday]];
+- (BOOL)mk_isYesterday {
+    return [self mk_isEqualToDateIgnoringTime:[NSDate mk_dateYesterday]];
 }
 
-- (BOOL)MK_isThisWeek {
-    return [self MK_isSameWeekAsDate:[NSDate date]];
+- (BOOL)mk_isThisWeek {
+    return [self mk_isSameWeekAsDate:[NSDate date]];
 }
 
-- (BOOL)MK_isNextWeek {
-    return [self MK_isSameWeekAsDate:[[NSDate date] MK_dateByAddingWeeks:1]];
+- (BOOL)mk_isNextWeek {
+    return [self mk_isSameWeekAsDate:[[NSDate date] mk_dateByAddingWeeks:1]];
 }
 
-- (BOOL)MK_isLastWeek {
-    return [self MK_isSameWeekAsDate:[[NSDate date] MK_dateBySubtractingWeeks:1]];
+- (BOOL)mk_isLastWeek {
+    return [self mk_isSameWeekAsDate:[[NSDate date] mk_dateBySubtractingWeeks:1]];
 }
 
-- (BOOL)MK_isSameWeekAsDate:(NSDate *)other {
+- (BOOL)mk_isSameWeekAsDate:(NSDate *)other {
     
     /*
      NOTE: Depending on localization, week starts on Monday or Sunday.
      */
     
-    NSDateComponents *components1 = [self MK_components];
-    NSDateComponents *components2 = [other MK_components];
+    NSDateComponents *components1 = [self mk_components];
+    NSDateComponents *components2 = [other mk_components];
     
     return (([components1 year] == [components2 year]) &&
             ([components1 week] == [components2 week]));
 }
 
-- (BOOL)MK_isThisYear {
-    return [self MK_isSameYearAsDate:[NSDate date]];
+- (BOOL)mk_isThisYear {
+    return [self mk_isSameYearAsDate:[NSDate date]];
 }
 
-- (BOOL)MK_isNextYear {
-    return [self MK_isSameYearAsDate:[[NSDate date] MK_dateByAddingYears:1]];
+- (BOOL)mk_isNextYear {
+    return [self mk_isSameYearAsDate:[[NSDate date] mk_dateByAddingYears:1]];
 }
 
-- (BOOL)MK_isLastYear {
-    return [self MK_isSameYearAsDate:[[NSDate date] MK_dateBySubtractingYears:1]];
+- (BOOL)mk_isLastYear {
+    return [self mk_isSameYearAsDate:[[NSDate date] mk_dateBySubtractingYears:1]];
 }
 
-- (BOOL)MK_isSameYearAsDate:(NSDate *)other {
-    NSDateComponents *components1 = [self MK_components];
-    NSDateComponents *components2 = [other MK_components];
+- (BOOL)mk_isSameYearAsDate:(NSDate *)other {
+    NSDateComponents *components1 = [self mk_components];
+    NSDateComponents *components2 = [other mk_components];
     
     return ([components1 year] == [components2 year]);
 }
 
-- (BOOL)MK_isEarlierThanDate:(NSDate *)other {
+- (BOOL)mk_isEarlierThanDate:(NSDate *)other {
     return ([self compare:other] == NSOrderedAscending);
 }
 
-- (BOOL)MK_isLaterThanDate:(NSDate *)other {
+- (BOOL)mk_isLaterThanDate:(NSDate *)other {
     return ([self compare:other] == NSOrderedDescending);
 }
 
-- (BOOL)MK_isEqualToDateIgnoringTime:(NSDate *)other {
-    NSDateComponents *components1 = [self MK_components];
-    NSDateComponents *components2 = [other MK_components];
+- (BOOL)mk_isEqualToDateIgnoringTime:(NSDate *)other {
+    NSDateComponents *components1 = [self mk_components];
+    NSDateComponents *components2 = [other mk_components];
     
     return (([components1 year] == [components2 year]) &&
             ([components1 month] == [components2 month]) &&

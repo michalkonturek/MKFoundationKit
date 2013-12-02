@@ -10,34 +10,34 @@
 
 @implementation NSDate (MK_Creation)
 
-+ (NSDate *)MK_dateTomorrow {
-    return [[NSDate date] MK_dateByAddingDays:1];
++ (NSDate *)mk_dateTomorrow {
+    return [[NSDate date] mk_dateByAddingDays:1];
 }
 
-+ (NSDate *)MK_dateYesterday {
-    return [[NSDate date] MK_dateBySubtractingDays:1];
++ (NSDate *)mk_dateYesterday {
+    return [[NSDate date] mk_dateBySubtractingDays:1];
 }
 
-+ (NSDate *)MK_dateWithoutTime {
-    return [[NSDate date] MK_dateWithoutTime];
++ (NSDate *)mk_dateWithoutTime {
+    return [[NSDate date] mk_dateWithoutTime];
 }
 
-+ (NSDate *)MK_dateWithDaysFromNow:(NSInteger)days {
-    return [[NSDate date] MK_dateByAddingDays:days];
++ (NSDate *)mk_dateWithDaysFromNow:(NSInteger)days {
+    return [[NSDate date] mk_dateByAddingDays:days];
 }
 
-+ (NSDate *)MK_dateFromString:(NSString *)string {
-    return [self MK_dateFromString:string withFormat:[NSDate MK_dateFormatDDMMYYYYDashed]];
++ (NSDate *)mk_dateFromString:(NSString *)string {
+    return [self mk_dateFromString:string withFormat:[NSDate mk_dateFormatDDMMYYYYDashed]];
 }
 
-+ (NSDate *)MK_dateFromString:(NSString *)string withFormat:(NSString *)format {
++ (NSDate *)mk_dateFromString:(NSString *)string withFormat:(NSString *)format {
     
     if ((NSNull *)string == [NSNull null] || string == nil) {
         return nil;
     }
     
     if (format == nil) {
-        format = [NSDate MK_dateFormatDDMMYYYYDashed];
+        format = [NSDate mk_dateFormatDDMMYYYYDashed];
     }
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
@@ -47,11 +47,11 @@
     return result;
 }
 
-- (NSDate *)MK_dateWithoutTime {
-    NSString *formattedString = [self MK_formattedString];
+- (NSDate *)mk_dateWithoutTime {
+    NSString *formattedString = [self mk_formattedString];
 
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:[NSDate MK_dateFormatDDMMYYYYDashed]];
+    [formatter setDateFormat:[NSDate mk_dateFormatDDMMYYYYDashed]];
     NSDate *result = [formatter dateFromString:formattedString];
     
     return result;
