@@ -49,32 +49,32 @@
 
 @implementation NSString (MK_Base64)
 
-+ (NSString *)MK_stringWithBase64EncodedString:(NSString *)string {
-    NSData *data = [NSData MK_dataWithBase64EncodedString:string];
++ (NSString *)mk_stringWithBase64EncodedString:(NSString *)string {
+    NSData *data = [NSData mk_dataWithBase64EncodedString:string];
     if (!data) return nil;
     
     return [[self alloc] initWithData:data encoding:NSUTF8StringEncoding];
 }
 
-- (NSString *)MK_base64DecodedString {
-    return [NSString MK_stringWithBase64EncodedString:self];
+- (NSString *)mk_base64DecodedString {
+    return [NSString mk_stringWithBase64EncodedString:self];
 }
 
-- (NSString *)MK_base64EncodedString {
+- (NSString *)mk_base64EncodedString {
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
-    return [data MK_base64EncodedString];
+    return [data mk_base64EncodedString];
 }
 
-- (NSString *)MK_base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth {
+- (NSString *)mk_base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth {
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
-    return [data MK_base64EncodedStringWithWrapWidth:wrapWidth];
+    return [data mk_base64EncodedStringWithWrapWidth:wrapWidth];
 }
 
-- (NSData *)MK_base64DecodedData {
-    return [NSData MK_dataWithBase64EncodedString:self];
+- (NSData *)mk_base64DecodedData {
+    return [NSData mk_dataWithBase64EncodedString:self];
 }
 
-- (NSData *)MK_base64EncodedData {
+- (NSData *)mk_base64EncodedData {
     return [self dataUsingEncoding:NSUTF8StringEncoding];
 }
 

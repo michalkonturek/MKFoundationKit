@@ -29,6 +29,9 @@
 		90382F8C181AFF1600A924D3 /* NSString+MK_UUID_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90382F8B181AFF1600A924D3 /* NSString+MK_UUID_Tests.m */; };
 		905AC43E182DA1E80047B2F7 /* NSDate+MK_Comparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 905AC43D182DA1E80047B2F7 /* NSDate+MK_Comparison.m */; };
 		905AC440182DA3C30047B2F7 /* NSDate+MK_Comparison_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 905AC43F182DA3C30047B2F7 /* NSDate+MK_Comparison_Tests.m */; };
+		905C747B184C9B3900A49630 /* NSObject+MK_AutoDescribe.m in Sources */ = {isa = PBXBuildFile; fileRef = 905C747A184C9B3900A49630 /* NSObject+MK_AutoDescribe.m */; };
+		905C7483184C9C0B00A49630 /* NSObject+MK_AutoDescribe_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 905C7480184C9C0B00A49630 /* NSObject+MK_AutoDescribe_Tests.m */; };
+		905C7484184C9C0B00A49630 /* TestDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 905C7482184C9C0B00A49630 /* TestDummy.m */; };
 		905F7C9D1816DCE000D0E780 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 905F7C851816DCE000D0E780 /* .gitkeep */; };
 		905F7C9F1816DCE000D0E780 /* NSDictionary+MK_Misc.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F7C891816DCE000D0E780 /* NSDictionary+MK_Misc.m */; };
 		905F7CA01816DCE000D0E780 /* NSNumber+MK_Comparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F7C8D1816DCE000D0E780 /* NSNumber+MK_Comparison.m */; };
@@ -66,7 +69,6 @@
 		90B244F1181C77C8007EE48E /* NSData+MK_Base64_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B244F0181C77C8007EE48E /* NSData+MK_Base64_Tests.m */; };
 		90B244F3181C77D6007EE48E /* NSString+MK_Base64_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B244F2181C77D6007EE48E /* NSString+MK_Base64_Tests.m */; };
 		90B244F9181C77FC007EE48E /* NSString+MK_Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B244F8181C77FC007EE48E /* NSString+MK_Base64.m */; };
-		90B244FC181C783B007EE48E /* NSData+MK.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B244FB181C783B007EE48E /* NSData+MK.m */; };
 		90C6171E1827DA98009EEFD3 /* NSString+MK_Misc.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C6171D1827DA98009EEFD3 /* NSString+MK_Misc.m */; };
 		90C617201827DAC0009EEFD3 /* NSString+MK_Misc_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C6171F1827DAC0009EEFD3 /* NSString+MK_Misc_Tests.m */; };
 		90C686AE182FE2B30009DF62 /* NSArray+MK_Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C686AD182FE2B30009DF62 /* NSArray+MK_Block.m */; };
@@ -128,6 +130,12 @@
 		905AC43C182DA1E80047B2F7 /* NSDate+MK_Comparison.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MK_Comparison.h"; sourceTree = "<group>"; };
 		905AC43D182DA1E80047B2F7 /* NSDate+MK_Comparison.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MK_Comparison.m"; sourceTree = "<group>"; };
 		905AC43F182DA3C30047B2F7 /* NSDate+MK_Comparison_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MK_Comparison_Tests.m"; sourceTree = "<group>"; };
+		905C7479184C9B3900A49630 /* NSObject+MK_AutoDescribe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MK_AutoDescribe.h"; sourceTree = "<group>"; };
+		905C747A184C9B3900A49630 /* NSObject+MK_AutoDescribe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MK_AutoDescribe.m"; sourceTree = "<group>"; };
+		905C747C184C9B8000A49630 /* NSObject+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MK.h"; sourceTree = "<group>"; };
+		905C7480184C9C0B00A49630 /* NSObject+MK_AutoDescribe_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MK_AutoDescribe_Tests.m"; sourceTree = "<group>"; };
+		905C7481184C9C0B00A49630 /* TestDummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDummy.h; sourceTree = "<group>"; };
+		905C7482184C9C0B00A49630 /* TestDummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDummy.m; sourceTree = "<group>"; };
 		905F7C7D1816DCE000D0E780 /* MKLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKLog.h; sourceTree = "<group>"; };
 		905F7C7E1816DCE000D0E780 /* MKMacro_Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMacro_Method.h; sourceTree = "<group>"; };
 		905F7C821816DCE000D0E780 /* NSDate+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MK.h"; sourceTree = "<group>"; };
@@ -193,7 +201,6 @@
 		90B244F7181C77FC007EE48E /* NSString+MK_Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MK_Base64.h"; sourceTree = "<group>"; };
 		90B244F8181C77FC007EE48E /* NSString+MK_Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_Base64.m"; sourceTree = "<group>"; };
 		90B244FA181C783B007EE48E /* NSData+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MK.h"; sourceTree = "<group>"; };
-		90B244FB181C783B007EE48E /* NSData+MK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MK.m"; sourceTree = "<group>"; };
 		90C6171C1827DA98009EEFD3 /* NSString+MK_Misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MK_Misc.h"; sourceTree = "<group>"; };
 		90C6171D1827DA98009EEFD3 /* NSString+MK_Misc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_Misc.m"; sourceTree = "<group>"; };
 		90C6171F1827DAC0009EEFD3 /* NSString+MK_Misc_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_Misc_Tests.m"; sourceTree = "<group>"; };
@@ -310,19 +317,40 @@
 			path = "NSArray+MK";
 			sourceTree = "<group>";
 		};
+		905C7478184C9B3900A49630 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				905C747C184C9B8000A49630 /* NSObject+MK.h */,
+				905C7479184C9B3900A49630 /* NSObject+MK_AutoDescribe.h */,
+				905C747A184C9B3900A49630 /* NSObject+MK_AutoDescribe.m */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		905C747F184C9C0B00A49630 /* NSObject+MK */ = {
+			isa = PBXGroup;
+			children = (
+				905C7480184C9C0B00A49630 /* NSObject+MK_AutoDescribe_Tests.m */,
+				905C7481184C9C0B00A49630 /* TestDummy.h */,
+				905C7482184C9C0B00A49630 /* TestDummy.m */,
+			);
+			path = "NSObject+MK";
+			sourceTree = "<group>";
+		};
 		905F7C7B1816DCE000D0E780 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				905F7CA71816DFC900D0E780 /* MKFoundation.h */,
 				905F7C7C1816DCE000D0E780 /* Macros */,
-				90B244EB181C7748007EE48E /* NSData */,
 				905F7C7F1816DCE000D0E780 /* NSArray */,
+				90B244EB181C7748007EE48E /* NSData */,
 				905F7C811816DCE000D0E780 /* NSDate */,
 				905F7C841816DCE000D0E780 /* NSDecimalNumber */,
 				905F7C861816DCE000D0E780 /* NSDictionary */,
 				905F7C8A1816DCE000D0E780 /* NSNumber */,
+				905C7478184C9B3900A49630 /* NSObject */,
 				90F76B5B1831A10100757308 /* NSSet */,
 				905F7C981816DCE000D0E780 /* NSString */,
-				905F7CA71816DFC900D0E780 /* MKFoundation.h */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -462,6 +490,7 @@
 				90AB7F5E181834C40070D745 /* NSDate+MK */,
 				90AB7F5F181834C40070D745 /* NSDictionary+MK */,
 				90AB7F60181834C40070D745 /* NSNumber+MK */,
+				905C747F184C9C0B00A49630 /* NSObject+MK */,
 				90F76B621832246300757308 /* NSSet+MK */,
 				906E75D1181838E9008516E1 /* NSString+MK */,
 				90AB7F4E181832C50070D745 /* Supporting Files */,
@@ -518,7 +547,6 @@
 			isa = PBXGroup;
 			children = (
 				90B244FA181C783B007EE48E /* NSData+MK.h */,
-				90B244FB181C783B007EE48E /* NSData+MK.m */,
 				90B244EC181C7767007EE48E /* NSData+MK_Base64.h */,
 				90B244ED181C7767007EE48E /* NSData+MK_Base64.m */,
 			);
@@ -718,7 +746,6 @@
 				90B244EE181C7767007EE48E /* NSData+MK_Base64.m in Sources */,
 				90382F80181AD2AA00A924D3 /* NSMutableArray+MK_Misc.m in Sources */,
 				905F7CA01816DCE000D0E780 /* NSNumber+MK_Comparison.m in Sources */,
-				90B244FC181C783B007EE48E /* NSData+MK.m in Sources */,
 				90B244F9181C77FC007EE48E /* NSString+MK_Base64.m in Sources */,
 				90F76B5718319E2700757308 /* NSDictionary+MK_Block.m in Sources */,
 				901AE4F618355EB700A7EBAD /* NSMutableArray+MK_Queue.m in Sources */,
@@ -740,6 +767,7 @@
 				905F7CA21816DCE000D0E780 /* NSNumber+MK_Fraction.m in Sources */,
 				90AB7F341816E16C0070D745 /* NSString+MK_Validation.m in Sources */,
 				90C6171E1827DA98009EEFD3 /* NSString+MK_Misc.m in Sources */,
+				905C747B184C9B3900A49630 /* NSObject+MK_AutoDescribe.m in Sources */,
 				90C686AE182FE2B30009DF62 /* NSArray+MK_Block.m in Sources */,
 				905F7C9F1816DCE000D0E780 /* NSDictionary+MK_Misc.m in Sources */,
 				901F14821816C927002333D7 /* main.m in Sources */,
@@ -752,8 +780,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				905C7484184C9C0B00A49630 /* TestDummy.m in Sources */,
 				90AB7F65181834C40070D745 /* NSNumber+MK_Creation_Tests.m in Sources */,
 				903183C7181949DE0065016F /* NSDate+MK_Creation_Tests.m in Sources */,
+				905C7483184C9C0B00A49630 /* NSObject+MK_AutoDescribe_Tests.m in Sources */,
 				90C686B3182FEFEE0009DF62 /* NSArray+MK_Block_Tests.m in Sources */,
 				90AB7F67181834C40070D745 /* NSNumber+MK_Comparison_Tests.m in Sources */,
 				906E75D318183BBB008516E1 /* NSNumber+MK_Fraction_Tests.m in Sources */,

@@ -28,14 +28,14 @@
 
 - (void)test_renameKeysUsingMapping {
     id mapping = @{@"A": @1, @"B": @2, @"C": @3};
-    id result = [self.input MK_renameKeysUsingMapping:mapping];
+    id result = [self.input mk_renameKeysUsingMapping:mapping];
     
     assertThat([result allKeys], containsInAnyOrder(@1, @2, @3, @"D", nil));
 }
 
 - (void)test_dictionaryWithKeys {
     id keys = @[@"A", @"B"];
-    id result = [self.input MK_dictionaryWithKeys:keys];
+    id result = [self.input mk_dictionaryWithKeys:keys];
     
     assertThat(result, hasCountOf([keys count]));
     
@@ -48,18 +48,18 @@
 
 - (void)test_dictionaryWithKeys_returns_empty_when_no_keys {
     id keys = @[];
-    id result = [self.input MK_dictionaryWithKeys:keys];
+    id result = [self.input mk_dictionaryWithKeys:keys];
     
     assertThat(result, hasCountOf([keys count]));
 }
 
 - (void)test_isEmpty_returns_true {
-    BOOL result = [[NSDictionary dictionary] MK_isEmpty];
+    BOOL result = [[NSDictionary dictionary] mk_isEmpty];
     assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_isEmpty_returns_false {
-    BOOL result = [self.input MK_isEmpty];
+    BOOL result = [self.input mk_isEmpty];
     assertThatBool(result, equalToBool(NO));
 }
 

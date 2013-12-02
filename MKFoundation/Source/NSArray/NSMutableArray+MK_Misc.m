@@ -10,7 +10,7 @@
 
 @implementation NSMutableArray (MK_Misc)
 
-- (void)MK_safeAddObject:(id)object {
+- (void)mk_safeAddObject:(id)object {
     if (!object) return;
     [self addObject:object];
 }

@@ -12,7 +12,7 @@
 
 @implementation NSNumber (MK_Precision)
 
-+ (NSDecimalNumberHandler *)MK_decimalNumberHandlerWithScale:(short)scale {
++ (NSDecimalNumberHandler *)mk_decimalNumberHandlerWithScale:(short)scale {
     return [NSDecimalNumberHandler
             decimalNumberHandlerWithRoundingMode:NSRoundPlain
             scale:scale
@@ -23,14 +23,14 @@
             ];
 }
 
-- (instancetype)MK_roundedAsMoney {
-    return [self MK_roundedWithPrecision:2];
+- (instancetype)mk_roundedAsMoney {
+    return [self mk_roundedWithPrecision:2];
 }
 
-- (instancetype)MK_roundedWithPrecision:(short)precision {
+- (instancetype)mk_roundedWithPrecision:(short)precision {
     NSAssert(precision >= 0, @"Precision cannot be negative.");
-    NSDecimalNumberHandler *behavior = [NSDecimalNumber MK_decimalNumberHandlerWithScale:precision];
-    return [[self MK_decimalNumber] decimalNumberByRoundingAccordingToBehavior:behavior];
+    NSDecimalNumberHandler *behavior = [NSDecimalNumber mk_decimalNumberHandlerWithScale:precision];
+    return [[self mk_decimalNumber] decimalNumberByRoundingAccordingToBehavior:behavior];
 }
 
 @end

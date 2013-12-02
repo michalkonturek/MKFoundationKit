@@ -16,59 +16,59 @@
  tests, the legacy typedef ENUM must be used.
  */
 
-- (NSDate *)MK_dateByAddingDays:(NSInteger)days {
+- (NSDate *)mk_dateByAddingDays:(NSInteger)days {
     return [self _dateByAdding:days ofUnit:NSDayCalendarUnit];
 }
 
-- (NSDate *)MK_dateByAddingWeeks:(NSInteger)weeks {
-    return [self MK_dateByAddingDays:(weeks * 7)];
+- (NSDate *)mk_dateByAddingWeeks:(NSInteger)weeks {
+    return [self mk_dateByAddingDays:(weeks * 7)];
 }
 
-- (NSDate *)MK_dateByAddingMonths:(NSInteger)months {
+- (NSDate *)mk_dateByAddingMonths:(NSInteger)months {
     return [self _dateByAdding:months ofUnit:NSMonthCalendarUnit];
 }
 
-- (NSDate *)MK_dateByAddingYears:(NSInteger)months {
+- (NSDate *)mk_dateByAddingYears:(NSInteger)months {
     return [self _dateByAdding:months ofUnit:NSYearCalendarUnit];
 }
 
-- (NSDate *)MK_dateByAddingHours:(NSInteger)hours {
+- (NSDate *)mk_dateByAddingHours:(NSInteger)hours {
     return [self _dateByAdding:hours ofUnit:NSHourCalendarUnit];
 }
 
-- (NSDate *)MK_dateByAddingMinutes:(NSInteger)minutes {
+- (NSDate *)mk_dateByAddingMinutes:(NSInteger)minutes {
     return [self _dateByAdding:minutes ofUnit:NSMinuteCalendarUnit];
 }
 
-- (NSDate *)MK_dateByAddingSeconds:(NSInteger)seconds {
+- (NSDate *)mk_dateByAddingSeconds:(NSInteger)seconds {
     return [self _dateByAdding:seconds ofUnit:NSSecondCalendarUnit];
 }
 
-- (NSDate *)MK_dateBySubtractingDays:(NSInteger)days {
+- (NSDate *)mk_dateBySubtractingDays:(NSInteger)days {
     return [self _dateByAdding:-days ofUnit:NSDayCalendarUnit];
 }
 
-- (NSDate *)MK_dateBySubtractingWeeks:(NSInteger)weeks {
-    return [self MK_dateByAddingDays:-(weeks * 7)];
+- (NSDate *)mk_dateBySubtractingWeeks:(NSInteger)weeks {
+    return [self mk_dateByAddingDays:-(weeks * 7)];
 }
 
-- (NSDate *)MK_dateBySubtractingMonths:(NSInteger)months {
+- (NSDate *)mk_dateBySubtractingMonths:(NSInteger)months {
     return [self _dateByAdding:-months ofUnit:NSMonthCalendarUnit];
 }
 
-- (NSDate *)MK_dateBySubtractingYears:(NSInteger)years {
+- (NSDate *)mk_dateBySubtractingYears:(NSInteger)years {
     return [self _dateByAdding:-years ofUnit:NSYearCalendarUnit];
 }
 
-- (NSDate *)MK_dateBySubtractingHours:(NSInteger)hours {
+- (NSDate *)mk_dateBySubtractingHours:(NSInteger)hours {
     return [self _dateByAdding:-hours ofUnit:NSHourCalendarUnit];
 }
 
-- (NSDate *)MK_dateBySubtractingMinutes:(NSInteger)minutes {
+- (NSDate *)mk_dateBySubtractingMinutes:(NSInteger)minutes {
     return [self _dateByAdding:-minutes ofUnit:NSMinuteCalendarUnit];
 }
 
-- (NSDate *)MK_dateBySubtractingSeconds:(NSInteger)seconds {
+- (NSDate *)mk_dateBySubtractingSeconds:(NSInteger)seconds {
     return [self _dateByAdding:-seconds ofUnit:NSSecondCalendarUnit];
 }
 
@@ -103,15 +103,15 @@
     return date;
 }
 
-- (NSInteger)MK_differenceInDaysToDate:(NSDate *)toDate {
+- (NSInteger)mk_differenceInDaysToDate:(NSDate *)toDate {
     return [self _differenceInUnit:NSDayCalendarUnit toDate:toDate];
 }
 
-- (NSInteger)MK_differenceInMonthsToDate:(NSDate *)toDate {
+- (NSInteger)mk_differenceInMonthsToDate:(NSDate *)toDate {
     return [self _differenceInUnit:NSMonthCalendarUnit toDate:toDate];
 }
 
-- (NSInteger)MK_differenceInYearsToDate:(NSDate *)toDate {
+- (NSInteger)mk_differenceInYearsToDate:(NSDate *)toDate {
     return [self _differenceInUnit:NSYearCalendarUnit toDate:toDate];
 }
 

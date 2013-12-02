@@ -41,7 +41,7 @@
 
 - (void)test_each {
     __block id result = [NSMutableArray array];
-    [self.input MK_each:^(id item) {
+    [self.input mk_each:^(id item) {
         [result addObject:item];
     }];
     
@@ -50,8 +50,8 @@
 }
 
 - (void)test_map {
-    id result = [self.input MK_map:^id(id item) {
-        return [item MK_multiplyBy:@2];
+    id result = [self.input mk_map:^id(id item) {
+        return [item mk_multiplyBy:@2];
     }];
     
     assertThat(result, hasCountOf(4));
@@ -59,8 +59,8 @@
 }
 
 - (void)test_match_returns {
-    id result = [self.input MK_match:^BOOL(id key, id value) {
-        return [value MK_isEven];
+    id result = [self.input mk_match:^BOOL(id key, id value) {
+        return [value mk_isEven];
     }];
     
     assertThat(result, equalTo(@2));
@@ -68,8 +68,8 @@
 
 - (void)test_match_returns_nil {
     NSDictionary *target = @{@0: @1, @1: @3, @2: @5, @3: @11};
-    id result = [target MK_match:^BOOL(id key, id value) {
-        return [value MK_isEven];
+    id result = [target mk_match:^BOOL(id key, id value) {
+        return [value mk_isEven];
     }];
     
     assertThat(result, nilValue());
@@ -77,7 +77,7 @@
 
 - (void)test_reduce {
     NSArray *input = @[@"M", @"A", @"R", @"K"];
-    NSString *result = [input MK_reduce:@"Name: " withBlock:^id(id item, id aggregate) {
+    NSString *result = [input mk_reduce:@"Name: " withBlock:^id(id item, id aggregate) {
         return [NSString stringWithFormat:@"%@%@", aggregate, item];
     }];
     
@@ -86,8 +86,8 @@
 
 - (void)test_reject {
     NSDictionary *target = @{@0: @1, @1: @2, @2: @4, @3: @11};
-    NSDictionary *result = [target MK_reject:^BOOL(id key, id value) {
-        return [value MK_isEven];
+    NSDictionary *result = [target mk_reject:^BOOL(id key, id value) {
+        return [value mk_isEven];
     }];
     
     assertThat(result, hasCountOf(2));
@@ -111,8 +111,8 @@
 
 - (void)test_none_returns_true {
     NSDictionary *target = @{@0: @1, @1: @3, @2: @5, @3: @11};
-    BOOL result = [target MK_none:^BOOL(id key, id value) {
-        return [value MK_isEven];
+    BOOL result = [target mk_none:^BOOL(id key, id value) {
+        return [value mk_isEven];
     }];
     
     assertThatBool(result, equalToBool(YES));
@@ -120,8 +120,8 @@
 
 - (void)test_none_returns_false {
     NSDictionary *target = @{@0: @1, @1: @4, @2: @5, @3: @11};
-    BOOL result = [target MK_none:^BOOL(id key, id value) {
-        return [value MK_isEven];
+    BOOL result = [target mk_none:^BOOL(id key, id value) {
+        return [value mk_isEven];
     }];
     
     assertThatBool(result, equalToBool(NO));

@@ -10,9 +10,9 @@
 
 @interface NSString (MK_Empty)
 
-+ (BOOL)MK_isStringEmptyOrNil:(NSString *)value;
++ (BOOL)mk_isStringEmptyOrNil:(NSString *)value;
 
-- (BOOL)MK_isEmpty;
-- (NSString *)MK_trimmedString;
+- (BOOL)mk_isEmpty;
+- (NSString *)mk_trimmedString;
 
 @end

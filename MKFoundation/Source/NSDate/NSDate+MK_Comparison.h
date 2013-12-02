@@ -10,23 +10,23 @@
 
 @interface NSDate (MK_Comparison)
 
-- (BOOL)MK_isToday;
-- (BOOL)MK_isTomorrow;
-- (BOOL)MK_isYesterday;
+- (BOOL)mk_isToday;
+- (BOOL)mk_isTomorrow;
+- (BOOL)mk_isYesterday;
 
-- (BOOL)MK_isThisWeek;
-- (BOOL)MK_isNextWeek;
-- (BOOL)MK_isLastWeek;
-- (BOOL)MK_isSameWeekAsDate:(NSDate *)other;
+- (BOOL)mk_isThisWeek;
+- (BOOL)mk_isNextWeek;
+- (BOOL)mk_isLastWeek;
+- (BOOL)mk_isSameWeekAsDate:(NSDate *)other;
 
-- (BOOL)MK_isThisYear;
-- (BOOL)MK_isNextYear;
-- (BOOL)MK_isLastYear;
-- (BOOL)MK_isSameYearAsDate:(NSDate *)other;
+- (BOOL)mk_isThisYear;
+- (BOOL)mk_isNextYear;
+- (BOOL)mk_isLastYear;
+- (BOOL)mk_isSameYearAsDate:(NSDate *)other;
 
-- (BOOL)MK_isEarlierThanDate:(NSDate *)other;
-- (BOOL)MK_isLaterThanDate:(NSDate *)other;
+- (BOOL)mk_isEarlierThanDate:(NSDate *)other;
+- (BOOL)mk_isLaterThanDate:(NSDate *)other;
 
-- (BOOL)MK_isEqualToDateIgnoringTime:(NSDate *)other;
+- (BOOL)mk_isEqualToDateIgnoringTime:(NSDate *)other;
 
 @end

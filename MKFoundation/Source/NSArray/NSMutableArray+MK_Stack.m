@@ -10,14 +10,14 @@
 
 @implementation NSMutableArray (MK_Stack)
 
-- (void)MK_pushObject:(id)object {
+- (void)mk_pushObject:(id)object {
     [self insertObject:object atIndex:0];
 }
 
-- (id)MK_pullObject {
-    if ([self MK_isEmpty]) return nil;
+- (id)mk_pullObject {
+    if ([self mk_isEmpty]) return nil;
 
-    id firstObject = [self MK_firstObject];
+    id firstObject = [self mk_firstObject];
     [self removeObject:firstObject];
     return firstObject;
 }

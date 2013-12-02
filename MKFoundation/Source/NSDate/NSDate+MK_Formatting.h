@@ -10,18 +10,18 @@
 
 @interface NSDate (MK_Formatting)
 
-+ (NSString *)MK_dateFormatCCCCDDMMMYYYY;
-+ (NSString *)MK_dateFormatCCCCDDMMMMYYYY;
++ (NSString *)mk_dateFormatCCCCDDMMMYYYY;
++ (NSString *)mk_dateFormatCCCCDDMMMMYYYY;
 
-+ (NSString *)MK_dateFormatDDMMMYYYY;
-+ (NSString *)MK_dateFormatDDMMYYYYDashed;
-+ (NSString *)MK_dateFormatDDMMYYYYSlashed;
++ (NSString *)mk_dateFormatDDMMMYYYY;
++ (NSString *)mk_dateFormatDDMMYYYYDashed;
++ (NSString *)mk_dateFormatDDMMYYYYSlashed;
 
-+ (NSString *)MK_dateFormatDDMMMYYYYSlashed;
-+ (NSString *)MK_dateFormatMMMDDYYYY;
-+ (NSString *)MK_dateFormatYYYYMMDDDashed;
++ (NSString *)mk_dateFormatDDMMMYYYYSlashed;
++ (NSString *)mk_dateFormatMMMDDYYYY;
++ (NSString *)mk_dateFormatYYYYMMDDDashed;
 
-- (NSString *)MK_formattedString;
-- (NSString *)MK_formattedStringUsingFormat:(NSString *)dateFormat;
+- (NSString *)mk_formattedString;
+- (NSString *)mk_formattedStringUsingFormat:(NSString *)dateFormat;
 
 @end

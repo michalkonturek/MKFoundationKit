@@ -10,7 +10,7 @@
 
 @implementation NSMutableDictionary (MK_Misc)
 
-- (void)MK_safeSetObject:(id)object forKey:(id)key {
+- (void)mk_safeSetObject:(id)object forKey:(id)key {
     if (!key || !object) return;
     [self setObject:object forKey:key];
 }

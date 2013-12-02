@@ -10,14 +10,14 @@
 
 @interface NSDate (MK_Creation)
 
-+ (NSDate *)MK_dateTomorrow;
-+ (NSDate *)MK_dateYesterday;
++ (NSDate *)mk_dateTomorrow;
++ (NSDate *)mk_dateYesterday;
 
-+ (NSDate *)MK_dateWithoutTime;
-+ (NSDate *)MK_dateWithDaysFromNow:(NSInteger)days;
-+ (NSDate *)MK_dateFromString:(NSString *)string;
-+ (NSDate *)MK_dateFromString:(NSString *)string withFormat:(NSString *)format;
++ (NSDate *)mk_dateWithoutTime;
++ (NSDate *)mk_dateWithDaysFromNow:(NSInteger)days;
++ (NSDate *)mk_dateFromString:(NSString *)string;
++ (NSDate *)mk_dateFromString:(NSString *)string withFormat:(NSString *)format;
 
-- (NSDate *)MK_dateWithoutTime;
+- (NSDate *)mk_dateWithoutTime;
 
 @end

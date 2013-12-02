@@ -16,29 +16,29 @@
 
 - (void)test_dateTomorrow {
     NSDate *today = [NSDate date];
-    NSDate *tomorrow = [NSDate MK_dateTomorrow];
-    NSInteger result = [today MK_differenceInDaysToDate:tomorrow];
+    NSDate *tomorrow = [NSDate mk_dateTomorrow];
+    NSInteger result = [today mk_differenceInDaysToDate:tomorrow];
     assertThatInteger(result, equalToInteger(1));
 }
 
 - (void)test_dateYesterday {
     NSDate *today = [NSDate date];
-    NSDate *yesterday = [[NSDate MK_dateYesterday] MK_dateWithoutTime];
-    NSInteger result = [today MK_differenceInDaysToDate:yesterday];
+    NSDate *yesterday = [[NSDate mk_dateYesterday] mk_dateWithoutTime];
+    NSInteger result = [today mk_differenceInDaysToDate:yesterday];
     assertThatInteger(result, equalToInteger(-1));
 }
 
 - (void)test_dateWithoutTime {
-    NSDate *date = [NSDate MK_dateWithoutTime];
-    id result = [date MK_formattedStringUsingFormat:@"HH:mm"];
+    NSDate *date = [NSDate mk_dateWithoutTime];
+    id result = [date mk_formattedStringUsingFormat:@"HH:mm"];
     assertThat(result, equalTo(@"00:00"));
 }
 
 - (void)test_dateFromStringWithFormat {
     id string = @"2012-04-01";
-    id date = [NSDate MK_dateFromString:string withFormat:[NSDate MK_dateFormatYYYYMMDDDashed]];
+    id date = [NSDate mk_dateFromString:string withFormat:[NSDate mk_dateFormatYYYYMMDDDashed]];
     
-    id result = [date MK_formattedStringUsingFormat:[NSDate MK_dateFormatYYYYMMDDDashed]];
+    id result = [date mk_formattedStringUsingFormat:[NSDate mk_dateFormatYYYYMMDDDashed]];
     assertThat(result, equalTo(string));
 }
 

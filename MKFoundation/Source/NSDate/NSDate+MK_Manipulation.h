@@ -10,26 +10,26 @@
 
 @interface NSDate (MK_Manipulation)
 
-- (NSDate *)MK_dateByAddingDays:(NSInteger)days;
-- (NSDate *)MK_dateByAddingWeeks:(NSInteger)weeks;
-- (NSDate *)MK_dateByAddingMonths:(NSInteger)months;
-- (NSDate *)MK_dateByAddingYears:(NSInteger)years;
+- (NSDate *)mk_dateByAddingDays:(NSInteger)days;
+- (NSDate *)mk_dateByAddingWeeks:(NSInteger)weeks;
+- (NSDate *)mk_dateByAddingMonths:(NSInteger)months;
+- (NSDate *)mk_dateByAddingYears:(NSInteger)years;
 
-- (NSDate *)MK_dateByAddingHours:(NSInteger)hours;
-- (NSDate *)MK_dateByAddingMinutes:(NSInteger)minutes;
-- (NSDate *)MK_dateByAddingSeconds:(NSInteger)seconds;
+- (NSDate *)mk_dateByAddingHours:(NSInteger)hours;
+- (NSDate *)mk_dateByAddingMinutes:(NSInteger)minutes;
+- (NSDate *)mk_dateByAddingSeconds:(NSInteger)seconds;
 
-- (NSDate *)MK_dateBySubtractingDays:(NSInteger)days;
-- (NSDate *)MK_dateBySubtractingWeeks:(NSInteger)weeks;
-- (NSDate *)MK_dateBySubtractingMonths:(NSInteger)months;
-- (NSDate *)MK_dateBySubtractingYears:(NSInteger)years;
+- (NSDate *)mk_dateBySubtractingDays:(NSInteger)days;
+- (NSDate *)mk_dateBySubtractingWeeks:(NSInteger)weeks;
+- (NSDate *)mk_dateBySubtractingMonths:(NSInteger)months;
+- (NSDate *)mk_dateBySubtractingYears:(NSInteger)years;
 
-- (NSDate *)MK_dateBySubtractingHours:(NSInteger)hours;
-- (NSDate *)MK_dateBySubtractingMinutes:(NSInteger)minutes;
-- (NSDate *)MK_dateBySubtractingSeconds:(NSInteger)seconds;
+- (NSDate *)mk_dateBySubtractingHours:(NSInteger)hours;
+- (NSDate *)mk_dateBySubtractingMinutes:(NSInteger)minutes;
+- (NSDate *)mk_dateBySubtractingSeconds:(NSInteger)seconds;
 
-- (NSInteger)MK_differenceInDaysToDate:(NSDate *)toDate;
-- (NSInteger)MK_differenceInMonthsToDate:(NSDate *)toDate;
-- (NSInteger)MK_differenceInYearsToDate:(NSDate *)toDate;
+- (NSInteger)mk_differenceInDaysToDate:(NSDate *)toDate;
+- (NSInteger)mk_differenceInMonthsToDate:(NSDate *)toDate;
+- (NSInteger)mk_differenceInYearsToDate:(NSDate *)toDate;
 
 @end
