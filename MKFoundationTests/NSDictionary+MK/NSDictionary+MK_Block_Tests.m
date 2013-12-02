@@ -41,7 +41,7 @@
 
 - (void)test_each {
     __block id result = [NSMutableArray array];
-    [self.input MK_each:^(id item) {
+    [self.input mk_each:^(id item) {
         [result addObject:item];
     }];
     
@@ -50,7 +50,7 @@
 }
 
 - (void)test_map {
-    id result = [self.input MK_map:^id(id item) {
+    id result = [self.input mk_map:^id(id item) {
         return [item MK_multiplyBy:@2];
     }];
     
@@ -59,7 +59,7 @@
 }
 
 - (void)test_match_returns {
-    id result = [self.input MK_match:^BOOL(id key, id value) {
+    id result = [self.input mk_match:^BOOL(id key, id value) {
         return [value MK_isEven];
     }];
     
@@ -68,7 +68,7 @@
 
 - (void)test_match_returns_nil {
     NSDictionary *target = @{@0: @1, @1: @3, @2: @5, @3: @11};
-    id result = [target MK_match:^BOOL(id key, id value) {
+    id result = [target mk_match:^BOOL(id key, id value) {
         return [value MK_isEven];
     }];
     
@@ -86,7 +86,7 @@
 
 - (void)test_reject {
     NSDictionary *target = @{@0: @1, @1: @2, @2: @4, @3: @11};
-    NSDictionary *result = [target MK_reject:^BOOL(id key, id value) {
+    NSDictionary *result = [target mk_reject:^BOOL(id key, id value) {
         return [value MK_isEven];
     }];
     
@@ -111,7 +111,7 @@
 
 - (void)test_none_returns_true {
     NSDictionary *target = @{@0: @1, @1: @3, @2: @5, @3: @11};
-    BOOL result = [target MK_none:^BOOL(id key, id value) {
+    BOOL result = [target mk_none:^BOOL(id key, id value) {
         return [value MK_isEven];
     }];
     
@@ -120,7 +120,7 @@
 
 - (void)test_none_returns_false {
     NSDictionary *target = @{@0: @1, @1: @4, @2: @5, @3: @11};
-    BOOL result = [target MK_none:^BOOL(id key, id value) {
+    BOOL result = [target mk_none:^BOOL(id key, id value) {
         return [value MK_isEven];
     }];
     

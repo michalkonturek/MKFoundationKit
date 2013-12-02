@@ -10,24 +10,24 @@
 
 @interface NSDictionary (MK_Block)
 
-- (void)MK_apply:(MKItemBlock)block;
+- (void)mk_apply:(MKItemBlock)block;
 
-- (void)MK_each:(MKItemBlock)block;
+- (void)mk_each:(MKItemBlock)block;
 
-- (instancetype)MK_map:(LINQSelectorBlock)selectorBlock;
+- (instancetype)mk_map:(LINQSelectorBlock)selectorBlock;
 
-- (id)MK_match:(LINQKeyValueConditionBlock)conditionBlock;
+- (id)mk_match:(LINQKeyValueConditionBlock)conditionBlock;
 
-- (id)MK_reduce:(id)initial withBlock:(LINQAccumulatorBlock)accumulatorBlock;
+- (id)mk_reduce:(id)initial withBlock:(LINQAccumulatorBlock)accumulatorBlock;
 
-- (instancetype)MK_reject:(LINQKeyValueConditionBlock)conditionBlock;
+- (instancetype)mk_reject:(LINQKeyValueConditionBlock)conditionBlock;
 
-- (instancetype)MK_select:(LINQKeyValueConditionBlock)conditionBlock;
+- (instancetype)mk_select:(LINQKeyValueConditionBlock)conditionBlock;
 
-- (BOOL)MK_all:(LINQKeyValueConditionBlock)conditionBlock;
+- (BOOL)mk_all:(LINQKeyValueConditionBlock)conditionBlock;
 
-- (BOOL)MK_any:(LINQKeyValueConditionBlock)conditionBlock;
+- (BOOL)mk_any:(LINQKeyValueConditionBlock)conditionBlock;
 
-- (BOOL)MK_none:(LINQKeyValueConditionBlock)conditionBlock;
+- (BOOL)mk_none:(LINQKeyValueConditionBlock)conditionBlock;
 
 @end
