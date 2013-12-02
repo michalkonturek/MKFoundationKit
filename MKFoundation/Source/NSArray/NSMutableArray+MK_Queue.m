@@ -10,14 +10,14 @@
 
 @implementation NSMutableArray (MK_Queue)
 
-- (void)MK_enqueueObject:(id)object {
+- (void)mk_enqueueObject:(id)object {
     [self addObject:object];
 }
 
-- (id)MK_dequeueObject {
-    if ([self MK_isEmpty]) return nil;
+- (id)mk_dequeueObject {
+    if ([self mk_isEmpty]) return nil;
     
-    id lastObject = [self MK_firstObject];
+    id lastObject = [self mk_firstObject];
     [self removeObjectAtIndex:0];
     return lastObject;
 }

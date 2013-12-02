@@ -16,7 +16,7 @@
 
 - (void)test_safeAddObject {
     NSMutableArray *result = [NSMutableArray LINQ_empty];
-    [result MK_safeAddObject:nil];
+    [result mk_safeAddObject:nil];
     assertThat(result, hasCountOf(0));
 }
 

@@ -10,7 +10,7 @@
 
 @interface NSMutableArray (MK_Stack)
 
-- (void)MK_pushObject:(id)object;
-- (id)MK_pullObject;
+- (void)mk_pushObject:(id)object;
+- (id)mk_pullObject;
 
 @end

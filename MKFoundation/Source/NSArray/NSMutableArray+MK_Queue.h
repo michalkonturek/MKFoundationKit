@@ -10,7 +10,7 @@
 
 @interface NSMutableArray (MK_Queue)
 
-- (void)MK_enqueueObject:(id)object;
-- (id)MK_dequeueObject;
+- (void)mk_enqueueObject:(id)object;
+- (id)mk_dequeueObject;
 
 @end

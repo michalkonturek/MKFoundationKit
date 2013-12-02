@@ -28,14 +28,14 @@
 
 - (void)test_pushObject {
     id expected = @0;;
-    [self.target MK_pushObject:expected];
+    [self.target mk_pushObject:expected];
     id result = [self.target objectAtIndex:0];
     assertThat(result, sameInstance(expected));
 }
 
 - (void)test_pullObject {
     id expected = [self.target objectAtIndex:0];
-    id result = [self.target MK_pullObject];
+    id result = [self.target mk_pullObject];
     assertThat(result, sameInstance(expected));
 }
 

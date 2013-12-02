@@ -14,7 +14,7 @@
 @implementation NSDictionary (MK_Misc)
 
 - (NSMutableDictionary *)mk_dictionaryWithKeys:(NSArray *)keys {
-    if ([keys MK_isEmpty]) return [NSMutableDictionary LINQ_empty];
+    if ([keys mk_isEmpty]) return [NSMutableDictionary LINQ_empty];
     
     id result = [NSMutableDictionary dictionaryWithCapacity:[keys count]];
     for (NSString *key in keys) {
