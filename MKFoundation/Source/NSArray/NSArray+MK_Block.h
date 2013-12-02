@@ -10,24 +10,24 @@
 
 @interface NSArray (MK_Block)
 
-- (void)MK_apply:(MKItemBlock)block;
+- (void)mk_apply:(MKItemBlock)block;
 
-- (void)MK_each:(MKItemBlock)block;
+- (void)mk_each:(MKItemBlock)block;
 
-- (instancetype)MK_map:(LINQSelectorBlock)selectorBlock;
+- (instancetype)mk_map:(LINQSelectorBlock)selectorBlock;
 
-- (id)MK_match:(LINQConditionBlock)conditionBlock;
+- (id)mk_match:(LINQConditionBlock)conditionBlock;
 
-- (id)MK_reduce:(id)initial withBlock:(LINQAccumulatorBlock)accumulatorBlock;
+- (id)mk_reduce:(id)initial withBlock:(LINQAccumulatorBlock)accumulatorBlock;
 
-- (instancetype)MK_reject:(LINQConditionBlock)conditionBlock;
+- (instancetype)mk_reject:(LINQConditionBlock)conditionBlock;
 
-- (instancetype)MK_select:(LINQConditionBlock)conditionBlock;
+- (instancetype)mk_select:(LINQConditionBlock)conditionBlock;
 
-- (BOOL)MK_all:(LINQConditionBlock)conditionBlock;
+- (BOOL)mk_all:(LINQConditionBlock)conditionBlock;
 
-- (BOOL)MK_any:(LINQConditionBlock)conditionBlock;
+- (BOOL)mk_any:(LINQConditionBlock)conditionBlock;
 
-- (BOOL)MK_none:(LINQConditionBlock)conditionBlock;
+- (BOOL)mk_none:(LINQConditionBlock)conditionBlock;
 
 @end

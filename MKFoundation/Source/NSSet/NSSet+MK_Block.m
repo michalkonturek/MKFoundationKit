@@ -11,46 +11,46 @@
 @implementation NSSet (MK_Block)
 
 - (void)mk_apply:(MKItemBlock)block {
-    [[self allObjects] MK_apply:block];
+    [[self allObjects] mk_apply:block];
 }
 
 - (void)mk_each:(MKItemBlock)block {
-    [[self allObjects] MK_each:block];
+    [[self allObjects] mk_each:block];
 }
 
 - (instancetype)mk_map:(LINQSelectorBlock)selectorBlock {
-    id result = [[self allObjects] MK_map:selectorBlock];
+    id result = [[self allObjects] mk_map:selectorBlock];
     return [[self class] setWithArray:result];
 }
 
 - (id)mk_match:(LINQConditionBlock)conditionBlock {
-    return [[self allObjects] MK_match:conditionBlock];
+    return [[self allObjects] mk_match:conditionBlock];
 }
 
 - (id)mk_reduce:(id)initial withBlock:(LINQAccumulatorBlock)accumulatorBlock {
-    return [[self allObjects] MK_reduce:initial withBlock:accumulatorBlock];
+    return [[self allObjects] mk_reduce:initial withBlock:accumulatorBlock];
 }
 
 - (instancetype)mk_reject:(LINQConditionBlock)conditionBlock {
-    id result = [[self allObjects] MK_reject:conditionBlock];
+    id result = [[self allObjects] mk_reject:conditionBlock];
     return [[self class] setWithArray:result];
 }
 
 - (instancetype)mk_select:(LINQConditionBlock)conditionBlock {
-    id result = [[self allObjects] MK_select:conditionBlock];
+    id result = [[self allObjects] mk_select:conditionBlock];
     return [[self class] setWithArray:result];
 }
 
 - (BOOL)mk_all:(LINQConditionBlock)conditionBlock {
-    return [[self allObjects] MK_all:conditionBlock];
+    return [[self allObjects] mk_all:conditionBlock];
 }
 
 - (BOOL)mk_any:(LINQConditionBlock)conditionBlock {
-    return [[self allObjects] MK_any:conditionBlock];
+    return [[self allObjects] mk_any:conditionBlock];
 }
 
 - (BOOL)mk_none:(LINQConditionBlock)conditionBlock {
-    return [[self allObjects] MK_none:conditionBlock];
+    return [[self allObjects] mk_none:conditionBlock];
 }
 
 @end

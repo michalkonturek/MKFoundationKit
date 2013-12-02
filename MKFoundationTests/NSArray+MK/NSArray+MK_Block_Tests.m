@@ -67,7 +67,7 @@
 
 - (void)test_reduce {
     NSArray *input = @[@"M", @"A", @"R", @"K"];
-    NSString *result = [input MK_reduce:@"Name: " withBlock:^id(id item, id aggregate) {
+    NSString *result = [input mk_reduce:@"Name: " withBlock:^id(id item, id aggregate) {
         return [NSString stringWithFormat:@"%@%@", aggregate, item];
     }];
     
