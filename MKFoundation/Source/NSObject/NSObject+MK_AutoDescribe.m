@@ -12,11 +12,11 @@
 
 @implementation NSObject (MK_AutoDescribe)
 
-+ (NSArray *)MK_propertyList {
-    return [self MK_propertyList:[self class]];
++ (NSArray *)mk_propertyList {
+    return [self mk_propertyList:[self class]];
 }
 
-+ (NSArray *)MK_propertyList:(Class)clazz {
++ (NSArray *)mk_propertyList:(Class)clazz {
     NSUInteger count;
     objc_property_t *propertyList = class_copyPropertyList(clazz, &count);
     
@@ -36,13 +36,13 @@
     return result;
 }
 
-+ (NSArray *)MK_methodListOnly {
-    return [self MK_methodListOnly:[self class]];
++ (NSArray *)mk_methodListOnly {
+    return [self mk_methodListOnly:[self class]];
 }
 
-+ (NSArray *)MK_methodListOnly:(Class)clazz {
-    NSArray *properties = [self MK_propertyList:clazz];
-    NSArray *methods = [self MK_methodList:clazz];
++ (NSArray *)mk_methodListOnly:(Class)clazz {
+    NSArray *properties = [self mk_propertyList:clazz];
+    NSArray *methods = [self mk_methodList:clazz];
     
     NSMutableArray *result = [NSMutableArray arrayWithArray:methods];
     NSMutableArray *without = [NSMutableArray arrayWithArray:properties];
@@ -63,11 +63,11 @@
     return result;
 }
 
-+ (NSArray *)MK_methodList {
-    return [self MK_methodList:[self class]];
++ (NSArray *)mk_methodList {
+    return [self mk_methodList:[self class]];
 }
 
-+ (NSArray *)MK_methodList:(Class)clazz {
++ (NSArray *)mk_methodList:(Class)clazz {
     NSUInteger count;
     Method *methods = class_copyMethodList(clazz, &count);
     
@@ -82,16 +82,16 @@
     return results;
 }
 
-- (void)MK_printObject {
+- (void)mk_printObject {
     if ([self isKindOfClass:NSClassFromString(@"NSManagedObject")]) {
         NSLog(@"%@", [self description]);
         return;
     }
     
-    [self MK_printObjectKeys:[[self class] MK_propertyList]];
+    [self mk_printObjectKeys:[[self class] mk_propertyList]];
 }
 
-- (void)MK_printObjectKeys:(NSArray *)keys {
+- (void)mk_printObjectKeys:(NSArray *)keys {
     
     __block NSObject *blockSelf = self;
     [self _printElements:keys
@@ -102,16 +102,16 @@
               }];
 }
 
-- (void)MK_printObjectMethods {
-    [self _printElements:[[self class] MK_methodList]
+- (void)mk_printObjectMethods {
+    [self _printElements:[[self class] mk_methodList]
               withHeader:@"methods" withBlock:^(id item, id result) {
                   [result appendString:@"\n\t"];
                   [result appendString:item];
     }];
 }
 
-- (void)MK_printObjectMethodsOnly {
-    [self _printElements:[[self class] MK_methodListOnly]
+- (void)mk_printObjectMethodsOnly {
+    [self _printElements:[[self class] mk_methodListOnly]
               withHeader:@"methods only" withBlock:^(id item, id result) {
                   [result appendString:@"\n\t"];
                   [result appendString:item];
@@ -122,7 +122,7 @@
             withHeader:(NSString *)header withBlock:(void (^)(id item, id result))block {
     
     __block NSMutableString *result = [NSMutableString string];
-    [result appendString:[NSString stringWithFormat:@"\n- - - > %@ %@: ", [self MK_className], header]];
+    [result appendString:[NSString stringWithFormat:@"\n- - - > %@ %@: ", [self mk_className], header]];
     
     for (id item in elements) {
         block(item, result);
@@ -133,7 +133,7 @@
     NSLog(@"%@", result);
 }
 
-- (NSString *)MK_className {
+- (NSString *)mk_className {
     return NSStringFromClass([self class]);
 }
 

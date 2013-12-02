@@ -10,21 +10,21 @@
 
 @interface NSObject (MK_AutoDescribe)
 
-+ (NSArray *)MK_propertyList;
-+ (NSArray *)MK_propertyList:(Class)clazz;
++ (NSArray *)mk_propertyList;
++ (NSArray *)mk_propertyList:(Class)clazz;
 
-+ (NSArray *)MK_methodListOnly;
-+ (NSArray *)MK_methodListOnly:(Class)clazz;
++ (NSArray *)mk_methodListOnly;
++ (NSArray *)mk_methodListOnly:(Class)clazz;
 
-+ (NSArray *)MK_methodList;
-+ (NSArray *)MK_methodList:(Class)clazz;
++ (NSArray *)mk_methodList;
++ (NSArray *)mk_methodList:(Class)clazz;
 
-- (void)MK_printObject;
-- (void)MK_printObjectKeys:(NSArray *)keys;
+- (void)mk_printObject;
+- (void)mk_printObjectKeys:(NSArray *)keys;
 
-- (void)MK_printObjectMethods;
-- (void)MK_printObjectMethodsOnly;
+- (void)mk_printObjectMethods;
+- (void)mk_printObjectMethodsOnly;
 
-- (NSString *)MK_className;
+- (NSString *)mk_className;
 
 @end
