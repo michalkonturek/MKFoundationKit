@@ -32,7 +32,7 @@ Source code of this project is available under the standard MIT license. Please 
 * [NSString](#NSString)
 
 
-## NSArray
+## NSArray Additions
 
 ### NSArray+MK_Block
 
@@ -84,14 +84,14 @@ Source code of this project is available under the standard MIT license. Please 
 - (id)mk_pullObject;
 ```
 
-## NSData
+## NSData Additions
 
 ### NSData+MK_Base64
 
 ```objc
 ```
 
-## NSDate
+## NSDate Additions
 
 ### NSDate+MK_Comparison
 
@@ -179,6 +179,9 @@ Source code of this project is available under the standard MIT license. Please 
 ## NSSet
 
 ### NSSet+MK_Block
+
+```objc
+```
 
 ## NSString
 

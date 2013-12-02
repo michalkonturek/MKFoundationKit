@@ -83,4 +83,33 @@
     assertThatBool(result, equalToBool(NO));
 }
 
+- (void)test_countOccurrencesOfStrings_when_case_sensitive {
+    id input = @"AAaaAAaBbcbBbBCcaB";
+    id terms = @[@"A", @"c"];
+    NSInteger expected = 4 + 2;
+    
+    NSInteger result = [input mk_countOccurencesOfStrings:terms caseSensitive:YES];
+    
+    assertThatInteger(result, equalToInteger(expected));
+}
+
+- (void)test_countOccurrencesOfStrings_when_not_case_sensitive {
+    id input = @"AAaaAAaBbcbBbBCcaB";
+    id terms = @[@"A", @"c"];
+    NSInteger expected = 8 + 3;
+    
+    NSInteger result = [input mk_countOccurencesOfStrings:terms caseSensitive:NO];
+    
+    assertThatInteger(result, equalToInteger(expected));
+}
+
+-  (void)test_range {
+    id input = @"12345";
+    
+    NSRange result = [input mk_range];
+
+    assertThatInteger(result.location, equalToInteger(0));
+    assertThatInteger(result.length, equalToInteger([input length]));
+}
+
 @end

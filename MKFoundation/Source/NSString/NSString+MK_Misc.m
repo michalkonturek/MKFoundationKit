@@ -36,4 +36,49 @@
     return (range.location != NSNotFound);
 }
 
+- (NSInteger)mk_countOccurencesOfString:(NSString *)term {
+    return [self mk_countOccurencesOfString:term caseSensitive:YES];
+}
+
+- (NSInteger)mk_countOccurencesOfString:(NSString *)term caseSensitive:(BOOL)caseSensitive {
+    return [self mk_countOccurencesOfStrings:@[term] caseSensitive:caseSensitive];
+}
+
+- (NSInteger)mk_countOccurencesOfStrings:(NSArray *)terms {
+    return [self mk_countOccurencesOfStrings:terms caseSensitive:YES];
+}
+
+- (NSInteger)mk_countOccurencesOfStrings:(NSArray *)terms caseSensitive:(BOOL)caseSensitive {
+    NSInteger result = 0;
+    
+    NSRegularExpressionOptions option = (caseSensitive) ? 0 : NSRegularExpressionCaseInsensitive;
+    
+    for (id item in terms) {
+        NSError *error = nil;
+        id regex = [NSRegularExpression regularExpressionWithPattern:item
+                                                             options:option
+                                                               error:&error];
+        
+        result += [regex numberOfMatchesInString:self options:0 range:[self mk_range]];
+    }
+    
+    return result;
+}
+
+- (NSRange)mk_range {
+    return [self rangeOfString:self];
+}
+
+//- (NSInteger)countOccurencesOfCharacters:(NSArray *)characters {
+//    NSInteger result = 0;
+//    
+//    for (id item in characters) {
+//        NSString *cleared = [self stringByReplacingOccurrencesOfString:item withString:@""];
+//        NSInteger count = ([self length] - [cleared length]);
+//        result += count;
+//    }
+//    
+//    return result;
+//}
+
 @end

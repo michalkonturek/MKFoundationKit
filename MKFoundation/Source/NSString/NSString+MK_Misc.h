@@ -16,4 +16,12 @@
 
 - (BOOL)MK_containsString:(NSString *)term caseSensitive:(BOOL)caseSensitive;
 
+- (NSInteger)mk_countOccurencesOfString:(NSString *)term;
+- (NSInteger)mk_countOccurencesOfString:(NSString *)term caseSensitive:(BOOL)caseSensitive;
+
+- (NSInteger)mk_countOccurencesOfStrings:(NSArray *)terms;
+- (NSInteger)mk_countOccurencesOfStrings:(NSArray *)terms caseSensitive:(BOOL)caseSensitive;
+
+- (NSRange)mk_range;
+
 @end
