@@ -1,6 +1,6 @@
 //
-//  NSObject+MKDebugKit_Tests.m
-//  MKDebugKit
+//  NSObject+MK_AutoDescribe_Tests.m
+//  MKFoundation
 //
 //  Created by Michal Konturek on 20/10/2013.
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
