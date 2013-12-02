@@ -24,49 +24,49 @@
 
 - (void)test_integralPart_when_fraction {
     NSNumber *input = @1.1;
-    NSNumber *result = [input MK_integralPart];
+    NSNumber *result = [input mk_integralPart];
     assertThat(result, equalToInteger(1));
 }
 
 - (void)test_integralPart_when_integer {
     NSNumber *input = @1;
-    NSNumber *result = [input MK_integralPart];
+    NSNumber *result = [input mk_integralPart];
     assertThat(result, equalToInteger(1));
 }
 
 - (void)test_fractionalPart_when_fraction {
     NSNumber *input = @1.1;
-    NSNumber *result = [input MK_fractionalPart];
+    NSNumber *result = [input mk_fractionalPart];
     assertThat(result, equalToDouble(0.1));
 }
 
 - (void)test_fractionalPart_when_integer {
     NSNumber *input = @1;
-    NSNumber *result = [input MK_fractionalPart];
+    NSNumber *result = [input mk_fractionalPart];
     assertThat(result, equalToDouble(0));
 }
 
 - (void)test_isInteger_returns_true {
     NSNumber *input = @1;
-    BOOL result = [input MK_isInteger];
+    BOOL result = [input mk_isInteger];
     assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_isInteger_returns_false {
     NSNumber *input = @1.1;
-    BOOL result = [input MK_isInteger];
+    BOOL result = [input mk_isInteger];
     assertThatBool(result, equalToBool(NO));
 }
 
 - (void)test_isFractional_returns_true {
     NSNumber *input = @1.1;
-    BOOL result = [input MK_isFraction];
+    BOOL result = [input mk_isFraction];
     assertThatBool(result, equalToBool(YES));
 }
 
 - (void)test_isFractional_returns_false {
     NSNumber *input = @1;
-    BOOL result = [input MK_isFraction];
+    BOOL result = [input mk_isFraction];
     assertThatBool(result, equalToBool(NO));
 }
 

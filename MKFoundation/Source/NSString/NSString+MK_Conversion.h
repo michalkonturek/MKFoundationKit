@@ -10,7 +10,7 @@
 
 @interface NSString (MK_Conversion)
 
-- (NSNumber *)MK_numberWithInteger;
-- (NSNumber *)MK_numberWithLongLong;
+- (NSNumber *)mk_numberWithInteger;
+- (NSNumber *)mk_numberWithLongLong;
 
 @end

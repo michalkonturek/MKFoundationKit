@@ -10,7 +10,7 @@
 
 @implementation NSString (MK_Validation)
 
-+ (BOOL)MK_isStringValidEmail:(NSString *)email {
++ (BOOL)mk_isStringValidEmail:(NSString *)email {
     /*
      Source:        http://stackoverflow.com/questions/3139619/check-that-an-email-address-is-valid-on-ios
      Discussion:    http://blog.logichigh.com/2010/09/02/validating-an-e-mail-address/
@@ -21,14 +21,14 @@
     NSString *regex = stricterFilter ? stricterFilterString : laxString;
 //    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
 //    return [emailTest evaluateWithObject:email];
-    return [email MK_matchesRegex:regex];
+    return [email mk_matchesRegex:regex];
 }
 
-- (BOOL)MK_isValidEmail {
-    return [[self class] MK_isStringValidEmail:self];
+- (BOOL)mk_isValidEmail {
+    return [[self class] mk_isStringValidEmail:self];
 }
 
-- (BOOL)MK_matchesRegex:(NSString *)regex {
+- (BOOL)mk_matchesRegex:(NSString *)regex {
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
     return [emailTest evaluateWithObject:self];
 }

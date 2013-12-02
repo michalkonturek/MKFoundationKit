@@ -10,8 +10,8 @@
 
 @interface NSNumber (MK_Creation)
 
-+ (instancetype)MK_createFrom:(NSNumber *)number;
++ (instancetype)mk_createFrom:(NSNumber *)number;
 
-- (NSDecimalNumber *)MK_decimalNumber;
+- (NSDecimalNumber *)mk_decimalNumber;
 
 @end

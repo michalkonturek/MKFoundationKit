@@ -10,11 +10,11 @@
 
 @interface NSNumber (MK_Manipulation)
 
-- (instancetype)MK_add:(NSNumber *)other;
-- (instancetype)MK_subtract:(NSNumber *)other;
-- (instancetype)MK_multiplyBy:(NSNumber *)other;
-- (instancetype)MK_divideBy:(NSNumber *)other;
+- (instancetype)mk_add:(NSNumber *)other;
+- (instancetype)mk_subtract:(NSNumber *)other;
+- (instancetype)mk_multiplyBy:(NSNumber *)other;
+- (instancetype)mk_divideBy:(NSNumber *)other;
 
-- (instancetype)MK_raiseToPower:(NSInteger)power;
+- (instancetype)mk_raiseToPower:(NSInteger)power;
 
 @end

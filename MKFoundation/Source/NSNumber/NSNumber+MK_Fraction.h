@@ -10,10 +10,10 @@
 
 @interface NSNumber (MK_Fraction)
 
-- (instancetype)MK_integralPart;
-- (instancetype)MK_fractionalPart;
+- (instancetype)mk_integralPart;
+- (instancetype)mk_fractionalPart;
 
-- (BOOL)MK_isInteger;
-- (BOOL)MK_isFraction;
+- (BOOL)mk_isInteger;
+- (BOOL)mk_isFraction;
 
 @end

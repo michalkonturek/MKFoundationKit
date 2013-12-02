@@ -10,14 +10,14 @@
 
 @interface NSNumber (MK_Negative)
 
-+ (instancetype)MK_minus_one;
++ (instancetype)mk_minusOne;
 
-- (instancetype)MK_negative;
-- (instancetype)MK_positive;;
+- (instancetype)mk_negative;
+- (instancetype)mk_positive;;
 
-- (instancetype)MK_negate;
+- (instancetype)mk_negate;
 
-- (BOOL)MK_isPositive;
-- (BOOL)MK_isNegative;
+- (BOOL)mk_isPositive;
+- (BOOL)mk_isNegative;
 
 @end

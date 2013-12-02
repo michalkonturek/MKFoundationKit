@@ -10,11 +10,11 @@
 
 @interface NSString (MK_Misc)
 
-- (NSString *)MK_firstComponentUsingSeparators:(NSCharacterSet *)separators;
-- (NSString *)MK_lastComponentUsingSeparators:(NSCharacterSet *)separators;
-- (NSString *)MK_componentAtIndex:(NSInteger)index usingSeparators:(NSCharacterSet *)separators;
+- (NSString *)mk_firstComponentUsingSeparators:(NSCharacterSet *)separators;
+- (NSString *)mk_lastComponentUsingSeparators:(NSCharacterSet *)separators;
+- (NSString *)mk_componentAtIndex:(NSInteger)index usingSeparators:(NSCharacterSet *)separators;
 
-- (BOOL)MK_containsString:(NSString *)term caseSensitive:(BOOL)caseSensitive;
+- (BOOL)mk_containsString:(NSString *)term caseSensitive:(BOOL)caseSensitive;
 
 - (NSInteger)mk_countOccurencesOfString:(NSString *)term;
 - (NSInteger)mk_countOccurencesOfString:(NSString *)term caseSensitive:(BOOL)caseSensitive;

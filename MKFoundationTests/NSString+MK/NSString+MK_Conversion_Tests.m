@@ -16,25 +16,25 @@
 
 - (void)test_numberWithInteger_when_numeric {
     NSString *input = @"101";
-    NSNumber *result = [input MK_numberWithInteger];
+    NSNumber *result = [input mk_numberWithInteger];
     assertThat(result, equalTo(@101));
 }
 
 - (void)test_numberWithInteger_when_alphanumeric {
     NSString *input = @"101 ABCD";
-    NSNumber *result = [input MK_numberWithInteger];
+    NSNumber *result = [input mk_numberWithInteger];
     assertThat(result, equalTo(@101));
 }
 
 - (void)test_numberWithLongLong_when_numeric {
     NSString *input = @"101111111111";
-    NSNumber *result = [input MK_numberWithLongLong];
+    NSNumber *result = [input mk_numberWithLongLong];
     assertThat(result, equalTo(@101111111111));
 }
 
 - (void)test_numberWithLongLong_when_alphanumeric {
     NSString *input = @"101111111111 ABCD";
-    NSNumber *result = [input MK_numberWithLongLong];
+    NSNumber *result = [input mk_numberWithLongLong];
     assertThat(result, equalTo(@101111111111));
 }
 

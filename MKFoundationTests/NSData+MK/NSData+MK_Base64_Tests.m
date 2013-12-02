@@ -16,7 +16,7 @@
 
 - (void)test_base64EncodingAndDecoding_when_input_none {
     NSString *input = @"";
-    NSString *result = [input MK_base64EncodedString];
+    NSString *result = [input mk_base64EncodedString];
     assertThat(result, nilValue());
 }
 
@@ -27,7 +27,7 @@
     assertThat([[NSData mk_dataWithBase64EncodedString:encoded] mk_base64EncodedString],
                equalTo(encoded));
     
-    assertThat([[decoded MK_base64EncodedData] mk_base64DecodedString],
+    assertThat([[decoded mk_base64EncodedData] mk_base64DecodedString],
                equalTo(decoded));
 }
 
@@ -38,7 +38,7 @@
     assertThat([[NSData mk_dataWithBase64EncodedString:encoded] mk_base64EncodedString],
                equalTo(encoded));
     
-    assertThat([[decoded MK_base64EncodedData] mk_base64DecodedString],
+    assertThat([[decoded mk_base64EncodedData] mk_base64DecodedString],
                equalTo(decoded));
 }
 
@@ -49,7 +49,7 @@
     assertThat([[NSData mk_dataWithBase64EncodedString:encoded] mk_base64EncodedString],
                equalTo(encoded));
     
-    assertThat([[decoded MK_base64EncodedData] mk_base64DecodedString],
+    assertThat([[decoded mk_base64EncodedData] mk_base64DecodedString],
                equalTo(decoded));
 }
 
@@ -60,7 +60,7 @@
     assertThat([[NSData mk_dataWithBase64EncodedString:encoded] mk_base64EncodedString],
                equalTo(encoded));
     
-    assertThat([[decoded MK_base64EncodedData] mk_base64DecodedString],
+    assertThat([[decoded mk_base64EncodedData] mk_base64DecodedString],
                equalTo(decoded));
 }
 
@@ -71,7 +71,7 @@
     assertThat([[NSData mk_dataWithBase64EncodedString:encoded] mk_base64EncodedString],
                equalTo(encoded));
     
-    assertThat([[decoded MK_base64EncodedData] mk_base64DecodedString],
+    assertThat([[decoded mk_base64EncodedData] mk_base64DecodedString],
                equalTo(decoded));
 }
 

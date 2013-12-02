@@ -10,10 +10,10 @@
 
 @interface NSString (MK_Validation)
 
-+ (BOOL)MK_isStringValidEmail:(NSString *)email;
++ (BOOL)mk_isStringValidEmail:(NSString *)email;
 
-- (BOOL)MK_isValidEmail;
+- (BOOL)mk_isValidEmail;
 
-- (BOOL)MK_matchesRegex:(NSString *)regex;
+- (BOOL)mk_matchesRegex:(NSString *)regex;
 
 @end

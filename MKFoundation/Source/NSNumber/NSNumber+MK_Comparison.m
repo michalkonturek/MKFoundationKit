@@ -45,9 +45,9 @@
 }
 
 - (BOOL)mk_isOdd {
-    if ([self MK_isFraction]) return YES;
+    if ([self mk_isFraction]) return YES;
     if ([self mk_isTheSame:@0]) return NO;
-    return [[self MK_divideBy:@2] MK_isFraction];
+    return [[self mk_divideBy:@2] mk_isFraction];
 }
 
 @end

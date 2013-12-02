@@ -51,7 +51,7 @@
 
 - (void)test_map {
     id result = [self.input mk_map:^id(id item) {
-        return [item MK_multiplyBy:@2];
+        return [item mk_multiplyBy:@2];
     }];
     
     assertThat(result, hasCountOf(4));

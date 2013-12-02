@@ -10,16 +10,16 @@
 
 @implementation NSString (MK_Misc)
 
-- (NSString *)MK_firstComponentUsingSeparators:(NSCharacterSet *)separators {
-    return [self MK_componentAtIndex:0 usingSeparators:separators];
+- (NSString *)mk_firstComponentUsingSeparators:(NSCharacterSet *)separators {
+    return [self mk_componentAtIndex:0 usingSeparators:separators];
 }
 
-- (NSString *)MK_lastComponentUsingSeparators:(NSCharacterSet *)separators {
+- (NSString *)mk_lastComponentUsingSeparators:(NSCharacterSet *)separators {
     NSArray *components = [self componentsSeparatedByCharactersInSet:separators];
     return (components.count == 1) ? @"" : [components lastObject];
 }
 
-- (NSString *)MK_componentAtIndex:(NSInteger)index usingSeparators:(NSCharacterSet *)separators {
+- (NSString *)mk_componentAtIndex:(NSInteger)index usingSeparators:(NSCharacterSet *)separators {
     if (index < 0) return @"";
     
     NSArray *components = [self componentsSeparatedByCharactersInSet:separators];
@@ -29,7 +29,7 @@
     return [components objectAtIndex:index];
 }
 
-- (BOOL)MK_containsString:(NSString *)term caseSensitive:(BOOL)caseSensitive {
+- (BOOL)mk_containsString:(NSString *)term caseSensitive:(BOOL)caseSensitive {
     NSString *target = (caseSensitive) ? self : [self lowercaseString];
     NSString *searchTerm = (caseSensitive) ? term : [term lowercaseString];
     NSRange range = [target rangeOfString:searchTerm];
