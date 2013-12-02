@@ -32,7 +32,7 @@
     id target = @[@1, @2, @4, @11];
     
     __block id result = [NSMutableArray array];
-    [target MK_each:^(id item) {
+    [target mk_each:^(id item) {
         [result addObject:item];
     }];
     
@@ -49,7 +49,7 @@
 
 - (void)test_match_returns {
     id target = @[@1, @2, @4, @11];
-    id result = [target MK_match:^BOOL(id item) {
+    id result = [target mk_match:^BOOL(id item) {
         return [item MK_isEven];
     }];
     
@@ -58,7 +58,7 @@
 
 - (void)test_match_returns_nil {
     id target = @[@1, @3, @5, @11];
-    id result = [target MK_match:^BOOL(id item) {
+    id result = [target mk_match:^BOOL(id item) {
         return [item MK_isEven];
     }];
     
@@ -76,7 +76,7 @@
 
 - (void)test_reject {
     id target = @[@1, @2, @4, @11, @14];
-    id result = [target MK_reject:^BOOL(id item) {
+    id result = [target mk_reject:^BOOL(id item) {
         return [item MK_isEven];
     }];
     
@@ -101,7 +101,7 @@
 
 - (void)test_none_returns_true {
     id target = @[@1, @3, @5, @11];
-    BOOL result = [target MK_none:^BOOL(id item) {
+    BOOL result = [target mk_none:^BOOL(id item) {
         return [item MK_isEven];
     }];
     
@@ -110,7 +110,7 @@
 
 - (void)test_none_returns_false {
     id target = @[@1, @4, @5, @11];
-    BOOL result = [target MK_none:^BOOL(id item) {
+    BOOL result = [target mk_none:^BOOL(id item) {
         return [item MK_isEven];
     }];
     

@@ -41,7 +41,7 @@
 
 - (void)test_each {
     __block id result = [NSMutableArray array];
-    [self.input MK_each:^(id item) {
+    [self.input mk_each:^(id item) {
         [result addObject:item];
     }];
     
@@ -50,7 +50,7 @@
 }
 
 - (void)test_map {
-    id result = [self.input MK_map:^id(id item) {
+    id result = [self.input mk_map:^id(id item) {
         return [item MK_multiplyBy:@2];
     }];
     
@@ -59,7 +59,7 @@
 }
 
 - (void)test_match_returns {
-    id result = [self.input MK_match:^BOOL(id item) {
+    id result = [self.input mk_match:^BOOL(id item) {
         return [item MK_isEven];
     }];
     
@@ -68,7 +68,7 @@
 
 - (void)test_match_returns_nil {
     NSSet *target = [NSSet setWithArray:@[@1, @3, @5, @11]];
-    id result = [target MK_match:^BOOL(id item) {
+    id result = [target mk_match:^BOOL(id item) {
         return [item MK_isEven];
     }];
     
@@ -77,7 +77,7 @@
 
 - (void)test_reduce {
     NSSet *input = [[NSSet alloc] initWithArray:@[@"M", @"A", @"R", @"K"]];
-    NSString *result = [input MK_reduce:@"X" withBlock:^id(id item, id aggregate) {
+    NSString *result = [input mk_reduce:@"X" withBlock:^id(id item, id aggregate) {
         return [NSString stringWithFormat:@"%@%@", aggregate, item];
     }];
     
@@ -90,7 +90,7 @@
 
 - (void)test_reject {
     NSSet *target = [NSSet setWithArray:@[@1, @2, @4, @11, @14]];
-    id result = [target MK_reject:^BOOL(id item) {
+    id result = [target mk_reject:^BOOL(id item) {
         return [item MK_isEven];
     }];
     
@@ -99,7 +99,7 @@
 }
 
 - (void)test_select {
-    id result = [self.input MK_select:^BOOL(id item) {
+    id result = [self.input mk_select:^BOOL(id item) {
         return [item MK_isEven];
     }];
 
@@ -109,7 +109,7 @@
 
 - (void)test_all_returns_true {
     NSSet *target = [NSSet setWithArray:@[@2, @4, @8, @22]];
-    BOOL result = [target MK_all:^BOOL(id item) {
+    BOOL result = [target mk_all:^BOOL(id item) {
         return [item MK_isEven];
     }];
     
@@ -118,7 +118,7 @@
 
 - (void)test_all_returns_false {
     NSSet *target = [NSSet setWithArray:@[@2, @4, @8, @31]];
-    BOOL result = [target MK_all:^BOOL(id item) {
+    BOOL result = [target mk_all:^BOOL(id item) {
         return [item MK_isEven];
     }];
     
@@ -127,7 +127,7 @@
 
 - (void)test_any_returns_true {
     NSSet *target = [NSSet setWithArray:@[@2, @4, @8, @31]];
-    BOOL result = [target MK_any:^BOOL(id item) {
+    BOOL result = [target mk_any:^BOOL(id item) {
         return [item MK_isOdd];
     }];
     
@@ -136,7 +136,7 @@
 
 - (void)test_any_returns_false {
     NSSet *target = [NSSet setWithArray:@[@2, @4, @8, @22]];
-    BOOL result = [target MK_any:^BOOL(id item) {
+    BOOL result = [target mk_any:^BOOL(id item) {
         return [item MK_isOdd];
     }];
     
@@ -145,7 +145,7 @@
 
 - (void)test_none_returns_true {
     NSSet *target = [NSSet setWithArray:@[@1, @3, @5, @11]];
-    BOOL result = [target MK_none:^BOOL(id item) {
+    BOOL result = [target mk_none:^BOOL(id item) {
         return [item MK_isEven];
     }];
     
@@ -154,7 +154,7 @@
 
 - (void)test_none_returns_false {
     NSSet *target = [NSSet setWithArray:@[@1, @4, @5, @11]];
-    BOOL result = [target MK_none:^BOOL(id item) {
+    BOOL result = [target mk_none:^BOOL(id item) {
         return [item MK_isEven];
     }];
     
