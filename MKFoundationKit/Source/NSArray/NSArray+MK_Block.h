@@ -16,11 +16,11 @@
 
 - (void)mk_each:(void (^)(id item))block;
 
-- (instancetype)mk_map:(LINQSelectorBlock)selectorBlock;
+- (instancetype)mk_map:(id (^)(id item))selectorBlock;
 
 - (id)mk_match:(BOOL (^)(id item))conditionBlock;
 
-- (id)mk_reduce:(id)initial withBlock:(LINQAccumulatorBlock)accumulatorBlock;
+- (id)mk_reduce:(id)initial withBlock:(id (^)(id item, id aggregate))accumulatorBlock;
 
 - (instancetype)mk_reject:(BOOL (^)(id item))conditionBlock;
 

@@ -28,7 +28,7 @@
     }];
 }
 
-- (instancetype)mk_map:(LINQSelectorBlock)selectorBlock {
+- (instancetype)mk_map:(id (^)(id item))selectorBlock {
     return [self linq_select:selectorBlock];
 }
 
@@ -46,7 +46,7 @@
     return result;
 }
 
-- (id)mk_reduce:(id)initial withBlock:(LINQAccumulatorBlock)accumulatorBlock {
+- (id)mk_reduce:(id)initial withBlock:(id (^)(id item, id aggregate))accumulatorBlock {
     if (!accumulatorBlock) return self;
     
     __block id result = initial;
