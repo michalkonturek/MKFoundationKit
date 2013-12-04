@@ -6,6 +6,4 @@
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
 //
 
-#import "NSArray+MK.h"
-
 #import "NSSet+MK_Block.h"

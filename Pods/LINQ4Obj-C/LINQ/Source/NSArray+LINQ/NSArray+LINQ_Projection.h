@@ -13,13 +13,13 @@
 /**
  Projects values that are based on a transform function.
  */
-- (instancetype)LINQ_select:(LINQSelectorBlock)selectorBlock;
+- (instancetype)linq_select:(LINQSelectorBlock)selectorBlock;
 
 
 /**
  Projects sequences of values that are based on a transform
  function and then flattens them into one sequence.
  */
-- (instancetype)LINQ_selectMany:(LINQSelectorBlock)selectorBlock;
+- (instancetype)linq_selectMany:(LINQSelectorBlock)selectorBlock;
 
 @end

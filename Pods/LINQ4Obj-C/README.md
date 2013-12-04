@@ -1,7 +1,8 @@
 # LINQ for Objective-C
 
-[![Build Platform](http://cocoapod-badges.herokuapp.com/p/LINQ4Obj-C/badge.png)](https://github.com/michalkonturek/LINQ4Obj-C)
-[![Build Version](http://cocoapod-badges.herokuapp.com/v/LINQ4Obj-C/badge.png)](https://github.com/michalkonturek/LINQ4Obj-C)
+[![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)](https://github.com/michalkonturek/LINQ4Obj-C/blob/master/LICENSE)
+[![Build Platform](https://cocoapod-badges.herokuapp.com/p/LINQ4Obj-C/badge.png)](https://github.com/michalkonturek/LINQ4Obj-C)
+[![Build Version](https://cocoapod-badges.herokuapp.com/v/LINQ4Obj-C/badge.png)](https://github.com/michalkonturek/LINQ4Obj-C)
 [![Build Status](https://travis-ci.org/michalkonturek/LINQ4Obj-C.png?branch=master)](https://travis-ci.org/michalkonturek/LINQ4Obj-C)
 
 Provides fluent interface of LINQ-style query to Objective-C.
@@ -40,14 +41,14 @@ Source code of this project is available under the standard MIT license. Please 
  Performs a custom aggregation operation on the values of a collection.
 
 ```objc
-- (id)LINQ_aggregate:(LINQAccumulatorBlock)accumulatorBlock;
+- (id)linq_aggregate:(LINQAccumulatorBlock)accumulatorBlock;
 ```
 
 The following example creates a coma-separated string from an array of strings.
 
 ```objc
 NSArray *input = @[@"M", @"A", @"R", @"K"];
-NSString *result = [input LINQ_aggregate:^id(id item, id aggregate) {
+NSString *result = [input linq_aggregate:^id(id item, id aggregate) {
     return [NSString stringWithFormat:@"%@, %@", aggregate, item];
 }];	
 // Result is: @"M, A, R, K"
@@ -58,21 +59,21 @@ NSString *result = [input LINQ_aggregate:^id(id item, id aggregate) {
 Calculates the average value of a collection of values.
 
 ```objc
-- (id)LINQ_avg;
+- (id)linq_avg;
 ```
 
 Calculates the average value of the attribute specified
 by the key parameter for all objects in the collection.
 
 ```objc
-- (id)LINQ_avgForKey:(NSString *)key; 
+- (id)linq_avgForKey:(NSString *)key; 
 ```
 
 Example: Return the average length of strings in the collection.
 
 ```objc
 NSArray *words = @[@"A", @"AB", @"ABC", @"ABCD", @"ABCDE"];
-NSNumber *avg_word_length = [words LINQ_avgForKey:@"length"];
+NSNumber *avg_word_length = [words linq_avgForKey:@"length"];
 // Result is 3.
 ```
 
@@ -83,15 +84,15 @@ Counts the elements in a collection, optionally only
 those elements that satisfy a predicate function.
 
 ```objc
-- (NSUInteger)LINQ_count:(LINQConditionBlock)conditionBlock;
+- (NSUInteger)linq_count:(LINQConditionBlock)conditionBlock;
 ```
 
 Example: Return the number of elements 
 in the collection that are not smaller than 8.
 
 ```objc
-NSArray *numbers = [NSArray LINQ_from:1 to:10];
-NSInteger *count = [numbers LINQ_count:^BOOL(id item) {
+NSArray *numbers = [NSArray linq_from:1 to:10];
+NSInteger *count = [numbers linq_count:^BOOL(id item) {
         return ([item compare:@8] != NSOrderedAscending);
     }];
 // Count is 3.
@@ -103,14 +104,14 @@ NSInteger *count = [numbers LINQ_count:^BOOL(id item) {
 Determines the maximum value in a collection.
 
 ```objc
-- (id)LINQ_max;
+- (id)linq_max;
 ```
 
 Calculates the max value of the attribute specified
 by the key parameter for all objects in a collection.
 
 ```objc
-- (id)LINQ_maxForKey:(NSString *)key;- 
+- (id)linq_maxForKey:(NSString *)key;- 
 ```
 
 
@@ -119,14 +120,14 @@ by the key parameter for all objects in a collection.
 Determines the minimum value in a collection.
 
 ```objc
-- (id)LINQ_min;
+- (id)linq_min;
 ```
 
 Calculates the min value of the attribute specified
 by the key parameter for all objects in the collection.
 
 ```objc
-- (id)LINQ_minForKey:(NSString *)key;
+- (id)linq_minForKey:(NSString *)key;
 ```
 
 
@@ -135,14 +136,14 @@ by the key parameter for all objects in the collection.
  Calculates the sum of the values in a collection.
 
 ```objc
-- (id)LINQ_sum;
+- (id)linq_sum;
 ```
 
  Calculates the sum of values of the attribute specified
  by the key parameter for all objects in a collection.
 
 ```objc
-- (id)LINQ_sumForKey:(NSString *)key;
+- (id)linq_sumForKey:(NSString *)key;
 ```
 
 
@@ -156,25 +157,25 @@ by the key parameter for all objects in the collection.
 Puts value elements into an NSArray.
 
 ```objc
-- (NSArray *)LINQ_toArray;
+- (NSArray *)linq_toArray;
 ```
 
 Puts value elements into a NSArray which satisfy key condtion.
  
 ```objc
-- (NSArray *)LINQ_toArrayWhereKey:(LINQConditionBlock)conditionBlock;
+- (NSArray *)linq_toArrayWhereKey:(LINQConditionBlock)conditionBlock;
 ```
 
 Puts value elements into a NSArray which satisfy value condtion.
 
 ```objc
-- (NSArray *)LINQ_toArrayWhereValue:(LINQConditionBlock)conditionBlock;
+- (NSArray *)linq_toArrayWhereValue:(LINQConditionBlock)conditionBlock;
 ```
 
 Puts value elements into a NSArray which satisfy both key and value condtion.
 
 ```objc
-- (NSArray *)LINQ_toArrayWhereKeyValue:(LINQKeyValueConditionBlock)conditionBlock;
+- (NSArray *)linq_toArrayWhereKeyValue:(LINQKeyValueConditionBlock)conditionBlock;
 ```
 
 #### ToDictionary
@@ -182,13 +183,13 @@ Puts value elements into a NSArray which satisfy both key and value condtion.
  Puts elements into an index-key-based NSDictionary.
 
 ```objc
-- (NSDictionary *)LINQ_toDictionary;
+- (NSDictionary *)linq_toDictionary;
 ```
 <!--
  Example: 
 
 ```objc
-[@[@"A", @"B", @"C", @"D", @"E"] LINQ_ToDictionary];
+[@[@"A", @"B", @"C", @"D", @"E"] linq_toDictionary];
 
 // Result is: 
 // {
@@ -205,13 +206,13 @@ Puts value elements into a NSArray which satisfy both key and value condtion.
 Puts elements into a NSDictionary based on a key selector function.
 
 ```objc
-- (NSDictionary *)LINQ_toDictionaryWithKeySelector:(LINQSelectorBlock)keySelector;
+- (NSDictionary *)linq_toDictionaryWithKeySelector:(LINQSelectorBlock)keySelector;
 ```
 
 Puts elements into a NSDictionary based on a key and value selector functions.
 
 ```objc
-- (NSDictionary *)LINQ_toDictionaryWithKeySelector:(LINQSelectorBlock)keySelector
+- (NSDictionary *)linq_toDictionaryWithKeySelector:(LINQSelectorBlock)keySelector
                                      valueSelector:(LINQSelectorBlock)valueSelector;
 ```
 
@@ -223,7 +224,7 @@ Puts elements into a NSDictionary based on a key and value selector functions.
 Selects values, depending on their ability to be cast to a specified type.
 
 ```objc
-- (instancetype)LINQ_ofType:(Class)klass;
+- (instancetype)linq_ofType:(Class)klass;
 ```
 <!--
  Example: 
@@ -235,13 +236,13 @@ Selects values, depending on their ability to be cast to a specified type.
 Selects elements which keys can be cast to a specified type.
 
 ```objc
-- (instancetype)LINQ_ofTypeKey:(Class)klass;
+- (instancetype)linq_ofTypeKey:(Class)klass;
 ```
 
 Selects elements which values can be cast to a specified type.
 
 ```objc
-- (instancetype)LINQ_ofTypeValue:(Class)klass;
+- (instancetype)linq_ofTypeValue:(Class)klass;
 ```
 
 #### Where
@@ -249,7 +250,7 @@ Selects elements which values can be cast to a specified type.
  Selects values that are based on a predicate function.
 
 ```objc
-- (instancetype)LINQ_where:(LINQConditionBlock)conditionBlock;
+- (instancetype)linq_where:(LINQConditionBlock)conditionBlock;
 ```
 <!--
  Example: 
@@ -261,19 +262,19 @@ Selects elements which values can be cast to a specified type.
 Selects values which satisify key-value condition.
 
 ```objc
-- (instancetype)LINQ_where:(LINQKeyValueConditionBlock)conditionBlock;
+- (instancetype)linq_where:(LINQKeyValueConditionBlock)conditionBlock;
 ```
 
 Selects values which keys satisify condition.
 
 ```objc
-- (instancetype)LINQ_whereKey:(LINQConditionBlock)conditionBlock;
+- (instancetype)linq_whereKey:(LINQConditionBlock)conditionBlock;
 ```
 
 Selects values which satisify condition.
 
 ```objc
-- (instancetype)LINQ_whereValue:(LINQConditionBlock)conditionBlock;
+- (instancetype)linq_whereValue:(LINQConditionBlock)conditionBlock;
 ```
 
 ## Generation Operations
@@ -283,7 +284,7 @@ Selects values which satisify condition.
 Returns empty array.
 
 ```objc
-+ (instancetype)LINQ_empty;
++ (instancetype)linq_empty;
 ```
 
 #### From:To:
@@ -291,7 +292,7 @@ Returns empty array.
 Creates array with integers from to.
 
 ```objc
-+ (instancetype)LINQ_from:(NSInteger)from to:(NSInteger)to;
++ (instancetype)linq_from:(NSInteger)from to:(NSInteger)to;
 ```
 
 #### Repeat
@@ -299,7 +300,7 @@ Creates array with integers from to.
 Generates a collection that contains one repeated value.
 
 ```objc
-+ (instancetype)LINQ_repeat:(id)element count:(NSInteger)count;
++ (instancetype)linq_repeat:(id)element count:(NSInteger)count;
 ```
 
 
@@ -319,7 +320,7 @@ Generates a collection that contains one repeated value.
 
 
 ```objc
-- (NSDictionary *)LINQ_groupBy:(LINQSelectorBlock)selector;
+- (NSDictionary *)linq_groupBy:(LINQSelectorBlock)selector;
 ```
 
 Example: 
@@ -329,7 +330,7 @@ NSArray *words = @[@"Adam", @"Anthony",
 					@"Ben", @"Bob",
 					@"Michael", @"Max", @"Matt",
 					@"Simon"];
-NSDictionary *results = [self.input_words LINQ_groupBy:^id(id item) {
+NSDictionary *results = [self.input_words linq_groupBy:^id(id item) {
     return [item substringToIndex:1];
 }];
 // Result is:
@@ -348,7 +349,7 @@ into a NSDictionary whose key is a result of a selector
 and its value is an element: ` { key <- selector(element), value <- element}`
  
 ```objc
-- (instancetype)LINQ_toLookup:(LINQSelectorBlock)selector;
+- (instancetype)linq_toLookup:(LINQSelectorBlock)selector;
 ```
 
 <!--
@@ -364,7 +365,7 @@ Helps to filter results of toLookup: method.
 Returns array of NSDictionaries with the same key.
 
 ```objc
-- (instancetype)LINQ_lookup:(id)key;
+- (instancetype)linq_lookup:(id)key;
 ```
 
 <!--
@@ -388,15 +389,15 @@ Example:
 Skips elements up to a specified position in a collection.
 
 ```objc
-- (NSArray *)LINQ_skip:(NSInteger)count;
-- (NSDictionary *)LINQ_skip:(NSInteger)count;
+- (NSArray *)linq_skip:(NSInteger)count;
+- (NSDictionary *)linq_skip:(NSInteger)count;
 ```
 
 <!--
 Example: 
 
 ```objc
-NSArray *result = [[NSArray LINQ_from:1 to:10] LINQ_skip:5];
+NSArray *result = [[NSArray linq_from:1 to:10] linq_skip:5];
 // result is @[@6, @7, @8, @9, @10]
 ```
 -->
@@ -406,14 +407,14 @@ NSArray *result = [[NSArray LINQ_from:1 to:10] LINQ_skip:5];
 Takes elements up to a specified position in a collection.
 
 ```objc
-- (NSArray *)LINQ_take:(NSInteger)count;
-- (NSDictionary *)LINQ_take:(NSInteger)count;
+- (NSArray *)linq_take:(NSInteger)count;
+- (NSDictionary *)linq_take:(NSInteger)count;
 ```
 <!--
 Example: 
 
 ```objc
-NSArray *result = [[NSArray LINQ_from:1 to:10] LINQ_take:5];
+NSArray *result = [[NSArray linq_from:1 to:10] linq_take:5];
 // result is @[@1, @2, @3, @4, @5]
 ```
 -->
@@ -425,13 +426,13 @@ NSArray *result = [[NSArray LINQ_from:1 to:10] LINQ_take:5];
  Projects values that are based on a transform function.
 
 ```objc
-- (instancetype)LINQ_select:(LINQSelectorBlock)selectorBlock;
+- (instancetype)linq_select:(LINQSelectorBlock)selectorBlock;
 ```
 
 The example below adds 10 to each element in the collection.
 
 ```objc
-NSArray *result = [[NSArray LINQ_from:1 to:5] LINQ_select:^id(id item) {
+NSArray *result = [[NSArray linq_from:1 to:5] linq_select:^id(id item) {
     return [NSNumber numberWithInteger:([item integerValue] + 10)];
 }];
 // result is @[@11, @12, @13, @14, @15];
@@ -443,14 +444,14 @@ NSArray *result = [[NSArray LINQ_from:1 to:5] LINQ_select:^id(id item) {
  function and then flattens them into one sequence.
 
 ```objc
-- (instancetype)LINQ_selectMany:(LINQSelectorBlock)selectorBlock;
+- (instancetype)linq_selectMany:(LINQSelectorBlock)selectorBlock;
 ```
 
 This example returns words of each string of the collection.
 
 ```objc
 NSArray *input = @[@"an apple a day", @"the quick brown fox"];
-NSArray *result = [input LINQ_selectMany:^id(id item) { 
+NSArray *result = [input linq_selectMany:^id(id item) { 
     return [item componentsSeparatedByString:@" "]; 
 }]; 
 // result is @[@"an", @"apple", @"a", @"day", 
@@ -466,8 +467,8 @@ NSArray *result = [input LINQ_selectMany:^id(id item) {
 Determines whether all the elements in a sequence satisfy a condition.
 
 ```objc
-- (BOOL)LINQ_all:(LINQConditionBlock)conditionBlock;
-- (BOOL)LINQ_all:(LINQKeyValueConditionBlock)conditionBlock;
+- (BOOL)linq_all:(LINQConditionBlock)conditionBlock;
+- (BOOL)linq_all:(LINQKeyValueConditionBlock)conditionBlock;
 ```
 
 #### Any
@@ -475,8 +476,8 @@ Determines whether all the elements in a sequence satisfy a condition.
 Determines whether any elements in a sequence satisfy a condition.
  
 ```objc
-- (BOOL)LINQ_any:(LINQConditionBlock)conditionBlock;
-- (BOOL)LINQ_any:(LINQKeyValueConditionBlock)conditionBlock;
+- (BOOL)linq_any:(LINQConditionBlock)conditionBlock;
+- (BOOL)linq_any:(LINQKeyValueConditionBlock)conditionBlock;
 ```
 
 ## Set Operations
@@ -486,7 +487,7 @@ Determines whether any elements in a sequence satisfy a condition.
  Removes duplicate values from a collection.
 
 ```objc
-- (instancetype)LINQ_distinct;
+- (instancetype)linq_distinct;
 ```
 
 #### Except
@@ -495,8 +496,8 @@ Determines whether any elements in a sequence satisfy a condition.
  that appear in a second collection.
 
 ```objc
-- (instancetype)LINQ_except:(NSArray *)other;
-- (instancetype)LINQ_except:(NSDictionary *)other;
+- (instancetype)linq_except:(NSArray *)other;
+- (instancetype)linq_except:(NSDictionary *)other;
 ```
 
 #### Intersect
@@ -505,8 +506,8 @@ Determines whether any elements in a sequence satisfy a condition.
  that appear in each of two collections.
 
 ```objc
-- (instancetype)LINQ_intersect:(NSArray *)other;
-- (instancetype)LINQ_intersect:(NSDictionary *)other;
+- (instancetype)linq_intersect:(NSArray *)other;
+- (instancetype)linq_intersect:(NSDictionary *)other;
 ```
 
 #### Union
@@ -515,7 +516,7 @@ Determines whether any elements in a sequence satisfy a condition.
  that appear in either of two collections.
 
 ```objc
-- (NSArray *)LINQ_union:(NSArray *)other;
+- (NSArray *)linq_union:(NSArray *)other;
 ```
 
 Merges to dictionaries by returning the set union
@@ -523,7 +524,7 @@ of unique elements which keys appear in either of
 two dictionaries.
 
 ```objc
-- (NSDictionary *)LINQ_merge:(NSDictionary *)other;
+- (NSDictionary *)linq_merge:(NSDictionary *)other;
 ```
 
 
@@ -534,19 +535,19 @@ two dictionaries.
  Sorts values in ascending order.
 
 ```objc
-- (instancetype)LINQ_orderByAscending;
+- (instancetype)linq_orderByAscending;
 ```
 
  Sorts values in descending order.
 
 ```objc
-- (instancetype)LINQ_orderByDescending;
+- (instancetype)linq_orderByDescending;
 ```
 
  Sorts elements of a collection depending on an element's key.
 
 ```objc
-- (instancetype)LINQ_orderByKey:(NSString *)key ascending:(BOOL)ascending;
+- (instancetype)linq_orderByKey:(NSString *)key ascending:(BOOL)ascending;
 ```
 
 
@@ -555,7 +556,10 @@ two dictionaries.
  Reverses the order of the elements in a collection.
 
 ```objc
-- (instancetype)LINQ_reverse;
+- (instancetype)linq_reverse;
 ```
 
+- - - 
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/michalkonturek/linq4obj-c/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 

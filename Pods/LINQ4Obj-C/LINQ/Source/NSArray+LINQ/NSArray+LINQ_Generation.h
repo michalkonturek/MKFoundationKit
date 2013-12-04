@@ -13,21 +13,21 @@
 /**
  Returns empty array.
  */
-+ (instancetype)LINQ_empty;
++ (instancetype)linq_empty;
 
 /**
  Creates array with integers from to.
  */
-+ (instancetype)LINQ_from:(NSInteger)from to:(NSInteger)to;
++ (instancetype)linq_from:(NSInteger)from to:(NSInteger)to;
 
 /**
  Generates a collection that contains one repeated value.
  */
-+ (instancetype)LINQ_repeat:(id)element count:(NSInteger)count;
++ (instancetype)linq_repeat:(id)element count:(NSInteger)count;
 
 /**
  TBC
  */
-+ (instancetype)LINQ_with:(LINQSelectorBlock)block count:(NSInteger)count;
++ (instancetype)linq_with:(LINQSelectorBlock)block count:(NSInteger)count;
 
 @end

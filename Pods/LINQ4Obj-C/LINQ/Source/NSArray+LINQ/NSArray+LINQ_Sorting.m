@@ -10,20 +10,20 @@
 
 @implementation NSArray (LINQ_Sorting)
 
-- (instancetype)LINQ_orderByAscending {
+- (instancetype)linq_orderByAscending {
     return [self sortedArrayUsingSelector:@selector(compare:)];
 }
 
-- (instancetype)LINQ_orderByDescending {
-    return [[self LINQ_orderByAscending] LINQ_reverse];
+- (instancetype)linq_orderByDescending {
+    return [[self linq_orderByAscending] linq_reverse];
 }
 
-- (instancetype)LINQ_orderByKey:(NSString *)key ascending:(BOOL)ascending {
+- (instancetype)linq_orderByKey:(NSString *)key ascending:(BOOL)ascending {
     NSSortDescriptor *descriptor = [NSSortDescriptor sortDescriptorWithKey:key ascending:ascending];
     return [self sortedArrayUsingDescriptors:@[descriptor]];
 }
 
-- (instancetype)LINQ_reverse {
+- (instancetype)linq_reverse {
     return [[[self reverseObjectEnumerator] allObjects] mutableCopy];
 }
 

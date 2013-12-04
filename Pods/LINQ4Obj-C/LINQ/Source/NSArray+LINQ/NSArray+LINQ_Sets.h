@@ -13,24 +13,24 @@
 /**
  Removes duplicate values from a collection.
  */
-- (instancetype)LINQ_distinct;
+- (instancetype)linq_distinct;
 
 /**
  Returns the collection without the elements
  that appear in a second collection.
  */
-- (instancetype)LINQ_except:(NSArray *)other;
+- (instancetype)linq_except:(NSArray *)other;
 
 /**
  Returns the set intersection, which means elements
  that appear in each of two collections.
  */
-- (instancetype)LINQ_intersect:(NSArray *)other;
+- (instancetype)linq_intersect:(NSArray *)other;
 
 /**
  Returns the set union, which means unique elements
  that appear in either of two collections.
  */
-- (NSArray *)LINQ_union:(NSArray *)other;
+- (NSArray *)linq_union:(NSArray *)other;
 
 @end

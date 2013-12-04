@@ -10,11 +10,11 @@
 
 @implementation NSDictionary (LINQ_Partitioning)
 
-- (instancetype)LINQ_skip:(NSInteger)count {
-    if (count >= self.count) return [[self class] LINQ_empty];
+- (instancetype)linq_skip:(NSInteger)count {
+    if (count >= self.count) return [[self class] linq_empty];
     
     __block NSInteger idx = 1;
-    id result = [[self class] LINQ_empty];
+    id result = [[self class] linq_empty];
     [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
         if (idx > count) [result setObject:obj forKey:key];
         idx++;
@@ -22,11 +22,11 @@
     return result;
 }
 
-- (instancetype)LINQ_take:(NSInteger)count {
-    if (count >= self.count) return [[self class] LINQ_empty];
+- (instancetype)linq_take:(NSInteger)count {
+    if (count >= self.count) return [[self class] linq_empty];
     
     __block NSInteger idx = 1;
-    id result = [[self class] LINQ_empty];
+    id result = [[self class] linq_empty];
     [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
         if (idx <= count) [result setObject:obj forKey:key];
         idx++;

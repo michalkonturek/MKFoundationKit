@@ -27,7 +27,7 @@
 }
 
 - (void)test_isEmpty_returns_true {
-    BOOL result = [[NSArray LINQ_empty] mk_isEmpty];
+    BOOL result = [[NSArray linq_empty] mk_isEmpty];
     assertThatBool(result, equalToBool(YES));
 }
 

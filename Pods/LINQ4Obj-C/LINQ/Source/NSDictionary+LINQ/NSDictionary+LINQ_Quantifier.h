@@ -13,11 +13,11 @@
 /**
  Determines whether all the elements in a sequence satisfy a condition.
  */
-- (BOOL)LINQ_all:(LINQKeyValueConditionBlock)conditionBlock;
+- (BOOL)linq_all:(LINQKeyValueConditionBlock)conditionBlock;
 
 /**
  Determines whether any elements in a sequence satisfy a condition.
  */
-- (BOOL)LINQ_any:(LINQKeyValueConditionBlock)conditionBlock;
+- (BOOL)linq_any:(LINQKeyValueConditionBlock)conditionBlock;
 
 @end

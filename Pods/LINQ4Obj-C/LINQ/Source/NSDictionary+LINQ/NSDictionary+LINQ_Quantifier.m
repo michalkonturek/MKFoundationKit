@@ -10,7 +10,7 @@
 
 @implementation NSDictionary (LINQ_Quantifier)
 
-- (BOOL)LINQ_all:(LINQKeyValueConditionBlock)conditionBlock {
+- (BOOL)linq_all:(LINQKeyValueConditionBlock)conditionBlock {
     if (!conditionBlock) return YES;
     
     __block NSInteger failedCount = 0;
@@ -21,7 +21,7 @@
     return (failedCount == 0);
 }
 
-- (BOOL)LINQ_any:(LINQKeyValueConditionBlock)conditionBlock {
+- (BOOL)linq_any:(LINQKeyValueConditionBlock)conditionBlock {
     if (!conditionBlock) return NO;
     
     __block BOOL result = NO;

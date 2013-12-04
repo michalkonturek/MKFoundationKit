@@ -13,25 +13,25 @@
 /**
  Removes duplicate values from a collection.
  */
-- (instancetype)LINQ_distinct;
+- (instancetype)linq_distinct;
 
 /**
  Returns the collection without the elements
  that appear in a second collection.
  */
-- (instancetype)LINQ_except:(NSDictionary *)other;
+- (instancetype)linq_except:(NSDictionary *)other;
 
 /**
  Returns the set intersection, which means elements
  that appear in each of two collections.
  */
-- (instancetype)LINQ_intersect:(NSDictionary *)other;
+- (instancetype)linq_intersect:(NSDictionary *)other;
 
 /**
  Merges to dictionaries by returning the set union
  of unique elements which keys appear in either of
  two dictionaries.
  */
-- (NSDictionary *)LINQ_merge:(NSDictionary *)other;
+- (NSDictionary *)linq_merge:(NSDictionary *)other;
 
 @end

@@ -12,5 +12,6 @@
 #import <OCHamcrest.h>
 
 #import "MKFoundation.h"
+#import <LINQ4Obj-C/LINQ.h>
 
 #import "MKMacro_Test.h"

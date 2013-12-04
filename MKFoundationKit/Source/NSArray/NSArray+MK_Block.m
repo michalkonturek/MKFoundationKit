@@ -8,9 +8,11 @@
 
 #import "NSArray+MK_Block.h"
 
+#import <LINQ4Obj-C/NSArray+LINQ.h>
+
 @implementation NSArray (MK_Block)
 
-- (void)mk_apply:(MKItemBlock)block {
+- (void)mk_apply:(void (^)(id item))block {
     if (!block) return;
     
     [self enumerateObjectsWithOptions:NSEnumerationConcurrent
@@ -20,7 +22,7 @@
     }];
 }
 
-- (void)mk_each:(MKItemBlock)block {
+- (void)mk_each:(void (^)(id item))block {
     if (!block) return;
     
     [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
@@ -28,11 +30,11 @@
     }];
 }
 
-- (instancetype)mk_map:(LINQSelectorBlock)selectorBlock {
-    return [self LINQ_select:selectorBlock];
+- (instancetype)mk_map:(id (^)(id item))selectorBlock {
+    return [self linq_select:selectorBlock];
 }
 
-- (id)mk_match:(LINQConditionBlock)conditionBlock {
+- (id)mk_match:(BOOL (^)(id item))conditionBlock {
     if (!conditionBlock) return self;
     
     __block id result = nil;
@@ -46,7 +48,7 @@
     return result;
 }
 
-- (id)mk_reduce:(id)initial withBlock:(LINQAccumulatorBlock)accumulatorBlock {
+- (id)mk_reduce:(id)initial withBlock:(id (^)(id item, id aggregate))accumulatorBlock {
     if (!accumulatorBlock) return self;
     
     __block id result = initial;
@@ -57,26 +59,26 @@
     return result;
 }
 
-- (instancetype)mk_reject:(LINQConditionBlock)conditionBlock {
-    return [self LINQ_where:^BOOL(id item) {
+- (instancetype)mk_reject:(BOOL (^)(id item))conditionBlock {
+    return [self linq_where:^BOOL(id item) {
         return (!conditionBlock(item));
     }];
 }
 
-- (instancetype)mk_select:(LINQConditionBlock)conditionBlock {
-    return [self LINQ_where:conditionBlock];
+- (instancetype)mk_select:(BOOL (^)(id item))conditionBlock {
+    return [self linq_where:conditionBlock];
 }
 
-- (BOOL)mk_all:(LINQConditionBlock)conditionBlock {
-    return [self LINQ_all:conditionBlock];
+- (BOOL)mk_all:(BOOL (^)(id item))conditionBlock {
+    return [self linq_all:conditionBlock];
 }
 
-- (BOOL)mk_any:(LINQConditionBlock)conditionBlock {
-    return [self LINQ_any:conditionBlock];
+- (BOOL)mk_any:(BOOL (^)(id item))conditionBlock {
+    return [self linq_any:conditionBlock];
 }
 
-- (BOOL)mk_none:(LINQConditionBlock)conditionBlock {
-    return ![self LINQ_any:conditionBlock];
+- (BOOL)mk_none:(BOOL (^)(id item))conditionBlock {
+    return ![self linq_any:conditionBlock];
 }
 
 @end

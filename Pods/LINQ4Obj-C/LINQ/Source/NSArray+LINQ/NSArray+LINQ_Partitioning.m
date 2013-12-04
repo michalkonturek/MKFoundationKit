@@ -10,13 +10,13 @@
 
 @implementation NSArray (LINQ_Partitioning)
 
-- (NSArray *)LINQ_skip:(NSInteger)count {
+- (NSArray *)linq_skip:(NSInteger)count {
     if (count >= self.count) return [NSArray array];
     NSRange range = NSMakeRange(count, [self count] - count);
     return [self subarrayWithRange:range];
 }
 
-- (NSArray *)LINQ_take:(NSInteger)count {
+- (NSArray *)linq_take:(NSInteger)count {
     if (count >= self.count) return [NSArray array];
     NSInteger length = (count > self.count) ? self.count : count;
     return [self subarrayWithRange:NSMakeRange(0, length)];

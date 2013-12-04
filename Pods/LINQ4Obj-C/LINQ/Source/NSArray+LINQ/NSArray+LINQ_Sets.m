@@ -8,7 +8,7 @@
 
 @implementation NSArray (LINQ_Sets)
 
-- (instancetype)LINQ_distinct {
+- (instancetype)linq_distinct {
     if ([self count] == 0) return self;
     return [[[NSOrderedSet orderedSetWithArray:self] array] mutableCopy];
     
@@ -18,7 +18,7 @@
      */
 }
 
-- (instancetype)LINQ_except:(NSArray *)other {
+- (instancetype)linq_except:(NSArray *)other {
     if ([self _isEmpty]) return self;
     if (!other) return self;
     if ([other _isEmpty]) return self;
@@ -30,7 +30,7 @@
     return result;
 }
 
-- (instancetype)LINQ_intersect:(NSArray *)other {
+- (instancetype)linq_intersect:(NSArray *)other {
     if ([self _isEmpty]) return self;
     if (!other) return self;
     if ([other _isEmpty]) return self;
@@ -40,7 +40,7 @@
     return [[result array] mutableCopy];
 }
 
-- (NSArray *)LINQ_union:(NSArray *)other {
+- (NSArray *)linq_union:(NSArray *)other {
     if ([self _isEmpty]) return other;
     if (!other) return self;
     if ([other _isEmpty]) return self;

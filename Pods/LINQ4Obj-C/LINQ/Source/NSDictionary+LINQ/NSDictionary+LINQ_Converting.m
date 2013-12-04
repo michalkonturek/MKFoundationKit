@@ -10,11 +10,11 @@
 
 @implementation NSDictionary (LINQ_Converting)
 
-- (NSArray *)LINQ_toArray {
-    return [self LINQ_toArrayWhereKey:nil];
+- (NSArray *)linq_toArray {
+    return [self linq_toArrayWhereKey:nil];
 }
 
-- (NSArray *)LINQ_toArrayWhereKey:(LINQConditionBlock)conditionBlock {
+- (NSArray *)linq_toArrayWhereKey:(LINQConditionBlock)conditionBlock {
     if (!conditionBlock) conditionBlock = ^BOOL(id item) { return YES; };
     
     NSMutableArray *result = [NSMutableArray array];
@@ -25,7 +25,7 @@
     return result;
 }
 
-- (NSArray *)LINQ_toArrayWhereValue:(LINQConditionBlock)conditionBlock {
+- (NSArray *)linq_toArrayWhereValue:(LINQConditionBlock)conditionBlock {
     if (!conditionBlock) conditionBlock = ^BOOL(id item) { return YES; };
     
     NSMutableArray *result = [NSMutableArray array];
@@ -36,7 +36,7 @@
     return result;
 }
 
-- (NSArray *)LINQ_toArrayWhereKeyValue:(LINQKeyValueConditionBlock)conditionBlock {
+- (NSArray *)linq_toArrayWhereKeyValue:(LINQKeyValueConditionBlock)conditionBlock {
     if (!conditionBlock) conditionBlock = ^BOOL(id key, id value) { return YES; };
     
     NSMutableArray *result = [NSMutableArray array];

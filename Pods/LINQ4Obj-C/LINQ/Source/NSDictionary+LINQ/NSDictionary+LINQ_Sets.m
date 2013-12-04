@@ -10,28 +10,28 @@
 
 @implementation NSDictionary (LINQ_Sets)
 
-- (instancetype)LINQ_distinct {
+- (instancetype)linq_distinct {
     if ([self _isEmpty]) return self;
     
-    NSArray *values = [[self allValues] LINQ_distinct];
+    NSArray *values = [[self allValues] linq_distinct];
     return [self _aux_dictionary_with_values:values];
 }
 
-- (instancetype)LINQ_except:(NSDictionary *)other {
+- (instancetype)linq_except:(NSDictionary *)other {
     if ([self _isEmpty]) return self;
     if (!other) return self;
     if ([other _isEmpty]) return self;
     
-    NSArray *values = [[self allValues] LINQ_except:[other allValues]];
+    NSArray *values = [[self allValues] linq_except:[other allValues]];
     return [self _aux_dictionary_with_values:values];
 }
 
-- (instancetype)LINQ_intersect:(NSDictionary *)other {
+- (instancetype)linq_intersect:(NSDictionary *)other {
     if ([self _isEmpty]) return self;
     if (!other) return self;
     if ([other _isEmpty]) return self;
     
-    NSArray *values = [[self allValues] LINQ_intersect:[other allValues]];
+    NSArray *values = [[self allValues] linq_intersect:[other allValues]];
     return [self _aux_dictionary_with_values:values];
 }
 
@@ -49,7 +49,7 @@
     return result;
 }
 
-- (NSDictionary *)LINQ_merge:(NSDictionary *)other {
+- (NSDictionary *)linq_merge:(NSDictionary *)other {
     if ([self _isEmpty]) return other;
     if (!other) return self;
     if ([other _isEmpty]) return self;
