@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-#import "LINQ.h"
+//#import "LINQ.h"
 
-typedef void (^MKItemBlock)(id item);
+//typedef void (^MKItemBlock)(id item);
 
 #import "NSArray+MK_Block.h"
 #import "NSArray+MK_Misc.h"

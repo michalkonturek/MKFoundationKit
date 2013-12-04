@@ -10,7 +10,7 @@
 
 @implementation NSArray (MK_Block)
 
-- (void)mk_apply:(MKItemBlock)block {
+- (void)mk_apply:(void (^)(id item))block {
     if (!block) return;
     
     [self enumerateObjectsWithOptions:NSEnumerationConcurrent
@@ -20,7 +20,7 @@
     }];
 }
 
-- (void)mk_each:(MKItemBlock)block {
+- (void)mk_each:(void (^)(id item))block {
     if (!block) return;
     
     [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {

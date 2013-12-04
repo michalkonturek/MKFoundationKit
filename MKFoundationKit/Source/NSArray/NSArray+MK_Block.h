@@ -8,11 +8,13 @@
 
 #import "NSArray+MK.h"
 
+#import <LINQ4Obj-C/NSArray+LINQ.h>
+
 @interface NSArray (MK_Block)
 
-- (void)mk_apply:(MKItemBlock)block;
+- (void)mk_apply:(void (^)(id item))block;
 
-- (void)mk_each:(MKItemBlock)block;
+- (void)mk_each:(void (^)(id item))block;
 
 - (instancetype)mk_map:(LINQSelectorBlock)selectorBlock;
 

@@ -10,11 +10,11 @@
 
 @implementation NSSet (MK_Block)
 
-- (void)mk_apply:(MKItemBlock)block {
+- (void)mk_apply:(void (^)(id item))block {
     [[self allObjects] mk_apply:block];
 }
 
-- (void)mk_each:(MKItemBlock)block {
+- (void)mk_each:(void (^)(id item))block {
     [[self allObjects] mk_each:block];
 }
 
