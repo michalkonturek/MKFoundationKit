@@ -18,18 +18,18 @@
 
 - (instancetype)mk_map:(LINQSelectorBlock)selectorBlock;
 
-- (id)mk_match:(LINQConditionBlock)conditionBlock;
+- (id)mk_match:(BOOL (^)(id item))conditionBlock;
 
 - (id)mk_reduce:(id)initial withBlock:(LINQAccumulatorBlock)accumulatorBlock;
 
-- (instancetype)mk_reject:(LINQConditionBlock)conditionBlock;
+- (instancetype)mk_reject:(BOOL (^)(id item))conditionBlock;
 
-- (instancetype)mk_select:(LINQConditionBlock)conditionBlock;
+- (instancetype)mk_select:(BOOL (^)(id item))conditionBlock;
 
-- (BOOL)mk_all:(LINQConditionBlock)conditionBlock;
+- (BOOL)mk_all:(BOOL (^)(id item))conditionBlock;
 
-- (BOOL)mk_any:(LINQConditionBlock)conditionBlock;
+- (BOOL)mk_any:(BOOL (^)(id item))conditionBlock;
 
-- (BOOL)mk_none:(LINQConditionBlock)conditionBlock;
+- (BOOL)mk_none:(BOOL (^)(id item))conditionBlock;
 
 @end

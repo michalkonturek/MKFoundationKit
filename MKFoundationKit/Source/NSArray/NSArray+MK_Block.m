@@ -32,7 +32,7 @@
     return [self linq_select:selectorBlock];
 }
 
-- (id)mk_match:(LINQConditionBlock)conditionBlock {
+- (id)mk_match:(BOOL (^)(id item))conditionBlock {
     if (!conditionBlock) return self;
     
     __block id result = nil;
@@ -57,25 +57,25 @@
     return result;
 }
 
-- (instancetype)mk_reject:(LINQConditionBlock)conditionBlock {
+- (instancetype)mk_reject:(BOOL (^)(id item))conditionBlock {
     return [self linq_where:^BOOL(id item) {
         return (!conditionBlock(item));
     }];
 }
 
-- (instancetype)mk_select:(LINQConditionBlock)conditionBlock {
+- (instancetype)mk_select:(BOOL (^)(id item))conditionBlock {
     return [self linq_where:conditionBlock];
 }
 
-- (BOOL)mk_all:(LINQConditionBlock)conditionBlock {
+- (BOOL)mk_all:(BOOL (^)(id item))conditionBlock {
     return [self linq_all:conditionBlock];
 }
 
-- (BOOL)mk_any:(LINQConditionBlock)conditionBlock {
+- (BOOL)mk_any:(BOOL (^)(id item))conditionBlock {
     return [self linq_any:conditionBlock];
 }
 
-- (BOOL)mk_none:(LINQConditionBlock)conditionBlock {
+- (BOOL)mk_none:(BOOL (^)(id item))conditionBlock {
     return ![self linq_any:conditionBlock];
 }
 
