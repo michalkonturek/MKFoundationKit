@@ -13,17 +13,17 @@
 /**
  Puts elements into an index-key-based NSDictionary.
  */
-- (NSDictionary *)LINQ_toDictionary;
+- (NSDictionary *)linq_toDictionary;
 
 /**
  Puts elements into a NSDictionary based on a key selector function.
  */
-- (NSDictionary *)LINQ_toDictionaryWithKeySelector:(LINQSelectorBlock)keySelector;
+- (NSDictionary *)linq_toDictionaryWithKeySelector:(LINQSelectorBlock)keySelector;
 
 /**
  Puts elements into a NSDictionary based on a key and value selector functions.
  */
-- (NSDictionary *)LINQ_toDictionaryWithKeySelector:(LINQSelectorBlock)keySelector
+- (NSDictionary *)linq_toDictionaryWithKeySelector:(LINQSelectorBlock)keySelector
                                      valueSelector:(LINQSelectorBlock)valueSelector;
 
 @end

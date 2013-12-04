@@ -13,11 +13,11 @@
 /**
  Skips elements up to a specified position in a collection.
  */
-- (NSArray *)LINQ_skip:(NSInteger)count;
+- (NSArray *)linq_skip:(NSInteger)count;
 
 /**
  Takes elements up to a specified position in a collection.
  */
-- (NSArray *)LINQ_take:(NSInteger)count;
+- (NSArray *)linq_take:(NSInteger)count;
 
 @end

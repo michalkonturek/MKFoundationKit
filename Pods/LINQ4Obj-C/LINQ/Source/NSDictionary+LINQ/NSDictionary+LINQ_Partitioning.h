@@ -13,11 +13,11 @@
 /**
  Skips elements up to a specified position in a collection.
  */
-- (NSDictionary *)LINQ_skip:(NSInteger)count;
+- (NSDictionary *)linq_skip:(NSInteger)count;
 
 /**
  Takes elements up to a specified position in a collection.
  */
-- (NSDictionary *)LINQ_take:(NSInteger)count;
+- (NSDictionary *)linq_take:(NSInteger)count;
 
 @end

@@ -13,21 +13,21 @@
 /**
  Sorts values in ascending order.
  */
-- (instancetype)LINQ_orderByAscending;
+- (instancetype)linq_orderByAscending;
 
 /**
  Sorts values in descending order.
  */
-- (instancetype)LINQ_orderByDescending;
+- (instancetype)linq_orderByDescending;
 
 /**
  Sorts elements of a collection depending on an element key.
  */
-- (instancetype)LINQ_orderByKey:(NSString *)key ascending:(BOOL)ascending;
+- (instancetype)linq_orderByKey:(NSString *)key ascending:(BOOL)ascending;
 
 /**
  Reverses the order of the elements in a collection.
  */
-- (instancetype)LINQ_reverse;
+- (instancetype)linq_reverse;
 
 @end

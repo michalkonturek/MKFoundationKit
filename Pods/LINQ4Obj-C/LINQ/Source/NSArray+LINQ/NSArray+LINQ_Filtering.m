@@ -10,14 +10,14 @@
 
 @implementation NSArray (LINQ_Filtering)
 
-- (instancetype)LINQ_ofType:(Class)klass {
+- (instancetype)linq_ofType:(Class)klass {
     
-    return [self LINQ_where:^BOOL(id item) {
+    return [self linq_where:^BOOL(id item) {
         return [[item class] isSubclassOfClass:klass];
     }];
 }
 
-- (instancetype)LINQ_where:(LINQConditionBlock)conditionBlock {
+- (instancetype)linq_where:(LINQConditionBlock)conditionBlock {
     if (!conditionBlock) return self;
     
     NSMutableArray *result = [NSMutableArray array];

@@ -29,7 +29,7 @@
 }
 
 - (instancetype)mk_map:(LINQSelectorBlock)selectorBlock {
-    return [self LINQ_select:selectorBlock];
+    return [self linq_select:selectorBlock];
 }
 
 - (id)mk_match:(LINQConditionBlock)conditionBlock {
@@ -58,25 +58,25 @@
 }
 
 - (instancetype)mk_reject:(LINQConditionBlock)conditionBlock {
-    return [self LINQ_where:^BOOL(id item) {
+    return [self linq_where:^BOOL(id item) {
         return (!conditionBlock(item));
     }];
 }
 
 - (instancetype)mk_select:(LINQConditionBlock)conditionBlock {
-    return [self LINQ_where:conditionBlock];
+    return [self linq_where:conditionBlock];
 }
 
 - (BOOL)mk_all:(LINQConditionBlock)conditionBlock {
-    return [self LINQ_all:conditionBlock];
+    return [self linq_all:conditionBlock];
 }
 
 - (BOOL)mk_any:(LINQConditionBlock)conditionBlock {
-    return [self LINQ_any:conditionBlock];
+    return [self linq_any:conditionBlock];
 }
 
 - (BOOL)mk_none:(LINQConditionBlock)conditionBlock {
-    return ![self LINQ_any:conditionBlock];
+    return ![self linq_any:conditionBlock];
 }
 
 @end

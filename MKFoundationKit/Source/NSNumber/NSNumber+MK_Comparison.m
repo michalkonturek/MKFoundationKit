@@ -13,19 +13,19 @@
 @implementation NSNumber (MK_Comparison)
 
 + (instancetype)mk_max:(NSArray *)numbers {
-    return [numbers LINQ_max];
+    return [numbers linq_max];
 }
 
 + (instancetype)mk_min:(NSArray *)numbers {
-    return [numbers LINQ_min];
+    return [numbers linq_min];
 }
 
 - (instancetype)mk_max:(NSArray *)others {
-    return [[[NSMutableArray arrayWithArray:others] arrayByAddingObject:self] LINQ_max];
+    return [[[NSMutableArray arrayWithArray:others] arrayByAddingObject:self] linq_max];
 }
 
 - (instancetype)mk_min:(NSArray *)others {
-    return [[[NSMutableArray arrayWithArray:others] arrayByAddingObject:self] LINQ_min];
+    return [[[NSMutableArray arrayWithArray:others] arrayByAddingObject:self] linq_min];
 }
 
 - (BOOL)mk_isTheSame:(NSNumber *)other {

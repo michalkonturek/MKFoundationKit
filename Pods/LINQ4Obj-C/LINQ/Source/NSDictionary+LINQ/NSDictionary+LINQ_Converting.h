@@ -13,21 +13,21 @@
 /**
  Puts value elements into an NSArray.
  */
-- (NSArray *)LINQ_toArray;
+- (NSArray *)linq_toArray;
 
 /**
  Puts value elements into a NSArray which satisfy key condtion.
  */
-- (NSArray *)LINQ_toArrayWhereKey:(LINQConditionBlock)conditionBlock;
+- (NSArray *)linq_toArrayWhereKey:(LINQConditionBlock)conditionBlock;
 
 /**
  Puts value elements into a NSArray which satisfy value condtion.
  */
-- (NSArray *)LINQ_toArrayWhereValue:(LINQConditionBlock)conditionBlock;
+- (NSArray *)linq_toArrayWhereValue:(LINQConditionBlock)conditionBlock;
 
 /**
  Puts value elements into a NSArray which satisfy both key and value condtion.
  */
-- (NSArray *)LINQ_toArrayWhereKeyValue:(LINQKeyValueConditionBlock)conditionBlock;
+- (NSArray *)linq_toArrayWhereKeyValue:(LINQKeyValueConditionBlock)conditionBlock;
 
 @end

@@ -13,11 +13,11 @@
 /**
  Selects values, depending on their ability to be cast to a specified type.
  */
-- (instancetype)LINQ_ofType:(Class)klass;
+- (instancetype)linq_ofType:(Class)klass;
 
 /**
  Selects values that are based on a predicate function.
  */
-- (instancetype)LINQ_where:(LINQConditionBlock)conditionBlock;
+- (instancetype)linq_where:(LINQConditionBlock)conditionBlock;
 
 @end

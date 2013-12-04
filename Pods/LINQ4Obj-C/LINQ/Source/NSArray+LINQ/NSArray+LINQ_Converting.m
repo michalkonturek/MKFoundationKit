@@ -10,15 +10,15 @@
 
 @implementation NSArray (LINQ_Converting)
 
-- (NSDictionary *)LINQ_toDictionary {
-    return [self LINQ_toDictionaryWithKeySelector:nil valueSelector:nil];
+- (NSDictionary *)linq_toDictionary {
+    return [self linq_toDictionaryWithKeySelector:nil valueSelector:nil];
 }
 
-- (NSDictionary *)LINQ_toDictionaryWithKeySelector:(LINQSelectorBlock)keySelector {
-    return [self LINQ_toDictionaryWithKeySelector:keySelector valueSelector:nil];
+- (NSDictionary *)linq_toDictionaryWithKeySelector:(LINQSelectorBlock)keySelector {
+    return [self linq_toDictionaryWithKeySelector:keySelector valueSelector:nil];
 }
 
-- (NSDictionary *)LINQ_toDictionaryWithKeySelector:(LINQSelectorBlock)keySelector
+- (NSDictionary *)linq_toDictionaryWithKeySelector:(LINQSelectorBlock)keySelector
                                      valueSelector:(LINQSelectorBlock)valueSelector {
     NSMutableDictionary *result = [NSMutableDictionary dictionary];
     

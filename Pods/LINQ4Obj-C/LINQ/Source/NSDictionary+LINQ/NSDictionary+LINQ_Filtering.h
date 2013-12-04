@@ -13,26 +13,26 @@
 /**
  Selects elements which keys can be cast to a specified type.
  */
-- (instancetype)LINQ_ofTypeKey:(Class)klass;
+- (instancetype)linq_ofTypeKey:(Class)klass;
 
 /**
  Selects elements which values can be cast to a specified type.
  */
-- (instancetype)LINQ_ofTypeValue:(Class)klass;
+- (instancetype)linq_ofTypeValue:(Class)klass;
 
 /**
  Selects values which satisify key-value condition.
  */
-- (instancetype)LINQ_where:(LINQKeyValueConditionBlock)conditionBlock;
+- (instancetype)linq_where:(LINQKeyValueConditionBlock)conditionBlock;
 
 /**
  Selects values which keys satisify condition.
  */
-- (instancetype)LINQ_whereKey:(LINQConditionBlock)conditionBlock;
+- (instancetype)linq_whereKey:(LINQConditionBlock)conditionBlock;
 
 /**
  Selects values which satisify condition.
  */
-- (instancetype)LINQ_whereValue:(LINQConditionBlock)conditionBlock;
+- (instancetype)linq_whereValue:(LINQConditionBlock)conditionBlock;
 
 @end

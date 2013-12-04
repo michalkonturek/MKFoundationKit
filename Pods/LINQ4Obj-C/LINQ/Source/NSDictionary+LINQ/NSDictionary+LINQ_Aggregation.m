@@ -10,7 +10,7 @@
 
 @implementation NSDictionary (LINQ_Aggregation)
 
-- (id)LINQ_aggregate:(LINQAccumulatorBlock)accumulatorBlock {
+- (id)linq_aggregate:(LINQAccumulatorBlock)accumulatorBlock {
     if (!accumulatorBlock) return self;
     
     __block id accumulator = nil;
@@ -22,10 +22,10 @@
     return accumulator;
 }
 
-- (id)LINQ_avg {
+- (id)linq_avg {
     if ([self _isEmpty]) return [NSDecimalNumber zero];
     
-    id sum = [self LINQ_sum];
+    id sum = [self linq_sum];
     NSDecimalNumber *result = [NSDecimalNumber decimalNumberWithDecimal:[sum decimalValue]];
     NSDecimalNumber *count = [NSDecimalNumber decimalNumberWithDecimal:
                               [[NSNumber numberWithInteger:[self count]] decimalValue]];
@@ -33,42 +33,42 @@
     return [result decimalNumberByDividingBy:count];
 }
 
-- (id)LINQ_avgForKey:(NSString *)key {
+- (id)linq_avgForKey:(NSString *)key {
     return [self _aux_applyOperator:@"@avg" toKey:key];
 }
 
-- (NSUInteger)LINQ_count:(LINQConditionBlock)conditionBlock {
-    return [[self LINQ_whereValue:conditionBlock] count];
+- (NSUInteger)linq_count:(LINQConditionBlock)conditionBlock {
+    return [[self linq_whereValue:conditionBlock] count];
 }
 
-- (id)LINQ_max {
+- (id)linq_max {
     if ([self _isEmpty]) return [NSDecimalNumber zero];
     
-    return [self LINQ_aggregate:^id(id item, id aggregate) {
+    return [self linq_aggregate:^id(id item, id aggregate) {
         return ([item compare:aggregate] == NSOrderedDescending) ? item : aggregate;
     }];
 }
 
-- (id)LINQ_maxForKey:(NSString *)key {
+- (id)linq_maxForKey:(NSString *)key {
     return [self _aux_applyOperator:@"@max" toKey:key];
 }
 
-- (id)LINQ_min {
+- (id)linq_min {
     if ([self _isEmpty]) return [NSDecimalNumber zero];
     
-    return [self LINQ_aggregate:^id(id item, id aggregate) {
+    return [self linq_aggregate:^id(id item, id aggregate) {
         return ([item compare:aggregate] == NSOrderedAscending) ? item : aggregate;
     }];
 }
 
-- (id)LINQ_minForKey:(NSString *)key {
+- (id)linq_minForKey:(NSString *)key {
     return [self _aux_applyOperator:@"@min" toKey:key];
 }
 
-- (id)LINQ_sum {
+- (id)linq_sum {
     if ([self _isEmpty]) return [NSDecimalNumber zero];
     
-    return [self LINQ_aggregate:^id(id item, id aggregate) {
+    return [self linq_aggregate:^id(id item, id aggregate) {
         NSDecimalNumber *acc = [NSDecimalNumber
                                 decimalNumberWithDecimal:[aggregate decimalValue]];
         return [acc decimalNumberByAdding:[NSDecimalNumber
@@ -76,7 +76,7 @@
     }];
 }
 
-- (id)LINQ_sumForKey:(NSString *)key {
+- (id)linq_sumForKey:(NSString *)key {
     return [self _aux_applyOperator:@"@sum" toKey:key];
 }
 

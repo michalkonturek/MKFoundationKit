@@ -10,7 +10,7 @@
 
 @implementation NSArray (LINQ_Projection)
 
-- (instancetype)LINQ_select:(LINQSelectorBlock)selectorBlock {
+- (instancetype)linq_select:(LINQSelectorBlock)selectorBlock {
     if (!selectorBlock) return [[self class] array];
     
     NSMutableArray *result = [NSMutableArray arrayWithCapacity:self.count];
@@ -20,7 +20,7 @@
     return result;
 }
 
-- (instancetype)LINQ_selectMany:(LINQSelectorBlock)selectorBlock {
+- (instancetype)linq_selectMany:(LINQSelectorBlock)selectorBlock {
     if (!selectorBlock) return [[self class] array];
     
     NSMutableArray *result = [NSMutableArray arrayWithCapacity:self.count];

@@ -10,21 +10,21 @@
 
 @implementation NSDictionary (LINQ_Filtering)
 
-- (instancetype)LINQ_ofTypeKey:(Class)klass {
+- (instancetype)linq_ofTypeKey:(Class)klass {
     
-    return [self LINQ_whereKey:^BOOL(id item) {
+    return [self linq_whereKey:^BOOL(id item) {
         return [[item class] isSubclassOfClass:klass];
     }];
 }
 
-- (instancetype)LINQ_ofTypeValue:(Class)klass {
+- (instancetype)linq_ofTypeValue:(Class)klass {
     
-    return [self LINQ_whereValue:^BOOL(id item) {
+    return [self linq_whereValue:^BOOL(id item) {
         return [[item class] isSubclassOfClass:klass];
     }];
 }
 
-- (instancetype)LINQ_where:(LINQKeyValueConditionBlock)conditionBlock {
+- (instancetype)linq_where:(LINQKeyValueConditionBlock)conditionBlock {
     if (!conditionBlock) return self;
     
     NSMutableDictionary *result = [NSMutableDictionary dictionary];
@@ -34,7 +34,7 @@
     return result;
 }
 
-- (instancetype)LINQ_whereKey:(LINQConditionBlock)conditionBlock {
+- (instancetype)linq_whereKey:(LINQConditionBlock)conditionBlock {
     if (!conditionBlock) return self;
     
     NSMutableDictionary *result = [NSMutableDictionary dictionary];
@@ -44,7 +44,7 @@
     return result;
 }
 
-- (instancetype)LINQ_whereValue:(LINQConditionBlock)conditionBlock {
+- (instancetype)linq_whereValue:(LINQConditionBlock)conditionBlock {
     if (!conditionBlock) return self;
     
     NSMutableDictionary *result = [NSMutableDictionary dictionary];

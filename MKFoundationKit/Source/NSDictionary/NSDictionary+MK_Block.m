@@ -65,25 +65,25 @@
 }
 
 - (instancetype)mk_reject:(LINQKeyValueConditionBlock)conditionBlock {
-    return [self LINQ_where:^BOOL(id key, id value) {
+    return [self linq_where:^BOOL(id key, id value) {
         return (!conditionBlock(key, value));
     }];
 }
 
 - (instancetype)mk_select:(LINQKeyValueConditionBlock)conditionBlock {
-    return [self LINQ_where:conditionBlock];
+    return [self linq_where:conditionBlock];
 }
 
 - (BOOL)mk_all:(LINQKeyValueConditionBlock)conditionBlock {
-    return [self LINQ_all:conditionBlock];
+    return [self linq_all:conditionBlock];
 }
 
 - (BOOL)mk_any:(LINQKeyValueConditionBlock)conditionBlock {
-    return [self LINQ_any:conditionBlock];
+    return [self linq_any:conditionBlock];
 }
 
 - (BOOL)mk_none:(LINQKeyValueConditionBlock)conditionBlock {
-    return ![self LINQ_any:conditionBlock];
+    return ![self linq_any:conditionBlock];
 }
 
 @end
