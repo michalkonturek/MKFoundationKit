@@ -8,6 +8,8 @@
 
 #import "NSDictionary+MK_Block.h"
 
+#import <LINQ4Obj-C/NSDictionary+LINQ.h>
+
 @implementation NSDictionary (MK_Block)
 
 - (void)mk_apply:(void (^)(id item))block {
@@ -28,7 +30,7 @@
     }];
 }
 
-- (instancetype)mk_map:(LINQSelectorBlock)selectorBlock {
+- (instancetype)mk_map:(id (^)(id item))selectorBlock {
     if (!selectorBlock) return [[self class] dictionary];
     
     NSMutableDictionary *result = [NSMutableDictionary dictionaryWithCapacity:self.count];
@@ -39,7 +41,7 @@
     return result;
 }
 
-- (id)mk_match:(LINQKeyValueConditionBlock)conditionBlock {
+- (id)mk_match:(BOOL (^)(id key, id value))conditionBlock {
     if (!conditionBlock) return self;
     
     __block id result = nil;
@@ -53,7 +55,7 @@
     return result;
 }
 
-- (id)mk_reduce:(id)initial withBlock:(LINQAccumulatorBlock)accumulatorBlock {
+- (id)mk_reduce:(id)initial withBlock:(id (^)(id item, id aggregate))accumulatorBlock {
     if (!accumulatorBlock) return self;
     
     __block id result = initial;
@@ -64,17 +66,17 @@
     return result;
 }
 
-- (instancetype)mk_reject:(LINQKeyValueConditionBlock)conditionBlock {
+- (instancetype)mk_reject:(BOOL (^)(id key, id value))conditionBlock {
     return [self linq_where:^BOOL(id key, id value) {
         return (!conditionBlock(key, value));
     }];
 }
 
-- (instancetype)mk_select:(LINQKeyValueConditionBlock)conditionBlock {
+- (instancetype)mk_select:(BOOL (^)(id key, id value))conditionBlock {
     return [self linq_where:conditionBlock];
 }
 
-- (BOOL)mk_all:(LINQKeyValueConditionBlock)conditionBlock {
+- (BOOL)mk_all:(BOOL (^)(id key, id value))conditionBlock {
     return [self linq_all:conditionBlock];
 }
 

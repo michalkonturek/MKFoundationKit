@@ -8,6 +8,8 @@
 
 #import "NSArray+MK_Block.h"
 
+#import <LINQ4Obj-C/NSArray+LINQ.h>
+
 @implementation NSArray (MK_Block)
 
 - (void)mk_apply:(void (^)(id item))block {
