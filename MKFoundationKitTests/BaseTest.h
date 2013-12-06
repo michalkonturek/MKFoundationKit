@@ -6,11 +6,6 @@
 //
 
 
-#import <XCTest/XCTest.h>
-
-#define HC_SHORTHAND
-#import <OCHamcrest.h>
-
 #import "MKFoundationKit.h"
 #import <LINQ4Obj-C/LINQ.h>
 

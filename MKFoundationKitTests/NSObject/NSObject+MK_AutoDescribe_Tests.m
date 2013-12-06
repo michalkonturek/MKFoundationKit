@@ -6,8 +6,12 @@
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
 //
 
-#import "BaseTest.h"
+#import <XCTest/XCTest.h>
 
+#define HC_SHORTHAND
+#import <OCHamcrest.h>
+
+#import "BaseTest.h"
 #import "TestDummy.h"
 
 @interface NSObject_MK_AutoDescribe_Tests : XCTestCase
