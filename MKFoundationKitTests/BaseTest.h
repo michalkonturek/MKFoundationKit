@@ -11,7 +11,7 @@
 #define HC_SHORTHAND
 #import <OCHamcrest.h>
 
-#import "MKFoundation.h"
+#import "MKFoundationKit.h"
 #import <LINQ4Obj-C/LINQ.h>
 
 #import "MKMacro_Test.h"

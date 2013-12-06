@@ -45,8 +45,6 @@
 
 #import "NSData+MK_Base64.h"
 
-#import "MKFoundation.h"
-
 @implementation NSData (MK_Base64)
 
 + (NSData *)mk_dataWithBase64EncodedString:(NSString *)string {

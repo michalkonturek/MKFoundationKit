@@ -93,12 +93,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		904D3744184CE2D400DB9BFC /* MKLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKLog.h; sourceTree = "<group>"; };
+		904D3744184CE2D400DB9BFC /* MKMacro_Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMacro_Log.h; sourceTree = "<group>"; };
 		904D3745184CE2D400DB9BFC /* MKMacro_Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMacro_Geometry.h; sourceTree = "<group>"; };
 		904D3746184CE2D400DB9BFC /* MKMacro_Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMacro_Method.h; sourceTree = "<group>"; };
 		904D3747184CE2D400DB9BFC /* MKMacro_Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMacro_Test.h; sourceTree = "<group>"; };
 		904D3748184CE2D400DB9BFC /* MKMacro_Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMacro_Version.h; sourceTree = "<group>"; };
-		904D3749184CE2D400DB9BFC /* MKFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKFoundation.h; sourceTree = "<group>"; };
+		904D3749184CE2D400DB9BFC /* MKFoundationKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKFoundationKit.h; sourceTree = "<group>"; };
 		904D374B184CE2D400DB9BFC /* NSArray+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MK.h"; sourceTree = "<group>"; };
 		904D374C184CE2D400DB9BFC /* NSArray+MK_Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MK_Block.h"; sourceTree = "<group>"; };
 		904D374D184CE2D400DB9BFC /* NSArray+MK_Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MK_Block.m"; sourceTree = "<group>"; };
@@ -213,6 +213,7 @@
 		907CD00C184CE14A0070E0AC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		907CD014184CE14A0070E0AC /* MKFoundationKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MKFoundationKitTests-Info.plist"; sourceTree = "<group>"; };
 		907CD016184CE14A0070E0AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		90AD92381851638C00C2CF19 /* MKMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMacro.h; sourceTree = "<group>"; };
 		A2AFA71716B244859CD9A336 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25EF4BC88A44F43A87962BE /* Pods-MKFoundationKitTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKFoundationKitTests.xcconfig"; path = "Pods/Pods-MKFoundationKitTests.xcconfig"; sourceTree = "<group>"; };
 		D60CA56430804A97937C65AA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
@@ -248,8 +249,8 @@
 		904D3742184CE2D400DB9BFC /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				904D3749184CE2D400DB9BFC /* MKFoundationKit.h */,
 				904D3743184CE2D400DB9BFC /* Macros */,
-				904D3749184CE2D400DB9BFC /* MKFoundation.h */,
 				904D374A184CE2D400DB9BFC /* NSArray */,
 				904D3756184CE2D400DB9BFC /* NSData */,
 				904D375A184CE2D400DB9BFC /* NSDate */,
@@ -266,8 +267,9 @@
 		904D3743184CE2D400DB9BFC /* Macros */ = {
 			isa = PBXGroup;
 			children = (
-				904D3744184CE2D400DB9BFC /* MKLog.h */,
+				90AD92381851638C00C2CF19 /* MKMacro.h */,
 				904D3745184CE2D400DB9BFC /* MKMacro_Geometry.h */,
+				904D3744184CE2D400DB9BFC /* MKMacro_Log.h */,
 				904D3746184CE2D400DB9BFC /* MKMacro_Method.h */,
 				904D3747184CE2D400DB9BFC /* MKMacro_Test.h */,
 				904D3748184CE2D400DB9BFC /* MKMacro_Version.h */,

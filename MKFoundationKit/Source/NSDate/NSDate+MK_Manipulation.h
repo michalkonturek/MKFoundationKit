@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
 //
 
-#import "MKFoundation.h"
+#import <Foundation/Foundation.h>
 
 @interface NSDate (MK_Manipulation)
 
