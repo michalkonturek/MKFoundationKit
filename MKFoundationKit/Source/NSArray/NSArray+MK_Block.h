@@ -18,6 +18,8 @@
 
 - (id)mk_match:(BOOL (^)(id item))conditionBlock;
 
+- (id)mk_reduce:(id (^)(id item, id aggregate))accumulatorBlock;
+
 - (id)mk_reduce:(id)initial withBlock:(id (^)(id item, id aggregate))accumulatorBlock;
 
 - (instancetype)mk_reject:(BOOL (^)(id item))conditionBlock;

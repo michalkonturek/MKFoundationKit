@@ -48,12 +48,17 @@
     return result;
 }
 
+- (id)mk_reduce:(id (^)(id item, id aggregate))accumulatorBlock {
+    return [self mk_reduce:nil withBlock:accumulatorBlock];
+}
+
 - (id)mk_reduce:(id)initial withBlock:(id (^)(id item, id aggregate))accumulatorBlock {
     if (!accumulatorBlock) return self;
     
     __block id result = initial;
     [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        result = accumulatorBlock(obj, result);
+        if (!result) result = obj;
+        else result = accumulatorBlock(obj, result);
     }];
     
     return result;
