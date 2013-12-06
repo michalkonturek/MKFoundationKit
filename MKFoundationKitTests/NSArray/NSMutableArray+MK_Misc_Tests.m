@@ -20,7 +20,7 @@
 @implementation NSMutableArray_MK_Misc_Tests
 
 - (void)test_safeAddObject {
-    NSMutableArray *result = [NSMutableArray linq_empty];
+    NSMutableArray *result = [NSMutableArray array];
     [result mk_safeAddObject:nil];
     assertThat(result, hasCountOf(0));
 }

@@ -20,19 +20,19 @@
 @implementation NSMutableDictionary_MK_Tests
 
 - (void)test_safeAddObject_when_both_key_nil {
-    NSMutableDictionary *result = [NSMutableDictionary linq_empty];
+    NSMutableDictionary *result = [NSMutableDictionary dictionary];
     [result mk_safeSetObject:nil forKey:@"Object"];
     assertThat(result, hasCountOf(0));
 }
 
 - (void)test_safeAddObject_when_both_object_nil {
-    NSMutableDictionary *result = [NSMutableDictionary linq_empty];
+    NSMutableDictionary *result = [NSMutableDictionary dictionary];
     [result mk_safeSetObject:@"Key" forKey:nil];
     assertThat(result, hasCountOf(0));
 }
 
 - (void)test_safeAddObject_when_both_key_and_object_nil {
-    NSMutableDictionary *result = [NSMutableDictionary linq_empty];
+    NSMutableDictionary *result = [NSMutableDictionary dictionary];
     [result mk_safeSetObject:nil forKey:nil];
     assertThat(result, hasCountOf(0));
 }
