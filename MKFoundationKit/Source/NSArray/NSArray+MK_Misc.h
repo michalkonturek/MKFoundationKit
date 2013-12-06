@@ -10,13 +10,17 @@
 
 @interface NSArray (MK_Misc)
 
-- (BOOL)mk_isEmpty;
-
 /*
  NOTE: 
     Since iOS 4 firstObject has been available as private API.
     It has been publicly available since iOS 7.
  */
 - (id)mk_firstObject;
+
+- (id)mk_max;
+
+- (id)mk_min;
+
+- (BOOL)mk_isEmpty;
 
 @end

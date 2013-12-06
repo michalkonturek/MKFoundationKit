@@ -48,6 +48,26 @@
     assertThat(result, nilValue());
 }
 
+- (void)test_max {
+    NSNumber *result = [self.target mk_max];
+    assertThat(result, equalToInteger(3));
+}
+
+- (void)test_max_returns_zero_when_empty {
+    NSNumber *result = [[NSArray array] mk_max];
+    assertThat(result, equalToInteger(0));
+}
+
+- (void)test_min {
+    NSNumber *result = [self.target mk_min];
+    assertThat(result, equalToInteger(1));
+}
+
+- (void)test_min_returns_zero_when_empty {
+    NSNumber *result = [[NSArray array] mk_min];
+    assertThat(result, equalToInteger(0));
+}
+
 - (void)test_dequeueObject_returns_first_element {
     id expected = [self.target objectAtIndex:0];
     id result = [self.target mk_firstObject];

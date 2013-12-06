@@ -16,8 +16,7 @@
     if (!block) return;
     
     [self enumerateObjectsWithOptions:NSEnumerationConcurrent
-                           usingBlock:^(id obj, NSUInteger idx, BOOL *stop)
-    {
+                           usingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         block(obj);
     }];
 }
