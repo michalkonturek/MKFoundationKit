@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 #import "NSArray+MK_Block.h"
 #import "NSArray+MK_Misc.h"
 

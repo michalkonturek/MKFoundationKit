@@ -8,6 +8,9 @@
 
 #import "NSNumber+MK_Comparison.h"
 
+#import "NSNumber+MK_Fraction.h"
+#import "NSNumber+MK_Manipulation.h"
+
 #import "LINQ.h"
 
 @implementation NSNumber (MK_Comparison)

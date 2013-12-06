@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
 //
 
-//#import <Foundation/Foundation.h>
-
 #import "MKMacro.h"
 
 #import "NSArray+MK.h"
@@ -15,6 +13,6 @@
 #import "NSDate+MK.h"
 #import "NSDictionary+MK.h"
 #import "NSNumber+MK.h"
-#import "NSObject+MK_AutoDescribe.h"
+#import "NSObject+MK.h"
 #import "NSSet+MK.h"
 #import "NSString+MK.h"
