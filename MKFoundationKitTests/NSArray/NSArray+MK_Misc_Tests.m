@@ -31,6 +31,13 @@
     [super tearDown];
 }
 
+- (void)test_firstObject_returns_first_element {
+    id expected = [self.target objectAtIndex:0];
+    id result = [self.target mk_firstObject];
+    
+    assertThat(result, sameInstance(expected));
+}
+
 - (void)test_isEmpty_returns_true {
     BOOL result = [[NSArray array] mk_isEmpty];
     assertThatBool(result, equalToBool(YES));
@@ -66,13 +73,6 @@
 - (void)test_min_returns_zero_when_empty {
     NSNumber *result = [[NSArray array] mk_min];
     assertThat(result, equalToInteger(0));
-}
-
-- (void)test_dequeueObject_returns_first_element {
-    id expected = [self.target objectAtIndex:0];
-    id result = [self.target mk_firstObject];
-    
-    assertThat(result, sameInstance(expected));
 }
 
 @end
