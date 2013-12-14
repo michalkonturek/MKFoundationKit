@@ -47,11 +47,11 @@
 
 @interface NSString (MK_Base64)
 
-+ (NSString *)mk_stringWithBase64EncodedString:(NSString *)string;
+//+ (NSString *)mk_stringWithBase64EncodedString:(NSString *)string;
 
 - (NSString *)mk_base64DecodedString;
 - (NSString *)mk_base64EncodedString;
-- (NSString *)mk_base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth;
+//- (NSString *)mk_base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth;
 
 - (NSData *)mk_base64DecodedData;
 - (NSData *)mk_base64EncodedData;
