@@ -8,8 +8,6 @@
 
 #import "NSArray+MK_Block.h"
 
-#import <LINQ4Obj-C/NSArray+LINQ.h>
-
 @implementation NSArray (MK_Block)
 
 - (void)mk_apply:(void (^)(id item))block {
@@ -30,7 +28,14 @@
 }
 
 - (instancetype)mk_map:(id (^)(id item))selectorBlock {
-    return [self linq_select:selectorBlock];
+    if (!selectorBlock) return [[self class] array];
+    
+    NSMutableArray *result = [NSMutableArray arrayWithCapacity:self.count];
+    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        id value = selectorBlock(obj) ? : [NSNull null];
+        [result addObject:value];
+    }];
+    return result;
 }
 
 - (id)mk_match:(BOOL (^)(id item))conditionBlock {
@@ -64,25 +69,39 @@
 }
 
 - (instancetype)mk_reject:(BOOL (^)(id item))conditionBlock {
-    return [self linq_where:^BOOL(id item) {
+    return [self mk_select:^BOOL(id item) {
         return (!conditionBlock(item));
     }];
 }
 
 - (instancetype)mk_select:(BOOL (^)(id item))conditionBlock {
-    return [self linq_where:conditionBlock];
+    if (!conditionBlock) return self;
+    
+    NSMutableArray *result = [NSMutableArray array];
+    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        if (conditionBlock(obj)) [result addObject:obj];
+    }];
+    return result;
 }
 
 - (BOOL)mk_all:(BOOL (^)(id item))conditionBlock {
-    return [self linq_all:conditionBlock];
+    if (!conditionBlock) return YES;
+    for (id item in self) {
+        if (!conditionBlock(item)) return NO;
+    }
+    return YES;
 }
 
 - (BOOL)mk_any:(BOOL (^)(id item))conditionBlock {
-    return [self linq_any:conditionBlock];
+    if (!conditionBlock) return NO;
+    for (id item in self) {
+        if (conditionBlock(item)) return YES;
+    }
+    return NO;
 }
 
 - (BOOL)mk_none:(BOOL (^)(id item))conditionBlock {
-    return ![self linq_any:conditionBlock];
+    return ![self mk_any:conditionBlock];
 }
 
 @end
