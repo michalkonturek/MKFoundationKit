@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "71EF008537C54CFC91102FB8"
+               BuildableName = "libPods-MKFoundationKitTests.a"
+               BlueprintName = "Pods-MKFoundationKitTests"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "907CCFEF184CE14A0070E0AC"
                BuildableName = "MKFoundationKit.app"
                BlueprintName = "MKFoundationKit"
