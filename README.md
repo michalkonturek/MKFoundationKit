@@ -100,7 +100,6 @@ Source code of this project is available under the standard MIT license. Please 
 - (NSString *)mk_base64DecodedString;
 
 - (NSString *)mk_base64EncodedString;
-- (NSString *)mk_base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth;
 ```
 
 ## NSDate Additions
@@ -378,11 +377,8 @@ Source code of this project is available under the standard MIT license. Please 
 #### NSString+MK_Base64
 
 ```objc
-+ (NSString *)mk_stringWithBase64EncodedString:(NSString *)string;
-
 - (NSString *)mk_base64DecodedString;
 - (NSString *)mk_base64EncodedString;
-- (NSString *)mk_base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth;
 
 - (NSData *)mk_base64DecodedData;
 - (NSData *)mk_base64EncodedData;
