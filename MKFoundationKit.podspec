@@ -20,6 +20,4 @@ Pod::Spec.new do |s|
   s.source_files = 'MKFoundationKit/Source/**/*.{h,m}'
   s.requires_arc = true
 
-  s.dependency 'LINQ4Obj-C', '>= 1.0.2'
-
 end
