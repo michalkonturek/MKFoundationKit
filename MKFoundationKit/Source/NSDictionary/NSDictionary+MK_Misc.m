@@ -9,12 +9,11 @@
 #import "NSDictionary+MK.h"
 
 #import "NSArray+MK.h"
-#import "LINQ.h"
 
 @implementation NSDictionary (MK_Misc)
 
 - (NSMutableDictionary *)mk_dictionaryWithKeys:(NSArray *)keys {
-    if ([keys mk_isEmpty]) return [NSMutableDictionary linq_empty];
+    if ([keys mk_isEmpty]) return [NSMutableDictionary dictionary];
     
     id result = [NSMutableDictionary dictionaryWithCapacity:[keys count]];
     for (NSString *key in keys) {

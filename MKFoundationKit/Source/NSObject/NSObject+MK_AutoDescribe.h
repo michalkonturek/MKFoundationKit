@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
 //
 
-#import "NSObject+MK.h"
+#import <Foundation/Foundation.h>
 
 @interface NSObject (MK_AutoDescribe)
 

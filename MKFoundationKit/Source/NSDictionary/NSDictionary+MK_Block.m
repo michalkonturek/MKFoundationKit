@@ -8,8 +8,6 @@
 
 #import "NSDictionary+MK_Block.h"
 
-#import <LINQ4Obj-C/NSDictionary+LINQ.h>
-
 @implementation NSDictionary (MK_Block)
 
 - (void)mk_apply:(void (^)(id item))block {
@@ -35,7 +33,8 @@
     
     NSMutableDictionary *result = [NSMutableDictionary dictionaryWithCapacity:self.count];
     [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-        [result setObject:selectorBlock(obj) forKey:key];
+        id value = selectorBlock(obj) ? : [NSNull null];
+        [result setObject:value forKey:key];
     }];
     
     return result;
@@ -67,25 +66,45 @@
 }
 
 - (instancetype)mk_reject:(BOOL (^)(id key, id value))conditionBlock {
-    return [self linq_where:^BOOL(id key, id value) {
+    return [self mk_select:^BOOL(id key, id value) {
         return (!conditionBlock(key, value));
     }];
 }
 
 - (instancetype)mk_select:(BOOL (^)(id key, id value))conditionBlock {
-    return [self linq_where:conditionBlock];
+    if (!conditionBlock) return self;
+    
+    NSMutableDictionary *result = [NSMutableDictionary dictionary];
+    [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        if (conditionBlock(key, obj)) [result setObject:obj forKey:key];
+    }];
+    return result;
 }
 
 - (BOOL)mk_all:(BOOL (^)(id key, id value))conditionBlock {
-    return [self linq_all:conditionBlock];
+    if (!conditionBlock) return YES;
+    
+    __block NSInteger failedCount = 0;
+    [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        if (!conditionBlock(key, obj)) failedCount++;
+    }];
+    
+    return (failedCount == 0);
 }
 
-- (BOOL)mk_any:(LINQKeyValueConditionBlock)conditionBlock {
-    return [self linq_any:conditionBlock];
+- (BOOL)mk_any:(BOOL (^)(id key, id value))conditionBlock {
+    if (!conditionBlock) return NO;
+    
+    __block BOOL result = NO;
+    [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        if (conditionBlock(key, obj)) result = YES;
+    }];
+    
+    return result;
 }
 
-- (BOOL)mk_none:(LINQKeyValueConditionBlock)conditionBlock {
-    return ![self linq_any:conditionBlock];
+- (BOOL)mk_none:(BOOL (^)(id key, id value))conditionBlock {
+    return ![self mk_any:conditionBlock];
 }
 
 @end

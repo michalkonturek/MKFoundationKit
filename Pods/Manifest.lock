@@ -1,13 +1,10 @@
 PODS:
-  - LINQ4Obj-C (1.0.2)
   - OCHamcrest (3.0.1)
 
 DEPENDENCIES:
-  - LINQ4Obj-C (>= 1.0.0)
   - OCHamcrest (>= 3.0.0)
 
 SPEC CHECKSUMS:
-  LINQ4Obj-C: ed14f6f00beb890f24e04d35f64ac6a7301c688b
   OCHamcrest: 782c52ae8c673e5d6060a65005cfd26d20d519ba
 
 COCOAPODS: 0.28.0

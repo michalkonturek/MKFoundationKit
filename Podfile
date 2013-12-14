@@ -1,6 +1,6 @@
 
 
-pod 'LINQ4Obj-C',      '>= 1.0.0'
+#pod 'LINQ4Obj-C',      '>= 1.0.0'
 
 
 target :MKFoundationKitTests, :exclusive => true do

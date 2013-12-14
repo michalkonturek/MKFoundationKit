@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
 //
 
-#import "NSArray+MK.h"
+#import <Foundation/Foundation.h>
 
 @interface NSArray (MK_Block)
 
@@ -17,6 +17,8 @@
 - (instancetype)mk_map:(id (^)(id item))selectorBlock;
 
 - (id)mk_match:(BOOL (^)(id item))conditionBlock;
+
+- (id)mk_reduce:(id (^)(id item, id aggregate))accumulatorBlock;
 
 - (id)mk_reduce:(id)initial withBlock:(id (^)(id item, id aggregate))accumulatorBlock;
 

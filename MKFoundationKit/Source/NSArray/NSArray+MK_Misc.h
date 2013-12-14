@@ -6,11 +6,9 @@
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
 //
 
-#import "NSArray+MK.h"
+#import <Foundation/Foundation.h>
 
 @interface NSArray (MK_Misc)
-
-- (BOOL)mk_isEmpty;
 
 /*
  NOTE: 
@@ -18,5 +16,11 @@
     It has been publicly available since iOS 7.
  */
 - (id)mk_firstObject;
+
+- (id)mk_max;
+
+- (id)mk_min;
+
+- (BOOL)mk_isEmpty;
 
 @end

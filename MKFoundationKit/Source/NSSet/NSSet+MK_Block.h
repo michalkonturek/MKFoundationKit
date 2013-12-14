@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
 //
 
-#import "NSSet+MK.h"
+#import <Foundation/Foundation.h>
 
 @interface NSSet (MK_Block)
 

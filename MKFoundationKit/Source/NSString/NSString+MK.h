@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 #import "NSString+MK_Base64.h"
 #import "NSString+MK_Conversion.h"
 #import "NSString+MK_Empty.h"

@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
 //
 
-#import "NSNumber+MK.h"
+#import <Foundation/Foundation.h>
 
 @interface NSNumber (MK_Comparison)
 

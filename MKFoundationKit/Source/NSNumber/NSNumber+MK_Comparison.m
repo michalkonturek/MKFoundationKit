@@ -8,24 +8,27 @@
 
 #import "NSNumber+MK_Comparison.h"
 
-#import "LINQ.h"
+#import "NSNumber+MK_Fraction.h"
+#import "NSNumber+MK_Manipulation.h"
+
+#import "NSArray+MK_Misc.h"
 
 @implementation NSNumber (MK_Comparison)
 
 + (instancetype)mk_max:(NSArray *)numbers {
-    return [numbers linq_max];
+    return [numbers mk_max];
 }
 
 + (instancetype)mk_min:(NSArray *)numbers {
-    return [numbers linq_min];
+    return [numbers mk_min];
 }
 
 - (instancetype)mk_max:(NSArray *)others {
-    return [[[NSMutableArray arrayWithArray:others] arrayByAddingObject:self] linq_max];
+    return [[[NSMutableArray arrayWithArray:others] arrayByAddingObject:self] mk_max];
 }
 
 - (instancetype)mk_min:(NSArray *)others {
-    return [[[NSMutableArray arrayWithArray:others] arrayByAddingObject:self] linq_min];
+    return [[[NSMutableArray arrayWithArray:others] arrayByAddingObject:self] mk_min];
 }
 
 - (BOOL)mk_isTheSame:(NSNumber *)other {

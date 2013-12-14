@@ -10,14 +10,8 @@
 
 @implementation NSDate (MK_Manipulation)
 
-/*
- From iOS 7 NS<unit>CalendarUnit is deprecated and replaced by NSCalendarUnit<unit>.
- At the moment Travis CI does not have Xcode 5 installed, so in otder to pass
- tests, the legacy typedef ENUM must be used.
- */
-
 - (NSDate *)mk_dateByAddingDays:(NSInteger)days {
-    return [self _dateByAdding:days ofUnit:NSDayCalendarUnit];
+    return [self _dateByAdding:days ofUnit:NSCalendarUnitDay];
 }
 
 - (NSDate *)mk_dateByAddingWeeks:(NSInteger)weeks {
@@ -25,27 +19,27 @@
 }
 
 - (NSDate *)mk_dateByAddingMonths:(NSInteger)months {
-    return [self _dateByAdding:months ofUnit:NSMonthCalendarUnit];
+    return [self _dateByAdding:months ofUnit:NSCalendarUnitMonth];
 }
 
 - (NSDate *)mk_dateByAddingYears:(NSInteger)months {
-    return [self _dateByAdding:months ofUnit:NSYearCalendarUnit];
+    return [self _dateByAdding:months ofUnit:NSCalendarUnitYear];
 }
 
 - (NSDate *)mk_dateByAddingHours:(NSInteger)hours {
-    return [self _dateByAdding:hours ofUnit:NSHourCalendarUnit];
+    return [self _dateByAdding:hours ofUnit:NSCalendarUnitHour];
 }
 
 - (NSDate *)mk_dateByAddingMinutes:(NSInteger)minutes {
-    return [self _dateByAdding:minutes ofUnit:NSMinuteCalendarUnit];
+    return [self _dateByAdding:minutes ofUnit:NSCalendarUnitMinute];
 }
 
 - (NSDate *)mk_dateByAddingSeconds:(NSInteger)seconds {
-    return [self _dateByAdding:seconds ofUnit:NSSecondCalendarUnit];
+    return [self _dateByAdding:seconds ofUnit:NSCalendarUnitSecond];
 }
 
 - (NSDate *)mk_dateBySubtractingDays:(NSInteger)days {
-    return [self _dateByAdding:-days ofUnit:NSDayCalendarUnit];
+    return [self _dateByAdding:-days ofUnit:NSCalendarUnitDay];
 }
 
 - (NSDate *)mk_dateBySubtractingWeeks:(NSInteger)weeks {
@@ -53,45 +47,45 @@
 }
 
 - (NSDate *)mk_dateBySubtractingMonths:(NSInteger)months {
-    return [self _dateByAdding:-months ofUnit:NSMonthCalendarUnit];
+    return [self _dateByAdding:-months ofUnit:NSCalendarUnitMonth];
 }
 
 - (NSDate *)mk_dateBySubtractingYears:(NSInteger)years {
-    return [self _dateByAdding:-years ofUnit:NSYearCalendarUnit];
+    return [self _dateByAdding:-years ofUnit:NSCalendarUnitYear];
 }
 
 - (NSDate *)mk_dateBySubtractingHours:(NSInteger)hours {
-    return [self _dateByAdding:-hours ofUnit:NSHourCalendarUnit];
+    return [self _dateByAdding:-hours ofUnit:NSCalendarUnitHour];
 }
 
 - (NSDate *)mk_dateBySubtractingMinutes:(NSInteger)minutes {
-    return [self _dateByAdding:-minutes ofUnit:NSMinuteCalendarUnit];
+    return [self _dateByAdding:-minutes ofUnit:NSCalendarUnitMinute];
 }
 
 - (NSDate *)mk_dateBySubtractingSeconds:(NSInteger)seconds {
-    return [self _dateByAdding:-seconds ofUnit:NSSecondCalendarUnit];
+    return [self _dateByAdding:-seconds ofUnit:NSCalendarUnitSecond];
 }
 
 - (NSDate *)_dateByAdding:(NSInteger)value ofUnit:(NSCalendarUnit)unit {    
     NSDateComponents *components = [[NSDateComponents alloc] init];
     
     switch (unit) {
-        case NSYearCalendarUnit:
+        case NSCalendarUnitYear:
             [components setYear:value];
             break;
-        case NSMonthCalendarUnit:
+        case NSCalendarUnitMonth:
             [components setMonth:value];
             break;
-        case NSDayCalendarUnit:
+        case NSCalendarUnitDay:
             [components setDay:value];
             break;
-        case NSHourCalendarUnit:
+        case NSCalendarUnitHour:
             [components setHour:value];
             break;
-        case NSMinuteCalendarUnit:
+        case NSCalendarUnitMinute:
             [components setMinute:value];
             break;
-        case NSSecondCalendarUnit:
+        case NSCalendarUnitSecond:
             [components setSecond:value];
             break;
         default:
@@ -104,15 +98,15 @@
 }
 
 - (NSInteger)mk_differenceInDaysToDate:(NSDate *)toDate {
-    return [self _differenceInUnit:NSDayCalendarUnit toDate:toDate];
+    return [self _differenceInUnit:NSCalendarUnitDay toDate:toDate];
 }
 
 - (NSInteger)mk_differenceInMonthsToDate:(NSDate *)toDate {
-    return [self _differenceInUnit:NSMonthCalendarUnit toDate:toDate];
+    return [self _differenceInUnit:NSCalendarUnitMonth toDate:toDate];
 }
 
 - (NSInteger)mk_differenceInYearsToDate:(NSDate *)toDate {
-    return [self _differenceInUnit:NSYearCalendarUnit toDate:toDate];
+    return [self _differenceInUnit:NSCalendarUnitYear toDate:toDate];
 }
 
 - (NSInteger)_differenceInUnit:(NSCalendarUnit)unit toDate:(NSDate *)toDate {
@@ -121,10 +115,10 @@
                                                fromDate:self toDate:toDate options:0];
     
     switch (unit) {
-        case NSDayCalendarUnit:
+        case NSCalendarUnitDay:
             return [components day];
             break;
-        case NSMonthCalendarUnit:
+        case NSCalendarUnitMonth:
             return [components month];
             break;
         default:

@@ -8,6 +8,8 @@
 
 #import "NSMutableArray+MK_Stack.h"
 
+#import "NSArray+MK_Misc.h"
+
 @implementation NSMutableArray (MK_Stack)
 
 - (void)mk_pushObject:(id)object {

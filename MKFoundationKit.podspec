@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     "Michal Konturek" => "michal.konturek@gmail.com" 
   }
 
-  s.ios.deployment_target = '6.1'
+  s.ios.deployment_target = '7.0'
 
   s.source       = {
     :git => "https://github.com/michalkonturek/MKFoundationKit.git",
@@ -19,7 +19,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'MKFoundationKit/Source/**/*.{h,m}'
   s.requires_arc = true
-
-  s.dependency 'LINQ4Obj-C', '>= 1.0.2'
 
 end

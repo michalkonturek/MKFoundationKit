@@ -8,6 +8,8 @@
 
 #import "NSMutableArray+MK_Queue.h"
 
+#import "NSArray+MK_Misc.h"
+
 @implementation NSMutableArray (MK_Queue)
 
 - (void)mk_enqueueObject:(id)object {
