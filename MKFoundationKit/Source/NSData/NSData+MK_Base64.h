@@ -15,6 +15,5 @@
 - (NSString *)mk_base64DecodedString;
 
 - (NSString *)mk_base64EncodedString;
-//- (NSString *)mk_base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth;
 
 @end
