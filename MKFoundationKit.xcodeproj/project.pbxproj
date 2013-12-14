@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26F71E8BC49F4ED9AD94338D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2AFA71716B244859CD9A336 /* libPods.a */; };
 		904D3796184CE2D400DB9BFC /* NSArray+MK_Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 904D374D184CE2D400DB9BFC /* NSArray+MK_Block.m */; };
 		904D3797184CE2D400DB9BFC /* NSArray+MK_Misc.m in Sources */ = {isa = PBXBuildFile; fileRef = 904D374F184CE2D400DB9BFC /* NSArray+MK_Misc.m */; };
 		904D3798184CE2D400DB9BFC /* NSMutableArray+MK_Misc.m in Sources */ = {isa = PBXBuildFile; fileRef = 904D3751184CE2D400DB9BFC /* NSMutableArray+MK_Misc.m */; };
@@ -228,7 +227,6 @@
 				907CCFF6184CE14A0070E0AC /* CoreGraphics.framework in Frameworks */,
 				907CCFF8184CE14A0070E0AC /* UIKit.framework in Frameworks */,
 				907CCFF4184CE14A0070E0AC /* Foundation.framework in Frameworks */,
-				26F71E8BC49F4ED9AD94338D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
