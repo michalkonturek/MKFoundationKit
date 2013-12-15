@@ -40,4 +40,28 @@ Pod::Spec.new do |s|
     ss.source_files = 'MKFoundationKit/Source/**/*Stack.{h,m}'
   end  
 
+  s.subspec 'NSArray' do |ss|
+    ss.source_files = 'MKFoundationKit/Source/NSArray/*.{h,m}'
+  end
+
+  s.subspec 'NSDate' do |ss|
+    ss.source_files = 'MKFoundationKit/Source/NSDate/*.{h,m}'
+  end
+
+  s.subspec 'NSDictionary' do |ss|
+    ss.source_files = 'MKFoundationKit/Source/NSDictionary/*.{h,m}'
+  end
+
+  s.subspec 'NSNumber' do |ss|
+    ss.source_files = 'MKFoundationKit/Source/NSNumber/*.{h,m}'
+  end
+
+  s.subspec 'NSSet' do |ss|
+    ss.source_files = 'MKFoundationKit/Source/NSSet/*.{h,m}'
+  end
+
+  s.subspec 'NSString' do |ss|
+    ss.source_files = 'MKFoundationKit/Source/NSString/*.{h,m}'
+  end
+
 end
