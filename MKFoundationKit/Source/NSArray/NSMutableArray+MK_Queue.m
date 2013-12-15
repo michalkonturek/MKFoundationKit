@@ -17,9 +17,9 @@
 - (id)mk_dequeueObject {
     if ([self count] == 0) return nil;
     
-    id lastObject = [self objectAtIndex:0];
+    id firstObject = [self objectAtIndex:0];
     [self removeObjectAtIndex:0];
-    return lastObject;
+    return firstObject;
 }
 
 @end
