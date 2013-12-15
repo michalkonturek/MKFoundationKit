@@ -249,14 +249,6 @@ Source code of this project is available under the standard MIT license. Please 
 #### NSNumber+MK_Comparison
 
 ```objc
-+ (instancetype)mk_max:(NSArray *)numbers;
-
-+ (instancetype)mk_min:(NSArray *)numbers;
-
-- (instancetype)mk_max:(NSArray *)others;
-
-- (instancetype)mk_min:(NSArray *)others;
-
 - (BOOL)mk_isTheSame:(NSNumber *)other;
 
 - (BOOL)mk_isGreaterThan:(NSNumber *)other;
