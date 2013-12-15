@@ -22,14 +22,14 @@ Source code of this project is available under the standard MIT license. Please 
 
 # API
 
-* [NSArray](#NSArray)
-* [NSData](#NSData)
-* [NSDate](#NSDate)
-* [NSDictionary](#NSDictionary)
-* [NSNumber](#NSNumber)
-* [NSObject](#NSObject)
-* [NSSet](#NSSet)
-* [NSString](#NSString)
+* [NSArray](#nsarray-additions)
+* [NSData](#nsdata-additions)
+* [NSDate](#nsdata-additions)
+* [NSDictionary](#nsdictionary-additions)
+* [NSNumber](#nsnumber-additions)
+* [NSObject](#nsobject-additions)
+* [NSSet](#nsset-additions)
+* [NSString](#nsstring-additions)
 
 
 ## NSArray Additions
@@ -203,7 +203,7 @@ Source code of this project is available under the standard MIT license. Please 
 
 <!--## NSDecimalNumber-->
 
-## NSDictionary
+## NSDictionary Additions
 
 #### NSDictionary+MK_Block
 
@@ -244,7 +244,7 @@ Source code of this project is available under the standard MIT license. Please 
 - (void)mk_safeSetObject:(id)object forKey:(id)key;
 ```
 
-## NSNumber
+## NSNumber Additions
 
 #### NSNumber+MK_Comparison
 
@@ -323,7 +323,7 @@ Source code of this project is available under the standard MIT license. Please 
 - (instancetype)mk_roundedWithPrecision:(short)precision;
 ```
 
-## NSObject
+## NSObject Additions
 
 #### NSObject+MK_AutoDescribe
 
@@ -346,7 +346,7 @@ Source code of this project is available under the standard MIT license. Please 
 - (NSString *)mk_className;
 ```
 
-## NSSet
+## NSSet Additions
 
 #### NSSet+MK_Block
 
@@ -372,7 +372,7 @@ Source code of this project is available under the standard MIT license. Please 
 - (BOOL)mk_none:(BOOL (^)(id item))conditionBlock;
 ```
 
-## NSString
+## NSString Additions
 
 #### NSString+MK_Base64
 
