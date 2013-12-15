@@ -60,7 +60,4 @@
     assertThat(self.target, contains(@2, @3, nil));
 }
 
-
-
-
 @end

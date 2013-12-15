@@ -8,12 +8,10 @@
 
 #import "NSDictionary+MK.h"
 
-#import "NSArray+MK.h"
-
 @implementation NSDictionary (MK_Misc)
 
 - (NSMutableDictionary *)mk_dictionaryWithKeys:(NSArray *)keys {
-    if ([keys mk_isEmpty]) return [NSMutableDictionary dictionary];
+    if ([keys count] == 0) return [NSMutableDictionary dictionary];
     
     id result = [NSMutableDictionary dictionaryWithCapacity:[keys count]];
     for (NSString *key in keys) {

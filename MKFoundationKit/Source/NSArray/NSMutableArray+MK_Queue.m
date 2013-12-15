@@ -8,8 +8,6 @@
 
 #import "NSMutableArray+MK_Queue.h"
 
-#import "NSArray+MK_Misc.h"
-
 @implementation NSMutableArray (MK_Queue)
 
 - (void)mk_enqueueObject:(id)object {
@@ -17,11 +15,11 @@
 }
 
 - (id)mk_dequeueObject {
-    if ([self mk_isEmpty]) return nil;
+    if ([self count] == 0) return nil;
     
-    id lastObject = [self mk_firstObject];
+    id firstObject = [self objectAtIndex:0];
     [self removeObjectAtIndex:0];
-    return lastObject;
+    return firstObject;
 }
 
 @end

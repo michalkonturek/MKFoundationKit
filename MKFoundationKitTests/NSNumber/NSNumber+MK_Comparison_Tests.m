@@ -29,30 +29,6 @@
     self.numbers = nil;
 }
 
-- (void)test_class_max {
-    id expected = @18;
-    id returned = [NSNumber mk_max:self.numbers];
-    assertThat(expected, equalTo(returned));
-}
-
-- (void)test_class_min {
-    id expected = @1;
-    id returned = [NSNumber mk_min:self.numbers];
-    assertThat(expected, equalTo(returned));
-}
-
-- (void)test_max {
-    id expected = @31;
-    id returned = [expected mk_max:self.numbers];
-    assertThat(expected, equalTo(returned));
-}
-
-- (void)test_min {
-    id expected = @1;
-    id returned = [@2 mk_min:self.numbers];
-    assertThat(expected, equalTo(returned));
-}
-
 - (void)test_isTheSame_returns_true {
     BOOL result = [@10 mk_isTheSame:@10.0];
     assertThatBool(result, equalToBool(YES));

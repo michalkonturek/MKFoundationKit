@@ -8,8 +8,6 @@
 
 #import "NSMutableArray+MK_Stack.h"
 
-#import "NSArray+MK_Misc.h"
-
 @implementation NSMutableArray (MK_Stack)
 
 - (void)mk_pushObject:(id)object {
@@ -17,10 +15,10 @@
 }
 
 - (id)mk_pullObject {
-    if ([self mk_isEmpty]) return nil;
-
-    id firstObject = [self mk_firstObject];
-    [self removeObject:firstObject];
+    if ([self count] == 0) return nil;
+    
+    id firstObject = [self objectAtIndex:0];
+    [self removeObjectAtIndex:0];
     return firstObject;
 }
 

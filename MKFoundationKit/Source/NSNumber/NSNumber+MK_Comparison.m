@@ -11,25 +11,7 @@
 #import "NSNumber+MK_Fraction.h"
 #import "NSNumber+MK_Manipulation.h"
 
-#import "NSArray+MK_Misc.h"
-
 @implementation NSNumber (MK_Comparison)
-
-+ (instancetype)mk_max:(NSArray *)numbers {
-    return [numbers mk_max];
-}
-
-+ (instancetype)mk_min:(NSArray *)numbers {
-    return [numbers mk_min];
-}
-
-- (instancetype)mk_max:(NSArray *)others {
-    return [[[NSMutableArray arrayWithArray:others] arrayByAddingObject:self] mk_max];
-}
-
-- (instancetype)mk_min:(NSArray *)others {
-    return [[[NSMutableArray arrayWithArray:others] arrayByAddingObject:self] mk_min];
-}
 
 - (BOOL)mk_isTheSame:(NSNumber *)other {
     return ([self compare:other] == NSOrderedSame);
