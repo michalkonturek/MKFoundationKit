@@ -61,6 +61,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'NSString' do |ss|
+    ss.dependency 'MKFoundationKit/Base64'
     ss.source_files = 'MKFoundationKit/Source/NSString/*.{h,m}'
   end
 
