@@ -9,7 +9,6 @@
 #import "NSString+MK_Base64.h"
 
 #import "NSData+MK_Base64.h"
-#import "NSString+MK_Empty.h"
 
 @implementation NSString (MK_Base64)
 
