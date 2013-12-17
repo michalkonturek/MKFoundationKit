@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "MKFoundationKit"
-  s.version      = "0.4.4"
+  s.version      = "1.0.0"
   s.summary      = "Collection of categories for NSFoundation classes to accelerate development."
   s.homepage     = "https://github.com/michalkonturek/MKFoundationKit"
   s.license      = 'MIT'
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.source       = {
     :git => "https://github.com/michalkonturek/MKFoundationKit.git",
-    :tag => "0.4.4"
+    :tag => "1.0.0"
   }
 
   s.source_files = 'MKFoundationKit/Source/**/*.{h,m}'
@@ -61,6 +61,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'NSString' do |ss|
+    ss.dependency 'MKFoundationKit/Base64'
     ss.source_files = 'MKFoundationKit/Source/NSString/*.{h,m}'
   end
 
