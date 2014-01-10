@@ -17,7 +17,7 @@
 }
 
 + (NSArray *)mk_propertyList:(Class)clazz {
-    NSUInteger count;
+    unsigned int count;
     objc_property_t *propertyList = class_copyPropertyList(clazz, &count);
     
     NSMutableArray *result = [NSMutableArray arrayWithCapacity:count];
@@ -68,7 +68,7 @@
 }
 
 + (NSArray *)mk_methodList:(Class)clazz {
-    NSUInteger count;
+    unsigned int count;
     Method *methods = class_copyMethodList(clazz, &count);
     
     NSMutableArray *results = [NSMutableArray arrayWithCapacity:count];
