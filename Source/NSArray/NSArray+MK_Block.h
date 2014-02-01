@@ -14,22 +14,22 @@
 
 - (void)mk_each:(void (^)(id item))block;
 
-- (instancetype)mk_map:(id (^)(id item))selectorBlock;
+- (instancetype)mk_map:(id (^)(id item))block;
 
-- (id)mk_match:(BOOL (^)(id item))conditionBlock;
+- (id)mk_match:(BOOL (^)(id item))block;
 
-- (id)mk_reduce:(id (^)(id item, id aggregate))accumulatorBlock;
+- (id)mk_reduce:(id (^)(id item, id aggregate))block;
 
-- (id)mk_reduce:(id)initial withBlock:(id (^)(id item, id aggregate))accumulatorBlock;
+- (id)mk_reduce:(id)initial withBlock:(id (^)(id item, id aggregate))block;
 
-- (instancetype)mk_reject:(BOOL (^)(id item))conditionBlock;
+- (instancetype)mk_reject:(BOOL (^)(id item))block;
 
-- (instancetype)mk_select:(BOOL (^)(id item))conditionBlock;
+- (instancetype)mk_select:(BOOL (^)(id item))block;
 
-- (BOOL)mk_all:(BOOL (^)(id item))conditionBlock;
+- (BOOL)mk_all:(BOOL (^)(id item))block;
 
-- (BOOL)mk_any:(BOOL (^)(id item))conditionBlock;
+- (BOOL)mk_any:(BOOL (^)(id item))block;
 
-- (BOOL)mk_none:(BOOL (^)(id item))conditionBlock;
+- (BOOL)mk_none:(BOOL (^)(id item))block;
 
 @end
