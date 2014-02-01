@@ -27,23 +27,23 @@
     }];
 }
 
-- (instancetype)mk_map:(id (^)(id item))selectorBlock {
-    if (!selectorBlock) return [[self class] array];
+- (instancetype)mk_map:(id (^)(id item))block {
+    if (!block) return [[self class] array];
     
     NSMutableArray *result = [NSMutableArray arrayWithCapacity:self.count];
     [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        id value = selectorBlock(obj) ? : [NSNull null];
+        id value = block(obj) ? : [NSNull null];
         [result addObject:value];
     }];
     return result;
 }
 
-- (id)mk_match:(BOOL (^)(id item))conditionBlock {
-    if (!conditionBlock) return self;
+- (id)mk_match:(BOOL (^)(id item))block {
+    if (!block) return self;
     
     __block id result = nil;
     [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        if (conditionBlock(obj)) {
+        if (block(obj)) {
             result = obj;
             *stop = YES;
         }
@@ -52,56 +52,56 @@
     return result;
 }
 
-- (id)mk_reduce:(id (^)(id item, id aggregate))accumulatorBlock {
-    return [self mk_reduce:nil withBlock:accumulatorBlock];
+- (id)mk_reduce:(id (^)(id item, id aggregate))block {
+    return [self mk_reduce:nil withBlock:block];
 }
 
-- (id)mk_reduce:(id)initial withBlock:(id (^)(id item, id aggregate))accumulatorBlock {
-    if (!accumulatorBlock) return self;
+- (id)mk_reduce:(id)initial withBlock:(id (^)(id item, id aggregate))block {
+    if (!block) return self;
     
     __block id result = initial;
     [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         if (!result) result = obj;
-        else result = accumulatorBlock(obj, result);
+        else result = block(obj, result);
     }];
     
     return result;
 }
 
-- (instancetype)mk_reject:(BOOL (^)(id item))conditionBlock {
+- (instancetype)mk_reject:(BOOL (^)(id item))block {
     return [self mk_select:^BOOL(id item) {
-        return (!conditionBlock(item));
+        return (!block(item));
     }];
 }
 
-- (instancetype)mk_select:(BOOL (^)(id item))conditionBlock {
-    if (!conditionBlock) return self;
+- (instancetype)mk_select:(BOOL (^)(id item))block {
+    if (!block) return self;
     
     NSMutableArray *result = [NSMutableArray array];
     [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        if (conditionBlock(obj)) [result addObject:obj];
+        if (block(obj)) [result addObject:obj];
     }];
     return result;
 }
 
-- (BOOL)mk_all:(BOOL (^)(id item))conditionBlock {
-    if (!conditionBlock) return YES;
+- (BOOL)mk_all:(BOOL (^)(id item))block {
+    if (!block) return YES;
     for (id item in self) {
-        if (!conditionBlock(item)) return NO;
+        if (!block(item)) return NO;
     }
     return YES;
 }
 
-- (BOOL)mk_any:(BOOL (^)(id item))conditionBlock {
-    if (!conditionBlock) return NO;
+- (BOOL)mk_any:(BOOL (^)(id item))block {
+    if (!block) return NO;
     for (id item in self) {
-        if (conditionBlock(item)) return YES;
+        if (block(item)) return YES;
     }
     return NO;
 }
 
-- (BOOL)mk_none:(BOOL (^)(id item))conditionBlock {
-    return ![self mk_any:conditionBlock];
+- (BOOL)mk_none:(BOOL (^)(id item))block {
+    return ![self mk_any:block];
 }
 
 @end
