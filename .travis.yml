@@ -7,6 +7,8 @@ before_install:
     - pod --version
     #- xcpretty --version
 
+    - cd MKFoundationKit
+
 script: make ci
 
 notifications:
