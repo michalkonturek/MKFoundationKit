@@ -8,9 +8,7 @@
 
 MKFoundationKit is a collection of categories for `NSFoundation` classes to accelerate development. 
 
-## Intro
-
-<!--This library is available through [CocoaPods][PODS].-->
+This library is available through [CocoaPods][PODS].
 
 ## License
 
