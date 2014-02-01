@@ -17,53 +17,53 @@ Pod::Spec.new do |s|
     :tag => "1.1.0"
   }
 
-  s.source_files = 'MKFoundationKit/Source/**/*.{h,m}'
+  s.source_files = 'Source/**/*.{h,m}'
   s.requires_arc = true
 
   s.subspec 'AutoDescribe' do |ss|
-    ss.source_files = 'MKFoundationKit/Source/**/*AutoDescribe.{h,m}'
+    ss.source_files = 'Source/**/*AutoDescribe.{h,m}'
   end
 
   s.subspec 'Base64' do |ss|
-    ss.source_files = 'MKFoundationKit/Source/**/*Base64.{h,m}'
+    ss.source_files = 'Source/**/*Base64.{h,m}'
   end
 
   s.subspec 'Block' do |ss|
-    ss.source_files = 'MKFoundationKit/Source/**/*Block.{h,m}'
+    ss.source_files = 'Source/**/*Block.{h,m}'
   end
 
   s.subspec 'Queue' do |ss|
-    ss.source_files = 'MKFoundationKit/Source/**/*Queue.{h,m}'
+    ss.source_files = 'Source/**/*Queue.{h,m}'
   end
 
   s.subspec 'Stack' do |ss|
-    ss.source_files = 'MKFoundationKit/Source/**/*Stack.{h,m}'
+    ss.source_files = 'Source/**/*Stack.{h,m}'
   end  
 
   s.subspec 'NSArray' do |ss|
-    ss.source_files = 'MKFoundationKit/Source/NSArray/*.{h,m}'
+    ss.source_files = 'Source/NSArray/*.{h,m}'
   end
 
   s.subspec 'NSDate' do |ss|
-    ss.source_files = 'MKFoundationKit/Source/NSDate/*.{h,m}'
+    ss.source_files = 'Source/NSDate/*.{h,m}'
   end
 
   s.subspec 'NSDictionary' do |ss|
-    ss.source_files = 'MKFoundationKit/Source/NSDictionary/*.{h,m}'
+    ss.source_files = 'Source/NSDictionary/*.{h,m}'
   end
 
   s.subspec 'NSNumber' do |ss|
-    ss.source_files = 'MKFoundationKit/Source/NSNumber/*.{h,m}'
+    ss.source_files = 'Source/NSNumber/*.{h,m}'
   end
 
   s.subspec 'NSSet' do |ss|
     ss.dependency 'MKFoundationKit/Block'
-    ss.source_files = 'MKFoundationKit/Source/NSSet/*.{h,m}'
+    ss.source_files = 'Source/NSSet/*.{h,m}'
   end
 
   s.subspec 'NSString' do |ss|
     ss.dependency 'MKFoundationKit/Base64'
-    ss.source_files = 'MKFoundationKit/Source/NSString/*.{h,m}'
+    ss.source_files = 'Source/NSString/*.{h,m}'
   end
 
 end
