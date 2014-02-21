@@ -7,3 +7,4 @@
 //
 
 #import "NSObject+MK_AutoDescribe.h"
+#import "NSObject+MK_Misc.h"
