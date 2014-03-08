@@ -9,6 +9,7 @@
 #import "MKMacro.h"
 
 #import "NSArray+MK.h"
+#import "NSBundle+MK.h"
 #import "NSData+MK.h"
 #import "NSDate+MK.h"
 #import "NSDictionary+MK.h"

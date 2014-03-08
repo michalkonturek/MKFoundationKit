@@ -48,6 +48,8 @@
 		907CD00E184CE14A0070E0AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907CCFF3184CE14A0070E0AC /* Foundation.framework */; };
 		907CD00F184CE14A0070E0AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907CCFF7184CE14A0070E0AC /* UIKit.framework */; };
 		907CD017184CE14A0070E0AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 907CD015184CE14A0070E0AC /* InfoPlist.strings */; };
+		909F75CE18CA90C600670367 /* NSBundle+MK_Version.m in Sources */ = {isa = PBXBuildFile; fileRef = 909F75CD18CA90C600670367 /* NSBundle+MK_Version.m */; };
+		909F75D118CA927E00670367 /* NSBundle+MK_Version_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 909F75D018CA927E00670367 /* NSBundle+MK_Version_Tests.m */; };
 		90AD9262185164E400C2CF19 /* NSArray+MK_Block_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AD923C185164E300C2CF19 /* NSArray+MK_Block_Tests.m */; };
 		90AD9263185164E400C2CF19 /* NSArray+MK_Misc_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AD923D185164E300C2CF19 /* NSArray+MK_Misc_Tests.m */; };
 		90AD9264185164E400C2CF19 /* NSMutableArray+MK_Misc_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AD923E185164E300C2CF19 /* NSMutableArray+MK_Misc_Tests.m */; };
@@ -78,6 +80,8 @@
 		90AD927D185164E400C2CF19 /* NSString+MK_UTF_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AD925F185164E400C2CF19 /* NSString+MK_UTF_Tests.m */; };
 		90AD927E185164E400C2CF19 /* NSString+MK_UUID_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AD9260185164E400C2CF19 /* NSString+MK_UUID_Tests.m */; };
 		90AD927F185164E400C2CF19 /* NSString+MK_Validation_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AD9261185164E400C2CF19 /* NSString+MK_Validation_Tests.m */; };
+		90E55C5418B795C100A945F3 /* NSObject+MK_Misc.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E55C5318B795C100A945F3 /* NSObject+MK_Misc.m */; };
+		90E55C5618B7965300A945F3 /* NSObject+MK_Misc_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E55C5518B7965300A945F3 /* NSObject+MK_Misc_Tests.m */; };
 		F7FDD4F6AA054635BB0E765E /* libPods-MKFoundationKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D3378482DE422E9C347981 /* libPods-MKFoundationKitTests.a */; };
 /* End PBXBuildFile section */
 
@@ -182,6 +186,10 @@
 		907CD00C184CE14A0070E0AC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		907CD014184CE14A0070E0AC /* MKFoundationKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MKFoundationKitTests-Info.plist"; sourceTree = "<group>"; };
 		907CD016184CE14A0070E0AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		909F75CC18CA90C600670367 /* NSBundle+MK_Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+MK_Version.h"; sourceTree = "<group>"; };
+		909F75CD18CA90C600670367 /* NSBundle+MK_Version.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+MK_Version.m"; sourceTree = "<group>"; };
+		909F75D018CA927E00670367 /* NSBundle+MK_Version_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+MK_Version_Tests.m"; sourceTree = "<group>"; };
+		909F75D218CA92F000670367 /* NSBundle+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+MK.h"; sourceTree = "<group>"; };
 		90AD923C185164E300C2CF19 /* NSArray+MK_Block_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MK_Block_Tests.m"; sourceTree = "<group>"; };
 		90AD923D185164E300C2CF19 /* NSArray+MK_Misc_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MK_Misc_Tests.m"; sourceTree = "<group>"; };
 		90AD923E185164E300C2CF19 /* NSMutableArray+MK_Misc_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+MK_Misc_Tests.m"; sourceTree = "<group>"; };
@@ -213,6 +221,9 @@
 		90AD925F185164E400C2CF19 /* NSString+MK_UTF_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_UTF_Tests.m"; sourceTree = "<group>"; };
 		90AD9260185164E400C2CF19 /* NSString+MK_UUID_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_UUID_Tests.m"; sourceTree = "<group>"; };
 		90AD9261185164E400C2CF19 /* NSString+MK_Validation_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MK_Validation_Tests.m"; sourceTree = "<group>"; };
+		90E55C5218B795C100A945F3 /* NSObject+MK_Misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MK_Misc.h"; sourceTree = "<group>"; };
+		90E55C5318B795C100A945F3 /* NSObject+MK_Misc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MK_Misc.m"; sourceTree = "<group>"; };
+		90E55C5518B7965300A945F3 /* NSObject+MK_Misc_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MK_Misc_Tests.m"; sourceTree = "<group>"; };
 		A2AFA71716B244859CD9A336 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25EF4BC88A44F43A87962BE /* Pods-MKFoundationKitTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKFoundationKitTests.xcconfig"; path = "Pods/Pods-MKFoundationKitTests.xcconfig"; sourceTree = "<group>"; };
 		D60CA56430804A97937C65AA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
@@ -250,6 +261,7 @@
 				9049CB40189D7D5A00F1B338 /* MKFoundationKit.h */,
 				9049CB39189D7D5A00F1B338 /* Macros */,
 				9049CB41189D7D5A00F1B338 /* NSArray */,
+				909F75CB18CA908E00670367 /* NSBundle */,
 				9049CB4D189D7D5A00F1B338 /* NSData */,
 				9049CB51189D7D5A00F1B338 /* NSDate */,
 				9049CB5D189D7D5A00F1B338 /* NSDecimalNumber */,
@@ -370,6 +382,8 @@
 				9049CB76189D7D5A00F1B338 /* NSObject+MK.h */,
 				9049CB77189D7D5A00F1B338 /* NSObject+MK_AutoDescribe.h */,
 				9049CB78189D7D5A00F1B338 /* NSObject+MK_AutoDescribe.m */,
+				90E55C5218B795C100A945F3 /* NSObject+MK_Misc.h */,
+				90E55C5318B795C100A945F3 /* NSObject+MK_Misc.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -467,6 +481,7 @@
 			isa = PBXGroup;
 			children = (
 				90AD923B185164E300C2CF19 /* NSArray */,
+				909F75CF18CA925400670367 /* NSBundle */,
 				90AD9241185164E300C2CF19 /* NSData */,
 				90AD9243185164E300C2CF19 /* NSDate */,
 				90AD9249185164E300C2CF19 /* NSDictionary */,
@@ -487,6 +502,24 @@
 				907CD015184CE14A0070E0AC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		909F75CB18CA908E00670367 /* NSBundle */ = {
+			isa = PBXGroup;
+			children = (
+				909F75D218CA92F000670367 /* NSBundle+MK.h */,
+				909F75CC18CA90C600670367 /* NSBundle+MK_Version.h */,
+				909F75CD18CA90C600670367 /* NSBundle+MK_Version.m */,
+			);
+			path = NSBundle;
+			sourceTree = "<group>";
+		};
+		909F75CF18CA925400670367 /* NSBundle */ = {
+			isa = PBXGroup;
+			children = (
+				909F75D018CA927E00670367 /* NSBundle+MK_Version_Tests.m */,
+			);
+			path = NSBundle;
 			sourceTree = "<group>";
 		};
 		90AD923B185164E300C2CF19 /* NSArray */ = {
@@ -548,6 +581,7 @@
 			isa = PBXGroup;
 			children = (
 				90AD9255185164E400C2CF19 /* NSObject+MK_AutoDescribe_Tests.m */,
+				90E55C5518B7965300A945F3 /* NSObject+MK_Misc_Tests.m */,
 				90AD9256185164E400C2CF19 /* TestDummy.h */,
 				90AD9257185164E400C2CF19 /* TestDummy.m */,
 			);
@@ -746,6 +780,7 @@
 				9049CBA7189D7D5A00F1B338 /* NSString+MK_Misc.m in Sources */,
 				9049CB94189D7D5A00F1B338 /* NSDate+MK_Components.m in Sources */,
 				907CD000184CE14A0070E0AC /* main.m in Sources */,
+				909F75CE18CA90C600670367 /* NSBundle+MK_Version.m in Sources */,
 				9049CBA3189D7D5A00F1B338 /* NSSet+MK_Block.m in Sources */,
 				9049CB8E189D7D5A00F1B338 /* NSArray+MK_Misc.m in Sources */,
 				9049CBA6189D7D5A00F1B338 /* NSString+MK_Empty.m in Sources */,
@@ -758,6 +793,7 @@
 				9049CBA0189D7D5A00F1B338 /* NSNumber+MK_Negative.m in Sources */,
 				9049CB95189D7D5A00F1B338 /* NSDate+MK_Creation.m in Sources */,
 				9049CB8D189D7D5A00F1B338 /* NSArray+MK_Block.m in Sources */,
+				90E55C5418B795C100A945F3 /* NSObject+MK_Misc.m in Sources */,
 				9049CBA2189D7D5A00F1B338 /* NSObject+MK_AutoDescribe.m in Sources */,
 				9049CB8F189D7D5A00F1B338 /* NSMutableArray+MK_Misc.m in Sources */,
 				9049CBAA189D7D5A00F1B338 /* NSString+MK_Validation.m in Sources */,
@@ -788,6 +824,7 @@
 				90AD9270185164E400C2CF19 /* NSNumber+MK_Comparison_Tests.m in Sources */,
 				90AD9265185164E400C2CF19 /* NSMutableArray+MK_Queue.m in Sources */,
 				90AD9272185164E400C2CF19 /* NSNumber+MK_Fraction_Tests.m in Sources */,
+				909F75D118CA927E00670367 /* NSBundle+MK_Version_Tests.m in Sources */,
 				90AD927E185164E400C2CF19 /* NSString+MK_UUID_Tests.m in Sources */,
 				90AD9277185164E400C2CF19 /* TestDummy.m in Sources */,
 				90AD926C185164E400C2CF19 /* NSDate+MK_Manipulation_Tests.m in Sources */,
@@ -800,6 +837,7 @@
 				90AD926A185164E400C2CF19 /* NSDate+MK_Creation_Tests.m in Sources */,
 				90AD9274185164E400C2CF19 /* NSNumber+MK_Negative_Tests.m in Sources */,
 				90AD9278185164E400C2CF19 /* NSSet+MK_Block_Tests.m in Sources */,
+				90E55C5618B7965300A945F3 /* NSObject+MK_Misc_Tests.m in Sources */,
 				90AD9267185164E400C2CF19 /* NSData+MK_Base64_Tests.m in Sources */,
 				90AD9268185164E400C2CF19 /* NSDate+MK_Comparison_Tests.m in Sources */,
 				90AD9266185164E400C2CF19 /* NSMutableArray+MK_Stack.m in Sources */,

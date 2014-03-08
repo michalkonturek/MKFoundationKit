@@ -35,25 +35,26 @@ Source code of this project is available under the standard MIT license. Please 
 #### NSArray+MK_Block
 
 ```objc
-- (void)mk_apply:(MKItemBlock)block;
+- (void)mk_apply:(void (^)(id item))block;
 
-- (void)mk_each:(MKItemBlock)block;
+- (void)mk_each:(void (^)(id item))block;
 
-- (instancetype)mk_map:(LINQSelectorBlock)selectorBlock;
+- (instancetype)mk_map:(id (^)(id item))block;
 
-- (id)mk_match:(LINQConditionBlock)conditionBlock;
+- (id)mk_match:(BOOL (^)(id item))block;
 
-- (id)mk_reduce:(id)initial withBlock:(LINQAccumulatorBlock)accumulatorBlock;
+- (id)mk_reduce:(id (^)(id item, id aggregate))block;
+- (id)mk_reduce:(id)initial withBlock:(id (^)(id item, id aggregate))block;
 
-- (instancetype)mk_reject:(LINQConditionBlock)conditionBlock;
+- (instancetype)mk_reject:(BOOL (^)(id item))block;
 
-- (instancetype)mk_select:(LINQConditionBlock)conditionBlock;
+- (instancetype)mk_select:(BOOL (^)(id item))block;
 
-- (BOOL)mk_all:(LINQConditionBlock)conditionBlock;
+- (BOOL)mk_all:(BOOL (^)(id item))block;
 
-- (BOOL)mk_any:(LINQConditionBlock)conditionBlock;
+- (BOOL)mk_any:(BOOL (^)(id item))block;
 
-- (BOOL)mk_none:(LINQConditionBlock)conditionBlock;
+- (BOOL)mk_none:(BOOL (^)(id item))block;
 ```
 
 #### NSArray+MK_Misc
@@ -86,6 +87,18 @@ Source code of this project is available under the standard MIT license. Please 
 ```objc
 - (void)mk_pushObject:(id)object;
 - (id)mk_pullObject;
+```
+
+## NSBundle Additions
+
+```objc
+- (NSString *)mk_build;
+
+- (NSString *)mk_name;
+
+- (NSString *)mk_version;
+
+- (NSString *)mk_infoForKey:(id)key;
 ```
 
 ## NSData Additions
