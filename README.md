@@ -67,6 +67,8 @@ Source code of this project is available under the standard MIT license. Please 
 
 - (id)mk_min;
 
+- (instancetype)mk_reverse;
+
 - (BOOL)mk_isEmpty;
 ```
 

@@ -75,4 +75,9 @@
     assertThat(result, equalToInteger(0));
 }
 
+- (void)test_reverse {
+    id result = [self.target mk_reverse];
+    assertThat(result, contains(@3, @2, @1, nil));
+}
+
 @end

@@ -33,6 +33,10 @@
     }];
 }
 
+- (instancetype)mk_reverse {
+    return [[[self reverseObjectEnumerator] allObjects] mutableCopy];
+}
+
 - (BOOL)mk_isEmpty {
     return ([self count] == 0);
 }

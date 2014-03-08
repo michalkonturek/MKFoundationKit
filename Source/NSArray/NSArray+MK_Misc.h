@@ -21,6 +21,8 @@
 
 - (id)mk_min;
 
+- (instancetype)mk_reverse;
+
 - (BOOL)mk_isEmpty;
 
 @end
