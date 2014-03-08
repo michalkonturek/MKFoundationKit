@@ -110,7 +110,7 @@
 
 - (void)test_all_returns_true {
     id target = @[@1, @2, @3, @4];
-    BOOL result = [target mk_any:^BOOL(id item) {
+    BOOL result = [target mk_all:^BOOL(id item) {
         return [item mk_isGreaterThan:@0];
     }];
     
@@ -119,16 +119,29 @@
 
 - (void)test_all_returns_false {
     id target = @[@1, @2, @3, @4];
-    BOOL result = [target mk_any:^BOOL(id item) {
-        return [item mk_isGreaterThan:@10];
+    BOOL result = [target mk_all:^BOOL(id item) {
+        return [item mk_isGreaterThan:@2];
     }];
     
     assertThatBool(result, equalToBool(NO));
 }
 
 - (void)test_any_returns_true {
-    // Method calls a method from LINQ4Obj-C which already passes tests.
-    TEST_PASSES
+    id target = @[@1, @2, @3, @4];
+    BOOL result = [target mk_any:^BOOL(id item) {
+        return [item mk_isGreaterThan:@3];
+    }];
+    
+    assertThatBool(result, equalToBool(YES));
+}
+
+- (void)test_any_returns_false {
+    id target = @[@1, @2, @3, @4];
+    BOOL result = [target mk_any:^BOOL(id item) {
+        return [item mk_isGreaterThan:@5];
+    }];
+    
+    assertThatBool(result, equalToBool(NO));
 }
 
 - (void)test_none_returns_true {
