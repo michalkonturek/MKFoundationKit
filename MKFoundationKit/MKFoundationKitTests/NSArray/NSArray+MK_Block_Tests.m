@@ -99,16 +99,34 @@
 }
 
 - (void)test_select {
-    // Method calls a method from LINQ4Obj-C which already passes tests.
-    TEST_PASSES
+    id target = @[@1, @2, @3, @4];
+    id result = [target mk_select:^BOOL(id item) {
+        return [item mk_isEven];
+    }];
+
+    assertThat(result, hasCountOf(2));
+    assertThat(result, containsInAnyOrder(@2, @4, nil));
 }
 
-- (void)test_all {
-    // Method calls a method from LINQ4Obj-C which already passes tests.
-    TEST_PASSES
+- (void)test_all_returns_true {
+    id target = @[@1, @2, @3, @4];
+    BOOL result = [target mk_any:^BOOL(id item) {
+        return [item mk_isGreaterThan:@0];
+    }];
+    
+    assertThatBool(result, equalToBool(YES));
 }
 
-- (void)test_any {
+- (void)test_all_returns_false {
+    id target = @[@1, @2, @3, @4];
+    BOOL result = [target mk_any:^BOOL(id item) {
+        return [item mk_isGreaterThan:@10];
+    }];
+    
+    assertThatBool(result, equalToBool(NO));
+}
+
+- (void)test_any_returns_true {
     // Method calls a method from LINQ4Obj-C which already passes tests.
     TEST_PASSES
 }
