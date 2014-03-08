@@ -6,8 +6,4 @@
 //  Copyright (c) 2014 Michal Konturek. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-@interface NSBundle (MK)
-
-@end
+#import "NSBundle+MK_Version.h"

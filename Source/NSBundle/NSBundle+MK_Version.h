@@ -10,4 +10,12 @@
 
 @interface NSBundle (MK_Version)
 
+- (NSString *)mk_build;
+
+- (NSString *)mk_name;
+
+- (NSString *)mk_version;
+
+- (NSString *)mk_infoForKey:(id)key;
+
 @end

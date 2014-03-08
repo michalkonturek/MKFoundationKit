@@ -8,27 +8,33 @@
 
 #import <XCTest/XCTest.h>
 
+#define HC_SHORTHAND
+#import <OCHamcrest.h>
+
+#import "BaseTest.h"
+
 @interface NSBundle_MK_Version_Tests : XCTestCase
 
 @end
 
 @implementation NSBundle_MK_Version_Tests
 
-- (void)setUp
-{
-    [super setUp];
-    // Put setup code here; it will be run once, before the first test case.
+- (void)test_build {
+    id expected = @"1.0";
+    id result = [[NSBundle mainBundle] mk_build];
+    assertThat(result, equalTo(expected));
 }
 
-- (void)tearDown
-{
-    // Put teardown code here; it will be run once, after the last test case.
-    [super tearDown];
+- (void)test_name {
+    id expected = @"MKFoundationKit";
+    id result = [[NSBundle mainBundle] mk_name];
+    assertThat(result, equalTo(expected));
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+- (void)test_version {
+    id expected = @"1.2";
+    id result = [[NSBundle mainBundle] mk_version];
+    assertThat(result, equalTo(expected));
 }
 
 @end

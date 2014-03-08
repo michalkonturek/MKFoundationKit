@@ -10,4 +10,25 @@
 
 @implementation NSBundle (MK_Version)
 
+/*
+ source:
+ https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html#
+ */
+
+- (NSString *)mk_build {
+    return [self mk_infoForKey:@"CFBundleVersion"];
+}
+
+- (NSString *)mk_name {
+    return [self mk_infoForKey:@"CFBundleName"];
+}
+
+- (NSString *)mk_version {
+    return [self mk_infoForKey:@"CFBundleShortVersionString"];
+}
+
+- (NSString *)mk_infoForKey:(id)key {
+    return [[self infoDictionary] objectForKey:key];
+}
+
 @end
