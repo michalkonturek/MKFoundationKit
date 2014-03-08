@@ -21,6 +21,7 @@ Source code of this project is available under the standard MIT license. Please 
 # API
 
 * [NSArray](#nsarray-additions)
+* [NSBundle](#nsbundle-additions)
 * [NSData](#nsdata-additions)
 * [NSDate](#nsdata-additions)
 * [NSDictionary](#nsdictionary-additions)
@@ -109,7 +110,6 @@ Source code of this project is available under the standard MIT license. Please 
 + (NSData *)mk_dataWithBase64EncodedString:(NSString *)string;
 
 - (NSString *)mk_base64DecodedString;
-
 - (NSString *)mk_base64EncodedString;
 ```
 
