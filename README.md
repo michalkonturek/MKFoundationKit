@@ -89,6 +89,18 @@ Source code of this project is available under the standard MIT license. Please 
 - (id)mk_pullObject;
 ```
 
+## NSBundle Additions
+
+```objc
+- (NSString *)mk_build;
+
+- (NSString *)mk_name;
+
+- (NSString *)mk_version;
+
+- (NSString *)mk_infoForKey:(id)key;
+```
+
 ## NSData Additions
 
 ### NSData+MK_Base64
