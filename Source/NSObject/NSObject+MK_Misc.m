@@ -10,11 +10,6 @@
 
 @implementation NSObject (MK_Misc)
 
-+ (BOOL)mk_exists:(id)object {
-    if (!object) return NO;
-    return [object mk_exists];
-}
-
 - (BOOL)mk_exists {
     return (self != [NSNull null]);
 }

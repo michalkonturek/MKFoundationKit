@@ -10,8 +10,6 @@
 
 @interface NSObject (MK_Misc)
 
-+ (BOOL)mk_exists:(id)object;
-
 - (BOOL)mk_exists;
 
 @end
