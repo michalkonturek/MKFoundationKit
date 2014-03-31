@@ -64,6 +64,7 @@
 }
 
 - (void)test_match_returns {
+    self.input = @{@0: @1, @1: @2, @2: @3};
     id result = [self.input mk_match:^BOOL(id key, id value) {
         return [value mk_isEven];
     }];
