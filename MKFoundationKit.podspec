@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "MKFoundationKit"
-  s.version      = "1.2.0"
+  s.version      = "1.2.1"
   s.summary      = "Collection of categories for NSFoundation classes to accelerate development."
   s.homepage     = "https://github.com/michalkonturek/MKFoundationKit"
   s.license      = 'MIT'
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.source       = {
     :git => "https://github.com/michalkonturek/MKFoundationKit.git",
-    :tag => "1.2.0"
+    :tag => "1.2.1"
   }
 
   s.source_files = 'Source/**/*.{h,m}'
@@ -44,6 +44,10 @@ Pod::Spec.new do |s|
     ss.source_files = 'Source/NSArray/*.{h,m}'
   end
 
+  s.subspec 'NSBundle' do |ss|
+    ss.source_files = 'Source/NSBundle/*.{h,m}'
+  end
+
   s.subspec 'NSDate' do |ss|
     ss.source_files = 'Source/NSDate/*.{h,m}'
   end
@@ -54,6 +58,10 @@ Pod::Spec.new do |s|
 
   s.subspec 'NSNumber' do |ss|
     ss.source_files = 'Source/NSNumber/*.{h,m}'
+  end
+
+  s.subspec 'NSObject' do |ss|
+    ss.source_files = 'Source/NSObject/*.{h,m}'
   end
 
   s.subspec 'NSSet' do |ss|

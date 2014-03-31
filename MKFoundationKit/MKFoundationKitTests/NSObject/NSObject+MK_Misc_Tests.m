@@ -20,18 +20,18 @@
 @implementation NSObject_MK_Misc_Tests
 
 - (void)test_exists_returns_true {
-    id input = @1;
-    assertThatBool([NSObject mk_exists:input], equalToBool(YES));
+    id target = @1;
+    assertThatBool([target mk_exists], equalToBool(YES));
 }
 
 - (void)test_exists_returns_false_when_nil {
-    id input = nil;
-    assertThatBool([NSObject mk_exists:input], equalToBool(NO));
+    id target = nil;
+    assertThatBool([target mk_exists], equalToBool(NO));
 }
 
 - (void)test_exists_returns_false_when_nsnull {
-    id input = [NSNull null];
-    assertThatBool([NSObject mk_exists:input], equalToBool(NO));
+    id target = [NSNull null];
+    assertThatBool([target mk_exists], equalToBool(NO));
 }
 
 @end
