@@ -452,6 +452,15 @@ Source code of this project is available under the standard MIT license. Please 
 - (BOOL)mk_matchesRegex:(NSString *)regex;
 ```
 
+## Contributing
+
+1. Fork it.
+2. Create your feature branch (`git checkout -b new-feature`).
+3. Commit your changes (`git commit -am 'Added new-feature'`).
+4. Push to the branch (`git push origin new-feature`).
+5. Create new Pull Request.
+
+
 <!--- - - 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/michalkonturek/mkfoundationkit/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
