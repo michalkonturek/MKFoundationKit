@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "MKFoundationKit"
-  s.version      = "1.2.2"
+  s.version      = "1.2.3"
   s.summary      = "Collection of categories for NSFoundation classes to accelerate development."
   s.homepage     = "https://github.com/michalkonturek/MKFoundationKit"
   s.license      = 'MIT'
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/michalkonturek'
   s.source       = {
     :git => "https://github.com/michalkonturek/MKFoundationKit.git",
-    :tag => "1.2.2"
+    :tag => s.version.to_s
   }
 
   s.source_files = 'Source/**/*.{h,m}'
