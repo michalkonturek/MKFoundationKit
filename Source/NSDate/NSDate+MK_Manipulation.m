@@ -131,7 +131,7 @@
 }
 
 - (NSInteger)mk_differenceInMinutesToDate:(NSDate *)toDate {
-    return 0;
+    return [self _differenceInUnit:NSCalendarUnitMinute toDate:toDate];
 }
 
 - (NSInteger)mk_differenceInSecondsToDate:(NSDate *)toDate {
