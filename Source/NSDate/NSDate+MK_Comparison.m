@@ -65,7 +65,7 @@
     NSDateComponents *components2 = [other mk_components];
     
     return (([components1 year] == [components2 year]) &&
-            ([components1 week] == [components2 week]));
+            ([components1 weekOfYear] == [components2 weekOfYear]));
 }
 
 - (BOOL)mk_isThisYear {

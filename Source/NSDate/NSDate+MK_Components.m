@@ -36,7 +36,7 @@
 }
 
 - (NSInteger)mk_week {
-    return [[self mk_components] week];
+    return [[self mk_components] weekOfYear];
 }
 
 - (NSInteger)mk_weekday {
