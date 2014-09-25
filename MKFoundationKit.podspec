@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "MKFoundationKit"
-  s.version      = "1.2.3"
+  s.version      = "1.3.0"
   s.summary      = "Collection of categories for NSFoundation classes to accelerate development."
   s.homepage     = "https://github.com/michalkonturek/MKFoundationKit"
   s.license      = 'MIT'
