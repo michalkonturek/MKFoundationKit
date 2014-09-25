@@ -177,4 +177,20 @@
     assertThatInteger(result, equalToInteger(-1));
 }
 
+- (void)test_differenceInHoursToDate_when_later_date {
+    id target = [NSDate mk_dateFromString:@"01-04-2014 13:00" withFormat:@"dd-MM-yyyy HH:mm"];
+    id input = [target mk_dateByAddingHours:1];
+    
+    NSInteger result = [target mk_differenceInHoursToDate:input];
+    assertThatInteger(result, equalToInteger(1));
+}
+
+- (void)test_differenceInHoursToDate_when_earlier_date {
+    id target = [NSDate mk_dateFromString:@"01-04-2014 13:00" withFormat:@"dd-MM-yyyy HH:mm"];
+    id input = [target mk_dateByAddingHours:1];
+    
+    NSInteger result = [input mk_differenceInHoursToDate:target];
+    assertThatInteger(result, equalToInteger(-1));
+}
+
 @end
