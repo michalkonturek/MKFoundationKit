@@ -49,4 +49,8 @@
 - (NSInteger)mk_differenceInMonthsToDate:(NSDate *)toDate;
 - (NSInteger)mk_differenceInYearsToDate:(NSDate *)toDate;
 
+- (NSInteger)mk_differenceInHoursToDate:(NSDate *)toDate;
+- (NSInteger)mk_differenceInMinutesToDate:(NSDate *)toDate;
+- (NSInteger)mk_differenceInSecondsToDate:(NSDate *)toDate;
+
 @end

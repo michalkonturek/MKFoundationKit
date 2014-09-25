@@ -126,17 +126,41 @@
     return [self _differenceInUnit:NSCalendarUnitYear toDate:toDate];
 }
 
+- (NSInteger)mk_differenceInHoursToDate:(NSDate *)toDate {
+    return [self _differenceInUnit:NSCalendarUnitHour toDate:toDate];
+}
+
+- (NSInteger)mk_differenceInMinutesToDate:(NSDate *)toDate {
+    return [self _differenceInUnit:NSCalendarUnitMinute toDate:toDate];
+}
+
+- (NSInteger)mk_differenceInSecondsToDate:(NSDate *)toDate {
+    return [self _differenceInUnit:NSCalendarUnitSecond toDate:toDate];
+}
+
 - (NSInteger)_differenceInUnit:(NSCalendarUnit)unit toDate:(NSDate *)toDate {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *components = [calendar components:unit
                                                fromDate:self toDate:toDate options:0];
     
     switch (unit) {
-        case NSCalendarUnitDay:
-            return [components day];
+        case NSCalendarUnitYear:
+            return [components year];
             break;
         case NSCalendarUnitMonth:
             return [components month];
+            break;
+        case NSCalendarUnitDay:
+            return [components day];
+            break;
+        case NSCalendarUnitHour:
+            return [components hour];
+            break;
+        case NSCalendarUnitMinute:
+            return [components minute];
+            break;
+        case NSCalendarUnitSecond:
+            return [components second];
             break;
         default:
             return [components year];
