@@ -1,3690 +1,883 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>007C480429414FA99FB63288</key>
-		<dict>
-			<key>fileRef</key>
-			<string>69A9CE77F4BB43D392E3EE14</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>00DB57AD7DB646428AFE283C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-MKFoundationKitTests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>01D6D5C17BEC48DFB5FA6BB3</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>A029444F317B4902B5CFC958</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Pods-MKFoundationKitTests-OCHamcrest-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>0311886C1A1041C08AC2CCF4</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B0F35D39C5FF443AB1BEB677</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0493E6CDD3944E1382CF1E88</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BBCC0EDB38604565887CB06B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>066500D6EE9F43D59CB12A00</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-MKFoundationKitTests.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06864FDED527495AA4D80079</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DAF1EBD808B94846BB949280</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>074DDB9214CC48AFB3CD7D10</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EB1784E021D3427D8A48E125</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>09282154078E45F09A7861FD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>43216E90508248AFA5F59B61</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0C44ED673D27489BB45FD645</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCIsDictionaryContaining.h</string>
-			<key>path</key>
-			<string>Source/Library/Collection/HCIsDictionaryContaining.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0D14FBF3BEB5446F95A00253</key>
-		<dict>
-			<key>fileRef</key>
-			<string>25E209E290964A659103F721</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>0DFA572D46FB492096FF84EB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>281214553E1B47D2BD39D211</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>10A302B12A544A78BC6B522E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>984FF12208B842A3A96BB17F</string>
-				<string>C118E4D0CE884F38B62DA7A1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1348282FD47F4241A9046BB2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCDescription.h</string>
-			<key>path</key>
-			<string>Source/Core/HCDescription.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>158927C027B64499A798213C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5555EEAB306F41C78829563A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>15C98588E58244B1B71FA32E</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>2A7C08FEB03F44C89077BA30</string>
-				<string>F2641E9193B54CACAA6A44EF</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>17D04FCBC401436BB7393163</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9EE5BAA7EBBC49468AA8D1FB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>18F133BB997F430592E33F3F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8DC8F90EE4834DA38620349C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>18FC16723FEA4A44BAC2E163</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCStringContainsInOrder.m</string>
-			<key>path</key>
-			<string>Source/Library/Text/HCStringContainsInOrder.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1974904711634E1498F3541A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCHasDescription.h</string>
-			<key>path</key>
-			<string>Source/Library/Object/HCHasDescription.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1B05519C98204040A5E8B1D8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>52D3DE8F7E9A4444A209B12F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>1B3E29D601CF44138BFB3D7B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>24250FD0C3674BB68DB50CB8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1B4EE6DE30D649D499DC69E2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B9D228F09E26411BA4F3AE5F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1C74000C6DAA4C9585B7F51E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCSenTestFailureHandler.m</string>
-			<key>path</key>
-			<string>Source/Core/HCSenTestFailureHandler.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1DAFB34073354F4C9703F8A5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1974904711634E1498F3541A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1E3DF34C455A46C1AA3655DE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCIsDictionaryContainingKey.m</string>
-			<key>path</key>
-			<string>Source/Library/Collection/HCIsDictionaryContainingKey.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1EEBC9F57B5D4D7AAADA5655</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F400BF27ADF44DAF8A518361</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>1EFEB40CE6BB425EBC648A2B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>95B5FE38273A439C88DBD5AA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1F77A7E710A24610A28C26F1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCAllOf.m</string>
-			<key>path</key>
-			<string>Source/Library/Logical/HCAllOf.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>225E094A7D6D42A3B4AB0E44</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>00DB57AD7DB646428AFE283C</string>
-				<string>F64049E73C454808B4A8566B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>24250FD0C3674BB68DB50CB8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCStringContains.h</string>
-			<key>path</key>
-			<string>Source/Library/Text/HCStringContains.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>25AF8A87835D493DB5AA8BDC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCIsDictionaryContainingEntries.m</string>
-			<key>path</key>
-			<string>Source/Library/Collection/HCIsDictionaryContainingEntries.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>25E209E290964A659103F721</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCHasDescription.m</string>
-			<key>path</key>
-			<string>Source/Library/Object/HCHasDescription.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>25FADA7D70A3496E9CE0062D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCWrapInMatcher.m</string>
-			<key>path</key>
-			<string>Source/Core/Helpers/HCWrapInMatcher.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2717BC3C78A342BA82F99EF2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCTestFailure.m</string>
-			<key>path</key>
-			<string>Source/Core/HCTestFailure.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2801061719D840EE8FA3DD4F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A1194ED72B784BAB838FCCA3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2811EAC90FF541CBB24144BB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DE0D8736D60043CDA7E7DA17</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>281214553E1B47D2BD39D211</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCNumberAssert.h</string>
-			<key>path</key>
-			<string>Source/Library/Number/HCNumberAssert.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>28CF85DD68154FD3A17375CE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9E4B356D37FE46E599674C29</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>28EB9D49E43D4285B4C3A88F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>429AAAA027EE4D47B3B20FE3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>291ADD476C4844418BFD439B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>25AF8A87835D493DB5AA8BDC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>2A7C08FEB03F44C89077BA30</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>066500D6EE9F43D59CB12A00</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>300B79643909497AA27ACD78</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>30F368899768437AB1C868A6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCStringStartsWith.m</string>
-			<key>path</key>
-			<string>Source/Library/Text/HCStringStartsWith.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>319F47D100BD44A0B733400C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCXCTestFailureHandler.h</string>
-			<key>path</key>
-			<string>Source/Core/HCXCTestFailureHandler.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>31C2497105E84CB7BBD145E7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BDBABAF9895A4DE3BCAF01E4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>337F4C7ACA8249179DEE019A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>88549B5B9FDC45E4AF0A40EA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>33D212A9829B4DA8B9A24931</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BA975E214ABA48D8BC0B4554</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>34130839A891453B943AD5FB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C7F0750A69644D61A288ACD5</string>
-				<string>1F77A7E710A24610A28C26F1</string>
-				<string>BDBABAF9895A4DE3BCAF01E4</string>
-				<string>AB791915C2904D5EAF6EB7D4</string>
-				<string>FAAA85422FDB42A0880A98E7</string>
-				<string>CCF6F75784C24C7A8B272288</string>
-				<string>5B6EFCD7D1894BE486955552</string>
-				<string>34562DA589574AAF984433D6</string>
-				<string>5488F7C6F070474AB97989C2</string>
-				<string>AB9AEA1832FF44068179DE0F</string>
-				<string>A6659239C9274F37B4120284</string>
-				<string>556E031BCDBF4D9A9044F537</string>
-				<string>EC993C401A5945C99C5E16C9</string>
-				<string>513FED378A964E758F8B3829</string>
-				<string>C01B8E8C3C3843DA993E6866</string>
-				<string>5F69F7C8A60748318B3DEDDC</string>
-				<string>C59E3ED519CD494D988C6183</string>
-				<string>6E87AEEDAB3C41BEAC81AC54</string>
-				<string>1348282FD47F4241A9046BB2</string>
-				<string>62ABFF59542B4DFF91956ADF</string>
-				<string>8A25363AA36F44B7B3649E31</string>
-				<string>AF8B804BD6484AD7A0898EF9</string>
-				<string>F4B3552398C342D7AD7067DB</string>
-				<string>1974904711634E1498F3541A</string>
-				<string>25E209E290964A659103F721</string>
-				<string>BBCC0EDB38604565887CB06B</string>
-				<string>B2BA166143C749DDBA0E6D77</string>
-				<string>71CCC4C34298449CA86A200C</string>
-				<string>9FFBDD07C17840649BF3ACEB</string>
-				<string>42EFA76371EB4243948977EE</string>
-				<string>429AAAA027EE4D47B3B20FE3</string>
-				<string>8555B75FED8A4523ADCAC339</string>
-				<string>53C2D2A4B1DF4B81A5F2EA8E</string>
-				<string>D0C1D46242114DA7B8947CC5</string>
-				<string>9EE5BAA7EBBC49468AA8D1FB</string>
-				<string>49490A48F0FA4799991D89CA</string>
-				<string>D601A23C5BD64CA59A2FF22E</string>
-				<string>870FCE8C724C47DA84BBD752</string>
-				<string>AE3078E157844FA5961C6623</string>
-				<string>8B0DBB2E228C4896A87007A4</string>
-				<string>EB1784E021D3427D8A48E125</string>
-				<string>895D2711BE064FD3954D29DC</string>
-				<string>761A30B5210E4E05B078B86C</string>
-				<string>0C44ED673D27489BB45FD645</string>
-				<string>C0F02EEBA3C54EBFA6374F20</string>
-				<string>B4CCE3E27F124C1AA6234305</string>
-				<string>25AF8A87835D493DB5AA8BDC</string>
-				<string>CFB27ED9E9FC4E758B8F9B90</string>
-				<string>1E3DF34C455A46C1AA3655DE</string>
-				<string>FE5B049B52A44F5DBFD0C8AC</string>
-				<string>58055BA3D9F247C29E4227E2</string>
-				<string>43216E90508248AFA5F59B61</string>
-				<string>E63B345AB47C4C589670B67E</string>
-				<string>ABC8D35228D648EAA74F3DAC</string>
-				<string>A97B3DC5390E4AED99B2D885</string>
-				<string>CA5C5CA4536F41DEA39B560D</string>
-				<string>DAF1EBD808B94846BB949280</string>
-				<string>69A9CE77F4BB43D392E3EE14</string>
-				<string>C256C910EA864597B4B820AC</string>
-				<string>5D21DA806BD34E8BB2EAB3A5</string>
-				<string>3A2240BD677E49BC86FDCAC8</string>
-				<string>E949960766884B5DB9562E00</string>
-				<string>B88EEDF950FF40A394616115</string>
-				<string>E5B6977A44F24B068DAECC17</string>
-				<string>F65A01D01DBB40C4BB06D301</string>
-				<string>590DE6D04A724F9EA1DB1263</string>
-				<string>DE72C6A2BC2F4279A2AD7ACE</string>
-				<string>A1194ED72B784BAB838FCCA3</string>
-				<string>556337E72A3E4B8EA06EE4E8</string>
-				<string>4147F58C28564A2C8FF467A3</string>
-				<string>56DEFA8B813441FBB0BD70B7</string>
-				<string>4E15749C82F444A0A29994F0</string>
-				<string>9E4B356D37FE46E599674C29</string>
-				<string>EEECB83646E34D0CA86D4127</string>
-				<string>281214553E1B47D2BD39D211</string>
-				<string>A67E5EBC3BD2421DB07529AE</string>
-				<string>B74D69DAC302442DBAC9B25D</string>
-				<string>37A2703DCA714CC39531939E</string>
-				<string>DE0D8736D60043CDA7E7DA17</string>
-				<string>52D3DE8F7E9A4444A209B12F</string>
-				<string>8CCC523E4426454FB9DB91B2</string>
-				<string>B9D228F09E26411BA4F3AE5F</string>
-				<string>1C74000C6DAA4C9585B7F51E</string>
-				<string>24250FD0C3674BB68DB50CB8</string>
-				<string>FECE6DBD69B14BFFB0A47CEC</string>
-				<string>B9808E3E3483453ABEB97D21</string>
-				<string>18FC16723FEA4A44BAC2E163</string>
-				<string>8BAA98B425AD4A86843BE65D</string>
-				<string>8DC8F90EE4834DA38620349C</string>
-				<string>9890FC6F6CAA4C8CB1EDA9B2</string>
-				<string>88549B5B9FDC45E4AF0A40EA</string>
-				<string>5555EEAB306F41C78829563A</string>
-				<string>30F368899768437AB1C868A6</string>
-				<string>889C473C701C47E0996742C0</string>
-				<string>BA975E214ABA48D8BC0B4554</string>
-				<string>A6C1BED3174444BDA11471CD</string>
-				<string>2717BC3C78A342BA82F99EF2</string>
-				<string>95B5FE38273A439C88DBD5AA</string>
-				<string>3803EBA270D14496B1A9AC77</string>
-				<string>F400BF27ADF44DAF8A518361</string>
-				<string>696472CF81DF445B9196E256</string>
-				<string>25FADA7D70A3496E9CE0062D</string>
-				<string>319F47D100BD44A0B733400C</string>
-				<string>B2E6F7C0F478402983A34F22</string>
-				<string>C8FE44413A41473281BA6143</string>
-				<string>98E6FACFFD844EC880453A35</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>OCHamcrest</string>
-			<key>path</key>
-			<string>OCHamcrest</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>344808D72DC845E7BE23DF27</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B25D22AE8590463BAA35C5FB</string>
-				<string>B080EB22FE544553A976B473</string>
-				<string>D783739385424AC999B5274F</string>
-				<string>4871B5F02BBF42779AAC051C</string>
-				<string>AB2F689CFE814EADB9C71DFE</string>
-				<string>CCE33456EEE540F79827914E</string>
-				<string>953090397F68445E9F36E101</string>
-				<string>FCBFCF5B15CB4B34949C5739</string>
-				<string>5DAB71DADF294EC1BE293861</string>
-				<string>3B5CBCDCCA2045F4A201DC89</string>
-				<string>6A276DF6AD504D70B6FC737E</string>
-				<string>0D14FBF3BEB5446F95A00253</string>
-				<string>FC5AEE5375C9449DBDDEE841</string>
-				<string>D1CC7F8FDA984C7F80D0897E</string>
-				<string>28EB9D49E43D4285B4C3A88F</string>
-				<string>8FB80ED8D4D84FDE8243E5E2</string>
-				<string>17D04FCBC401436BB7393163</string>
-				<string>8B77F696B0DA416EA080B26B</string>
-				<string>F33E0876986B46A3AE2C49CC</string>
-				<string>074DDB9214CC48AFB3CD7D10</string>
-				<string>B06E3DECD1224B1E988326B2</string>
-				<string>863F706AA3BC4D63AB9289EC</string>
-				<string>291ADD476C4844418BFD439B</string>
-				<string>81D71A21F75C4E0B9DB62275</string>
-				<string>8BCA67697DD84FF29A1E93CA</string>
-				<string>D4EC2BE1E8F14B819667FA6D</string>
-				<string>A7655C23E8DB4EFC90E2EB8E</string>
-				<string>06864FDED527495AA4D80079</string>
-				<string>5C2C1F012C3D4576AB15824D</string>
-				<string>722FE5AE34444AAE8C674525</string>
-				<string>F99AC8C9477144EFA49B992B</string>
-				<string>EBC4A5E0AD234603A271FA39</string>
-				<string>F11B1CB0C5204DD29ACE10AE</string>
-				<string>5B1357C96ED64065BB266212</string>
-				<string>D5397A09781247829B926ECA</string>
-				<string>28CF85DD68154FD3A17375CE</string>
-				<string>C38968893C654CB49D4D6E0C</string>
-				<string>BD0D0D2115FA4E12B962A110</string>
-				<string>1B05519C98204040A5E8B1D8</string>
-				<string>CFCBC6FF72D9405AADFB5BD5</string>
-				<string>BEECF05472F1418086AE6177</string>
-				<string>A829927375EE4B65880A38BA</string>
-				<string>18F133BB997F430592E33F3F</string>
-				<string>337F4C7ACA8249179DEE019A</string>
-				<string>B9637724696A454AAA4B06B6</string>
-				<string>33D212A9829B4DA8B9A24931</string>
-				<string>C1F624A077F14DFF92A4A10A</string>
-				<string>1EEBC9F57B5D4D7AAADA5655</string>
-				<string>AE806E5293A041B3B9A05351</string>
-				<string>776796A8F93E422AA100FB8C</string>
-				<string>A12664D6BEEA4F42BD4DE7BE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>34562DA589574AAF984433D6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCBaseDescription.m</string>
-			<key>path</key>
-			<string>Source/Core/HCBaseDescription.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>35208AF0300642B7A3A92B63</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-MKFoundationKitTests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>36B82D57A3F1441E99F2DC73</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-MKFoundationKitTests-OCHamcrest.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>37921F1F5B824B5AAF41A3CD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EC993C401A5945C99C5E16C9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>37A2703DCA714CC39531939E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCOrderingComparison.m</string>
-			<key>path</key>
-			<string>Source/Library/Number/HCOrderingComparison.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3803EBA270D14496B1A9AC77</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCTestFailureHandlerChain.h</string>
-			<key>path</key>
-			<string>Source/Core/HCTestFailureHandlerChain.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>38249578C1B8473898ADA2B9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E5B6977A44F24B068DAECC17</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>384575936C0740BF934B36D0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A6C1BED3174444BDA11471CD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>394C83AF355B41BA936B9E39</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>300B79643909497AA27ACD78</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A2240BD677E49BC86FDCAC8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCIsEqualToNumber.m</string>
-			<key>path</key>
-			<string>Source/Library/Number/HCIsEqualToNumber.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B5CBCDCCA2045F4A201DC89</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8A25363AA36F44B7B3649E31</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>3BD0B06C57CA43E69DC4BE43</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-MKFoundationKitTests-OCHamcrest-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4147F58C28564A2C8FF467A3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCIsSame.h</string>
-			<key>path</key>
-			<string>Source/Library/Object/HCIsSame.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>429AAAA027EE4D47B3B20FE3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCIs.m</string>
-			<key>path</key>
-			<string>Source/Library/Decorator/HCIs.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>42EFA76371EB4243948977EE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCIs.h</string>
-			<key>path</key>
-			<string>Source/Library/Decorator/HCIs.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>43216E90508248AFA5F59B61</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCIsEmptyCollection.h</string>
-			<key>path</key>
-			<string>Source/Library/Collection/HCIsEmptyCollection.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>441B74CCE23E4B4E843EF3C0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>870FCE8C724C47DA84BBD752</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4871B5F02BBF42779AAC051C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>34562DA589574AAF984433D6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>49490A48F0FA4799991D89CA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCIsCollectionContaining.h</string>
-			<key>path</key>
-			<string>Source/Library/Collection/HCIsCollectionContaining.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4996010510604EDB8922C6D4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>066500D6EE9F43D59CB12A00</string>
-				<string>C99739E9E7DD4CA8B6AD5599</string>
-				<string>DBE8557DE6174CAFA25BD689</string>
-				<string>35208AF0300642B7A3A92B63</string>
-				<string>887A01CC04424D7D9844E994</string>
-				<string>4B3B9DC56AA345E78D8FACB9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-MKFoundationKitTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4B18681851B2473589F70DF6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>62ABFF59542B4DFF91956ADF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4B3B9DC56AA345E78D8FACB9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-MKFoundationKitTests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4B503A0734B84DD581561D08</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>899500C00E204D1FB3CDE10F</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>673C1ABA16104D9EBD891172</string>
-			<key>remoteInfo</key>
-			<string>Pods-MKFoundationKitTests-OCHamcrest</string>
-		</dict>
-		<key>4C8C3DE55402431F970251C7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FAAA85422FDB42A0880A98E7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4E15749C82F444A0A29994F0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCIsTypeOf.h</string>
-			<key>path</key>
-			<string>Source/Library/Object/HCIsTypeOf.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4F5C8421A33F4342AAB18051</key>
-		<dict>
-			<key>fileRef</key>
-			<string>895D2711BE064FD3954D29DC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4FF86B3170F54BD18CBFAAB9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CA5C5CA4536F41DEA39B560D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>513FED378A964E758F8B3829</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCCollectMatchers.m</string>
-			<key>path</key>
-			<string>Source/Core/Helpers/HCCollectMatchers.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5210C4480AAD483F90458005</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3803EBA270D14496B1A9AC77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>52D3DE8F7E9A4444A209B12F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCRequireNonNilObject.m</string>
-			<key>path</key>
-			<string>Source/Core/Helpers/HCRequireNonNilObject.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>53C2D2A4B1DF4B81A5F2EA8E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCIsAnything.m</string>
-			<key>path</key>
-			<string>Source/Library/Logical/HCIsAnything.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5488F7C6F070474AB97989C2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCBaseMatcher.h</string>
-			<key>path</key>
-			<string>Source/Core/HCBaseMatcher.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5555EEAB306F41C78829563A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCStringStartsWith.h</string>
-			<key>path</key>
-			<string>Source/Library/Text/HCStringStartsWith.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>556337E72A3E4B8EA06EE4E8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCIsNot.m</string>
-			<key>path</key>
-			<string>Source/Library/Logical/HCIsNot.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>556E031BCDBF4D9A9044F537</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCClassMatcher.m</string>
-			<key>path</key>
-			<string>Source/Library/Object/HCClassMatcher.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>56DEFA8B813441FBB0BD70B7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCIsSame.m</string>
-			<key>path</key>
-			<string>Source/Library/Object/HCIsSame.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>58055BA3D9F247C29E4227E2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCIsDictionaryContainingValue.m</string>
-			<key>path</key>
-			<string>Source/Library/Collection/HCIsDictionaryContainingValue.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>58A4D63F7988443E93EFB255</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B74D69DAC302442DBAC9B25D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>590DE6D04A724F9EA1DB1263</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCIsNil.h</string>
-			<key>path</key>
-			<string>Source/Library/Object/HCIsNil.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5B1357C96ED64065BB266212</key>
-		<dict>
-			<key>fileRef</key>
-			<string>556337E72A3E4B8EA06EE4E8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>5B6EFCD7D1894BE486955552</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCBaseDescription.h</string>
-			<key>path</key>
-			<string>Source/Core/HCBaseDescription.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5C2C1F012C3D4576AB15824D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C256C910EA864597B4B820AC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>5C97838843384CDA823B022D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>319F47D100BD44A0B733400C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5D21DA806BD34E8BB2EAB3A5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCIsEqualToNumber.h</string>
-			<key>path</key>
-			<string>Source/Library/Number/HCIsEqualToNumber.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5DAB71DADF294EC1BE293861</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E87AEEDAB3C41BEAC81AC54</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>5F69F7C8A60748318B3DEDDC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCConformsToProtocol.m</string>
-			<key>path</key>
-			<string>Source/Library/Object/HCConformsToProtocol.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>61BC41C298F245FABAAECFD2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>696472CF81DF445B9196E256</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>628D95E59490404C95F605F2</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>A029444F317B4902B5CFC958</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Pods-MKFoundationKitTests-OCHamcrest-prefix.pch</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>62ABFF59542B4DFF91956ADF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCGenericTestFailureHandler.h</string>
-			<key>path</key>
-			<string>Source/Core/HCGenericTestFailureHandler.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>62D7F0AD06D04307BF5CC12D</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>NO</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>64AFADB459E148E08EC8FE49</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C7F0750A69644D61A288ACD5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>673C1ABA16104D9EBD891172</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E774698810A146049F87D0B8</string>
-			<key>buildPhases</key>
-			<array>
-				<string>344808D72DC845E7BE23DF27</string>
-				<string>D89D9798157D4CBD96D8F33F</string>
-				<string>D87AB44FEB3E4DC6AB04E7C4</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-MKFoundationKitTests-OCHamcrest</string>
-			<key>productName</key>
-			<string>Pods-MKFoundationKitTests-OCHamcrest</string>
-			<key>productReference</key>
-			<string>F64049E73C454808B4A8566B</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>696472CF81DF445B9196E256</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCWrapInMatcher.h</string>
-			<key>path</key>
-			<string>Source/Core/Helpers/HCWrapInMatcher.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>699BA1A4EE944A83B28E104A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8BAA98B425AD4A86843BE65D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>69A9CE77F4BB43D392E3EE14</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCIsEqualIgnoringWhiteSpace.h</string>
-			<key>path</key>
-			<string>Source/Library/Text/HCIsEqualIgnoringWhiteSpace.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A276DF6AD504D70B6FC737E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F4B3552398C342D7AD7067DB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>6AFDCC2D12E24E70A94FDCF6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>590DE6D04A724F9EA1DB1263</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6C914E2A4D3E452E9229E92E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5D21DA806BD34E8BB2EAB3A5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6D47904C65BB46C696BC8AEE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-MKFoundationKitTests-OCHamcrest-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E87AEEDAB3C41BEAC81AC54</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCDescribedAs.m</string>
-			<key>path</key>
-			<string>Source/Library/Decorator/HCDescribedAs.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>71CCC4C34298449CA86A200C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCInvocationMatcher.h</string>
-			<key>path</key>
-			<string>Source/Core/Helpers/HCInvocationMatcher.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>71EF008537C54CFC91102FB8</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>15C98588E58244B1B71FA32E</string>
-			<key>buildPhases</key>
-			<array>
-				<string>0311886C1A1041C08AC2CCF4</string>
-				<string>10A302B12A544A78BC6B522E</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>FCFF829DBE304D5185A0E6BD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-MKFoundationKitTests</string>
-			<key>productName</key>
-			<string>Pods-MKFoundationKitTests</string>
-			<key>productReference</key>
-			<string>00DB57AD7DB646428AFE283C</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>722FE5AE34444AAE8C674525</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3A2240BD677E49BC86FDCAC8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>73DE915450804FA9B124255E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4E15749C82F444A0A29994F0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>761A30B5210E4E05B078B86C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCIsCollectionOnlyContaining.m</string>
-			<key>path</key>
-			<string>Source/Library/Collection/HCIsCollectionOnlyContaining.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>76E9FC1989A944F185DE4449</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5B6EFCD7D1894BE486955552</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>776796A8F93E422AA100FB8C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B2E6F7C0F478402983A34F22</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>793F51F5953F44F781FCB4B7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0C44ED673D27489BB45FD645</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7D5A3AC84A6542F79C9DC95D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FE5B049B52A44F5DBFD0C8AC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>81D71A21F75C4E0B9DB62275</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1E3DF34C455A46C1AA3655DE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>840EE14C7E594D62BB1C35D2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EEECB83646E34D0CA86D4127</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8555B75FED8A4523ADCAC339</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCIsAnything.h</string>
-			<key>path</key>
-			<string>Source/Library/Logical/HCIsAnything.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>858B648510104D14A4F2007C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFB27ED9E9FC4E758B8F9B90</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>863F706AA3BC4D63AB9289EC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C0F02EEBA3C54EBFA6374F20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>870FCE8C724C47DA84BBD752</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCIsCollectionContainingInAnyOrder.h</string>
-			<key>path</key>
-			<string>Source/Library/Collection/HCIsCollectionContainingInAnyOrder.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>88549B5B9FDC45E4AF0A40EA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCStringEndsWith.m</string>
-			<key>path</key>
-			<string>Source/Library/Text/HCStringEndsWith.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>887A01CC04424D7D9844E994</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-MKFoundationKitTests-environment.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>889C473C701C47E0996742C0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCSubstringMatcher.h</string>
-			<key>path</key>
-			<string>Source/Library/Text/HCSubstringMatcher.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>895D2711BE064FD3954D29DC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCIsCollectionOnlyContaining.h</string>
-			<key>path</key>
-			<string>Source/Library/Collection/HCIsCollectionOnlyContaining.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>899500C00E204D1FB3CDE10F</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0500</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>A313C671C7654764861D0147</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>EDDD2D42ADC14A3BA983E889</string>
-			<key>productRefGroup</key>
-			<string>225E094A7D6D42A3B4AB0E44</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>71EF008537C54CFC91102FB8</string>
-				<string>673C1ABA16104D9EBD891172</string>
-			</array>
-		</dict>
-		<key>8A25363AA36F44B7B3649E31</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCGenericTestFailureHandler.m</string>
-			<key>path</key>
-			<string>Source/Core/HCGenericTestFailureHandler.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8B0DBB2E228C4896A87007A4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCIsCollectionContainingInOrder.h</string>
-			<key>path</key>
-			<string>Source/Library/Collection/HCIsCollectionContainingInOrder.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8B77F696B0DA416EA080B26B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D601A23C5BD64CA59A2FF22E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>8BAA98B425AD4A86843BE65D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCStringDescription.h</string>
-			<key>path</key>
-			<string>Source/Core/HCStringDescription.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8BCA67697DD84FF29A1E93CA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>58055BA3D9F247C29E4227E2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>8CCC523E4426454FB9DB91B2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCSelfDescribing.h</string>
-			<key>path</key>
-			<string>Source/Core/HCSelfDescribing.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8DC8F90EE4834DA38620349C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCStringDescription.m</string>
-			<key>path</key>
-			<string>Source/Core/HCStringDescription.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8F385934EE4F4EA09B37C0F5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B9808E3E3483453ABEB97D21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8FB80ED8D4D84FDE8243E5E2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>53C2D2A4B1DF4B81A5F2EA8E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>92EB6123BEE545C688506190</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A6659239C9274F37B4120284</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9330A110808B417493041F9C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4147F58C28564A2C8FF467A3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>935186C62A74416F9429D582</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9890FC6F6CAA4C8CB1EDA9B2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>94A6BD42ED5A479AA40EEA4D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8B0DBB2E228C4896A87007A4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>95250A071DBA471C8EC0E440</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D0C1D46242114DA7B8947CC5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>953090397F68445E9F36E101</key>
-		<dict>
-			<key>fileRef</key>
-			<string>513FED378A964E758F8B3829</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>957352B8EFD8418B8E266A76</key>
-		<dict>
-			<key>fileRef</key>
-			<string>889C473C701C47E0996742C0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>95B5FE38273A439C88DBD5AA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCTestFailureHandler.h</string>
-			<key>path</key>
-			<string>Source/Core/HCTestFailureHandler.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>984FF12208B842A3A96BB17F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>300B79643909497AA27ACD78</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9890FC6F6CAA4C8CB1EDA9B2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCStringEndsWith.h</string>
-			<key>path</key>
-			<string>Source/Library/Text/HCStringEndsWith.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>98E6FACFFD844EC880453A35</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>36B82D57A3F1441E99F2DC73</string>
-				<string>A029444F317B4902B5CFC958</string>
-				<string>3BD0B06C57CA43E69DC4BE43</string>
-				<string>6D47904C65BB46C696BC8AEE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>998B1D157CED46C6933C8317</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B4CCE3E27F124C1AA6234305</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9E4B356D37FE46E599674C29</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCIsTypeOf.m</string>
-			<key>path</key>
-			<string>Source/Library/Object/HCIsTypeOf.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9EE5BAA7EBBC49468AA8D1FB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCIsCloseTo.m</string>
-			<key>path</key>
-			<string>Source/Library/Number/HCIsCloseTo.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9FFBDD07C17840649BF3ACEB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCInvocationMatcher.m</string>
-			<key>path</key>
-			<string>Source/Core/Helpers/HCInvocationMatcher.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A029444F317B4902B5CFC958</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-MKFoundationKitTests-OCHamcrest-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A1194ED72B784BAB838FCCA3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCIsNot.h</string>
-			<key>path</key>
-			<string>Source/Library/Logical/HCIsNot.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A12664D6BEEA4F42BD4DE7BE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3BD0B06C57CA43E69DC4BE43</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A313C671C7654764861D0147</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>62D7F0AD06D04307BF5CC12D</string>
-				<string>F7769B400ECB42149C791EE0</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>A6659239C9274F37B4120284</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCClassMatcher.h</string>
-			<key>path</key>
-			<string>Source/Library/Object/HCClassMatcher.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A67E5EBC3BD2421DB07529AE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCNumberAssert.m</string>
-			<key>path</key>
-			<string>Source/Library/Number/HCNumberAssert.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A6C1BED3174444BDA11471CD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCTestFailure.h</string>
-			<key>path</key>
-			<string>Source/Core/HCTestFailure.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A7655C23E8DB4EFC90E2EB8E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A97B3DC5390E4AED99B2D885</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>A829927375EE4B65880A38BA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>18FC16723FEA4A44BAC2E163</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>A8A908F4FA5944DDBCDF6567</key>
-		<dict>
-			<key>fileRef</key>
-			<string>42EFA76371EB4243948977EE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A97B3DC5390E4AED99B2D885</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCIsEqual.m</string>
-			<key>path</key>
-			<string>Source/Library/Object/HCIsEqual.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB2F689CFE814EADB9C71DFE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB9AEA1832FF44068179DE0F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>AB791915C2904D5EAF6EB7D4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCAnyOf.m</string>
-			<key>path</key>
-			<string>Source/Library/Logical/HCAnyOf.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AB9AEA1832FF44068179DE0F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCBaseMatcher.m</string>
-			<key>path</key>
-			<string>Source/Core/HCBaseMatcher.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ABC8D35228D648EAA74F3DAC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCIsEqual.h</string>
-			<key>path</key>
-			<string>Source/Library/Object/HCIsEqual.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AE23A5D7465F4671B3F9D38B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C59E3ED519CD494D988C6183</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AE3078E157844FA5961C6623</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCIsCollectionContainingInAnyOrder.m</string>
-			<key>path</key>
-			<string>Source/Library/Collection/HCIsCollectionContainingInAnyOrder.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AE806E5293A041B3B9A05351</key>
-		<dict>
-			<key>fileRef</key>
-			<string>25FADA7D70A3496E9CE0062D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>AF8B804BD6484AD7A0898EF9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCHasCount.h</string>
-			<key>path</key>
-			<string>Source/Library/Collection/HCHasCount.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B06E3DECD1224B1E988326B2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>761A30B5210E4E05B078B86C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>B080EB22FE544553A976B473</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB791915C2904D5EAF6EB7D4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>B0F35D39C5FF443AB1BEB677</key>
-		<dict>
-			<key>fileRef</key>
-			<string>35208AF0300642B7A3A92B63</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B25D22AE8590463BAA35C5FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1F77A7E710A24610A28C26F1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>B2BA166143C749DDBA0E6D77</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCHasProperty.m</string>
-			<key>path</key>
-			<string>Source/Library/Object/HCHasProperty.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B2E6F7C0F478402983A34F22</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCXCTestFailureHandler.m</string>
-			<key>path</key>
-			<string>Source/Core/HCXCTestFailureHandler.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B3A48A46DD6F4C57B1E95733</key>
-		<dict>
-			<key>fileRef</key>
-			<string>300B79643909497AA27ACD78</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B4CCE3E27F124C1AA6234305</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCIsDictionaryContainingEntries.h</string>
-			<key>path</key>
-			<string>Source/Library/Collection/HCIsDictionaryContainingEntries.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B74D69DAC302442DBAC9B25D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCOrderingComparison.h</string>
-			<key>path</key>
-			<string>Source/Library/Number/HCOrderingComparison.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B88EEDF950FF40A394616115</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCIsIn.m</string>
-			<key>path</key>
-			<string>Source/Library/Collection/HCIsIn.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B9637724696A454AAA4B06B6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>30F368899768437AB1C868A6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>B9808E3E3483453ABEB97D21</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCStringContainsInOrder.h</string>
-			<key>path</key>
-			<string>Source/Library/Text/HCStringContainsInOrder.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B9D228F09E26411BA4F3AE5F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCSenTestFailureHandler.h</string>
-			<key>path</key>
-			<string>Source/Core/HCSenTestFailureHandler.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BA975E214ABA48D8BC0B4554</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCSubstringMatcher.m</string>
-			<key>path</key>
-			<string>Source/Library/Text/HCSubstringMatcher.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BBCC0EDB38604565887CB06B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCHasProperty.h</string>
-			<key>path</key>
-			<string>Source/Library/Object/HCHasProperty.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BD0D0D2115FA4E12B962A110</key>
-		<dict>
-			<key>fileRef</key>
-			<string>37A2703DCA714CC39531939E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>BDBABAF9895A4DE3BCAF01E4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCAnyOf.h</string>
-			<key>path</key>
-			<string>Source/Library/Logical/HCAnyOf.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BEECF05472F1418086AE6177</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FECE6DBD69B14BFFB0A47CEC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>C01B8E8C3C3843DA993E6866</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCConformsToProtocol.h</string>
-			<key>path</key>
-			<string>Source/Library/Object/HCConformsToProtocol.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C0F02EEBA3C54EBFA6374F20</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCIsDictionaryContaining.m</string>
-			<key>path</key>
-			<string>Source/Library/Collection/HCIsDictionaryContaining.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C118E4D0CE884F38B62DA7A1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F64049E73C454808B4A8566B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C15CAFFC1C7E41FBA20CF602</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>34130839A891453B943AD5FB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1F624A077F14DFF92A4A10A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2717BC3C78A342BA82F99EF2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>C256C910EA864597B4B820AC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCIsEqualIgnoringWhiteSpace.m</string>
-			<key>path</key>
-			<string>Source/Library/Text/HCIsEqualIgnoringWhiteSpace.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C38968893C654CB49D4D6E0C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A67E5EBC3BD2421DB07529AE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>C45F002B24FD4FC59632F929</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C01B8E8C3C3843DA993E6866</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C59E3ED519CD494D988C6183</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCDescribedAs.h</string>
-			<key>path</key>
-			<string>Source/Library/Decorator/HCDescribedAs.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C7F0750A69644D61A288ACD5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCAllOf.h</string>
-			<key>path</key>
-			<string>Source/Library/Logical/HCAllOf.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C8FE44413A41473281BA6143</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>OCHamcrest.h</string>
-			<key>path</key>
-			<string>Source/OCHamcrest.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C99739E9E7DD4CA8B6AD5599</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-MKFoundationKitTests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C9FBCDBBBA274ED6A5CD0C01</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ABC8D35228D648EAA74F3DAC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CA5C5CA4536F41DEA39B560D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCIsEqualIgnoringCase.h</string>
-			<key>path</key>
-			<string>Source/Library/Text/HCIsEqualIgnoringCase.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CCE33456EEE540F79827914E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>556E031BCDBF4D9A9044F537</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>CCF6F75784C24C7A8B272288</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCAssertThat.m</string>
-			<key>path</key>
-			<string>Source/Core/HCAssertThat.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CF0D5FC26E5A4824AEC9CD67</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5488F7C6F070474AB97989C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CFB27ED9E9FC4E758B8F9B90</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCIsDictionaryContainingKey.h</string>
-			<key>path</key>
-			<string>Source/Library/Collection/HCIsDictionaryContainingKey.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CFCBC6FF72D9405AADFB5BD5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1C74000C6DAA4C9585B7F51E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>D0C1D46242114DA7B8947CC5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCIsCloseTo.h</string>
-			<key>path</key>
-			<string>Source/Library/Number/HCIsCloseTo.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D1CC7F8FDA984C7F80D0897E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9FFBDD07C17840649BF3ACEB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>D4EC2BE1E8F14B819667FA6D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E63B345AB47C4C589670B67E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>D5397A09781247829B926ECA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>56DEFA8B813441FBB0BD70B7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>D601A23C5BD64CA59A2FF22E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCIsCollectionContaining.m</string>
-			<key>path</key>
-			<string>Source/Library/Collection/HCIsCollectionContaining.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D69A6F54A6F245F7BD4D67E5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AF8B804BD6484AD7A0898EF9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D783739385424AC999B5274F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CCF6F75784C24C7A8B272288</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>D87AB44FEB3E4DC6AB04E7C4</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>64AFADB459E148E08EC8FE49</string>
-				<string>31C2497105E84CB7BBD145E7</string>
-				<string>4C8C3DE55402431F970251C7</string>
-				<string>76E9FC1989A944F185DE4449</string>
-				<string>CF0D5FC26E5A4824AEC9CD67</string>
-				<string>92EB6123BEE545C688506190</string>
-				<string>37921F1F5B824B5AAF41A3CD</string>
-				<string>C45F002B24FD4FC59632F929</string>
-				<string>AE23A5D7465F4671B3F9D38B</string>
-				<string>EAEDA66C45524492B3A1F40A</string>
-				<string>4B18681851B2473589F70DF6</string>
-				<string>D69A6F54A6F245F7BD4D67E5</string>
-				<string>1DAFB34073354F4C9703F8A5</string>
-				<string>0493E6CDD3944E1382CF1E88</string>
-				<string>F21E1D9E800E4BECA0A69726</string>
-				<string>A8A908F4FA5944DDBCDF6567</string>
-				<string>EB738F963A6D46F68843246C</string>
-				<string>95250A071DBA471C8EC0E440</string>
-				<string>FDF9622179C2471B971854A5</string>
-				<string>441B74CCE23E4B4E843EF3C0</string>
-				<string>94A6BD42ED5A479AA40EEA4D</string>
-				<string>4F5C8421A33F4342AAB18051</string>
-				<string>793F51F5953F44F781FCB4B7</string>
-				<string>998B1D157CED46C6933C8317</string>
-				<string>858B648510104D14A4F2007C</string>
-				<string>7D5A3AC84A6542F79C9DC95D</string>
-				<string>09282154078E45F09A7861FD</string>
-				<string>C9FBCDBBBA274ED6A5CD0C01</string>
-				<string>4FF86B3170F54BD18CBFAAB9</string>
-				<string>007C480429414FA99FB63288</string>
-				<string>6C914E2A4D3E452E9229E92E</string>
-				<string>DF0064F785C745E0B83D2140</string>
-				<string>38249578C1B8473898ADA2B9</string>
-				<string>6AFDCC2D12E24E70A94FDCF6</string>
-				<string>2801061719D840EE8FA3DD4F</string>
-				<string>9330A110808B417493041F9C</string>
-				<string>73DE915450804FA9B124255E</string>
-				<string>840EE14C7E594D62BB1C35D2</string>
-				<string>0DFA572D46FB492096FF84EB</string>
-				<string>58A4D63F7988443E93EFB255</string>
-				<string>2811EAC90FF541CBB24144BB</string>
-				<string>FB46F337C5B94CEA913AC4D0</string>
-				<string>1B4EE6DE30D649D499DC69E2</string>
-				<string>1B3E29D601CF44138BFB3D7B</string>
-				<string>8F385934EE4F4EA09B37C0F5</string>
-				<string>699BA1A4EE944A83B28E104A</string>
-				<string>935186C62A74416F9429D582</string>
-				<string>158927C027B64499A798213C</string>
-				<string>957352B8EFD8418B8E266A76</string>
-				<string>384575936C0740BF934B36D0</string>
-				<string>1EFEB40CE6BB425EBC648A2B</string>
-				<string>5210C4480AAD483F90458005</string>
-				<string>61BC41C298F245FABAAECFD2</string>
-				<string>5C97838843384CDA823B022D</string>
-				<string>EE43B25497164386A000F4C8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D89D9798157D4CBD96D8F33F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B3A48A46DD6F4C57B1E95733</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>DAF1EBD808B94846BB949280</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCIsEqualIgnoringCase.m</string>
-			<key>path</key>
-			<string>Source/Library/Text/HCIsEqualIgnoringCase.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DBE8557DE6174CAFA25BD689</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-MKFoundationKitTests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DE0D8736D60043CDA7E7DA17</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCRequireNonNilObject.h</string>
-			<key>path</key>
-			<string>Source/Core/Helpers/HCRequireNonNilObject.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DE72C6A2BC2F4279A2AD7ACE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCIsNil.m</string>
-			<key>path</key>
-			<string>Source/Library/Object/HCIsNil.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0064F785C745E0B83D2140</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E949960766884B5DB9562E00</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E4AD287A494346C7A8765512</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>394C83AF355B41BA936B9E39</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5B6977A44F24B068DAECC17</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCIsInstanceOf.h</string>
-			<key>path</key>
-			<string>Source/Library/Object/HCIsInstanceOf.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E63B345AB47C4C589670B67E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCIsEmptyCollection.m</string>
-			<key>path</key>
-			<string>Source/Library/Collection/HCIsEmptyCollection.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E774698810A146049F87D0B8</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>01D6D5C17BEC48DFB5FA6BB3</string>
-				<string>628D95E59490404C95F605F2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E949960766884B5DB9562E00</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCIsIn.h</string>
-			<key>path</key>
-			<string>Source/Library/Collection/HCIsIn.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAEDA66C45524492B3A1F40A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1348282FD47F4241A9046BB2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EB1784E021D3427D8A48E125</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCIsCollectionContainingInOrder.m</string>
-			<key>path</key>
-			<string>Source/Library/Collection/HCIsCollectionContainingInOrder.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EB738F963A6D46F68843246C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8555B75FED8A4523ADCAC339</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EBC4A5E0AD234603A271FA39</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F65A01D01DBB40C4BB06D301</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>EC993C401A5945C99C5E16C9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCCollectMatchers.h</string>
-			<key>path</key>
-			<string>Source/Core/Helpers/HCCollectMatchers.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDDD2D42ADC14A3BA983E889</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FDA91DC663944DE29E69BB04</string>
-				<string>E4AD287A494346C7A8765512</string>
-				<string>C15CAFFC1C7E41FBA20CF602</string>
-				<string>225E094A7D6D42A3B4AB0E44</string>
-				<string>F73698DDEEBA4FA286609A5F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EE43B25497164386A000F4C8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C8FE44413A41473281BA6143</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EEECB83646E34D0CA86D4127</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCMatcher.h</string>
-			<key>path</key>
-			<string>Source/Core/HCMatcher.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F11B1CB0C5204DD29ACE10AE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DE72C6A2BC2F4279A2AD7ACE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>F21E1D9E800E4BECA0A69726</key>
-		<dict>
-			<key>fileRef</key>
-			<string>71CCC4C34298449CA86A200C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F2641E9193B54CACAA6A44EF</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>066500D6EE9F43D59CB12A00</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>F33E0876986B46A3AE2C49CC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AE3078E157844FA5961C6623</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>F400BF27ADF44DAF8A518361</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCTestFailureHandlerChain.m</string>
-			<key>path</key>
-			<string>Source/Core/HCTestFailureHandlerChain.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F4B3552398C342D7AD7067DB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCHasCount.m</string>
-			<key>path</key>
-			<string>Source/Library/Collection/HCHasCount.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F64049E73C454808B4A8566B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-MKFoundationKitTests-OCHamcrest.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>F65A01D01DBB40C4BB06D301</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCIsInstanceOf.m</string>
-			<key>path</key>
-			<string>Source/Library/Object/HCIsInstanceOf.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F73698DDEEBA4FA286609A5F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4996010510604EDB8922C6D4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F7769B400ECB42149C791EE0</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>NO</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>F99AC8C9477144EFA49B992B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B88EEDF950FF40A394616115</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>FAAA85422FDB42A0880A98E7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCAssertThat.h</string>
-			<key>path</key>
-			<string>Source/Core/HCAssertThat.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FB46F337C5B94CEA913AC4D0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8CCC523E4426454FB9DB91B2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FC5AEE5375C9449DBDDEE841</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B2BA166143C749DDBA0E6D77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>FCBFCF5B15CB4B34949C5739</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5F69F7C8A60748318B3DEDDC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc -DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>FCFF829DBE304D5185A0E6BD</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>673C1ABA16104D9EBD891172</string>
-			<key>targetProxy</key>
-			<string>4B503A0734B84DD581561D08</string>
-		</dict>
-		<key>FDA91DC663944DE29E69BB04</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>FDF9622179C2471B971854A5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>49490A48F0FA4799991D89CA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FE5B049B52A44F5DBFD0C8AC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HCIsDictionaryContainingValue.h</string>
-			<key>path</key>
-			<string>Source/Library/Collection/HCIsDictionaryContainingValue.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FECE6DBD69B14BFFB0A47CEC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HCStringContains.m</string>
-			<key>path</key>
-			<string>Source/Library/Text/HCStringContains.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>899500C00E204D1FB3CDE10F</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		007C480429414FA99FB63288 /* HCIsEqualIgnoringWhiteSpace.h in Headers */ = {isa = PBXBuildFile; fileRef = 69A9CE77F4BB43D392E3EE14 /* HCIsEqualIgnoringWhiteSpace.h */; };
+		0493E6CDD3944E1382CF1E88 /* HCHasProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = BBCC0EDB38604565887CB06B /* HCHasProperty.h */; };
+		06864FDED527495AA4D80079 /* HCIsEqualIgnoringCase.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF1EBD808B94846BB949280 /* HCIsEqualIgnoringCase.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		074DDB9214CC48AFB3CD7D10 /* HCIsCollectionContainingInOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1784E021D3427D8A48E125 /* HCIsCollectionContainingInOrder.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		09282154078E45F09A7861FD /* HCIsEmptyCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 43216E90508248AFA5F59B61 /* HCIsEmptyCollection.h */; };
+		0D14FBF3BEB5446F95A00253 /* HCHasDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E209E290964A659103F721 /* HCHasDescription.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		0DFA572D46FB492096FF84EB /* HCNumberAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = 281214553E1B47D2BD39D211 /* HCNumberAssert.h */; };
+		158927C027B64499A798213C /* HCStringStartsWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 5555EEAB306F41C78829563A /* HCStringStartsWith.h */; };
+		17D04FCBC401436BB7393163 /* HCIsCloseTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE5BAA7EBBC49468AA8D1FB /* HCIsCloseTo.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		18F133BB997F430592E33F3F /* HCStringDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC8F90EE4834DA38620349C /* HCStringDescription.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		1B05519C98204040A5E8B1D8 /* HCRequireNonNilObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D3DE8F7E9A4444A209B12F /* HCRequireNonNilObject.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		1B3E29D601CF44138BFB3D7B /* HCStringContains.h in Headers */ = {isa = PBXBuildFile; fileRef = 24250FD0C3674BB68DB50CB8 /* HCStringContains.h */; };
+		1B4EE6DE30D649D499DC69E2 /* HCSenTestFailureHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = B9D228F09E26411BA4F3AE5F /* HCSenTestFailureHandler.h */; };
+		1DAFB34073354F4C9703F8A5 /* HCHasDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 1974904711634E1498F3541A /* HCHasDescription.h */; };
+		1EEBC9F57B5D4D7AAADA5655 /* HCTestFailureHandlerChain.m in Sources */ = {isa = PBXBuildFile; fileRef = F400BF27ADF44DAF8A518361 /* HCTestFailureHandlerChain.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		1EFEB40CE6BB425EBC648A2B /* HCTestFailureHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 95B5FE38273A439C88DBD5AA /* HCTestFailureHandler.h */; };
+		2801061719D840EE8FA3DD4F /* HCIsNot.h in Headers */ = {isa = PBXBuildFile; fileRef = A1194ED72B784BAB838FCCA3 /* HCIsNot.h */; };
+		2811EAC90FF541CBB24144BB /* HCRequireNonNilObject.h in Headers */ = {isa = PBXBuildFile; fileRef = DE0D8736D60043CDA7E7DA17 /* HCRequireNonNilObject.h */; };
+		28CF85DD68154FD3A17375CE /* HCIsTypeOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4B356D37FE46E599674C29 /* HCIsTypeOf.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		28EB9D49E43D4285B4C3A88F /* HCIs.m in Sources */ = {isa = PBXBuildFile; fileRef = 429AAAA027EE4D47B3B20FE3 /* HCIs.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		291ADD476C4844418BFD439B /* HCIsDictionaryContainingEntries.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AF8A87835D493DB5AA8BDC /* HCIsDictionaryContainingEntries.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		31C2497105E84CB7BBD145E7 /* HCAnyOf.h in Headers */ = {isa = PBXBuildFile; fileRef = BDBABAF9895A4DE3BCAF01E4 /* HCAnyOf.h */; };
+		337F4C7ACA8249179DEE019A /* HCStringEndsWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 88549B5B9FDC45E4AF0A40EA /* HCStringEndsWith.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		33D212A9829B4DA8B9A24931 /* HCSubstringMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = BA975E214ABA48D8BC0B4554 /* HCSubstringMatcher.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		37921F1F5B824B5AAF41A3CD /* HCCollectMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = EC993C401A5945C99C5E16C9 /* HCCollectMatchers.h */; };
+		38249578C1B8473898ADA2B9 /* HCIsInstanceOf.h in Headers */ = {isa = PBXBuildFile; fileRef = E5B6977A44F24B068DAECC17 /* HCIsInstanceOf.h */; };
+		384575936C0740BF934B36D0 /* HCTestFailure.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C1BED3174444BDA11471CD /* HCTestFailure.h */; };
+		3B5CBCDCCA2045F4A201DC89 /* HCGenericTestFailureHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A25363AA36F44B7B3649E31 /* HCGenericTestFailureHandler.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		441B74CCE23E4B4E843EF3C0 /* HCIsCollectionContainingInAnyOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = 870FCE8C724C47DA84BBD752 /* HCIsCollectionContainingInAnyOrder.h */; };
+		4871B5F02BBF42779AAC051C /* HCBaseDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 34562DA589574AAF984433D6 /* HCBaseDescription.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		4B18681851B2473589F70DF6 /* HCGenericTestFailureHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 62ABFF59542B4DFF91956ADF /* HCGenericTestFailureHandler.h */; };
+		4C8C3DE55402431F970251C7 /* HCAssertThat.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAA85422FDB42A0880A98E7 /* HCAssertThat.h */; };
+		4F5C8421A33F4342AAB18051 /* HCIsCollectionOnlyContaining.h in Headers */ = {isa = PBXBuildFile; fileRef = 895D2711BE064FD3954D29DC /* HCIsCollectionOnlyContaining.h */; };
+		4FF86B3170F54BD18CBFAAB9 /* HCIsEqualIgnoringCase.h in Headers */ = {isa = PBXBuildFile; fileRef = CA5C5CA4536F41DEA39B560D /* HCIsEqualIgnoringCase.h */; };
+		5210C4480AAD483F90458005 /* HCTestFailureHandlerChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 3803EBA270D14496B1A9AC77 /* HCTestFailureHandlerChain.h */; };
+		58A4D63F7988443E93EFB255 /* HCOrderingComparison.h in Headers */ = {isa = PBXBuildFile; fileRef = B74D69DAC302442DBAC9B25D /* HCOrderingComparison.h */; };
+		5B1357C96ED64065BB266212 /* HCIsNot.m in Sources */ = {isa = PBXBuildFile; fileRef = 556337E72A3E4B8EA06EE4E8 /* HCIsNot.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		5C2C1F012C3D4576AB15824D /* HCIsEqualIgnoringWhiteSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = C256C910EA864597B4B820AC /* HCIsEqualIgnoringWhiteSpace.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		5C97838843384CDA823B022D /* HCXCTestFailureHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 319F47D100BD44A0B733400C /* HCXCTestFailureHandler.h */; };
+		5DAB71DADF294EC1BE293861 /* HCDescribedAs.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E87AEEDAB3C41BEAC81AC54 /* HCDescribedAs.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		61BC41C298F245FABAAECFD2 /* HCWrapInMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 696472CF81DF445B9196E256 /* HCWrapInMatcher.h */; };
+		64AFADB459E148E08EC8FE49 /* HCAllOf.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F0750A69644D61A288ACD5 /* HCAllOf.h */; };
+		699BA1A4EE944A83B28E104A /* HCStringDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BAA98B425AD4A86843BE65D /* HCStringDescription.h */; };
+		6A276DF6AD504D70B6FC737E /* HCHasCount.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B3552398C342D7AD7067DB /* HCHasCount.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		6AFDCC2D12E24E70A94FDCF6 /* HCIsNil.h in Headers */ = {isa = PBXBuildFile; fileRef = 590DE6D04A724F9EA1DB1263 /* HCIsNil.h */; };
+		6C914E2A4D3E452E9229E92E /* HCIsEqualToNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D21DA806BD34E8BB2EAB3A5 /* HCIsEqualToNumber.h */; };
+		722FE5AE34444AAE8C674525 /* HCIsEqualToNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2240BD677E49BC86FDCAC8 /* HCIsEqualToNumber.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		73DE915450804FA9B124255E /* HCIsTypeOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E15749C82F444A0A29994F0 /* HCIsTypeOf.h */; };
+		76E9FC1989A944F185DE4449 /* HCBaseDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B6EFCD7D1894BE486955552 /* HCBaseDescription.h */; };
+		776796A8F93E422AA100FB8C /* HCXCTestFailureHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E6F7C0F478402983A34F22 /* HCXCTestFailureHandler.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		793F51F5953F44F781FCB4B7 /* HCIsDictionaryContaining.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C44ED673D27489BB45FD645 /* HCIsDictionaryContaining.h */; };
+		7D5A3AC84A6542F79C9DC95D /* HCIsDictionaryContainingValue.h in Headers */ = {isa = PBXBuildFile; fileRef = FE5B049B52A44F5DBFD0C8AC /* HCIsDictionaryContainingValue.h */; };
+		81D71A21F75C4E0B9DB62275 /* HCIsDictionaryContainingKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3DF34C455A46C1AA3655DE /* HCIsDictionaryContainingKey.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		840EE14C7E594D62BB1C35D2 /* HCMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = EEECB83646E34D0CA86D4127 /* HCMatcher.h */; };
+		858B648510104D14A4F2007C /* HCIsDictionaryContainingKey.h in Headers */ = {isa = PBXBuildFile; fileRef = CFB27ED9E9FC4E758B8F9B90 /* HCIsDictionaryContainingKey.h */; };
+		863F706AA3BC4D63AB9289EC /* HCIsDictionaryContaining.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F02EEBA3C54EBFA6374F20 /* HCIsDictionaryContaining.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		8B77F696B0DA416EA080B26B /* HCIsCollectionContaining.m in Sources */ = {isa = PBXBuildFile; fileRef = D601A23C5BD64CA59A2FF22E /* HCIsCollectionContaining.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		8BCA67697DD84FF29A1E93CA /* HCIsDictionaryContainingValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 58055BA3D9F247C29E4227E2 /* HCIsDictionaryContainingValue.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		8F385934EE4F4EA09B37C0F5 /* HCStringContainsInOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = B9808E3E3483453ABEB97D21 /* HCStringContainsInOrder.h */; };
+		8FB80ED8D4D84FDE8243E5E2 /* HCIsAnything.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C2D2A4B1DF4B81A5F2EA8E /* HCIsAnything.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		92EB6123BEE545C688506190 /* HCClassMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = A6659239C9274F37B4120284 /* HCClassMatcher.h */; };
+		9330A110808B417493041F9C /* HCIsSame.h in Headers */ = {isa = PBXBuildFile; fileRef = 4147F58C28564A2C8FF467A3 /* HCIsSame.h */; };
+		935186C62A74416F9429D582 /* HCStringEndsWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 9890FC6F6CAA4C8CB1EDA9B2 /* HCStringEndsWith.h */; };
+		94A6BD42ED5A479AA40EEA4D /* HCIsCollectionContainingInOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B0DBB2E228C4896A87007A4 /* HCIsCollectionContainingInOrder.h */; };
+		95250A071DBA471C8EC0E440 /* HCIsCloseTo.h in Headers */ = {isa = PBXBuildFile; fileRef = D0C1D46242114DA7B8947CC5 /* HCIsCloseTo.h */; };
+		953090397F68445E9F36E101 /* HCCollectMatchers.m in Sources */ = {isa = PBXBuildFile; fileRef = 513FED378A964E758F8B3829 /* HCCollectMatchers.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		957352B8EFD8418B8E266A76 /* HCSubstringMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 889C473C701C47E0996742C0 /* HCSubstringMatcher.h */; };
+		984FF12208B842A3A96BB17F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300B79643909497AA27ACD78 /* Foundation.framework */; };
+		998B1D157CED46C6933C8317 /* HCIsDictionaryContainingEntries.h in Headers */ = {isa = PBXBuildFile; fileRef = B4CCE3E27F124C1AA6234305 /* HCIsDictionaryContainingEntries.h */; };
+		A12664D6BEEA4F42BD4DE7BE /* Pods-MKFoundationKitTests-OCHamcrest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD0B06C57CA43E69DC4BE43 /* Pods-MKFoundationKitTests-OCHamcrest-dummy.m */; };
+		A7655C23E8DB4EFC90E2EB8E /* HCIsEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = A97B3DC5390E4AED99B2D885 /* HCIsEqual.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		A829927375EE4B65880A38BA /* HCStringContainsInOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FC16723FEA4A44BAC2E163 /* HCStringContainsInOrder.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		A8A908F4FA5944DDBCDF6567 /* HCIs.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EFA76371EB4243948977EE /* HCIs.h */; };
+		AB2F689CFE814EADB9C71DFE /* HCBaseMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9AEA1832FF44068179DE0F /* HCBaseMatcher.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		AE23A5D7465F4671B3F9D38B /* HCDescribedAs.h in Headers */ = {isa = PBXBuildFile; fileRef = C59E3ED519CD494D988C6183 /* HCDescribedAs.h */; };
+		AE806E5293A041B3B9A05351 /* HCWrapInMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FADA7D70A3496E9CE0062D /* HCWrapInMatcher.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		B06E3DECD1224B1E988326B2 /* HCIsCollectionOnlyContaining.m in Sources */ = {isa = PBXBuildFile; fileRef = 761A30B5210E4E05B078B86C /* HCIsCollectionOnlyContaining.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		B080EB22FE544553A976B473 /* HCAnyOf.m in Sources */ = {isa = PBXBuildFile; fileRef = AB791915C2904D5EAF6EB7D4 /* HCAnyOf.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		B0F35D39C5FF443AB1BEB677 /* Pods-MKFoundationKitTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35208AF0300642B7A3A92B63 /* Pods-MKFoundationKitTests-dummy.m */; };
+		B25D22AE8590463BAA35C5FB /* HCAllOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F77A7E710A24610A28C26F1 /* HCAllOf.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		B3A48A46DD6F4C57B1E95733 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300B79643909497AA27ACD78 /* Foundation.framework */; };
+		B9637724696A454AAA4B06B6 /* HCStringStartsWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F368899768437AB1C868A6 /* HCStringStartsWith.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		BD0D0D2115FA4E12B962A110 /* HCOrderingComparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A2703DCA714CC39531939E /* HCOrderingComparison.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		BEECF05472F1418086AE6177 /* HCStringContains.m in Sources */ = {isa = PBXBuildFile; fileRef = FECE6DBD69B14BFFB0A47CEC /* HCStringContains.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		C118E4D0CE884F38B62DA7A1 /* libPods-MKFoundationKitTests-OCHamcrest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F64049E73C454808B4A8566B /* libPods-MKFoundationKitTests-OCHamcrest.a */; };
+		C1F624A077F14DFF92A4A10A /* HCTestFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = 2717BC3C78A342BA82F99EF2 /* HCTestFailure.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		C38968893C654CB49D4D6E0C /* HCNumberAssert.m in Sources */ = {isa = PBXBuildFile; fileRef = A67E5EBC3BD2421DB07529AE /* HCNumberAssert.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		C45F002B24FD4FC59632F929 /* HCConformsToProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = C01B8E8C3C3843DA993E6866 /* HCConformsToProtocol.h */; };
+		C9FBCDBBBA274ED6A5CD0C01 /* HCIsEqual.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC8D35228D648EAA74F3DAC /* HCIsEqual.h */; };
+		CCE33456EEE540F79827914E /* HCClassMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 556E031BCDBF4D9A9044F537 /* HCClassMatcher.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		CF0D5FC26E5A4824AEC9CD67 /* HCBaseMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 5488F7C6F070474AB97989C2 /* HCBaseMatcher.h */; };
+		CFCBC6FF72D9405AADFB5BD5 /* HCSenTestFailureHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C74000C6DAA4C9585B7F51E /* HCSenTestFailureHandler.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		D1CC7F8FDA984C7F80D0897E /* HCInvocationMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFBDD07C17840649BF3ACEB /* HCInvocationMatcher.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		D4EC2BE1E8F14B819667FA6D /* HCIsEmptyCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = E63B345AB47C4C589670B67E /* HCIsEmptyCollection.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		D5397A09781247829B926ECA /* HCIsSame.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DEFA8B813441FBB0BD70B7 /* HCIsSame.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		D69A6F54A6F245F7BD4D67E5 /* HCHasCount.h in Headers */ = {isa = PBXBuildFile; fileRef = AF8B804BD6484AD7A0898EF9 /* HCHasCount.h */; };
+		D783739385424AC999B5274F /* HCAssertThat.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF6F75784C24C7A8B272288 /* HCAssertThat.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		DF0064F785C745E0B83D2140 /* HCIsIn.h in Headers */ = {isa = PBXBuildFile; fileRef = E949960766884B5DB9562E00 /* HCIsIn.h */; };
+		EAEDA66C45524492B3A1F40A /* HCDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 1348282FD47F4241A9046BB2 /* HCDescription.h */; };
+		EB738F963A6D46F68843246C /* HCIsAnything.h in Headers */ = {isa = PBXBuildFile; fileRef = 8555B75FED8A4523ADCAC339 /* HCIsAnything.h */; };
+		EBC4A5E0AD234603A271FA39 /* HCIsInstanceOf.m in Sources */ = {isa = PBXBuildFile; fileRef = F65A01D01DBB40C4BB06D301 /* HCIsInstanceOf.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		EE43B25497164386A000F4C8 /* OCHamcrest.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FE44413A41473281BA6143 /* OCHamcrest.h */; };
+		F11B1CB0C5204DD29ACE10AE /* HCIsNil.m in Sources */ = {isa = PBXBuildFile; fileRef = DE72C6A2BC2F4279A2AD7ACE /* HCIsNil.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		F21E1D9E800E4BECA0A69726 /* HCInvocationMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CCC4C34298449CA86A200C /* HCInvocationMatcher.h */; };
+		F33E0876986B46A3AE2C49CC /* HCIsCollectionContainingInAnyOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3078E157844FA5961C6623 /* HCIsCollectionContainingInAnyOrder.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		F99AC8C9477144EFA49B992B /* HCIsIn.m in Sources */ = {isa = PBXBuildFile; fileRef = B88EEDF950FF40A394616115 /* HCIsIn.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		FB46F337C5B94CEA913AC4D0 /* HCSelfDescribing.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCC523E4426454FB9DB91B2 /* HCSelfDescribing.h */; };
+		FC5AEE5375C9449DBDDEE841 /* HCHasProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BA166143C749DDBA0E6D77 /* HCHasProperty.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		FCBFCF5B15CB4B34949C5739 /* HCConformsToProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F69F7C8A60748318B3DEDDC /* HCConformsToProtocol.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		FDF9622179C2471B971854A5 /* HCIsCollectionContaining.h in Headers */ = {isa = PBXBuildFile; fileRef = 49490A48F0FA4799991D89CA /* HCIsCollectionContaining.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B503A0734B84DD581561D08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 899500C00E204D1FB3CDE10F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 673C1ABA16104D9EBD891172;
+			remoteInfo = "Pods-MKFoundationKitTests-OCHamcrest";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00DB57AD7DB646428AFE283C /* libPods-MKFoundationKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MKFoundationKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		066500D6EE9F43D59CB12A00 /* Pods-MKFoundationKitTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKFoundationKitTests.xcconfig"; sourceTree = "<group>"; };
+		0C44ED673D27489BB45FD645 /* HCIsDictionaryContaining.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsDictionaryContaining.h; path = Source/Library/Collection/HCIsDictionaryContaining.h; sourceTree = "<group>"; };
+		1348282FD47F4241A9046BB2 /* HCDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCDescription.h; path = Source/Core/HCDescription.h; sourceTree = "<group>"; };
+		18FC16723FEA4A44BAC2E163 /* HCStringContainsInOrder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCStringContainsInOrder.m; path = Source/Library/Text/HCStringContainsInOrder.m; sourceTree = "<group>"; };
+		1974904711634E1498F3541A /* HCHasDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCHasDescription.h; path = Source/Library/Object/HCHasDescription.h; sourceTree = "<group>"; };
+		1C74000C6DAA4C9585B7F51E /* HCSenTestFailureHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCSenTestFailureHandler.m; path = Source/Core/HCSenTestFailureHandler.m; sourceTree = "<group>"; };
+		1E3DF34C455A46C1AA3655DE /* HCIsDictionaryContainingKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsDictionaryContainingKey.m; path = Source/Library/Collection/HCIsDictionaryContainingKey.m; sourceTree = "<group>"; };
+		1F77A7E710A24610A28C26F1 /* HCAllOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCAllOf.m; path = Source/Library/Logical/HCAllOf.m; sourceTree = "<group>"; };
+		24250FD0C3674BB68DB50CB8 /* HCStringContains.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCStringContains.h; path = Source/Library/Text/HCStringContains.h; sourceTree = "<group>"; };
+		25AF8A87835D493DB5AA8BDC /* HCIsDictionaryContainingEntries.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsDictionaryContainingEntries.m; path = Source/Library/Collection/HCIsDictionaryContainingEntries.m; sourceTree = "<group>"; };
+		25E209E290964A659103F721 /* HCHasDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCHasDescription.m; path = Source/Library/Object/HCHasDescription.m; sourceTree = "<group>"; };
+		25FADA7D70A3496E9CE0062D /* HCWrapInMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCWrapInMatcher.m; path = Source/Core/Helpers/HCWrapInMatcher.m; sourceTree = "<group>"; };
+		2717BC3C78A342BA82F99EF2 /* HCTestFailure.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCTestFailure.m; path = Source/Core/HCTestFailure.m; sourceTree = "<group>"; };
+		281214553E1B47D2BD39D211 /* HCNumberAssert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCNumberAssert.h; path = Source/Library/Number/HCNumberAssert.h; sourceTree = "<group>"; };
+		300B79643909497AA27ACD78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		30F368899768437AB1C868A6 /* HCStringStartsWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCStringStartsWith.m; path = Source/Library/Text/HCStringStartsWith.m; sourceTree = "<group>"; };
+		319F47D100BD44A0B733400C /* HCXCTestFailureHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCXCTestFailureHandler.h; path = Source/Core/HCXCTestFailureHandler.h; sourceTree = "<group>"; };
+		34562DA589574AAF984433D6 /* HCBaseDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCBaseDescription.m; path = Source/Core/HCBaseDescription.m; sourceTree = "<group>"; };
+		35208AF0300642B7A3A92B63 /* Pods-MKFoundationKitTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MKFoundationKitTests-dummy.m"; sourceTree = "<group>"; };
+		36B82D57A3F1441E99F2DC73 /* Pods-MKFoundationKitTests-OCHamcrest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKFoundationKitTests-OCHamcrest.xcconfig"; sourceTree = "<group>"; };
+		37A2703DCA714CC39531939E /* HCOrderingComparison.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCOrderingComparison.m; path = Source/Library/Number/HCOrderingComparison.m; sourceTree = "<group>"; };
+		3803EBA270D14496B1A9AC77 /* HCTestFailureHandlerChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCTestFailureHandlerChain.h; path = Source/Core/HCTestFailureHandlerChain.h; sourceTree = "<group>"; };
+		3A2240BD677E49BC86FDCAC8 /* HCIsEqualToNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsEqualToNumber.m; path = Source/Library/Number/HCIsEqualToNumber.m; sourceTree = "<group>"; };
+		3BD0B06C57CA43E69DC4BE43 /* Pods-MKFoundationKitTests-OCHamcrest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MKFoundationKitTests-OCHamcrest-dummy.m"; sourceTree = "<group>"; };
+		4147F58C28564A2C8FF467A3 /* HCIsSame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsSame.h; path = Source/Library/Object/HCIsSame.h; sourceTree = "<group>"; };
+		429AAAA027EE4D47B3B20FE3 /* HCIs.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIs.m; path = Source/Library/Decorator/HCIs.m; sourceTree = "<group>"; };
+		42EFA76371EB4243948977EE /* HCIs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIs.h; path = Source/Library/Decorator/HCIs.h; sourceTree = "<group>"; };
+		43216E90508248AFA5F59B61 /* HCIsEmptyCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsEmptyCollection.h; path = Source/Library/Collection/HCIsEmptyCollection.h; sourceTree = "<group>"; };
+		49490A48F0FA4799991D89CA /* HCIsCollectionContaining.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsCollectionContaining.h; path = Source/Library/Collection/HCIsCollectionContaining.h; sourceTree = "<group>"; };
+		4B3B9DC56AA345E78D8FACB9 /* Pods-MKFoundationKitTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MKFoundationKitTests-resources.sh"; sourceTree = "<group>"; };
+		4E15749C82F444A0A29994F0 /* HCIsTypeOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsTypeOf.h; path = Source/Library/Object/HCIsTypeOf.h; sourceTree = "<group>"; };
+		513FED378A964E758F8B3829 /* HCCollectMatchers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCCollectMatchers.m; path = Source/Core/Helpers/HCCollectMatchers.m; sourceTree = "<group>"; };
+		52D3DE8F7E9A4444A209B12F /* HCRequireNonNilObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCRequireNonNilObject.m; path = Source/Core/Helpers/HCRequireNonNilObject.m; sourceTree = "<group>"; };
+		53C2D2A4B1DF4B81A5F2EA8E /* HCIsAnything.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsAnything.m; path = Source/Library/Logical/HCIsAnything.m; sourceTree = "<group>"; };
+		5488F7C6F070474AB97989C2 /* HCBaseMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCBaseMatcher.h; path = Source/Core/HCBaseMatcher.h; sourceTree = "<group>"; };
+		5555EEAB306F41C78829563A /* HCStringStartsWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCStringStartsWith.h; path = Source/Library/Text/HCStringStartsWith.h; sourceTree = "<group>"; };
+		556337E72A3E4B8EA06EE4E8 /* HCIsNot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsNot.m; path = Source/Library/Logical/HCIsNot.m; sourceTree = "<group>"; };
+		556E031BCDBF4D9A9044F537 /* HCClassMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCClassMatcher.m; path = Source/Library/Object/HCClassMatcher.m; sourceTree = "<group>"; };
+		56DEFA8B813441FBB0BD70B7 /* HCIsSame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsSame.m; path = Source/Library/Object/HCIsSame.m; sourceTree = "<group>"; };
+		58055BA3D9F247C29E4227E2 /* HCIsDictionaryContainingValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsDictionaryContainingValue.m; path = Source/Library/Collection/HCIsDictionaryContainingValue.m; sourceTree = "<group>"; };
+		590DE6D04A724F9EA1DB1263 /* HCIsNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsNil.h; path = Source/Library/Object/HCIsNil.h; sourceTree = "<group>"; };
+		5B6EFCD7D1894BE486955552 /* HCBaseDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCBaseDescription.h; path = Source/Core/HCBaseDescription.h; sourceTree = "<group>"; };
+		5D21DA806BD34E8BB2EAB3A5 /* HCIsEqualToNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsEqualToNumber.h; path = Source/Library/Number/HCIsEqualToNumber.h; sourceTree = "<group>"; };
+		5F69F7C8A60748318B3DEDDC /* HCConformsToProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCConformsToProtocol.m; path = Source/Library/Object/HCConformsToProtocol.m; sourceTree = "<group>"; };
+		62ABFF59542B4DFF91956ADF /* HCGenericTestFailureHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCGenericTestFailureHandler.h; path = Source/Core/HCGenericTestFailureHandler.h; sourceTree = "<group>"; };
+		696472CF81DF445B9196E256 /* HCWrapInMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCWrapInMatcher.h; path = Source/Core/Helpers/HCWrapInMatcher.h; sourceTree = "<group>"; };
+		69A9CE77F4BB43D392E3EE14 /* HCIsEqualIgnoringWhiteSpace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsEqualIgnoringWhiteSpace.h; path = Source/Library/Text/HCIsEqualIgnoringWhiteSpace.h; sourceTree = "<group>"; };
+		6D47904C65BB46C696BC8AEE /* Pods-MKFoundationKitTests-OCHamcrest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MKFoundationKitTests-OCHamcrest-prefix.pch"; sourceTree = "<group>"; };
+		6E87AEEDAB3C41BEAC81AC54 /* HCDescribedAs.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCDescribedAs.m; path = Source/Library/Decorator/HCDescribedAs.m; sourceTree = "<group>"; };
+		71CCC4C34298449CA86A200C /* HCInvocationMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCInvocationMatcher.h; path = Source/Core/Helpers/HCInvocationMatcher.h; sourceTree = "<group>"; };
+		761A30B5210E4E05B078B86C /* HCIsCollectionOnlyContaining.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsCollectionOnlyContaining.m; path = Source/Library/Collection/HCIsCollectionOnlyContaining.m; sourceTree = "<group>"; };
+		8555B75FED8A4523ADCAC339 /* HCIsAnything.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsAnything.h; path = Source/Library/Logical/HCIsAnything.h; sourceTree = "<group>"; };
+		870FCE8C724C47DA84BBD752 /* HCIsCollectionContainingInAnyOrder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsCollectionContainingInAnyOrder.h; path = Source/Library/Collection/HCIsCollectionContainingInAnyOrder.h; sourceTree = "<group>"; };
+		88549B5B9FDC45E4AF0A40EA /* HCStringEndsWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCStringEndsWith.m; path = Source/Library/Text/HCStringEndsWith.m; sourceTree = "<group>"; };
+		887A01CC04424D7D9844E994 /* Pods-MKFoundationKitTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MKFoundationKitTests-environment.h"; sourceTree = "<group>"; };
+		889C473C701C47E0996742C0 /* HCSubstringMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCSubstringMatcher.h; path = Source/Library/Text/HCSubstringMatcher.h; sourceTree = "<group>"; };
+		895D2711BE064FD3954D29DC /* HCIsCollectionOnlyContaining.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsCollectionOnlyContaining.h; path = Source/Library/Collection/HCIsCollectionOnlyContaining.h; sourceTree = "<group>"; };
+		8A25363AA36F44B7B3649E31 /* HCGenericTestFailureHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCGenericTestFailureHandler.m; path = Source/Core/HCGenericTestFailureHandler.m; sourceTree = "<group>"; };
+		8B0DBB2E228C4896A87007A4 /* HCIsCollectionContainingInOrder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsCollectionContainingInOrder.h; path = Source/Library/Collection/HCIsCollectionContainingInOrder.h; sourceTree = "<group>"; };
+		8BAA98B425AD4A86843BE65D /* HCStringDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCStringDescription.h; path = Source/Core/HCStringDescription.h; sourceTree = "<group>"; };
+		8CCC523E4426454FB9DB91B2 /* HCSelfDescribing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCSelfDescribing.h; path = Source/Core/HCSelfDescribing.h; sourceTree = "<group>"; };
+		8DC8F90EE4834DA38620349C /* HCStringDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCStringDescription.m; path = Source/Core/HCStringDescription.m; sourceTree = "<group>"; };
+		95B5FE38273A439C88DBD5AA /* HCTestFailureHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCTestFailureHandler.h; path = Source/Core/HCTestFailureHandler.h; sourceTree = "<group>"; };
+		9890FC6F6CAA4C8CB1EDA9B2 /* HCStringEndsWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCStringEndsWith.h; path = Source/Library/Text/HCStringEndsWith.h; sourceTree = "<group>"; };
+		9E4B356D37FE46E599674C29 /* HCIsTypeOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsTypeOf.m; path = Source/Library/Object/HCIsTypeOf.m; sourceTree = "<group>"; };
+		9EE5BAA7EBBC49468AA8D1FB /* HCIsCloseTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsCloseTo.m; path = Source/Library/Number/HCIsCloseTo.m; sourceTree = "<group>"; };
+		9FFBDD07C17840649BF3ACEB /* HCInvocationMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCInvocationMatcher.m; path = Source/Core/Helpers/HCInvocationMatcher.m; sourceTree = "<group>"; };
+		A029444F317B4902B5CFC958 /* Pods-MKFoundationKitTests-OCHamcrest-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKFoundationKitTests-OCHamcrest-Private.xcconfig"; sourceTree = "<group>"; };
+		A1194ED72B784BAB838FCCA3 /* HCIsNot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsNot.h; path = Source/Library/Logical/HCIsNot.h; sourceTree = "<group>"; };
+		A6659239C9274F37B4120284 /* HCClassMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCClassMatcher.h; path = Source/Library/Object/HCClassMatcher.h; sourceTree = "<group>"; };
+		A67E5EBC3BD2421DB07529AE /* HCNumberAssert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCNumberAssert.m; path = Source/Library/Number/HCNumberAssert.m; sourceTree = "<group>"; };
+		A6C1BED3174444BDA11471CD /* HCTestFailure.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCTestFailure.h; path = Source/Core/HCTestFailure.h; sourceTree = "<group>"; };
+		A97B3DC5390E4AED99B2D885 /* HCIsEqual.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsEqual.m; path = Source/Library/Object/HCIsEqual.m; sourceTree = "<group>"; };
+		AB791915C2904D5EAF6EB7D4 /* HCAnyOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCAnyOf.m; path = Source/Library/Logical/HCAnyOf.m; sourceTree = "<group>"; };
+		AB9AEA1832FF44068179DE0F /* HCBaseMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCBaseMatcher.m; path = Source/Core/HCBaseMatcher.m; sourceTree = "<group>"; };
+		ABC8D35228D648EAA74F3DAC /* HCIsEqual.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsEqual.h; path = Source/Library/Object/HCIsEqual.h; sourceTree = "<group>"; };
+		AE3078E157844FA5961C6623 /* HCIsCollectionContainingInAnyOrder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsCollectionContainingInAnyOrder.m; path = Source/Library/Collection/HCIsCollectionContainingInAnyOrder.m; sourceTree = "<group>"; };
+		AF8B804BD6484AD7A0898EF9 /* HCHasCount.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCHasCount.h; path = Source/Library/Collection/HCHasCount.h; sourceTree = "<group>"; };
+		B2BA166143C749DDBA0E6D77 /* HCHasProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCHasProperty.m; path = Source/Library/Object/HCHasProperty.m; sourceTree = "<group>"; };
+		B2E6F7C0F478402983A34F22 /* HCXCTestFailureHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCXCTestFailureHandler.m; path = Source/Core/HCXCTestFailureHandler.m; sourceTree = "<group>"; };
+		B4CCE3E27F124C1AA6234305 /* HCIsDictionaryContainingEntries.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsDictionaryContainingEntries.h; path = Source/Library/Collection/HCIsDictionaryContainingEntries.h; sourceTree = "<group>"; };
+		B74D69DAC302442DBAC9B25D /* HCOrderingComparison.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCOrderingComparison.h; path = Source/Library/Number/HCOrderingComparison.h; sourceTree = "<group>"; };
+		B88EEDF950FF40A394616115 /* HCIsIn.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsIn.m; path = Source/Library/Collection/HCIsIn.m; sourceTree = "<group>"; };
+		B9808E3E3483453ABEB97D21 /* HCStringContainsInOrder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCStringContainsInOrder.h; path = Source/Library/Text/HCStringContainsInOrder.h; sourceTree = "<group>"; };
+		B9D228F09E26411BA4F3AE5F /* HCSenTestFailureHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCSenTestFailureHandler.h; path = Source/Core/HCSenTestFailureHandler.h; sourceTree = "<group>"; };
+		BA975E214ABA48D8BC0B4554 /* HCSubstringMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCSubstringMatcher.m; path = Source/Library/Text/HCSubstringMatcher.m; sourceTree = "<group>"; };
+		BBCC0EDB38604565887CB06B /* HCHasProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCHasProperty.h; path = Source/Library/Object/HCHasProperty.h; sourceTree = "<group>"; };
+		BDBABAF9895A4DE3BCAF01E4 /* HCAnyOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCAnyOf.h; path = Source/Library/Logical/HCAnyOf.h; sourceTree = "<group>"; };
+		C01B8E8C3C3843DA993E6866 /* HCConformsToProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCConformsToProtocol.h; path = Source/Library/Object/HCConformsToProtocol.h; sourceTree = "<group>"; };
+		C0F02EEBA3C54EBFA6374F20 /* HCIsDictionaryContaining.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsDictionaryContaining.m; path = Source/Library/Collection/HCIsDictionaryContaining.m; sourceTree = "<group>"; };
+		C256C910EA864597B4B820AC /* HCIsEqualIgnoringWhiteSpace.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsEqualIgnoringWhiteSpace.m; path = Source/Library/Text/HCIsEqualIgnoringWhiteSpace.m; sourceTree = "<group>"; };
+		C59E3ED519CD494D988C6183 /* HCDescribedAs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCDescribedAs.h; path = Source/Library/Decorator/HCDescribedAs.h; sourceTree = "<group>"; };
+		C7F0750A69644D61A288ACD5 /* HCAllOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCAllOf.h; path = Source/Library/Logical/HCAllOf.h; sourceTree = "<group>"; };
+		C8FE44413A41473281BA6143 /* OCHamcrest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCHamcrest.h; path = Source/OCHamcrest.h; sourceTree = "<group>"; };
+		C99739E9E7DD4CA8B6AD5599 /* Pods-MKFoundationKitTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MKFoundationKitTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CA5C5CA4536F41DEA39B560D /* HCIsEqualIgnoringCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsEqualIgnoringCase.h; path = Source/Library/Text/HCIsEqualIgnoringCase.h; sourceTree = "<group>"; };
+		CCF6F75784C24C7A8B272288 /* HCAssertThat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCAssertThat.m; path = Source/Core/HCAssertThat.m; sourceTree = "<group>"; };
+		CFB27ED9E9FC4E758B8F9B90 /* HCIsDictionaryContainingKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsDictionaryContainingKey.h; path = Source/Library/Collection/HCIsDictionaryContainingKey.h; sourceTree = "<group>"; };
+		D0C1D46242114DA7B8947CC5 /* HCIsCloseTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsCloseTo.h; path = Source/Library/Number/HCIsCloseTo.h; sourceTree = "<group>"; };
+		D601A23C5BD64CA59A2FF22E /* HCIsCollectionContaining.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsCollectionContaining.m; path = Source/Library/Collection/HCIsCollectionContaining.m; sourceTree = "<group>"; };
+		DAF1EBD808B94846BB949280 /* HCIsEqualIgnoringCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsEqualIgnoringCase.m; path = Source/Library/Text/HCIsEqualIgnoringCase.m; sourceTree = "<group>"; };
+		DBE8557DE6174CAFA25BD689 /* Pods-MKFoundationKitTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MKFoundationKitTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DE0D8736D60043CDA7E7DA17 /* HCRequireNonNilObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCRequireNonNilObject.h; path = Source/Core/Helpers/HCRequireNonNilObject.h; sourceTree = "<group>"; };
+		DE72C6A2BC2F4279A2AD7ACE /* HCIsNil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsNil.m; path = Source/Library/Object/HCIsNil.m; sourceTree = "<group>"; };
+		E5B6977A44F24B068DAECC17 /* HCIsInstanceOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsInstanceOf.h; path = Source/Library/Object/HCIsInstanceOf.h; sourceTree = "<group>"; };
+		E63B345AB47C4C589670B67E /* HCIsEmptyCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsEmptyCollection.m; path = Source/Library/Collection/HCIsEmptyCollection.m; sourceTree = "<group>"; };
+		E949960766884B5DB9562E00 /* HCIsIn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsIn.h; path = Source/Library/Collection/HCIsIn.h; sourceTree = "<group>"; };
+		EB1784E021D3427D8A48E125 /* HCIsCollectionContainingInOrder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsCollectionContainingInOrder.m; path = Source/Library/Collection/HCIsCollectionContainingInOrder.m; sourceTree = "<group>"; };
+		EC993C401A5945C99C5E16C9 /* HCCollectMatchers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCCollectMatchers.h; path = Source/Core/Helpers/HCCollectMatchers.h; sourceTree = "<group>"; };
+		EEECB83646E34D0CA86D4127 /* HCMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCMatcher.h; path = Source/Core/HCMatcher.h; sourceTree = "<group>"; };
+		F400BF27ADF44DAF8A518361 /* HCTestFailureHandlerChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCTestFailureHandlerChain.m; path = Source/Core/HCTestFailureHandlerChain.m; sourceTree = "<group>"; };
+		F4B3552398C342D7AD7067DB /* HCHasCount.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCHasCount.m; path = Source/Library/Collection/HCHasCount.m; sourceTree = "<group>"; };
+		F64049E73C454808B4A8566B /* libPods-MKFoundationKitTests-OCHamcrest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MKFoundationKitTests-OCHamcrest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F65A01D01DBB40C4BB06D301 /* HCIsInstanceOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCIsInstanceOf.m; path = Source/Library/Object/HCIsInstanceOf.m; sourceTree = "<group>"; };
+		FAAA85422FDB42A0880A98E7 /* HCAssertThat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCAssertThat.h; path = Source/Core/HCAssertThat.h; sourceTree = "<group>"; };
+		FDA91DC663944DE29E69BB04 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FE5B049B52A44F5DBFD0C8AC /* HCIsDictionaryContainingValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCIsDictionaryContainingValue.h; path = Source/Library/Collection/HCIsDictionaryContainingValue.h; sourceTree = "<group>"; };
+		FECE6DBD69B14BFFB0A47CEC /* HCStringContains.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCStringContains.m; path = Source/Library/Text/HCStringContains.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10A302B12A544A78BC6B522E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984FF12208B842A3A96BB17F /* Foundation.framework in Frameworks */,
+				C118E4D0CE884F38B62DA7A1 /* libPods-MKFoundationKitTests-OCHamcrest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89D9798157D4CBD96D8F33F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3A48A46DD6F4C57B1E95733 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		225E094A7D6D42A3B4AB0E44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00DB57AD7DB646428AFE283C /* libPods-MKFoundationKitTests.a */,
+				F64049E73C454808B4A8566B /* libPods-MKFoundationKitTests-OCHamcrest.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34130839A891453B943AD5FB /* OCHamcrest */ = {
+			isa = PBXGroup;
+			children = (
+				C7F0750A69644D61A288ACD5 /* HCAllOf.h */,
+				1F77A7E710A24610A28C26F1 /* HCAllOf.m */,
+				BDBABAF9895A4DE3BCAF01E4 /* HCAnyOf.h */,
+				AB791915C2904D5EAF6EB7D4 /* HCAnyOf.m */,
+				FAAA85422FDB42A0880A98E7 /* HCAssertThat.h */,
+				CCF6F75784C24C7A8B272288 /* HCAssertThat.m */,
+				5B6EFCD7D1894BE486955552 /* HCBaseDescription.h */,
+				34562DA589574AAF984433D6 /* HCBaseDescription.m */,
+				5488F7C6F070474AB97989C2 /* HCBaseMatcher.h */,
+				AB9AEA1832FF44068179DE0F /* HCBaseMatcher.m */,
+				A6659239C9274F37B4120284 /* HCClassMatcher.h */,
+				556E031BCDBF4D9A9044F537 /* HCClassMatcher.m */,
+				EC993C401A5945C99C5E16C9 /* HCCollectMatchers.h */,
+				513FED378A964E758F8B3829 /* HCCollectMatchers.m */,
+				C01B8E8C3C3843DA993E6866 /* HCConformsToProtocol.h */,
+				5F69F7C8A60748318B3DEDDC /* HCConformsToProtocol.m */,
+				C59E3ED519CD494D988C6183 /* HCDescribedAs.h */,
+				6E87AEEDAB3C41BEAC81AC54 /* HCDescribedAs.m */,
+				1348282FD47F4241A9046BB2 /* HCDescription.h */,
+				62ABFF59542B4DFF91956ADF /* HCGenericTestFailureHandler.h */,
+				8A25363AA36F44B7B3649E31 /* HCGenericTestFailureHandler.m */,
+				AF8B804BD6484AD7A0898EF9 /* HCHasCount.h */,
+				F4B3552398C342D7AD7067DB /* HCHasCount.m */,
+				1974904711634E1498F3541A /* HCHasDescription.h */,
+				25E209E290964A659103F721 /* HCHasDescription.m */,
+				BBCC0EDB38604565887CB06B /* HCHasProperty.h */,
+				B2BA166143C749DDBA0E6D77 /* HCHasProperty.m */,
+				71CCC4C34298449CA86A200C /* HCInvocationMatcher.h */,
+				9FFBDD07C17840649BF3ACEB /* HCInvocationMatcher.m */,
+				42EFA76371EB4243948977EE /* HCIs.h */,
+				429AAAA027EE4D47B3B20FE3 /* HCIs.m */,
+				8555B75FED8A4523ADCAC339 /* HCIsAnything.h */,
+				53C2D2A4B1DF4B81A5F2EA8E /* HCIsAnything.m */,
+				D0C1D46242114DA7B8947CC5 /* HCIsCloseTo.h */,
+				9EE5BAA7EBBC49468AA8D1FB /* HCIsCloseTo.m */,
+				49490A48F0FA4799991D89CA /* HCIsCollectionContaining.h */,
+				D601A23C5BD64CA59A2FF22E /* HCIsCollectionContaining.m */,
+				870FCE8C724C47DA84BBD752 /* HCIsCollectionContainingInAnyOrder.h */,
+				AE3078E157844FA5961C6623 /* HCIsCollectionContainingInAnyOrder.m */,
+				8B0DBB2E228C4896A87007A4 /* HCIsCollectionContainingInOrder.h */,
+				EB1784E021D3427D8A48E125 /* HCIsCollectionContainingInOrder.m */,
+				895D2711BE064FD3954D29DC /* HCIsCollectionOnlyContaining.h */,
+				761A30B5210E4E05B078B86C /* HCIsCollectionOnlyContaining.m */,
+				0C44ED673D27489BB45FD645 /* HCIsDictionaryContaining.h */,
+				C0F02EEBA3C54EBFA6374F20 /* HCIsDictionaryContaining.m */,
+				B4CCE3E27F124C1AA6234305 /* HCIsDictionaryContainingEntries.h */,
+				25AF8A87835D493DB5AA8BDC /* HCIsDictionaryContainingEntries.m */,
+				CFB27ED9E9FC4E758B8F9B90 /* HCIsDictionaryContainingKey.h */,
+				1E3DF34C455A46C1AA3655DE /* HCIsDictionaryContainingKey.m */,
+				FE5B049B52A44F5DBFD0C8AC /* HCIsDictionaryContainingValue.h */,
+				58055BA3D9F247C29E4227E2 /* HCIsDictionaryContainingValue.m */,
+				43216E90508248AFA5F59B61 /* HCIsEmptyCollection.h */,
+				E63B345AB47C4C589670B67E /* HCIsEmptyCollection.m */,
+				ABC8D35228D648EAA74F3DAC /* HCIsEqual.h */,
+				A97B3DC5390E4AED99B2D885 /* HCIsEqual.m */,
+				CA5C5CA4536F41DEA39B560D /* HCIsEqualIgnoringCase.h */,
+				DAF1EBD808B94846BB949280 /* HCIsEqualIgnoringCase.m */,
+				69A9CE77F4BB43D392E3EE14 /* HCIsEqualIgnoringWhiteSpace.h */,
+				C256C910EA864597B4B820AC /* HCIsEqualIgnoringWhiteSpace.m */,
+				5D21DA806BD34E8BB2EAB3A5 /* HCIsEqualToNumber.h */,
+				3A2240BD677E49BC86FDCAC8 /* HCIsEqualToNumber.m */,
+				E949960766884B5DB9562E00 /* HCIsIn.h */,
+				B88EEDF950FF40A394616115 /* HCIsIn.m */,
+				E5B6977A44F24B068DAECC17 /* HCIsInstanceOf.h */,
+				F65A01D01DBB40C4BB06D301 /* HCIsInstanceOf.m */,
+				590DE6D04A724F9EA1DB1263 /* HCIsNil.h */,
+				DE72C6A2BC2F4279A2AD7ACE /* HCIsNil.m */,
+				A1194ED72B784BAB838FCCA3 /* HCIsNot.h */,
+				556337E72A3E4B8EA06EE4E8 /* HCIsNot.m */,
+				4147F58C28564A2C8FF467A3 /* HCIsSame.h */,
+				56DEFA8B813441FBB0BD70B7 /* HCIsSame.m */,
+				4E15749C82F444A0A29994F0 /* HCIsTypeOf.h */,
+				9E4B356D37FE46E599674C29 /* HCIsTypeOf.m */,
+				EEECB83646E34D0CA86D4127 /* HCMatcher.h */,
+				281214553E1B47D2BD39D211 /* HCNumberAssert.h */,
+				A67E5EBC3BD2421DB07529AE /* HCNumberAssert.m */,
+				B74D69DAC302442DBAC9B25D /* HCOrderingComparison.h */,
+				37A2703DCA714CC39531939E /* HCOrderingComparison.m */,
+				DE0D8736D60043CDA7E7DA17 /* HCRequireNonNilObject.h */,
+				52D3DE8F7E9A4444A209B12F /* HCRequireNonNilObject.m */,
+				8CCC523E4426454FB9DB91B2 /* HCSelfDescribing.h */,
+				B9D228F09E26411BA4F3AE5F /* HCSenTestFailureHandler.h */,
+				1C74000C6DAA4C9585B7F51E /* HCSenTestFailureHandler.m */,
+				24250FD0C3674BB68DB50CB8 /* HCStringContains.h */,
+				FECE6DBD69B14BFFB0A47CEC /* HCStringContains.m */,
+				B9808E3E3483453ABEB97D21 /* HCStringContainsInOrder.h */,
+				18FC16723FEA4A44BAC2E163 /* HCStringContainsInOrder.m */,
+				8BAA98B425AD4A86843BE65D /* HCStringDescription.h */,
+				8DC8F90EE4834DA38620349C /* HCStringDescription.m */,
+				9890FC6F6CAA4C8CB1EDA9B2 /* HCStringEndsWith.h */,
+				88549B5B9FDC45E4AF0A40EA /* HCStringEndsWith.m */,
+				5555EEAB306F41C78829563A /* HCStringStartsWith.h */,
+				30F368899768437AB1C868A6 /* HCStringStartsWith.m */,
+				889C473C701C47E0996742C0 /* HCSubstringMatcher.h */,
+				BA975E214ABA48D8BC0B4554 /* HCSubstringMatcher.m */,
+				A6C1BED3174444BDA11471CD /* HCTestFailure.h */,
+				2717BC3C78A342BA82F99EF2 /* HCTestFailure.m */,
+				95B5FE38273A439C88DBD5AA /* HCTestFailureHandler.h */,
+				3803EBA270D14496B1A9AC77 /* HCTestFailureHandlerChain.h */,
+				F400BF27ADF44DAF8A518361 /* HCTestFailureHandlerChain.m */,
+				696472CF81DF445B9196E256 /* HCWrapInMatcher.h */,
+				25FADA7D70A3496E9CE0062D /* HCWrapInMatcher.m */,
+				319F47D100BD44A0B733400C /* HCXCTestFailureHandler.h */,
+				B2E6F7C0F478402983A34F22 /* HCXCTestFailureHandler.m */,
+				C8FE44413A41473281BA6143 /* OCHamcrest.h */,
+				98E6FACFFD844EC880453A35 /* Support Files */,
+			);
+			path = OCHamcrest;
+			sourceTree = "<group>";
+		};
+		394C83AF355B41BA936B9E39 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				300B79643909497AA27ACD78 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4996010510604EDB8922C6D4 /* Pods-MKFoundationKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				066500D6EE9F43D59CB12A00 /* Pods-MKFoundationKitTests.xcconfig */,
+				C99739E9E7DD4CA8B6AD5599 /* Pods-MKFoundationKitTests-acknowledgements.markdown */,
+				DBE8557DE6174CAFA25BD689 /* Pods-MKFoundationKitTests-acknowledgements.plist */,
+				35208AF0300642B7A3A92B63 /* Pods-MKFoundationKitTests-dummy.m */,
+				887A01CC04424D7D9844E994 /* Pods-MKFoundationKitTests-environment.h */,
+				4B3B9DC56AA345E78D8FACB9 /* Pods-MKFoundationKitTests-resources.sh */,
+			);
+			name = "Pods-MKFoundationKitTests";
+			sourceTree = "<group>";
+		};
+		98E6FACFFD844EC880453A35 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				36B82D57A3F1441E99F2DC73 /* Pods-MKFoundationKitTests-OCHamcrest.xcconfig */,
+				A029444F317B4902B5CFC958 /* Pods-MKFoundationKitTests-OCHamcrest-Private.xcconfig */,
+				3BD0B06C57CA43E69DC4BE43 /* Pods-MKFoundationKitTests-OCHamcrest-dummy.m */,
+				6D47904C65BB46C696BC8AEE /* Pods-MKFoundationKitTests-OCHamcrest-prefix.pch */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		C15CAFFC1C7E41FBA20CF602 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34130839A891453B943AD5FB /* OCHamcrest */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E4AD287A494346C7A8765512 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				394C83AF355B41BA936B9E39 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDDD2D42ADC14A3BA983E889 = {
+			isa = PBXGroup;
+			children = (
+				FDA91DC663944DE29E69BB04 /* Podfile */,
+				E4AD287A494346C7A8765512 /* Frameworks */,
+				C15CAFFC1C7E41FBA20CF602 /* Pods */,
+				225E094A7D6D42A3B4AB0E44 /* Products */,
+				F73698DDEEBA4FA286609A5F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F73698DDEEBA4FA286609A5F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4996010510604EDB8922C6D4 /* Pods-MKFoundationKitTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D87AB44FEB3E4DC6AB04E7C4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64AFADB459E148E08EC8FE49 /* HCAllOf.h in Headers */,
+				31C2497105E84CB7BBD145E7 /* HCAnyOf.h in Headers */,
+				4C8C3DE55402431F970251C7 /* HCAssertThat.h in Headers */,
+				76E9FC1989A944F185DE4449 /* HCBaseDescription.h in Headers */,
+				CF0D5FC26E5A4824AEC9CD67 /* HCBaseMatcher.h in Headers */,
+				92EB6123BEE545C688506190 /* HCClassMatcher.h in Headers */,
+				37921F1F5B824B5AAF41A3CD /* HCCollectMatchers.h in Headers */,
+				C45F002B24FD4FC59632F929 /* HCConformsToProtocol.h in Headers */,
+				AE23A5D7465F4671B3F9D38B /* HCDescribedAs.h in Headers */,
+				EAEDA66C45524492B3A1F40A /* HCDescription.h in Headers */,
+				4B18681851B2473589F70DF6 /* HCGenericTestFailureHandler.h in Headers */,
+				D69A6F54A6F245F7BD4D67E5 /* HCHasCount.h in Headers */,
+				1DAFB34073354F4C9703F8A5 /* HCHasDescription.h in Headers */,
+				0493E6CDD3944E1382CF1E88 /* HCHasProperty.h in Headers */,
+				F21E1D9E800E4BECA0A69726 /* HCInvocationMatcher.h in Headers */,
+				A8A908F4FA5944DDBCDF6567 /* HCIs.h in Headers */,
+				EB738F963A6D46F68843246C /* HCIsAnything.h in Headers */,
+				95250A071DBA471C8EC0E440 /* HCIsCloseTo.h in Headers */,
+				FDF9622179C2471B971854A5 /* HCIsCollectionContaining.h in Headers */,
+				441B74CCE23E4B4E843EF3C0 /* HCIsCollectionContainingInAnyOrder.h in Headers */,
+				94A6BD42ED5A479AA40EEA4D /* HCIsCollectionContainingInOrder.h in Headers */,
+				4F5C8421A33F4342AAB18051 /* HCIsCollectionOnlyContaining.h in Headers */,
+				793F51F5953F44F781FCB4B7 /* HCIsDictionaryContaining.h in Headers */,
+				998B1D157CED46C6933C8317 /* HCIsDictionaryContainingEntries.h in Headers */,
+				858B648510104D14A4F2007C /* HCIsDictionaryContainingKey.h in Headers */,
+				7D5A3AC84A6542F79C9DC95D /* HCIsDictionaryContainingValue.h in Headers */,
+				09282154078E45F09A7861FD /* HCIsEmptyCollection.h in Headers */,
+				C9FBCDBBBA274ED6A5CD0C01 /* HCIsEqual.h in Headers */,
+				4FF86B3170F54BD18CBFAAB9 /* HCIsEqualIgnoringCase.h in Headers */,
+				007C480429414FA99FB63288 /* HCIsEqualIgnoringWhiteSpace.h in Headers */,
+				6C914E2A4D3E452E9229E92E /* HCIsEqualToNumber.h in Headers */,
+				DF0064F785C745E0B83D2140 /* HCIsIn.h in Headers */,
+				38249578C1B8473898ADA2B9 /* HCIsInstanceOf.h in Headers */,
+				6AFDCC2D12E24E70A94FDCF6 /* HCIsNil.h in Headers */,
+				2801061719D840EE8FA3DD4F /* HCIsNot.h in Headers */,
+				9330A110808B417493041F9C /* HCIsSame.h in Headers */,
+				73DE915450804FA9B124255E /* HCIsTypeOf.h in Headers */,
+				840EE14C7E594D62BB1C35D2 /* HCMatcher.h in Headers */,
+				0DFA572D46FB492096FF84EB /* HCNumberAssert.h in Headers */,
+				58A4D63F7988443E93EFB255 /* HCOrderingComparison.h in Headers */,
+				2811EAC90FF541CBB24144BB /* HCRequireNonNilObject.h in Headers */,
+				FB46F337C5B94CEA913AC4D0 /* HCSelfDescribing.h in Headers */,
+				1B4EE6DE30D649D499DC69E2 /* HCSenTestFailureHandler.h in Headers */,
+				1B3E29D601CF44138BFB3D7B /* HCStringContains.h in Headers */,
+				8F385934EE4F4EA09B37C0F5 /* HCStringContainsInOrder.h in Headers */,
+				699BA1A4EE944A83B28E104A /* HCStringDescription.h in Headers */,
+				935186C62A74416F9429D582 /* HCStringEndsWith.h in Headers */,
+				158927C027B64499A798213C /* HCStringStartsWith.h in Headers */,
+				957352B8EFD8418B8E266A76 /* HCSubstringMatcher.h in Headers */,
+				384575936C0740BF934B36D0 /* HCTestFailure.h in Headers */,
+				1EFEB40CE6BB425EBC648A2B /* HCTestFailureHandler.h in Headers */,
+				5210C4480AAD483F90458005 /* HCTestFailureHandlerChain.h in Headers */,
+				61BC41C298F245FABAAECFD2 /* HCWrapInMatcher.h in Headers */,
+				5C97838843384CDA823B022D /* HCXCTestFailureHandler.h in Headers */,
+				EE43B25497164386A000F4C8 /* OCHamcrest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		673C1ABA16104D9EBD891172 /* Pods-MKFoundationKitTests-OCHamcrest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E774698810A146049F87D0B8 /* Build configuration list for PBXNativeTarget "Pods-MKFoundationKitTests-OCHamcrest" */;
+			buildPhases = (
+				344808D72DC845E7BE23DF27 /* Sources */,
+				D89D9798157D4CBD96D8F33F /* Frameworks */,
+				D87AB44FEB3E4DC6AB04E7C4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MKFoundationKitTests-OCHamcrest";
+			productName = "Pods-MKFoundationKitTests-OCHamcrest";
+			productReference = F64049E73C454808B4A8566B /* libPods-MKFoundationKitTests-OCHamcrest.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		71EF008537C54CFC91102FB8 /* Pods-MKFoundationKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15C98588E58244B1B71FA32E /* Build configuration list for PBXNativeTarget "Pods-MKFoundationKitTests" */;
+			buildPhases = (
+				0311886C1A1041C08AC2CCF4 /* Sources */,
+				10A302B12A544A78BC6B522E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCFF829DBE304D5185A0E6BD /* PBXTargetDependency */,
+			);
+			name = "Pods-MKFoundationKitTests";
+			productName = "Pods-MKFoundationKitTests";
+			productReference = 00DB57AD7DB646428AFE283C /* libPods-MKFoundationKitTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		899500C00E204D1FB3CDE10F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = A313C671C7654764861D0147 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EDDD2D42ADC14A3BA983E889;
+			productRefGroup = 225E094A7D6D42A3B4AB0E44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71EF008537C54CFC91102FB8 /* Pods-MKFoundationKitTests */,
+				673C1ABA16104D9EBD891172 /* Pods-MKFoundationKitTests-OCHamcrest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0311886C1A1041C08AC2CCF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0F35D39C5FF443AB1BEB677 /* Pods-MKFoundationKitTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344808D72DC845E7BE23DF27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B25D22AE8590463BAA35C5FB /* HCAllOf.m in Sources */,
+				B080EB22FE544553A976B473 /* HCAnyOf.m in Sources */,
+				D783739385424AC999B5274F /* HCAssertThat.m in Sources */,
+				4871B5F02BBF42779AAC051C /* HCBaseDescription.m in Sources */,
+				AB2F689CFE814EADB9C71DFE /* HCBaseMatcher.m in Sources */,
+				CCE33456EEE540F79827914E /* HCClassMatcher.m in Sources */,
+				953090397F68445E9F36E101 /* HCCollectMatchers.m in Sources */,
+				FCBFCF5B15CB4B34949C5739 /* HCConformsToProtocol.m in Sources */,
+				5DAB71DADF294EC1BE293861 /* HCDescribedAs.m in Sources */,
+				3B5CBCDCCA2045F4A201DC89 /* HCGenericTestFailureHandler.m in Sources */,
+				6A276DF6AD504D70B6FC737E /* HCHasCount.m in Sources */,
+				0D14FBF3BEB5446F95A00253 /* HCHasDescription.m in Sources */,
+				FC5AEE5375C9449DBDDEE841 /* HCHasProperty.m in Sources */,
+				D1CC7F8FDA984C7F80D0897E /* HCInvocationMatcher.m in Sources */,
+				28EB9D49E43D4285B4C3A88F /* HCIs.m in Sources */,
+				8FB80ED8D4D84FDE8243E5E2 /* HCIsAnything.m in Sources */,
+				17D04FCBC401436BB7393163 /* HCIsCloseTo.m in Sources */,
+				8B77F696B0DA416EA080B26B /* HCIsCollectionContaining.m in Sources */,
+				F33E0876986B46A3AE2C49CC /* HCIsCollectionContainingInAnyOrder.m in Sources */,
+				074DDB9214CC48AFB3CD7D10 /* HCIsCollectionContainingInOrder.m in Sources */,
+				B06E3DECD1224B1E988326B2 /* HCIsCollectionOnlyContaining.m in Sources */,
+				863F706AA3BC4D63AB9289EC /* HCIsDictionaryContaining.m in Sources */,
+				291ADD476C4844418BFD439B /* HCIsDictionaryContainingEntries.m in Sources */,
+				81D71A21F75C4E0B9DB62275 /* HCIsDictionaryContainingKey.m in Sources */,
+				8BCA67697DD84FF29A1E93CA /* HCIsDictionaryContainingValue.m in Sources */,
+				D4EC2BE1E8F14B819667FA6D /* HCIsEmptyCollection.m in Sources */,
+				A7655C23E8DB4EFC90E2EB8E /* HCIsEqual.m in Sources */,
+				06864FDED527495AA4D80079 /* HCIsEqualIgnoringCase.m in Sources */,
+				5C2C1F012C3D4576AB15824D /* HCIsEqualIgnoringWhiteSpace.m in Sources */,
+				722FE5AE34444AAE8C674525 /* HCIsEqualToNumber.m in Sources */,
+				F99AC8C9477144EFA49B992B /* HCIsIn.m in Sources */,
+				EBC4A5E0AD234603A271FA39 /* HCIsInstanceOf.m in Sources */,
+				F11B1CB0C5204DD29ACE10AE /* HCIsNil.m in Sources */,
+				5B1357C96ED64065BB266212 /* HCIsNot.m in Sources */,
+				D5397A09781247829B926ECA /* HCIsSame.m in Sources */,
+				28CF85DD68154FD3A17375CE /* HCIsTypeOf.m in Sources */,
+				C38968893C654CB49D4D6E0C /* HCNumberAssert.m in Sources */,
+				BD0D0D2115FA4E12B962A110 /* HCOrderingComparison.m in Sources */,
+				1B05519C98204040A5E8B1D8 /* HCRequireNonNilObject.m in Sources */,
+				CFCBC6FF72D9405AADFB5BD5 /* HCSenTestFailureHandler.m in Sources */,
+				BEECF05472F1418086AE6177 /* HCStringContains.m in Sources */,
+				A829927375EE4B65880A38BA /* HCStringContainsInOrder.m in Sources */,
+				18F133BB997F430592E33F3F /* HCStringDescription.m in Sources */,
+				337F4C7ACA8249179DEE019A /* HCStringEndsWith.m in Sources */,
+				B9637724696A454AAA4B06B6 /* HCStringStartsWith.m in Sources */,
+				33D212A9829B4DA8B9A24931 /* HCSubstringMatcher.m in Sources */,
+				C1F624A077F14DFF92A4A10A /* HCTestFailure.m in Sources */,
+				1EEBC9F57B5D4D7AAADA5655 /* HCTestFailureHandlerChain.m in Sources */,
+				AE806E5293A041B3B9A05351 /* HCWrapInMatcher.m in Sources */,
+				776796A8F93E422AA100FB8C /* HCXCTestFailureHandler.m in Sources */,
+				A12664D6BEEA4F42BD4DE7BE /* Pods-MKFoundationKitTests-OCHamcrest-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCFF829DBE304D5185A0E6BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 673C1ABA16104D9EBD891172 /* Pods-MKFoundationKitTests-OCHamcrest */;
+			targetProxy = 4B503A0734B84DD581561D08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01D6D5C17BEC48DFB5FA6BB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A029444F317B4902B5CFC958 /* Pods-MKFoundationKitTests-OCHamcrest-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-MKFoundationKitTests-OCHamcrest-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2A7C08FEB03F44C89077BA30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 066500D6EE9F43D59CB12A00 /* Pods-MKFoundationKitTests.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		628D95E59490404C95F605F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A029444F317B4902B5CFC958 /* Pods-MKFoundationKitTests-OCHamcrest-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-MKFoundationKitTests-OCHamcrest-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62D7F0AD06D04307BF5CC12D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		F2641E9193B54CACAA6A44EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 066500D6EE9F43D59CB12A00 /* Pods-MKFoundationKitTests.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7769B400ECB42149C791EE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15C98588E58244B1B71FA32E /* Build configuration list for PBXNativeTarget "Pods-MKFoundationKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A7C08FEB03F44C89077BA30 /* Debug */,
+				F2641E9193B54CACAA6A44EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A313C671C7654764861D0147 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62D7F0AD06D04307BF5CC12D /* Debug */,
+				F7769B400ECB42149C791EE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E774698810A146049F87D0B8 /* Build configuration list for PBXNativeTarget "Pods-MKFoundationKitTests-OCHamcrest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D6D5C17BEC48DFB5FA6BB3 /* Debug */,
+				628D95E59490404C95F605F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 899500C00E204D1FB3CDE10F /* Project object */;
+}
