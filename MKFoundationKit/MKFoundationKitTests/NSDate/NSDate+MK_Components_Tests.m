@@ -53,8 +53,13 @@
     assertThatInteger(result, equalToInteger(2013));
 }
 
-- (void)test_week {
-    NSInteger result = [self.target mk_week];
+- (void)test_weekOfMonth {
+    NSInteger result = [self.target mk_weekOfMonth];
+    assertThatInteger(result, equalToInteger(2));
+}
+
+- (void)test_weekOfYear {
+    NSInteger result = [self.target mk_weekOfYear];
     assertThatInteger(result, equalToInteger(2));
 }
 

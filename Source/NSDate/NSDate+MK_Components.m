@@ -35,7 +35,11 @@
     return [[self mk_components] month];
 }
 
-- (NSInteger)mk_week {
+- (NSInteger)mk_weekOfMonth {
+    return [[self mk_components] weekOfMonth];
+}
+
+- (NSInteger)mk_weekOfYear {
     return [[self mk_components] weekOfYear];
 }
 
