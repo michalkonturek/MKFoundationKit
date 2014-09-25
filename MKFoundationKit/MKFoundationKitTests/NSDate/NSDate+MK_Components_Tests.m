@@ -54,7 +54,8 @@
 }
 
 - (void)test_weekOfMonth {
-    
+    NSInteger result = [self.target mk_weekOfMonth];
+    assertThatInteger(result, equalToInteger(2));
 }
 
 - (void)test_weekOfYear {
