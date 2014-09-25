@@ -31,7 +31,8 @@
 
 - (NSInteger)mk_year;
 - (NSInteger)mk_month;
-- (NSInteger)mk_week;
+- (NSInteger)mk_weekOfMonth;
+- (NSInteger)mk_weekOfYear;
 - (NSInteger)mk_weekday;
 - (NSInteger)mk_nthWeekday;
 - (NSInteger)mk_day;
