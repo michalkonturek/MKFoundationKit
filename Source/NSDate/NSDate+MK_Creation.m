@@ -68,13 +68,12 @@
 }
 
 - (NSDate *)mk_dateWithoutTime {
-    NSString *formattedString = [self mk_formattedString];
-
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:[NSDate mk_dateFormatDDMMYYYYDashed]];
-    NSDate *result = [formatter dateFromString:formattedString];
-    
+    unsigned int flags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay;
+    NSCalendar* calendar = [NSCalendar currentCalendar];
+    NSDateComponents* components = [calendar components:flags fromDate:self];
+    NSDate* result = [[calendar dateFromComponents:components] dateByAddingTimeInterval:[[NSTimeZone localTimeZone]secondsFromGMT]];
     return result;
+
 }
 
 @end
