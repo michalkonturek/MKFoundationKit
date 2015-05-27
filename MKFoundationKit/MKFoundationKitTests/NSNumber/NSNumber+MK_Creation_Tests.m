@@ -44,7 +44,7 @@
      https://developer.apple.com/library/mac/#documentation/cocoa/Reference/Foundation/Classes/NSNumber_Class/Reference/Reference.html
      */
     
-    assertThatBool([result isMemberOfClass:[NSDecimalNumber class]], equalToBool(NO));
+    assertThatBool([result isMemberOfClass:[NSDecimalNumber class]], isFalse());
 }
 
 - (void)test_createFrom_when_nsdecimalnumber_class {
@@ -52,7 +52,7 @@
     
     NSLog(@"%@", [result class]);
     
-    assertThatBool([result isMemberOfClass:[NSDecimalNumber class]], equalToBool(YES));
+    assertThatBool([result isMemberOfClass:[NSDecimalNumber class]], isTrue());
 }
 
 

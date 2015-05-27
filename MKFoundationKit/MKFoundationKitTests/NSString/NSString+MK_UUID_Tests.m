@@ -39,7 +39,7 @@
 - (void)test_stringWithUUID {
     NSString *result = [NSString mk_stringWithUUID];
     NSString *regex = @"^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$";
-    assertThatBool([result mk_matchesRegex:regex], equalToBool(YES));
+    assertThatBool([result mk_matchesRegex:regex], isTrue());
 }
 
 @end

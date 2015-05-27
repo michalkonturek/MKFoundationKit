@@ -57,12 +57,12 @@
 
 - (void)test_isEmpty_returns_true {
     BOOL result = [[NSArray array] mk_isEmpty];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isEmpty_returns_false {
     BOOL result = [self.target mk_isEmpty];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_firstObject_when_empty_returns_nil {

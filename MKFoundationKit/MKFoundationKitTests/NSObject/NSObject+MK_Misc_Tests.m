@@ -38,17 +38,17 @@
 
 - (void)test_exists_returns_true {
     id target = @1;
-    assertThatBool([target mk_exists], equalToBool(YES));
+    assertThatBool([target mk_exists], isTrue());
 }
 
 - (void)test_exists_returns_false_when_nil {
     id target = nil;
-    assertThatBool([target mk_exists], equalToBool(NO));
+    assertThatBool([target mk_exists], isFalse());
 }
 
 - (void)test_exists_returns_false_when_nsnull {
     id target = [NSNull null];
-    assertThatBool([target mk_exists], equalToBool(NO));
+    assertThatBool([target mk_exists], isFalse());
 }
 
 @end

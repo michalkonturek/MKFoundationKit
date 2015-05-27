@@ -135,7 +135,7 @@
         return [item mk_isEven];
     }];
     
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_all_returns_false {
@@ -144,7 +144,7 @@
         return [item mk_isEven];
     }];
     
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_any_returns_true {
@@ -153,7 +153,7 @@
         return [item mk_isOdd];
     }];
     
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_any_returns_false {
@@ -162,7 +162,7 @@
         return [item mk_isOdd];
     }];
     
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_none_returns_true {
@@ -171,7 +171,7 @@
         return [item mk_isEven];
     }];
     
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_none_returns_false {
@@ -180,7 +180,7 @@
         return [item mk_isEven];
     }];
     
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 @end

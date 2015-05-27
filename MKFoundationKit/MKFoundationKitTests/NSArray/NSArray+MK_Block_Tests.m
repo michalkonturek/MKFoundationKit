@@ -131,7 +131,7 @@
         return [item mk_isGreaterThan:@0];
     }];
     
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_all_returns_false {
@@ -140,7 +140,7 @@
         return [item mk_isGreaterThan:@2];
     }];
     
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_any_returns_true {
@@ -149,7 +149,7 @@
         return [item mk_isGreaterThan:@3];
     }];
     
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_any_returns_false {
@@ -158,7 +158,7 @@
         return [item mk_isGreaterThan:@5];
     }];
     
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_none_returns_true {
@@ -167,7 +167,7 @@
         return [item mk_isEven];
     }];
     
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_none_returns_false {
@@ -176,7 +176,7 @@
         return [item mk_isEven];
     }];
     
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 @end

@@ -84,25 +84,25 @@
 - (void)test_containsString_when_case_returns_true {
     NSString *term = @"regis";
     BOOL result = [self.input mk_containsString:term caseSensitive:YES];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_containsString_when_case_returns_false {
     NSString *term = @"Regis";
     BOOL result = [self.input mk_containsString:term caseSensitive:YES];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_containsString_when_no_case_returns_true {
     NSString *term = @"Regis";
     BOOL result = [self.input mk_containsString:term caseSensitive:NO];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_containsString_when_no_case_returns_false {
     NSString *term = @"Regissss";
     BOOL result = [self.input mk_containsString:term caseSensitive:NO];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_countOccurrencesOfStrings_when_case_sensitive {

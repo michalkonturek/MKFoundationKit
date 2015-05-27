@@ -38,22 +38,22 @@
 
 - (void)test_isStringEmptyOrNil_returns_true {
     BOOL result = [NSString mk_isStringEmptyOrNil:@""];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isStringEmptyOrNil_returns_true_when_spaces {
     BOOL result = [NSString mk_isStringEmptyOrNil:@"   "];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isStringEmptyOrNil_returns_true_when_nil {
     BOOL result = [NSString mk_isStringEmptyOrNil:nil];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isStringEmptyOrNil_returns_false {
     BOOL result = [NSString mk_isStringEmptyOrNil:@"A B"];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_trimmedString {

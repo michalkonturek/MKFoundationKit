@@ -39,161 +39,161 @@
 - (void)test_isToday_returns_true {
     NSDate *target = [NSDate date];
     BOOL result = [target mk_isToday];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isToday_returns_false {
     NSDate *target = [NSDate mk_dateTomorrow];
     BOOL result = [target mk_isToday];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_isTomorrow_returns_true {
     NSDate *target = [NSDate mk_dateTomorrow];
     BOOL result = [target mk_isTomorrow];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isTomorrow_returns_false {
     NSDate *target = [NSDate date];
     BOOL result = [target mk_isTomorrow];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_isYesterday_returns_true {
     NSDate *target = [NSDate mk_dateYesterday];
     BOOL result = [target mk_isYesterday];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isYesterday_returns_false {
     NSDate *target = [NSDate date];
     BOOL result = [target mk_isYesterday];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_isThisWeek_returns_true {
     NSDate *target = [NSDate date];
     BOOL result = [target mk_isThisWeek];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isThisWeek_returns_false {
     NSDate *target = [[NSDate date] mk_dateByAddingDays:8];
     BOOL result = [target mk_isThisWeek];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_isNextWeek_returns_true {
     NSDate *target = [[NSDate date] mk_dateByAddingDays:7];
     BOOL result = [target mk_isNextWeek];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isNextWeek_returns_false {
     NSDate *target = [NSDate date];
     BOOL result = [target mk_isNextWeek];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_isLastWeek_returns_true {
     NSDate *target = [[NSDate date] mk_dateBySubtractingWeeks:1];
     BOOL result = [target mk_isLastWeek];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isLastWeek_returns_false {
     NSDate *target = [NSDate date];
     BOOL result = [target mk_isLastWeek];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_isSameWeekAsDate_returns_true {
     NSDate *target = [NSDate mk_dateFromString:@"01-01-2013"];
     BOOL result = [target mk_isSameWeekAsDate:[NSDate mk_dateFromString:@"02-01-2013"]];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isSameWeekAsDate_returns_true_when_different_months {
     NSDate *target = [NSDate mk_dateFromString:@"31-01-2013"];
     BOOL result = [target mk_isSameWeekAsDate:[NSDate mk_dateFromString:@"02-02-2013"]];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isSameWeekAsDate_returns_false {
     NSDate *target = [NSDate date];
     BOOL result = [target mk_isSameWeekAsDate:[target mk_dateByAddingWeeks:1]];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_isSameWeekAsDate_returns_false_when_different_year {
     NSDate *target = [NSDate mk_dateFromString:@"01-01-2013"];
     BOOL result = [target mk_isSameWeekAsDate:[target mk_dateByAddingYears:1]];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_isThisYear_returns_true {
     NSDate *target = [NSDate date];
     BOOL result = [target mk_isThisYear];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isThisYear_returns_false {
     NSDate *target = [[NSDate date] mk_dateByAddingYears:1];
     BOOL result = [target mk_isThisYear];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_isNextYear_returns_true {
     NSDate *target = [[NSDate date] mk_dateByAddingYears:1];
     BOOL result = [target mk_isNextYear];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isNextYear_returns_false {
     NSDate *target = [NSDate date];
     BOOL result = [target mk_isNextYear];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_isLastYear_returns_true {
     NSDate *target = [[NSDate date] mk_dateBySubtractingYears:1];
     BOOL result = [target mk_isLastYear];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isLastYear_returns_false {
     NSDate *target = [NSDate date];
     BOOL result = [target mk_isLastYear];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_isEarlierThanDate_returns_true {
     NSDate *target = [NSDate date];
     NSDate *other = [[NSDate date] mk_dateByAddingDays:1];
     BOOL result = [target mk_isEarlierThanDate:other];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isEarlierThanDate_returns_false {
     NSDate *target = [NSDate date];
     NSDate *other = [[NSDate date] mk_dateBySubtractingDays:1];
     BOOL result = [target mk_isEarlierThanDate:other];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_isLaterThanDate_returns_true {
     NSDate *target = [NSDate date];
     NSDate *other = [[NSDate date] mk_dateBySubtractingDays:1];
     BOOL result = [target mk_isLaterThanDate:other];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isLaterThanDate_returns_false {
     NSDate *target = [NSDate date];
     NSDate *other = [[NSDate date] mk_dateByAddingDays:1];
     BOOL result = [target mk_isLaterThanDate:other];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_isEqualToDateIgnoringTime_returns_true {
@@ -202,7 +202,7 @@
     id other = [target mk_dateByAddingHours:1];
 
     BOOL result = [target mk_isEqualToDateIgnoringTime:other];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isEqualToDateIgnoringTime_returns_false {
@@ -211,7 +211,7 @@
     id other = [target mk_dateByAddingHours:6];
     
     BOOL result = [target mk_isEqualToDateIgnoringTime:other];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 @end

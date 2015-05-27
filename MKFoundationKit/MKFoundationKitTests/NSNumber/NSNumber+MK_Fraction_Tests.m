@@ -71,25 +71,25 @@
 - (void)test_isInteger_returns_true {
     NSNumber *input = @1;
     BOOL result = [input mk_isInteger];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isInteger_returns_false {
     NSNumber *input = @1.1;
     BOOL result = [input mk_isInteger];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_isFractional_returns_true {
     NSNumber *input = @1.1;
     BOOL result = [input mk_isFraction];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isFractional_returns_false {
     NSNumber *input = @1;
     BOOL result = [input mk_isFraction];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 @end

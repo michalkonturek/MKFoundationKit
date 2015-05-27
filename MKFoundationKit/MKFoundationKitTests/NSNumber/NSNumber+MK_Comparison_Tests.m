@@ -48,62 +48,62 @@
 
 - (void)test_isTheSame_returns_true {
     BOOL result = [@10 mk_isTheSame:@10.0];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isTheSame_returns_false {
     BOOL result = [@10 mk_isTheSame:@10.1];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_isGreaterThan_returns_true {
     BOOL result = [@100 mk_isGreaterThan:@10];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isGreaterThan_returns_false {
     BOOL result = [@10 mk_isGreaterThan:@10.08];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_isLessThan_returns_true {
     BOOL result = [@10 mk_isLessThan:@18];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isLessThan_returns_false {
     BOOL result = [@19.5 mk_isLessThan:@18];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_isEven_returns_true {
     BOOL result = [@22 mk_isEven];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isEven_returns_true_when_zero {
     BOOL result = [@0 mk_isEven];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isEven_returns_false {
     BOOL result = [@1 mk_isEven];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_isOdd_returns_true {
     BOOL result = [@3 mk_isOdd];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isOdd_returns_true_when_fraction {
     BOOL result = [@2.2 mk_isOdd];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isOdd_returns_false {
     BOOL result = [@4 mk_isOdd];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 @end

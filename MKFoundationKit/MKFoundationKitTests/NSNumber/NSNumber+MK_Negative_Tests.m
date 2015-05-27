@@ -78,22 +78,22 @@
 
 - (void)test_isPositive_returns_true {
     BOOL result = [@1 mk_isPositive];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isPositive_returns_false {
     BOOL result = [[NSNumber mk_minusOne] mk_isPositive];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 - (void)test_isNegative_returns_true {
     BOOL result = [[NSNumber mk_minusOne] mk_isNegative];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isNegative_returns_false {
     BOOL result = [@1 mk_isNegative];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 @end

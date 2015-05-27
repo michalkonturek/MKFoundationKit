@@ -138,7 +138,7 @@
         return [value mk_isEven];
     }];
     
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_none_returns_false {
@@ -147,7 +147,7 @@
         return [value mk_isEven];
     }];
     
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 

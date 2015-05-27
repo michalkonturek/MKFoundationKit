@@ -23,7 +23,7 @@
 //  THE SOFTWARE.
 //
 
-#define TEST_PASSES assertThatBool(YES, equalToBool(YES));
+#define TEST_PASSES assertThatBool(YES, isTrue());
 #define TEST_FAILS  XCTFail(@"Test not implemented.");
 #define TEST_NOT_IMPLEMENTED STFail(@"Test not implemented.");
 

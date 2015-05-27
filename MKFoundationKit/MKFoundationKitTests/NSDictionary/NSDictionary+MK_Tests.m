@@ -77,12 +77,12 @@
 
 - (void)test_isEmpty_returns_true {
     BOOL result = [[NSDictionary dictionary] mk_isEmpty];
-    assertThatBool(result, equalToBool(YES));
+    assertThatBool(result, isTrue());
 }
 
 - (void)test_isEmpty_returns_false {
     BOOL result = [self.input mk_isEmpty];
-    assertThatBool(result, equalToBool(NO));
+    assertThatBool(result, isFalse());
 }
 
 @end
