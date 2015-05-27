@@ -110,12 +110,12 @@
 
 - (void)mk_printObjectKeys:(NSArray *)keys {
     
-    __block NSObject *blockSelf = self;
+    __weak typeof(self) weakSelf = self;
     [self _printElements:keys
               withHeader:@"attributes" withBlock:^(id item, id result) {
                   [result appendString:@"\n\t"];
                   [result appendString:[NSString stringWithFormat:@"%@ : %@",
-                                        item, [blockSelf valueForKey:item]]];
+                                        item, [weakSelf valueForKey:item]]];
               }];
 }
 
