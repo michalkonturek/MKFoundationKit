@@ -1,46 +1,43 @@
-//
-//  OCHamcrest - HCIs.m
-//  Copyright 2013 hamcrest.org. See LICENSE.txt
-//
-//  Created by: Jon Reid, http://qualitycoding.org/
-//  Docs: http://hamcrest.github.com/OCHamcrest/
-//  Source: https://github.com/hamcrest/OCHamcrest
-//
+//  OCHamcrest by Jon Reid, http://qualitycoding.org/about/
+//  Copyright 2014 hamcrest.org. See LICENSE.txt
 
 #import "HCIs.h"
 
-#import "HCDescription.h"
 #import "HCWrapInMatcher.h"
 
 
+@interface HCIs ()
+@property (readonly, nonatomic, strong) id <HCMatcher> matcher;
+@end
+
 @implementation HCIs
 
-+ (instancetype)is:(id <HCMatcher>)aMatcher
++ (instancetype)is:(id <HCMatcher>)matcher
 {
-    return [[self alloc] initWithMatcher:aMatcher];
+    return [[self alloc] initWithMatcher:matcher];
 }
 
-- (instancetype)initWithMatcher:(id <HCMatcher>)aMatcher
+- (instancetype)initWithMatcher:(id <HCMatcher>)matcher
 {
     self = [super init];
     if (self)
-        matcher = aMatcher;
+        _matcher = matcher;
     return self;
 }
 
 - (BOOL)matches:(id)item
 {
-    return [matcher matches:item];
+    return [self.matcher matches:item];
 }
 
 - (void)describeMismatchOf:(id)item to:(id<HCDescription>)mismatchDescription
 {
-    [matcher describeMismatchOf:item to:mismatchDescription];
+    [self.matcher describeMismatchOf:item to:mismatchDescription];
 }
 
 - (void)describeTo:(id<HCDescription>)description
 {
-    [description appendDescriptionOf:matcher];
+    [description appendDescriptionOf:self.matcher];
 }
 
 @end

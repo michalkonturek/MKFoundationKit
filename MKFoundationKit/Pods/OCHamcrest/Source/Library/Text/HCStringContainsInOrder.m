@@ -1,15 +1,9 @@
-//
-//  OCHamcrest - HCStringContainsInOrder.m
-//  Copyright 2013 hamcrest.org. See LICENSE.txt
-//
-//  Created by: Jon Reid, http://qualitycoding.org/
-//  Docs: http://hamcrest.github.com/OCHamcrest/
-//  Source: https://github.com/hamcrest/OCHamcrest
-//
+//  OCHamcrest by Jon Reid, http://qualitycoding.org/about/
+//  Copyright 2014 hamcrest.org. See LICENSE.txt
 
 #import "HCStringContainsInOrder.h"
 
-#import "HCDescription.h"
+#import "HCCollect.h"
 
 
 @implementation HCStringContainsInOrder
@@ -33,7 +27,7 @@
                                              userInfo:nil];
             }
         }
-        
+
         substrings = substringList;
     }
     return self;
@@ -43,7 +37,7 @@
 {
     if (![item isKindOfClass:[NSString class]])
         return NO;
-    
+
     NSRange searchRange = NSMakeRange(0, [item length]);
     for (NSString *substring in substrings)
     {
@@ -63,21 +57,12 @@
 
 @end
 
-
 id HC_stringContainsInOrder(NSString *substring, ...)
 {
     va_list args;
     va_start(args, substring);
-    NSMutableArray *substringList = [NSMutableArray arrayWithObject:substring];
-    
-    substring = va_arg(args, NSString *);
-    while (substring != nil)
-    {
-        [substringList addObject:substring];
-        substring = va_arg(args, NSString *);
-    }
-    
+    NSArray *substrings = HCCollectItems(substring, args);
     va_end(args);
-    
-    return [HCStringContainsInOrder containsInOrder:substringList];
+
+    return [HCStringContainsInOrder containsInOrder:substrings];
 }

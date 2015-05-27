@@ -1,26 +1,15 @@
-//
-//  OCHamcrest - HCIsCollectionContainingInAnyOrder.m
-//  Copyright 2013 hamcrest.org. See LICENSE.txt
-//
-//  Created by: Jon Reid, http://qualitycoding.org/
-//  Docs: http://hamcrest.github.com/OCHamcrest/
-//  Source: https://github.com/hamcrest/OCHamcrest
-//
+//  OCHamcrest by Jon Reid, http://qualitycoding.org/about/
+//  Copyright 2014 hamcrest.org. See LICENSE.txt
 
 #import "HCIsCollectionContainingInAnyOrder.h"
 
-#import "HCAllOf.h"
-#import "HCDescription.h"
-#import "HCWrapInMatcher.h"
+#import "HCCollect.h"
 
 
 @interface HCMatchingInAnyOrder : NSObject
-{
-    NSMutableArray *matchers;
-    id<HCDescription, NSObject> mismatchDescription;
-}
+@property (readonly, nonatomic, copy) NSMutableArray *matchers;
+@property (readonly, nonatomic, strong) id <HCDescription, NSObject> mismatchDescription;
 @end
-
 
 @implementation HCMatchingInAnyOrder
 
@@ -30,8 +19,8 @@
     self = [super init];
     if (self)
     {
-        matchers = [itemMatchers mutableCopy];
-        mismatchDescription = description;        
+        _matchers = [itemMatchers mutableCopy];
+        _mismatchDescription = description;
     }
     return self;
 }
@@ -39,33 +28,38 @@
 - (BOOL)matches:(id)item
 {
     NSUInteger index = 0;
-    for (id <HCMatcher> matcher in matchers)
+    for (id <HCMatcher> matcher in self.matchers)
     {
         if ([matcher matches:item])
         {
-            [matchers removeObjectAtIndex:index];
+            [self.matchers removeObjectAtIndex:index];
             return YES;
         }
         ++index;
     }
-    [[mismatchDescription appendText:@"not matched: "] appendDescriptionOf:item];
+    [[self.mismatchDescription appendText:@"not matched: "]
+                               appendDescriptionOf:item];
     return NO;
 }
 
 - (BOOL)isFinishedWith:(NSArray *)collection
 {
-    if ([matchers count] == 0)
+    if ([self.matchers count] == 0)
         return YES;
-    
-    [[[[mismatchDescription appendText:@"no item matches: "]
-                            appendList:matchers start:@"" separator:@", " end:@""]
-                            appendText:@" in "]
-                            appendList:collection start:@"[" separator:@", " end:@"]"];
+
+    [[[[self.mismatchDescription appendText:@"no item matches: "]
+                                 appendList:self.matchers start:@"" separator:@", " end:@""]
+                                 appendText:@" in "]
+                                 appendList:collection start:@"[" separator:@", " end:@"]"];
     return NO;
 }
 
 @end
 
+
+@interface HCIsCollectionContainingInAnyOrder ()
+@property (readonly, nonatomic, copy) NSArray *matchers;
+@end
 
 @implementation HCIsCollectionContainingInAnyOrder
 
@@ -78,42 +72,32 @@
 {
     self = [super init];
     if (self)
-        matchers = [itemMatchers copy];
+        _matchers = [itemMatchers copy];
     return self;
-}
-
-- (BOOL)matches:(id)collection
-{
-    return [self matches:collection describingMismatchTo:nil];
 }
 
 - (BOOL)matches:(id)collection describingMismatchTo:(id<HCDescription>)mismatchDescription
 {
     if (![collection conformsToProtocol:@protocol(NSFastEnumeration)])
     {
-        [super describeMismatchOf:collection to:mismatchDescription];
+        [[mismatchDescription appendText:@"was non-collection "] appendDescriptionOf:collection];
         return NO;
     }
-    
+
     HCMatchingInAnyOrder *matchSequence =
-        [[HCMatchingInAnyOrder alloc] initWithMatchers:matchers 
+        [[HCMatchingInAnyOrder alloc] initWithMatchers:self.matchers
                                    mismatchDescription:mismatchDescription];
     for (id item in collection)
         if (![matchSequence matches:item])
             return NO;
-    
-    return [matchSequence isFinishedWith:collection];
-}
 
-- (void)describeMismatchOf:(id)item to:(id<HCDescription>)mismatchDescription
-{
-    [self matches:item describingMismatchTo:mismatchDescription];
+    return [matchSequence isFinishedWith:collection];
 }
 
 - (void)describeTo:(id<HCDescription>)description
 {
     [[[description appendText:@"a collection over "]
-                   appendList:matchers start:@"[" separator:@", " end:@"]"]
+                   appendList:self.matchers start:@"[" separator:@", " end:@"]"]
                    appendText:@" in any order"];
 }
 
@@ -122,17 +106,10 @@
 
 id HC_containsInAnyOrder(id itemMatch, ...)
 {
-    NSMutableArray *matchers = [NSMutableArray arrayWithObject:HCWrapInMatcher(itemMatch)];
-    
     va_list args;
     va_start(args, itemMatch);
-    itemMatch = va_arg(args, id);
-    while (itemMatch != nil)
-    {
-        [matchers addObject:HCWrapInMatcher(itemMatch)];
-        itemMatch = va_arg(args, id);
-    }
+    NSArray *matchers = HCCollectMatchers(itemMatch, args);
     va_end(args);
-    
+
     return [HCIsCollectionContainingInAnyOrder isCollectionContainingInAnyOrder:matchers];
 }

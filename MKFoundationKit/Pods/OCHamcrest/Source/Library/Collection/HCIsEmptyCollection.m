@@ -1,16 +1,9 @@
-//
-//  OCHamcrest - HCIsEmptyCollection.m
-//  Copyright 2013 hamcrest.org. See LICENSE.txt
-//
-//  Created by: Jon Reid, http://qualitycoding.org/
-//  Docs: http://hamcrest.github.com/OCHamcrest/
-//  Source: https://github.com/hamcrest/OCHamcrest
-//
+//  OCHamcrest by Jon Reid, http://qualitycoding.org/about/
+//  Copyright 2014 hamcrest.org. See LICENSE.txt
 
 #import "HCIsEmptyCollection.h"
 
-#import "HCDescription.h"
-#import "HCIsEqualToNumber.h"
+#import "HCIsEqual.h"
 
 
 @implementation HCIsEmptyCollection
@@ -22,7 +15,7 @@
 
 - (instancetype)init
 {
-    self = [super initWithCount:HC_equalToUnsignedInteger(0)];
+    self = [super initWithCount:HC_equalTo(@0)];
     return self;
 }
 
@@ -39,7 +32,7 @@
 @end
 
 
-OBJC_EXPORT id HC_isEmpty()
+FOUNDATION_EXPORT id HC_isEmpty()
 {
     return [HCIsEmptyCollection isEmptyCollection];
 }

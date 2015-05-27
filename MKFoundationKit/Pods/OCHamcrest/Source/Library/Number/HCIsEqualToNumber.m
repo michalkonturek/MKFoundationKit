@@ -1,56 +1,109 @@
-//
-//  OCHamcrest - HCIsEqualToNumber.m
-//  Copyright 2013 hamcrest.org. See LICENSE.txt
-//
-//  Created by: Jon Reid, http://qualitycoding.org/
-//  Docs: http://hamcrest.github.com/OCHamcrest/
-//  Source: https://github.com/hamcrest/OCHamcrest
-//
+//  OCHamcrest by Jon Reid, http://qualitycoding.org/about/
+//  Copyright 2014 hamcrest.org. See LICENSE.txt
 
 #import "HCIsEqualToNumber.h"
 
 #import "HCIsEqual.h"
-#import "HCDescription.h"
 
 
-#define DEFINE_EQUAL_TO_NUMBER(name, type)                                  \
-    OBJC_EXPORT id HC_equalTo ## name(type value)                           \
-    {                                                                       \
-        return [HCIsEqual isEqualTo:[NSNumber numberWith ## name :value]];  \
-    }
+FOUNDATION_EXPORT id HC_equalToChar(char value)
+{
+    return HC_equalTo(@(value));
+}
 
-DEFINE_EQUAL_TO_NUMBER(Char, char)
-DEFINE_EQUAL_TO_NUMBER(Double, double)
-DEFINE_EQUAL_TO_NUMBER(Float, float)
-DEFINE_EQUAL_TO_NUMBER(Int, int)
-DEFINE_EQUAL_TO_NUMBER(Long, long)
-DEFINE_EQUAL_TO_NUMBER(LongLong, long long)
-DEFINE_EQUAL_TO_NUMBER(Short, short)
-DEFINE_EQUAL_TO_NUMBER(UnsignedChar, unsigned char)
-DEFINE_EQUAL_TO_NUMBER(UnsignedInt, unsigned int)
-DEFINE_EQUAL_TO_NUMBER(UnsignedLong, unsigned long)
-DEFINE_EQUAL_TO_NUMBER(UnsignedLongLong, unsigned long long)
-DEFINE_EQUAL_TO_NUMBER(UnsignedShort, unsigned short)
-DEFINE_EQUAL_TO_NUMBER(Integer, NSInteger)
-DEFINE_EQUAL_TO_NUMBER(UnsignedInteger, NSUInteger)
+FOUNDATION_EXPORT id HC_equalToDouble(double value)
+{
+    return HC_equalTo(@(value));
+}
 
-OBJC_EXPORT id HC_equalToBool(BOOL value)
+FOUNDATION_EXPORT id HC_equalToFloat(float value)
+{
+    return HC_equalTo(@(value));
+}
+
+FOUNDATION_EXPORT id HC_equalToInt(int value)
+{
+    return HC_equalTo(@(value));
+}
+
+FOUNDATION_EXPORT id HC_equalToLong(long value)
+{
+    return HC_equalTo(@(value));
+}
+
+FOUNDATION_EXPORT id HC_equalToLongLong(long long value)
+{
+    return HC_equalTo(@(value));
+}
+
+FOUNDATION_EXPORT id HC_equalToShort(short value)
+{
+    return HC_equalTo(@(value));
+}
+
+FOUNDATION_EXPORT id HC_equalToUnsignedChar(unsigned char value)
+{
+    return HC_equalTo(@(value));
+}
+
+FOUNDATION_EXPORT id HC_equalToUnsignedInt(unsigned int value)
+{
+    return HC_equalTo(@(value));
+}
+
+FOUNDATION_EXPORT id HC_equalToUnsignedLong(unsigned long value)
+{
+    return HC_equalTo(@(value));
+}
+
+FOUNDATION_EXPORT id HC_equalToUnsignedLongLong(unsigned long long value)
+{
+    return HC_equalTo(@(value));
+}
+
+FOUNDATION_EXPORT id HC_equalToUnsignedShort(unsigned short value)
+{
+    return HC_equalTo(@(value));
+}
+
+FOUNDATION_EXPORT id HC_equalToInteger(NSInteger value)
+{
+    return HC_equalTo(@(value));
+}
+
+FOUNDATION_EXPORT id HC_equalToUnsignedInteger(NSUInteger value)
+{
+    return HC_equalTo(@(value));
+}
+
+#pragma mark -
+
+static NSString *stringForBool(BOOL value)
+{
+    return value ? @"<YES>" : @"<NO>";
+}
+
+FOUNDATION_EXPORT id HC_equalToBool(BOOL value)
 {
     return [[HCIsEqualToBool alloc] initWithValue:value];
 }
 
 @implementation HCIsEqualToBool
-{
-    BOOL _value;
-}
 
-+ (NSString*) stringForBool:(BOOL)value
+static void HCRequireYesOrNo(BOOL value)
 {
-    return value ? @"<YES>" : @"<NO>";
+    if (value != YES && value != NO)
+    {
+        @throw [NSException exceptionWithName:@"BoolValue"
+                                       reason:@"Must be YES or NO"
+                                     userInfo:nil];
+    }
 }
 
 - (instancetype)initWithValue:(BOOL)value
 {
+    HCRequireYesOrNo(value);
+
     self = [super init];
     if (self)
         _value = value;
@@ -61,19 +114,23 @@ OBJC_EXPORT id HC_equalToBool(BOOL value)
 {
     if (![item isKindOfClass:[NSNumber class]])
         return NO;
-    return [item boolValue] == _value;
+
+    return [item boolValue] == self.value;
 }
 
 - (void)describeTo:(id<HCDescription>)description
 {
-    [description appendText:@"a BOOL with value "];
-    [description appendText:[HCIsEqualToBool stringForBool:_value]];
+    [[description appendText:@"a BOOL with value "]
+                  appendText:stringForBool(self.value)];
 }
 
 - (void)describeMismatchOf:(id)item to:(id<HCDescription>)mismatchDescription
 {
     [mismatchDescription appendText:@"was "];
-    [mismatchDescription appendText:[HCIsEqualToBool stringForBool:[item boolValue]]];
+    if ([item isKindOfClass:[NSNumber class]])
+        [mismatchDescription appendText:stringForBool([item boolValue])];
+    else
+        [mismatchDescription appendDescriptionOf:item];
 }
 
 @end

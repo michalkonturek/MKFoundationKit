@@ -1,32 +1,29 @@
-//
-//  OCHamcrest - HCIsEqualIgnoringCase.m
-//  Copyright 2013 hamcrest.org. See LICENSE.txt
-//
-//  Created by: Jon Reid, http://qualitycoding.org/
-//  Docs: http://hamcrest.github.com/OCHamcrest/
-//  Source: https://github.com/hamcrest/OCHamcrest
-//
+//  OCHamcrest by Jon Reid, http://qualitycoding.org/about/
+//  Copyright 2014 hamcrest.org. See LICENSE.txt
 
 #import "HCIsEqualIgnoringCase.h"
 
-#import "HCDescription.h"
 #import "HCRequireNonNilObject.h"
 
 
+@interface HCIsEqualIgnoringCase ()
+@property (readonly, nonatomic, copy) NSString *string;
+@end
+
 @implementation HCIsEqualIgnoringCase
 
-+ (instancetype)isEqualIgnoringCase:(NSString *)aString
++ (instancetype)isEqualIgnoringCase:(NSString *)string
 {
-    return [[self alloc] initWithString:aString];
+    return [[self alloc] initWithString:string];
 }
 
-- (instancetype)initWithString:(NSString *)aString
+- (instancetype)initWithString:(NSString *)string
 {
-    HCRequireNonNilObject(aString);
-    
+    HCRequireNonNilObject(string);
+
     self = [super init];
     if (self)
-        string = [aString copy];
+        _string = [string copy];
     return self;
 }
 
@@ -34,13 +31,13 @@
 {
     if (![item isKindOfClass:[NSString class]])
         return NO;
-    
-    return [string caseInsensitiveCompare:item] == NSOrderedSame;
+
+    return [self.string caseInsensitiveCompare:item] == NSOrderedSame;
 }
 
 - (void)describeTo:(id<HCDescription>)description
 {
-    [[description appendDescriptionOf:string]
+    [[description appendDescriptionOf:self.string]
                   appendText:@" ignoring case"];
 }
 

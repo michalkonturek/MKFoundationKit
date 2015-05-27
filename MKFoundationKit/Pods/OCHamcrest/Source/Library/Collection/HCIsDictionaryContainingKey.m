@@ -1,31 +1,29 @@
-//
-//  OCHamcrest - HCIsDictionaryContainingKey.m
-//  Copyright 2013 hamcrest.org. See LICENSE.txt
-//
-//  Created by: Jon Reid, http://qualitycoding.org/
-//  Docs: http://hamcrest.github.com/OCHamcrest/
-//  Source: https://github.com/hamcrest/OCHamcrest
-//
+//  OCHamcrest by Jon Reid, http://qualitycoding.org/about/
+//  Copyright 2014 hamcrest.org. See LICENSE.txt
 
 #import "HCIsDictionaryContainingKey.h"
 
-#import "HCDescription.h"
 #import "HCRequireNonNilObject.h"
 #import "HCWrapInMatcher.h"
 
 
+@interface HCIsDictionaryContainingKey ()
+@property (readonly, nonatomic, strong) id <HCMatcher> keyMatcher;
+@end
+
+
 @implementation HCIsDictionaryContainingKey
 
-+ (instancetype)isDictionaryContainingKey:(id <HCMatcher>)theKeyMatcher
++ (instancetype)isDictionaryContainingKey:(id <HCMatcher>)keyMatcher
 {
-    return [[self alloc] initWithKeyMatcher:theKeyMatcher];
+    return [[self alloc] initWithKeyMatcher:keyMatcher];
 }
 
-- (instancetype)initWithKeyMatcher:(id <HCMatcher>)theKeyMatcher
+- (instancetype)initWithKeyMatcher:(id <HCMatcher>)keyMatcher
 {
     self = [super init];
     if (self)
-        keyMatcher = theKeyMatcher;
+        _keyMatcher = keyMatcher;
     return self;
 }
 
@@ -33,7 +31,7 @@
 {
     if ([dict isKindOfClass:[NSDictionary class]])
         for (id oneKey in dict)
-            if ([keyMatcher matches:oneKey])
+            if ([self.keyMatcher matches:oneKey])
                 return YES;
     return NO;
 }
@@ -41,7 +39,7 @@
 - (void)describeTo:(id<HCDescription>)description
 {
     [[description appendText:@"a dictionary containing key "]
-                  appendDescriptionOf:keyMatcher];
+                  appendDescriptionOf:self.keyMatcher];
 }
 
 @end

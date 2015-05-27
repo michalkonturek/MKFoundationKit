@@ -1,41 +1,33 @@
-//
-//  OCHamcrest - HCAllOf.m
-//  Copyright 2013 hamcrest.org. See LICENSE.txt
-//
-//  Created by: Jon Reid, http://qualitycoding.org/
-//  Docs: http://hamcrest.github.com/OCHamcrest/
-//  Source: https://github.com/hamcrest/OCHamcrest
-//
+//  OCHamcrest by Jon Reid, http://qualitycoding.org/about/
+//  Copyright 2014 hamcrest.org. See LICENSE.txt
 
 #import "HCAllOf.h"
 
-#import "HCCollectMatchers.h"
-#import "HCDescription.h"
+#import "HCCollect.h"
 
+
+@interface HCAllOf ()
+@property (readonly, nonatomic, copy) NSArray *matchers;
+@end
 
 @implementation HCAllOf
 
-+ (instancetype)allOf:(NSArray *)theMatchers
++ (instancetype)allOf:(NSArray *)matchers
 {
-    return [[self alloc] initWithMatchers:theMatchers];
+    return [[self alloc] initWithMatchers:matchers];
 }
 
-- (instancetype)initWithMatchers:(NSArray *)theMatchers
+- (instancetype)initWithMatchers:(NSArray *)matchers
 {
     self = [super init];
     if (self)
-        matchers = theMatchers;
+        _matchers = [matchers copy];
     return self;
-}
-
-- (BOOL)matches:(id)item
-{
-    return [self matches:item describingMismatchTo:nil];
 }
 
 - (BOOL)matches:(id)item describingMismatchTo:(id<HCDescription>)mismatchDescription
 {
-    for (id <HCMatcher> oneMatcher in matchers)
+    for (id <HCMatcher> oneMatcher in self.matchers)
     {
         if (![oneMatcher matches:item])
         {
@@ -47,14 +39,9 @@
     return YES;
 }
 
-- (void)describeMismatchOf:(id)item to:(id<HCDescription>)mismatchDescription
-{
-    [self matches:item describingMismatchTo:mismatchDescription];
-}
-
 - (void)describeTo:(id<HCDescription>)description
 {
-    [description appendList:matchers start:@"(" separator:@" and " end:@")"];
+    [description appendList:self.matchers start:@"(" separator:@" and " end:@")"];
 }
 
 @end
@@ -66,6 +53,6 @@ id HC_allOf(id match, ...)
     va_start(args, match);
     NSArray *matcherList = HCCollectMatchers(match, args);
     va_end(args);
-    
+
     return [HCAllOf allOf:matcherList];
 }

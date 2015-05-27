@@ -1,11 +1,5 @@
-//
-//  OCHamcrest - HCStringEndsWith.m
-//  Copyright 2013 hamcrest.org. See LICENSE.txt
-//
-//  Created by: Jon Reid, http://qualitycoding.org/
-//  Docs: http://hamcrest.github.com/OCHamcrest/
-//  Source: https://github.com/hamcrest/OCHamcrest
-//
+//  OCHamcrest by Jon Reid, http://qualitycoding.org/about/
+//  Copyright 2014 hamcrest.org. See LICENSE.txt
 
 #import "HCStringEndsWith.h"
 
@@ -21,8 +15,8 @@
 {
     if (![item respondsToSelector:@selector(hasSuffix:)])
         return NO;
-    
-    return [item hasSuffix:substring];
+
+    return [item hasSuffix:self.substring];
 }
 
 - (NSString *)relationship

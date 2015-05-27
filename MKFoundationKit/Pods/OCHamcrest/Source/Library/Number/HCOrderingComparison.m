@@ -1,16 +1,15 @@
-//
-//  OCHamcrest - HCOrderingComparison.m
-//  Copyright 2013 hamcrest.org. See LICENSE.txt
-//
-//  Created by: Jon Reid, http://qualitycoding.org/
-//  Docs: http://hamcrest.github.com/OCHamcrest/
-//  Source: https://github.com/hamcrest/OCHamcrest
-//
+//  OCHamcrest by Jon Reid, http://qualitycoding.org/about/
+//  Copyright 2014 hamcrest.org. See LICENSE.txt
 
 #import "HCOrderingComparison.h"
 
-#import "HCDescription.h"
 
+@interface HCOrderingComparison ()
+@property (readonly, nonatomic, strong) id expected;
+@property (readonly, nonatomic, assign) NSComparisonResult minCompare;
+@property (readonly, nonatomic, assign) NSComparisonResult maxCompare;
+@property (readonly, nonatomic, copy) NSString *comparisonDescription;
+@end
 
 @implementation HCOrderingComparison
 
@@ -20,9 +19,9 @@
   comparisonDescription:(NSString *)description
 {
     return [[self alloc] initComparing:expectedValue
-                             minCompare:min
-                             maxCompare:max
-                  comparisonDescription:description];
+                            minCompare:min
+                            maxCompare:max
+                 comparisonDescription:description];
 }
 
 - (instancetype)initComparing:(id)expectedValue
@@ -36,14 +35,14 @@
                                        reason: @"Object must respond to compare:"
                                      userInfo: nil];
     }
-    
+
     self = [super init];
     if (self)
     {
-        expected = expectedValue;
-        minCompare = min;
-        maxCompare = max;
-        comparisonDescription = [description copy];
+        _expected = expectedValue;
+        _minCompare = min;
+        _maxCompare = max;
+        _comparisonDescription = [description copy];
     }
     return self;
 }
@@ -52,17 +51,25 @@
 {
     if (item == nil)
         return NO;
-    
-    NSComparisonResult compare = [expected compare:item];
-    return minCompare <= compare && compare <= maxCompare;
+
+    NSComparisonResult compare;
+    @try
+    {
+        compare = [self.expected compare:item];
+    }
+    @catch (NSException *e)
+    {
+        return NO;
+    }
+    return self.minCompare <= compare && compare <= self.maxCompare;
 }
 
 - (void)describeTo:(id<HCDescription>)description
 {
     [[[[description appendText:@"a value "]
-                    appendText:comparisonDescription]
+                    appendText:self.comparisonDescription]
                     appendText:@" "]
-                    appendDescriptionOf:expected];
+                    appendDescriptionOf:self.expected];
 }
 
 @end
