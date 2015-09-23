@@ -35,20 +35,29 @@
 
 + (NSArray *)mk_propertyList:(Class)clazz {
     unsigned int count;
-    objc_property_t *propertyList = class_copyPropertyList(clazz, &count);
+    NSMutableArray *result = nil;
     
-    NSMutableArray *result = [NSMutableArray arrayWithCapacity:count];
-    for (NSInteger idx = 0; idx < count; idx++ ) {
+    do {
+        objc_property_t *propertyList = class_copyPropertyList(clazz, &count);
         
-        objc_property_t property = propertyList[idx];
-        const char *propertyName = property_getName(property);
-        
-        if (propertyName) {
-            [result addObject:[NSString stringWithCString:propertyName encoding:NSUTF8StringEncoding]];
+        if (!result) {
+            result = [NSMutableArray arrayWithCapacity:count];
         }
-    }
-    
-    free(propertyList);
+        
+        for (NSInteger idx = 0; idx < count; idx++ ) {
+            
+            objc_property_t property = propertyList[idx];
+            const char *propertyName = property_getName(property);
+            
+            if (propertyName) {
+                [result addObject:[NSString stringWithCString:propertyName encoding:NSUTF8StringEncoding]];
+            }
+        }
+        
+        free(propertyList);
+        
+        clazz = [clazz superclass];
+    } while (clazz);
     
     return result;
 }
@@ -89,7 +98,7 @@
     Method *methods = class_copyMethodList(clazz, &count);
     
     NSMutableArray *results = [NSMutableArray arrayWithCapacity:count];
-    for (int idx = 0; idx < count ; idx++) {
+    for (unsigned int idx = 0; idx < count ; idx++) {
         SEL selector = method_getName(methods[idx]);
         [results addObject:NSStringFromSelector(selector)];
     }
@@ -98,6 +107,36 @@
     
     return results;
 }
+
+#pragma mark -
+#pragma mark Blocks
+
+- (void (^)(id item, id result))_itemBlock
+{
+    return ^(id item, id result) {
+        [result appendString:@"\n\t"];
+        [result appendString:item];
+    };
+}
+
+- (void (^)(id item, id result))_itemValueBlock
+{
+    __block NSObject *blockSelf = self;
+    
+    return ^(id item, id result) {
+        id keyValue = nil;
+        @try {
+            keyValue = [blockSelf valueForKey:item];
+        } @catch (NSException *e) {
+            keyValue = @"Can't get value via KVC";
+        }
+        [result appendString:@"\n\t"];
+        [result appendString:[NSString stringWithFormat:@"%@ : %@", item, keyValue]];
+    };
+}
+
+#pragma mark -
+#pragma mark Print object
 
 - (void)mk_printObject {
     if ([self isKindOfClass:NSClassFromString(@"NSManagedObject")]) {
@@ -109,33 +148,55 @@
 }
 
 - (void)mk_printObjectKeys:(NSArray *)keys {
-    
-    __block NSObject *blockSelf = self;
     [self _printElements:keys
-              withHeader:@"attributes" withBlock:^(id item, id result) {
-                  [result appendString:@"\n\t"];
-                  [result appendString:[NSString stringWithFormat:@"%@ : %@",
-                                        item, [blockSelf valueForKey:item]]];
-              }];
+              withHeader:@"attributes" withBlock:[self _itemValueBlock]];
 }
 
 - (void)mk_printObjectMethods {
     [self _printElements:[[self class] mk_methodList]
-              withHeader:@"methods" withBlock:^(id item, id result) {
-                  [result appendString:@"\n\t"];
-                  [result appendString:item];
-    }];
+              withHeader:@"methods" withBlock:[self _itemBlock]];
 }
 
 - (void)mk_printObjectMethodsOnly {
     [self _printElements:[[self class] mk_methodListOnly]
-              withHeader:@"methods only" withBlock:^(id item, id result) {
-                  [result appendString:@"\n\t"];
-                  [result appendString:item];
-    }];
+              withHeader:@"methods only" withBlock:[self _itemBlock]];
 }
 
 - (void)_printElements:(NSArray *)elements
+            withHeader:(NSString *)header withBlock:(void (^)(id item, id result))block {
+    
+    NSString *result = [self _describeElements:elements withHeader:header withBlock:block];
+    NSLog(@"%@", result);
+}
+
+#pragma mark -
+#pragma mark Describe object
+
+- (NSString *)mk_describeObject {
+    if ([self isKindOfClass:NSClassFromString(@"NSManagedObject")]) {
+        return [self description];
+    }
+    
+    return [self mk_describeObjectKeys:[[self class] mk_propertyList]];
+}
+
+- (NSString *)mk_describeObjectKeys:(NSArray *)keys {
+    
+    return [self _describeElements:keys
+                      withHeader:@"attributes" withBlock:[self _itemValueBlock]];
+}
+
+- (NSString *)mk_describeObjectMethods {
+    return [self _describeElements:[[self class] mk_methodList]
+                      withHeader:@"methods" withBlock:[self _itemBlock]];
+}
+
+- (NSString *)mk_describeObjectMethodsOnly {
+    return [self _describeElements:[[self class] mk_methodListOnly]
+              withHeader:@"methods only" withBlock:[self _itemBlock]];
+}
+
+- (NSString *)_describeElements:(NSArray *)elements
             withHeader:(NSString *)header withBlock:(void (^)(id item, id result))block {
     
     __block NSMutableString *result = [NSMutableString string];
@@ -147,7 +208,7 @@
     
     [result appendString:@"\n< - - -\n"];
     
-    NSLog(@"%@", result);
+    return result;
 }
 
 - (NSString *)mk_className {

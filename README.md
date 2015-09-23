@@ -353,6 +353,12 @@ Source code of this project is available under the standard MIT license. Please 
 - (void)mk_printObjectMethods;
 - (void)mk_printObjectMethodsOnly;
 
+- (NSString *)mk_describeObject;
+- (NSString *)mk_describeObjectKeys:(NSArray *)keys;
+
+- (NSString *)mk_describeObjectMethods;
+- (NSString *)mk_describeObjectMethodsOnly;
+
 - (NSString *)mk_className;
 ```
 
