@@ -42,6 +42,12 @@
 - (void)mk_printObjectMethods;
 - (void)mk_printObjectMethodsOnly;
 
+- (NSString *)mk_describeObject;
+- (NSString *)mk_describeObjectKeys:(NSArray *)keys;
+
+- (NSString *)mk_describeObjectMethods;
+- (NSString *)mk_describeObjectMethodsOnly;
+
 - (NSString *)mk_className;
 
 @end
