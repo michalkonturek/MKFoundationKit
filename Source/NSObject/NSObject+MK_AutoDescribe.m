@@ -89,7 +89,7 @@
     Method *methods = class_copyMethodList(clazz, &count);
     
     NSMutableArray *results = [NSMutableArray arrayWithCapacity:count];
-    for (int idx = 0; idx < count ; idx++) {
+    for (unsigned int idx = 0; idx < count ; idx++) {
         SEL selector = method_getName(methods[idx]);
         [results addObject:NSStringFromSelector(selector)];
     }
